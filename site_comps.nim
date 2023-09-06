@@ -16,79 +16,110 @@ proc content_col_styles*():string =
         "
     """
 
-proc top_nav*(): string = 
-    nav(
-        """
-            padding="1vh 10vh 1vh 10vh" itemPosH=between bgColor="#00000099" itemPosV="ctr" sticky
-            bgColorOnScroll="black"
+# proc top_nav*(): string = 
+#     nav(
+#         """
+#             padding="1vh 10vh 1vh 10vh" itemPosH=between bgColor="#00000099" itemPosV="ctr" sticky
+#             bgColorOnScroll="black"
 
-        """,
+#         """,
+#         """
+#             <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+#         """&
+#         nwc.row(
+#             """
+#             gap="2vh" itemPosH=6  style="flex: 1; height: 100%" bgColor=""
+#             """,
+#             nwc.btn(
+#                 """
+#                 round
+#                 bgColor = "#D02F3A"
+#                 textColor = "#FFFFFF"
+#                 growOnHover
+#                 """,
+#                 anostyle("""/""", "Get NFT")
+
+#             )&
+#             nwc.btn(
+#                 """
+#                     round
+#                     bgColorOnHover = "#D02F3A"
+#                     textColor = "#FFFFFF"
+#                 """,
+#                 anostyle(if demo == false: """/contribute""" else: "/", "Contribute")
+
+#             )&
+#             nwc.btn(
+#                 """
+#                     round
+#                     bgColorOnHover = "#D02F3A"
+#                     textColor = "#FFFFFF"
+#                 """,
+#                 anostyle(if demo == false: """/faq""" else: "/", "FAQ")
+
+#             )
+
+#         )
+#     )
+
+proc top_nav*():string =
+    # Desktop
+    nw.row(
         """
-            <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+        <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
         """&
-        nwc.row(
-            """
-            gap="2vh" itemPosH=6  style="flex: 1; height: 100%" bgColor=""
-            """,
-            nwc.btn(
-                """
-                round
-                bgColor = "#D02F3A"
-                textColor = "#FFFFFF"
-                growOnHover
-                """,
-                anostyle("""/""", "Get NFT")
+        nw.row(
+            nw.btn(anostyle("""/""", "Get NFT"), bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6)&
+            nw.btn(anostyle(if consts.demo == false : """/contribute""" else: "/", "Contribute"))&
+            nw.btn(anostyle(if consts.demo == false : """/faq"""        else: "/", "FAQ")),
 
-            )&
-            nwc.btn(
-                """
-                    round
-                    bgColorOnHover = "#D02F3A"
-                    textColor = "#FFFFFF"
-                """,
-                anostyle("""/contribute""", "Contribute")
-
-            )&
-            nwc.btn(
-                """
-                    round
-                    bgColorOnHover = "#D02F3A"
-                    textColor = "#FFFFFF"
-                """,
-                anostyle("""/faq""", "FAQ")
-
-            )
-
-        )
+            gap = 10,
+            itemPosH = 1,
+            extra_class = "flex-1",
+            itemposv = "c"
+        ),
+        itemposh=2,
+        p = "px-24 py-5",
+        bgColor="#00000099",
+        #extra_class = "sticky top-0 z-10",
+        extra_class = " top-0 z-10",
+        whenBelow = (650, @["hidden"]),
+        name = "top nav desktop",
+    )&
+    
+    # Mobile
+    nw.row(
+        """
+        <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+    
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg 
+            width='50px'
+            fill = "white"
+            style = "cursor:pointer"
+            version="1.1" id="Design_here" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+            <g>
+                <rect x="4" y="5" width="16" height="2"/>
+                <rect x="4" y="11" width="16" height="2"/>
+                <rect x="4" y="17" width="16" height="2"/>
+            </g>
+        </svg>
+        """,
+        itemposh    = "between",
+        p           = "px-24 py-5",
+        bgColor     ="#00000099",
+        extra_class = "top-0 z-10 hidden",
+        whenBelow   = (650, @["flex"]),
+        name        = "top nav mobile",
     )
 
-# proc top_col*(body:string):string = 
-#     col(
-#         """
-#         padding = "20vh"
-#         gap = "5vh"
-#         bgColor = "#EFECEBef00"
-#         textColor = "black"
-#         """,
-#         body
-#     )
+
 
 proc grey_card*(body:string):string = nwc.col(
     fmt"""bgColor = {style_grey} """ & content_col_styles(), 
     body)
-
-# proc red_card*(body:string):string = nwc.col(
-#     fmt"""bgColor = {style_red} """ & 
-#     # content_col_styles()&
-#     """
-#             padding = "5vh 5vh 5vh 5vh"
-#             textColor = "black"
-#             round
-#             itemPosH = c
-#             gap = 4vh
-#     """
-#     , 
-#     body)
 
 proc redCard*(body:string):string = nw.col(
     body,
@@ -101,94 +132,6 @@ proc redCard*(body:string):string = nw.col(
     
     
     )
-
-# proc play_card*():string = 
-#     row(
-#             """
-#                 round
-#                 padding = "2vw"
-#                 border-radius = "20px"
-#                 rowItemPosition = "3"
-#                 col-item-pos="4"
-#                 bgColor = "#EFECEBef"
-#                 style=" 
-#                 align-items: center;
-#                 "
-#             """,
-#             row(
-#                 """
-#                     id = "play-card-info"
-#                     rowItemPosition = "5"
-#                     bgColor = "#EFECEBef00"
-#                     padding = "5vh"
-#                     style="width: 100%;"
-#                     gap = 2vw
-#                 """,
-#                 col(
-#                     """
-#                         id="play-card-info-play-btn"
-#                         style=" 
-#                         background-color: rgba(255, 0, 0, 0);
-#                         "
-#                     """,
-#                     ddiv(
-#                         """
-#                             style=" 
-#                             cursor: pointer;
-#                             background-color: black;
-#                             padding: 1vh;
-#                             border-radius: 10%;
-#                             display: block;
-#                             "
-#                         """,
-#                         """
-#                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="100px" height="100px" style="display: block; margin:auto;">
-#                                 <path d="M5.5,4 L18.5,12 L5.5,20 L5.5,4 Z" />
-#                             </svg> 
-#                         """
-
-#                     )
-
-#                 )&
-#                 col(
-#                     """
-#                         id="play-card-info-text"
-#                         bgColor = "rgba(255, 0, 0, 0)"
-#                         style=" width: 100%;"
-#                     """,
-#                     text(
-#                         """
-#                             largest
-#                             bold
-#                         """,
-#                     "WIDE EYE FEELS"
-#                     )&
-#                     text(
-#                         """
-#                             small
-#                             bold
-#                         """,
-#                         "Brenna"
-#                     )
-
-#                 )
-
-#             )&
-#             ddiv(
-#                 """
-#                 <img 
-#                     src="/static/img/BFE4182D-B784-4D86-851F-31E230476773.PNG" 
-
-#                     style="  
-#                     width: 200px;
-#                     height: auto;
-#                     border-radius: 3%;
-#                 "
-#                 >
-#                 """
-
-#             )
-#     )
 
 proc connect_wallet_btn *(): string = 
     nwc.btn(
@@ -207,16 +150,6 @@ proc coming_soon_card*(): string =
         "COMING SOON"
     )
 
-# proc countdown*(): string = 
-#     col()
-
-# proc chapter_nav_bar*(): string = 
-#     row()
-
-
-# proc presale_card*(): string = 
-#     col()
-
 proc postNavCol*(body:string): string = 
     nw.col(
         body,
@@ -227,8 +160,6 @@ proc postNavCol*(body:string): string =
         
 
     )
-
-
 
 proc base*(body:string, title = "WIDE EYE FEELS") : string = 
     html(

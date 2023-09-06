@@ -5,6 +5,7 @@ import mynimlib/nimwind as nw
 import strformat, strutils
 import mynimlib/nimalpine as na
 import std/sugar
+import consts
 
 
 ################
@@ -173,59 +174,59 @@ proc playCard*():string =
 
         )
 
-proc topNav*():string =
-    # Desktop
-    nw.row(
-        """
-        <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-        """&
-        nw.row(
-            nw.btn(anostyle("""/""", "Get NFT"), bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6)&
-            nw.btn(anostyle("""/contribute""", "Contribute"))&
-            nw.btn(anostyle("""/faq""", "FAQ")),
+# proc topNav*():string =
+#     # Desktop
+#     nw.row(
+#         """
+#         <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+#         """&
+#         nw.row(
+#             nw.btn(anostyle("""/""", "Get NFT"), bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6)&
+#             nw.btn(anostyle("""/contribute""", "Contribute"))&
+#             nw.btn(anostyle("""/faq""", "FAQ")),
 
-            gap = 10,
-            itemPosH = 1,
-            extra_class = "flex-1",
-            itemposv = "c"
-        ),
-        itemposh=2,
-        p = "px-24 py-5",
-        bgColor="#00000099",
-        #extra_class = "sticky top-0 z-10",
-        extra_class = " top-0 z-10",
-        whenBelow = (650, @["hidden"]),
-        name = "top nav desktop",
-    )&
+#             gap = 10,
+#             itemPosH = 1,
+#             extra_class = "flex-1",
+#             itemposv = "c"
+#         ),
+#         itemposh=2,
+#         p = "px-24 py-5",
+#         bgColor="#00000099",
+#         #extra_class = "sticky top-0 z-10",
+#         extra_class = " top-0 z-10",
+#         whenBelow = (650, @["hidden"]),
+#         name = "top nav desktop",
+#     )&
     
-    # Mobile
-    nw.row(
-        """
-        <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+#     # Mobile
+#     nw.row(
+#         """
+#         <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
     
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg 
-            width='50px'
-            fill = "white"
-            style = "cursor:pointer"
-            version="1.1" id="Design_here" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-            <g>
-                <rect x="4" y="5" width="16" height="2"/>
-                <rect x="4" y="11" width="16" height="2"/>
-                <rect x="4" y="17" width="16" height="2"/>
-            </g>
-        </svg>
-        """,
-        itemposh="between",
-        p = "px-24 py-5",
-        bgColor="#00000099",
-        #extra_class = "sticky top-0 z-10 hidden",
-        extra_class = "top-0 z-10 hidden",
-        whenBelow = (650, @["flex"]),
-        name = "top nav mobile",
-    )
+#         <?xml version="1.0" encoding="utf-8"?>
+#         <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+#         <svg 
+#             width='50px'
+#             fill = "white"
+#             style = "cursor:pointer"
+#             version="1.1" id="Design_here" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+#                 y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+#             <g>
+#                 <rect x="4" y="5" width="16" height="2"/>
+#                 <rect x="4" y="11" width="16" height="2"/>
+#                 <rect x="4" y="17" width="16" height="2"/>
+#             </g>
+#         </svg>
+#         """,
+#         itemposh="between",
+#         p = "px-24 py-5",
+#         bgColor="#00000099",
+#         #extra_class = "sticky top-0 z-10 hidden",
+#         extra_class = "top-0 z-10 hidden",
+#         whenBelow = (650, @["flex"]),
+#         name = "top nav mobile",
+#     )
 
 proc chapter_carousel(iframes:seq[string]): string = 
     var arr = "["
@@ -373,7 +374,10 @@ proc NFTAccordions():string =
             
             )
     let chapter_accordions = @[
-        chapter_accordion(1, acc.items[0].btn, acc.items[0].content, chapter_carousel(buildIframes(2)) ),
+        if consts.demo == false: 
+            chapter_accordion(1, acc.items[0].btn, acc.items[0].content, chapter_carousel(buildIframes(2)) ) 
+        else: 
+            chapter_accordion(1, acc.items[0].btn, acc.items[0].content, ),
         chapter_accordion(2, acc.items[1].btn, acc.items[1].content, ),
         chapter_accordion(3, acc.items[2].btn, acc.items[2].content, ),
         chapter_accordion(4, acc.items[3].btn, acc.items[3].content, ),
@@ -611,8 +615,7 @@ proc landing*(ctx: Context) {.async.} =
   headers.add("Cache-Control", "no-cache, no-store, must-revalidate")
   resp htmlResponse(
       base(
-          topNav()&
-          #NFTAccordions()&
+          top_nav()&
           postNavCol(
               playCard()&
               mainContent()
