@@ -1,0 +1,34 @@
+@import 'SASS_Functions/Base';
+@import 'SASS_Functions/Color';
+@import 'SASS_Functions/Flex';
+@import 'SASS_Functions/Hover';
+@import 'SASS_Functions/MediaQueries';
+@import 'SASS_Functions/Utils';
+@import 'SASS_Functions/Containers';
+@import 'SASS_Functions/Buttons';
+@import 'SASS_Functions/Fonts';
+@import 'SASS_Functions/Inputs';
+
+
+@font-face {
+    font-family: "main";
+    src: url("../fonts/FjallaOne-Regular.ttf") format("truetype");
+}
+
+body {
+
+    //font-family: main;
+
+}
+
+.topLevel {
+
+    background-color: $bkglighter;
+    background-color: map-get($map: $cm_purple, $key: 100);
+
+    //@include showBorder(blue);
+    min-height: 100vh;
+
+
+}
+

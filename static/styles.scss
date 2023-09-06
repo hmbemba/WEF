@@ -1,0 +1,21 @@
+@import 'css/styles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    //font-family: 'Agdasima', sans-serif;
+
+    background-image: url("/static/img/bkg.png");
+    background-size: auto; 
+    color: white;
+
+}
+
+
+[x-cloak] { display: none !important; }
+
+// .form-group{
+//     @include flexRow();
+// }

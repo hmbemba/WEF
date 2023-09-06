@@ -1,0 +1,31 @@
+$mobile: 800px;
+$laptop: 1920px;
+
+@mixin Mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+//if the screen is equal to or less than 480px - do something
+// @media screen and (max-width: 480px){
+//   do: something
+// }
+
+@mixin showFromTo($from, $to) {
+    @media not all and (min-width: $from) and (max-width: $to) {
+        display: none;
+    }
+}
+
+@mixin showWhenAbove($width) {
+    @media (max-width: $width) {
+        display: none;
+    }
+}
+
+@mixin showWhenBelow($width) {
+    @media (min-width: $width) {
+        display: none;
+    }
+}
