@@ -174,60 +174,6 @@ proc playCard*():string =
 
         )
 
-# proc topNav*():string =
-#     # Desktop
-#     nw.row(
-#         """
-#         <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-#         """&
-#         nw.row(
-#             nw.btn(anostyle("""/""", "Get NFT"), bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6)&
-#             nw.btn(anostyle("""/contribute""", "Contribute"))&
-#             nw.btn(anostyle("""/faq""", "FAQ")),
-
-#             gap = 10,
-#             itemPosH = 1,
-#             extra_class = "flex-1",
-#             itemposv = "c"
-#         ),
-#         itemposh=2,
-#         p = "px-24 py-5",
-#         bgColor="#00000099",
-#         #extra_class = "sticky top-0 z-10",
-#         extra_class = " top-0 z-10",
-#         whenBelow = (650, @["hidden"]),
-#         name = "top nav desktop",
-#     )&
-    
-#     # Mobile
-#     nw.row(
-#         """
-#         <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-    
-#         <?xml version="1.0" encoding="utf-8"?>
-#         <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-#         <svg 
-#             width='50px'
-#             fill = "white"
-#             style = "cursor:pointer"
-#             version="1.1" id="Design_here" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-#                 y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-#             <g>
-#                 <rect x="4" y="5" width="16" height="2"/>
-#                 <rect x="4" y="11" width="16" height="2"/>
-#                 <rect x="4" y="17" width="16" height="2"/>
-#             </g>
-#         </svg>
-#         """,
-#         itemposh="between",
-#         p = "px-24 py-5",
-#         bgColor="#00000099",
-#         #extra_class = "sticky top-0 z-10 hidden",
-#         extra_class = "top-0 z-10 hidden",
-#         whenBelow = (650, @["flex"]),
-#         name = "top nav mobile",
-#     )
-
 proc chapter_carousel(iframes:seq[string]): string = 
     var arr = "["
     for ii in 0..iframes.len-1:
@@ -606,6 +552,14 @@ proc mainContent():string =
         name        = "main-content mobile"
     )
 
+proc demo_video():string = 
+    """
+    <video width="full" height="full" autoplay loop muted style="border-radius:10px">
+        <source src="/static/img/demo_vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    """
+
 ####################
 ## Route Handlers ##
 ## #################
@@ -614,13 +568,23 @@ proc landing*(ctx: Context) {.async.} =
   var headers = initResponseHeaders()
   headers.add("Cache-Control", "no-cache, no-store, must-revalidate")
   resp htmlResponse(
-      base(
-          top_nav()&
-          postNavCol(
-              playCard()&
-              mainContent()
-            )
-      ),
+      if not consts.demo:
+        base(
+            top_nav()&
+            postNavCol(
+                playCard()&
+                mainContent()
+                )
+        )
+      else:
+        base(
+            top_nav()&
+            postNavCol(
+                        grey_card(
+                            demo_video()
+                        )
+                )
+        ),
       headers = headers
   )
 

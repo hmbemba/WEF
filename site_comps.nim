@@ -117,9 +117,17 @@ proc top_nav*():string =
 
 
 
-proc grey_card*(body:string):string = nwc.col(
-    fmt"""bgColor = {style_grey} """ & content_col_styles(), 
-    body)
+proc grey_card*(body:string, name = ""):string = 
+    nw.row(
+            body,
+            round     = "10px"               ,
+            p         = "py-[2vw] px-[4vw]"  ,
+            itemposh  = 3                    ,
+            itemposv  = 4                    ,
+            bgColor   = "#EFECEBef"          ,
+            name      = name
+
+        )
 
 proc redCard*(body:string):string = nw.col(
     body,

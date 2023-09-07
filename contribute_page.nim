@@ -3,6 +3,7 @@ import site_comps
 import mynimlib/nimwebc as nwc
 import mynimlib/nimwind as nw
 import strformat, sequtils, strutils
+import mynimlib/icecream
 
 ################
 ## Components ##
@@ -36,8 +37,6 @@ proc edit_chapters_section(body:string) : string =
     head = """ id = 'edit-chapters-section' """,
     extra_class = "hidden"
   )
-
-
 
 
 
@@ -85,9 +84,17 @@ proc contribute_page*(ctx: Context) {.async.} =
     )
   )
 
+proc contribute_verify_contact_form_page*(ctx: Context) {.async.} =
+  ic "Incoming Post request"
+
+  ic $(ctx.request)
+  ic $(ctx.request.postParams)
+
+  resp jsonResponse(%*{"show_form":true})
 
 ####################
 ## Route Handlers ##
 ####################
 
 let contribute_route* = pattern("/contribute", contribute_page, @[HttpGet])
+let contribute_verify_contact_form_route* = pattern("/contribute/nft-holder-address", contribute_verify_contact_form_page, @[HttpPost])

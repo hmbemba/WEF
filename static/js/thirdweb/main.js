@@ -1952,21 +1952,6 @@ function show_edit_chapters(edit_chapters_section){
   edit_chapters_section.classList.remove("hidden");
 }
 function updateSectionStyles(editionsOwned, walletAddress) {
-  // for (const { chapter_num_owned, section_owned } of editionsOwned) {
-  //   console.log(chapter_num_owned, section_owned);
-  //   const chapterDiv = document.getElementById(`chapter-${chapter_num_owned}`);
-  //   console.log(chapterDiv);
-  //   if (chapterDiv) {
-  //     const sectionDiv = chapterDiv.querySelector(`#chapter-${chapter_num_owned}-section-${section_owned}`);
-  //     console.log(sectionDiv);
-  //     if (sectionDiv) {
-  //       const anchorTag = sectionDiv.firstChild;
-  //       anchorTag.href = `/edit/chapter/${chapter_num_owned + 1}/section/${section_owned + 1}/${walletAddress}`;
-  //       anchorTag.style.opacity = "1";
-  //       anchorTag.style.pointerEvents = "cursor";
-  //     }
-  //   }
-  // }
   for (const edition of editionsOwned) {
     const section = document.getElementById(`section-${edition}`);
     console.log(section);
@@ -1982,46 +1967,102 @@ function updateSectionStyles(editionsOwned, walletAddress) {
 
 const RPC_URL                      = "https://goerli.infura.io/v3/884a1eec1b9343bb81fc7778dfad1f39";
 const provider                     = new ethers.providers.JsonRpcProvider(RPC_URL);
-const contract_address = "0xc2DDB991A1c1Cec4d7f735842e74F6F0c02123f0";
+const contract_address             = "0x95161d22A309C21FbC8bA674f4f38e5F91BCea30";
 const edit_chapters_section        = document.querySelector('#edit-chapters-section');
 const wallet                       = new MetaMaskWallet();
 
 const MainContract                 = new EditionsContract(contract_address , editions_contract_abi , 2 , provider);
 
-async function main() {
+// async function main() {
 
+//   const btn = document.querySelector('#connect-wallet');
+//   btn.addEventListener('click', async () => {
+//     await wallet.connect();
+
+//     const address      = await wallet.getAddress();
+//     //console.log(address);
+    
+//     const hasPurchased = await hasPurchasedAnNFT(address, MainContract);
+//     console.log(hasPurchased);
+    
+//     if (hasPurchased) {
+//       //   send a post request with wallet address to "/contribute/nft-holder-address"
+//       // if "show_form" is in the response show the form
+      
+//       show_edit_chapters(edit_chapters_section);
+//       const editionsOwned = await getEditionsOwned(address, MainContract);
+//       console.log(editionsOwned);
+      
+//       updateSectionStyles(editionsOwned, address);
+
+//     } 
+    
+//     else {
+//       console.log("has not purchased");
+//       //show_buy_chapters();
+//     }
+
+//     // const contract = new ethers.Contract(CHAPTER_1_CONTRACT_ADDRESS, abi, provider);
+//     // const balance = await contract.balanceOf(address)
+//     // const readableBalance = ethers.utils.formatUnits(balance, 18);
+//     // // A balance of 0.0 means the user does not have the NFT
+//     // // A balance of 0.000000000000000001 means the user has the NFT
+//     // console.log(readableBalance);
+//     //show_edit_chapters();
+//   });
+
+
+// }
+
+async function main() {
   const btn = document.querySelector('#connect-wallet');
   btn.addEventListener('click', async () => {
     await wallet.connect();
 
     const address      = await wallet.getAddress();
-    //console.log(address);
-    
+
     const hasPurchased = await hasPurchasedAnNFT(address, MainContract);
     console.log(hasPurchased);
-    
-    if (hasPurchased) {
-      show_edit_chapters(edit_chapters_section);
-      const editionsOwned = await getEditionsOwned(address, MainContract);
-      console.log(editionsOwned);
-      
-      updateSectionStyles(editionsOwned, address);
 
+    if (hasPurchased) {
+      // Create the JSON body
+      const requestBody = JSON.stringify({ address: address });
+
+      try {
+        // Send a POST request with the wallet address to "/contribute/nft-holder-address"
+        const response = await fetch('/contribute/nft-holder-address', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: requestBody,
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          // Check if "show_form" is in the response data
+          // if (data.show_form) {
+          //   // Show the form
+          //   showForm();
+          // }
+        } else {
+          console.error('Failed to send POST request');
+        }
+
+        // Get the editions owned by the wallet
+        const editionsOwned = await getEditionsOwned(address, MainContract);
+        console.log(editionsOwned);
+
+        // Update section styles based on editions owned and wallet address
+        updateSectionStyles(editionsOwned, address);
+      } catch (error) {
+        console.error('Error:', error);
+      }
     } else {
       console.log("has not purchased");
-      //show_buy_chapters();
     }
-
-    // const contract = new ethers.Contract(CHAPTER_1_CONTRACT_ADDRESS, abi, provider);
-    // const balance = await contract.balanceOf(address)
-    // const readableBalance = ethers.utils.formatUnits(balance, 18);
-    // // A balance of 0.0 means the user does not have the NFT
-    // // A balance of 0.000000000000000001 means the user has the NFT
-    // console.log(readableBalance);
-    //show_edit_chapters();
   });
-
-
 }
 
 main().catch(error => console.error(error));
