@@ -578,12 +578,13 @@ proc landing*(ctx: Context) {.async.} =
         )
       else:
         base(
-            top_nav()&
-            postNavCol(
-                        grey_card(
-                            demo_video()
-                        )
-                )
+            demo_video()
+            # top_nav()&
+            # postNavCol(
+            #             grey_card(
+            #                 demo_video()
+            #             )
+            #     )
         ),
       headers = headers
   )

@@ -3,6 +3,7 @@ import faq_page
 import landing_page 
 import contribute_page  
 import edit_section_page 
+import cgpt_page
 import consts
 import prologue/middlewares/staticfile
 
@@ -28,6 +29,7 @@ app.addRoute(@[
   contribute_route         ,
   edit_section_route     ,
   faq_route                ,
+  cgpt_route               ,
 
 
 ], "")
