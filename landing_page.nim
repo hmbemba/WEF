@@ -554,7 +554,7 @@ proc mainContent():string =
 
 proc demo_video():string = 
     """
-    <video width="full" height="full" autoplay loop muted style="border-radius:10px">
+    <video playsinline width="full" height="full" autoplay loop muted style="border-radius:10px">
         <source src="/static/img/demo_vid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
