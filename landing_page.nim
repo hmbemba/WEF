@@ -559,9 +559,32 @@ proc demo_video():string =
     #     Your browser does not support the video tag.
     # </video>
     # """
-    """
-    <img style="width: 100vw;height: 100vh;" src="/static/img/demo_gif.gif" />
-    """
+    # """
+    # <img style="width: 100vw;height: 100vh;" src="/static/img/demo_gif.gif" />
+    # """
+    nw.col(
+            """
+            <img style="width: 100vw;height: 100vh;" src="/static/img/demo_gif.gif" />
+            """
+            ,
+            itemposv = "c",
+            itemposh = "c",
+            extra_class = "h-screen",
+            whenBelow = (750, @["hidden"]),
+
+    )&
+
+    nw.col(
+            """
+            <img style="width: 300px;height: 300px;" src="/static/img/demo_gif.gif" />
+            """
+            ,
+            itemposv = "c",
+            itemposh = "c",
+            extra_class = "h-screen hidden",
+            whenBelow = (750, @["flex"]),
+
+    )
 
 ####################
 ## Route Handlers ##
