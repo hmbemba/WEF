@@ -562,6 +562,7 @@ proc demo_video():string =
     # """
     # <img style="width: 100vw;height: 100vh;" src="/static/img/demo_gif.gif" />
     # """
+    # Desktop / Tablet
     nw.col(
             """
             <img style="width: 100vw;height: 100vh;" src="/static/img/demo_gif.gif" />
@@ -574,9 +575,10 @@ proc demo_video():string =
 
     )&
 
+    # Mobile 
     nw.col(
             """
-            <img style="width: 300px;height: 300px;" src="/static/img/demo_gif.gif" />
+            <img style="width: full;height: 300px;" src="/static/img/demo_gif.gif" />
             """
             ,
             itemposv = "c",
