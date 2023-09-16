@@ -606,6 +606,7 @@ proc landing*(ctx: Context) {.async.} =
         )
       else:
         base(
+            demo_nav()&
             demo_video()
         ),
       headers = headers
