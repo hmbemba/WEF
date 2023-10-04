@@ -164,7 +164,7 @@ fetch(
     """
     .} 
 
-let cgpt_resp      = await prompt_cgpt("Bearer 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", prompt)
+let cgpt_resp      = await prompt_cgpt("Bearer " & consts.open_ai_key, prompt)
 let cgpt_resp_json{. exportc: "cgpt_resp_json".} = await cgpt_resp.json()
 
 var resp_text{. exportc: "resp_text".} = "".cstring
@@ -241,7 +241,7 @@ proc nextBtnClicked(): Future[void] {. async exportc:"nextBtnClicked" .}=
   let prompt_2 = buildPrompt2($(title.innerHTML) & "\n" & $(content.innerHTML))
   echo prompt_2
 
-  let cgpt_resp_2      = await prompt_cgpt("Bearer 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", prompt_2)
+  let cgpt_resp_2      = await prompt_cgpt("Bearer " & consts.open_ai_key, prompt_2)
 
   let cgpt_resp_json_2{. exportc: "cgpt_resp_json_2".} = await cgpt_resp_2.json()
 
