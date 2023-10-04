@@ -256,7 +256,8 @@ proc base*(body:string, title = "WIDE EYE FEELS") : string =
                 title, 
                 body=""" 
                     <script type="module" src="/static/js/lit_base_components/dist/assets/lit_js_file"></script> 
-                    <script type="module" src="/static/js/thirdweb/dist/assets/tw_js_file"></script> 
+                    <script type="module" src="/static/js/thirdweb/dist/assets/tw_js_file"></script>
+                    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
 
                     <link rel="stylesheet" href="/static/styles.css">
                     <style>
@@ -274,7 +275,7 @@ proc base*(body:string, title = "WIDE EYE FEELS") : string =
                     __tailwind_cdn__
                 """.multiReplace(@[
                                     ("lit_js_file", lit_js_file),
-                                    ( "tw_js_file", tw_js_file),
+                                    ( "tw_js_file", tw_js_file) , # this is thirdweb not tailwind
                                     ("__tailwind_cdn__", nw.tw_cdn())
                                 ])
             ), 

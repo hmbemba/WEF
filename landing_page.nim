@@ -578,7 +578,25 @@ proc demo_video():string =
     # Mobile 
     nw.col(
             """
-            <img style="width: full;height: 300px;" src="/static/img/demo_gif.gif" />
+            <style>
+            /* CSS to zoom in the GIF */
+            .zoom-container {
+                width: 100vw; /* Set the width of the container to the viewport width */
+                height: 100vh; /* Set the height of the container to the viewport height */
+                overflow: hidden; /* Hide any overflow */
+            }
+
+            .zoomed-gif {
+                width: 100%; /* Make the image take up the full width of the container */
+                height: 100%; /* Make the image take up the full height of the container */
+                transform: scale(1); /* Zoom the image to 2x its original size (adjust this value as needed) */
+                transform-origin: center; /* Set the zoom origin to the top left corner */
+            }
+            </style>
+            
+            <div class="zoom-container">
+                <img class="zoomed-gif" src="/static/img/demo_gif.gif" alt="Zoomed GIF">
+            </div>
             """
             ,
             itemposv = "c",

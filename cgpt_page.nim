@@ -4,6 +4,9 @@ import mynimlib/nimwebc as nwc
 import mynimlib/nimwind as nw
 import strformat, sequtils, strutils
 import mynimlib/icecream
+import mynimlib/nimsvgicons
+
+
 
 ################
 ## Components ##
@@ -19,114 +22,168 @@ proc nft_card():string =
     proc regularText(body:string):string = 
         fmt"<p class=''>{body}</p>"
     
+    proc nft_img_mobile():string = 
+      """
+      <div class="bg-[#D9D9D9]" style="width:full; height:250px">
+      </div>
+      """
+
+    proc nft_img_desktop():string = 
+      """
+      <div class="bg-[#D9D9D9]" style="width:250px; height:250px"></div>
+      """
+    
+    proc text_section_mobile():string = 
+      nw.col(
+          nw.row(
+            boldText("Loss")
+            #smallText("Details")
+          )&
+          nw.col(
+            nw.row(boldText("Section 1.1: ")&regularText("Gaia's perspective - "))&
+            regularText("Aliquam efficros. Morbi lorem nisl, ultricies i")
+          ),
+          #p="p-4",
+          gap=2
+      )
+
+    proc text_section_desktop():string = 
+      nw.col(
+          nw.row(
+            boldText("Loss")
+            #smallText("Details")
+          )&
+          nw.col(
+            nw.row(boldText("Section 1.1: ")&regularText("Gaia's perspective - "))&
+            regularText("Aliquam efficros. Morbi lorem nisl, ultricies i")
+          ),
+          #p="p-4",
+          gap=2,
+          itemposv="around"
+      )
+
+
+
+
     # Desktop / Tablet
-    nw.row(
-            """<div style = "width:500px ; height: 500px ; background-color: grey></div>"""&
-
-            nw.col(
-                nw.col(
-                    boldText("Loss")&
-                    smallText("Details")
-                )&
-                regularText("Gaia's perspective - ")&
-                regularText("Aliquam efficitur semper libero, in eleifend orci facilisis vel. Maecenas in pellentesque massa, ut accumsan eros. Morbi lorem nisl, ultricies i")
-                #itemposv = "c"
-            ),
-
-            round     = "10px"          ,
-            p         = "py-[2vw] px-[4vw]" ,
-            itemposh  = 3            ,
-            itemposv  = 4            ,
-            bgColor   = "#EFECEBef"   ,
-            whenBelow = (750, @["hidden"]),
-            name      = "NFT Card dekstop / tablet"
-
-        )#&
+    nw.col(
+          nw.row(nft_img_desktop()&text_section_desktop(), bgColor="#81162099",p="p-4",gap=4,head="style='border-radius:10px; '"),
+          name="NFT Card Desktop",
+          whenAbove=(650, @["flex"]), 
+          p="p-[4vw]",
+          extra_class ="hidden",
+          head="style='border-radius:10px; '")&
 
     # Mobile
-    # nw.col(
-    #         nw.col(
-    #             """
-    #             <img 
-    #                 src="/static/img/BFE4182D-B784-4D86-851F-31E230476773.PNG" 
+    nw.col(
+          nw.col(nft_img_mobile()&text_section_mobile(), bgColor="#81162099",p="p-4",gap=4,head="style='border-radius:10px; '"),
+          name="NFT Card mobile",
+          whenAbove=(650, @["hidden"]), 
+          p="p-[4vw]",
+          head="style='border-radius:10px; '")
 
-    #                 style="  
-    #                 width: 100%;
-    #                 height: auto;
-    #                 border-top-left-radius: 10px;     
-    #                 border-top-right-radius: 10px;     
-    #                 border-bottom-left-radius: 0;
-    #                 border-bottom-right-radius: 0; 
-    #             "
-    #             >
-    #             """,
-    #             itemposv = "c"
-    #         )&
-    #         nw.row(
+proc comiczone():string = 
+  nw.row("""<p class="text-5xl">Comic Zone </p>""",itemposh="c", whenAbove=(650, @["hidden"]))&
+  nw.row("""<p class="text-8xl">Comic Zone </p>""",itemposh="c", extra_class="hidden", whenAbove=(650, @["flex"]))
 
-    #             nw.col(                    
-    #                     ddiv(
-    #                         """
-    #                             style=" 
-    #                             cursor: pointer;
-    #                             background-color: black;
-    #                             padding: 1vh;
-    #                             border-radius: 10%;
-    #                             display: block;
-    #                             "
-    #                         """,
-    #                         """
-    #                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="20vw" height="20vw" style="display: block; margin:auto;">
-    #                                 <path d="M5.5,4 L18.5,12 L5.5,20 L5.5,4 Z" />
-    #                             </svg> 
-    #                         """
-    #                     ), 
-    #                     head="""id="play-card-info-play-btn"""",
-    #                     itemposv = "c"
-    #                 )&
-    #             nw.col(                    
-    #                 """<p style = "font-size: 8vw; font-weight:bold;"> WIDE EYE FEELS </p>"""&
-    #                 """<p style = "font-size: 3vw; font-weight:bold;"> Brenna </p>""", 
-    #                 head = """id="play-card-info-text"style=" width: 100%;" """,
-    #                 itemposv = "c"
-                    
-                
-    #             ),
-    #             gap = "2vw",
-    #             w = "full",
-    #             itemposh = "between",
-    #             p = "p-4",
-    #             name = "play card mobile info"
+proc tell_ur_story():string = 
+  nw.row("""<p class="text-2xl p-le">Tell Your Story...</p>""",itemposh="c", whenAbove=(650, @["hidden"]))&
+  nw.row("""<p class="text-4xl">Tell Your Story...</p>""",itemposh="start", p="pl-20", extra_class="hidden", whenAbove=(650, @["flex"]))
 
-    #         ),
+proc page_header():string = 
+  nw.col(comiczone()&tell_ur_story(), gap=4)
 
-    #         round = "10px"          ,
-    #         #p = "py-[2vw] px-[4vw]" ,
-    #         itemposh = "c"            ,
-    #         itemposv = "c"            ,
-    #         bgColor = "#EFECEBef"   ,
-    #         extra_class = "hidden",
-    #         whenBelow = (750, @["flex"]),
-    #         name = "play card Mobile",
-    #         gap = "4vh"
+proc purple_card(body:string, name=""): string = 
+  nw.col(
+    nw.row(body, itemposh="c", itemposv="c"),
+    bgColor="#816AFE99",
+    p="p-4",
+    gap=4,
+    head="style='border-radius:10px; '",
+    name=name
+  )
 
-    #     )
+proc spinner():string = 
+  """
 
-# proc
-# proc cgpt_section():string = ""
-# proc title():string = ""
-# proc subtitle() :string = ""
+  <div role="status" id="spinner">
+      <svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+      </svg>
+      <span class="sr-only">Loading...</span>
+  </div>
+  
+  """
+
+proc ghost_writer_tab*(title:string):string = 
+  proc text(text:string):string= fmt"""<p class="text-slate-700">{text}</p>"""
+  
+  nw.col(
+    text(title)&chevron_down("red", "25px"),
+    bgColor = "#FFFFFF",
+    p="p-4",
+    head="style='border-radius:10px; '",
+    itemposh="c",
+    itemposv="c",
+    gap=4
+  )
+
+proc ghost_writer_tab_mobile*(title:string):string = 
+  proc text(text:string):string= fmt"""<p class="text-slate-700">{text}</p>"""
+  
+  nw.col(
+    text(title)&chevron_down("red", "25px"),
+    bgColor = "#FFFFFF",
+    p="p-3",
+    head="style='border-radius:10px; '",
+    itemposh="c",
+    itemposv="c",
+    #gap=2,
+    w = "full"
+  )
+
+proc ghost_writer_card():string = 
+    purple_card(
+      # Mobile
+      nw.col(
+        spinner(),#ghost_writer_tab_mobile("Gaia's Perspective")&ghost_writer_tab_mobile("Gaia's Perspective")&ghost_writer_tab_mobile("Gaia's Perspective"),
+        gap=4,
+        name = "mobile",
+        whenAbove=(650, @["hidden"]),
+        w="full",
+        head = """" id='ghost-writer-row-mobile' x-data="{ activeTab: '' }" """
+        
+        )&
+      nw.row(
+        ghost_writer_tab("Gaia's Perspective")&ghost_writer_tab("Gaia's Perspective")&ghost_writer_tab("Gaia's Perspective"),
+        gap=4,
+        name = "Desktop/tablet",
+        whenAbove=(650, @["flex"]),
+        extra_class="hidden"
+        
+        
+        ),
+        name = "ghost writer card"
+    )
+
+
 
 ################
 ## Routes     ##
 ################
 
 proc cgpt_page*(ctx: Context) {.async.} =
-  resp base(
+  resp htmlResponse base(
     top_nav()&
-    postNavCol(
-      nft_card()
-    )
+    page_header()&
+    #postNavCol(
+    nft_card()&
+    ghost_writer_card()&
+    nw.btn("Select Next Scenario", head="id='next-scenario-btn' ")&
+    """
+    <script type="module" src="/static/js/cgpt_page_fe.js "></script>
+    """
   )
 
 
