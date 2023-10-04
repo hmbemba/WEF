@@ -581,7 +581,7 @@ proc demo_video():string =
             <style>
             /* CSS to zoom in the GIF */
             .zoom-container {
-                width: 100vw; /* Set the width of the container to the viewport width */
+                width: 700px; /* Set the width of the container to the viewport width */
                 height: 100vh; /* Set the height of the container to the viewport height */
                 overflow: hidden; /* Hide any overflow */
             }
