@@ -2,24 +2,98 @@
 var framePtr = null;
 var excHandler = 0;
 var lastJSError = null;
-var NTI452984837 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI1342177285 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI822083656 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
-var NTI822083663 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI33555121 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI452985350 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI587203761 = {size: 0, kind: 19, base: null, node: null, finalizer: null};
-var NTI1325400069 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI452984857 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI452984942 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI654311516 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311515 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311514 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311513 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311512 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311511 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311510 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311509 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311508 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311507 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311506 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311505 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311504 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311503 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311502 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311501 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311500 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311499 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311498 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311497 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311496 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311495 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311494 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311493 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311492 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311565 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311454 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311612 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311609 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI654311608 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI654311489 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311611 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI654311490 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311558 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311448 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311547 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311559 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311449 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311546 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311545 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311564 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311453 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311544 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311543 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311560 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311450 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311542 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311541 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311441 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311439 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI654311540 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311539 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311440 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311538 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311537 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311550 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311561 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311451 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311549 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311563 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI654311562 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311452 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311534 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311438 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI654311548 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI654311442 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI587202570 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI603979796 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI1459617797 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI33555124 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI452984885 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI687865917 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI1023410248 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
+var NTI1023410255 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI33555121 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI1358954621 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI989856945 = {size: 0, kind: 19, base: null, node: null, finalizer: null};
+var NTI1442840581 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI452984963 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI33554466 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
+var NTI452984835 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI805306429 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI33555114 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33555125 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI1241513987 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI1174405123 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33554438 = {size: 0,kind: 2,base: null,node: null,finalizer: null};
-var NTI1241513988 = {size: 0, kind: 19, base: null, node: null, finalizer: null};
+var NTI1174405124 = {size: 0, kind: 19, base: null, node: null, finalizer: null};
 var NTI33555128 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33555130 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33555113 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33555120 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33555122 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33554456 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
 var NTI33555919 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI33555083 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
@@ -28,15 +102,9 @@ var NTI33554439 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
 var NTI33554440 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
 var NTI33555164 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
 var NTI33555112 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI33555113 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI33555120 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI33555122 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NNI33555122 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI33555122.node = NNI33555122;
-var NNI33555120 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI33555120.node = NNI33555120;
-var NNI33555113 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI33555113.node = NNI33555113;
+var NTI587202563 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NNI587202563 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI587202563.node = NNI587202563;
 NTI33555164.base = NTI33555112;
 NTI33555165.base = NTI33555112;
 var NNI33555112 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI33555164, name: "parent", sons: null}, 
@@ -48,96 +116,705 @@ NTI33555112.node = NNI33555112;
 var NNI33555083 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555083.node = NNI33555083;
 NTI33555112.base = NTI33555083;
-NTI33555113.base = NTI33555112;
-NTI33555120.base = NTI33555113;
-NTI33555122.base = NTI33555120;
+NTI587202563.base = NTI33555112;
 var NNI33555919 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554440, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI33554456, name: "Field1", sons: null}, 
 {kind: 1, offset: "Field2", len: 0, typ: NTI33554440, name: "Field2", sons: null}]};
 NTI33555919.node = NNI33555919;
+var NNI33555122 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555122.node = NNI33555122;
+var NNI33555120 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555120.node = NNI33555120;
+var NNI33555113 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555113.node = NNI33555113;
+NTI33555113.base = NTI33555112;
+NTI33555120.base = NTI33555113;
+NTI33555122.base = NTI33555120;
 var NNI33555130 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555130.node = NNI33555130;
 NTI33555130.base = NTI33555113;
 var NNI33555128 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555128.node = NNI33555128;
 NTI33555128.base = NTI33555113;
-NTI1241513988.base = NTI33554438;
-var NNI1241513987 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI1241513987.node = NNI1241513987;
+NTI1174405124.base = NTI33554438;
+var NNI1174405123 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI1174405123.node = NNI1174405123;
 var NNI33555125 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555125.node = NNI33555125;
 var NNI33555114 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555114.node = NNI33555114;
 NTI33555114.base = NTI33555112;
 NTI33555125.base = NTI33555114;
-NTI1241513987.base = NTI33555125;
-var NNI687865917 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI33554456, name: "a", sons: null}, 
+NTI1174405123.base = NTI33555125;
+var NNI805306429 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI33554456, name: "a", sons: null}, 
 {kind: 1, offset: "b", len: 0, typ: NTI33554456, name: "b", sons: null}]};
-NTI687865917.node = NNI687865917;
-var NNI452984885 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "title", len: 0, typ: NTI33554439, name: "title", sons: null}, 
-{kind: 1, offset: "content", len: 0, typ: NTI33554439, name: "content", sons: null}]};
-NTI452984885.node = NNI452984885;
-var NNI33555124 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI33555124.node = NNI33555124;
-NTI33555124.base = NTI33555113;
-var NNI1325400069 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
+NTI805306429.node = NNI805306429;
+var NNI452984835 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "title", len: 0, typ: NTI33554439, name: "title", sons: null}, 
+{kind: 1, offset: "content", len: 0, typ: NTI33554439, name: "content", sons: null}, 
+{kind: 1, offset: "selected", len: 0, typ: NTI33554466, name: "selected", sons: null}, 
+{kind: 1, offset: "number", len: 0, typ: NTI33554456, name: "number", sons: null}]};
+NTI452984835.node = NNI452984835;
+var NNI452984963 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "val", len: 0, typ: NTI452984835, name: "val", sons: null}, 
+{kind: 1, offset: "has", len: 0, typ: NTI33554466, name: "has", sons: null}]};
+NTI452984963.node = NNI452984963;
+var NNI1442840581 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI33554439, name: "Field1", sons: null}, 
 {kind: 1, offset: "Field2", len: 0, typ: NTI33554439, name: "Field2", sons: null}]};
-NTI1325400069.node = NNI1325400069;
-NTI587203761.base = NTI33554438;
-var NNI452985350 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
+NTI1442840581.node = NNI1442840581;
+NTI989856945.base = NTI33554438;
+var NNI1358954621 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI33554439, name: "Field1", sons: null}]};
-NTI452985350.node = NNI452985350;
+NTI1358954621.node = NNI1358954621;
 var NNI33555121 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555121.node = NNI33555121;
 NTI33555121.base = NTI33555120;
-var NNI822083663 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI822083656, name: "a", sons: null}, 
+var NNI1023410255 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI1023410248, name: "a", sons: null}, 
 {kind: 1, offset: "b", len: 0, typ: NTI33554456, name: "b", sons: null}]};
-NTI822083663.node = NNI822083663;
-var NNI1342177285 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
+NTI1023410255.node = NNI1023410255;
+var NNI33555124 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555124.node = NNI33555124;
+NTI33555124.base = NTI33555113;
+var NNI1459617797 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI33554439, name: "Field1", sons: null}]};
-NTI1342177285.node = NNI1342177285;
-var NNI452984837 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
+NTI1459617797.node = NNI1459617797;
+var NNI603979796 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI603979796.node = NNI603979796;
+NTI603979796.base = NTI33555113;
+var NNI654311534 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI654311534.node = NNI654311534;
+NTI654311534.base = NTI33555083;
+NTI654311438.base = NTI654311534;
+NTI654311563.base = NTI654311442;
+var NNI654311562 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "acceptCharset", len: 0, typ: NTI33554440, name: "acceptCharset", sons: null}, 
+{kind: 1, offset: "action", len: 0, typ: NTI33554440, name: "action", sons: null}, 
+{kind: 1, offset: "autocomplete", len: 0, typ: NTI33554440, name: "autocomplete", sons: null}, 
+{kind: 1, offset: "elements", len: 0, typ: NTI654311563, name: "elements", sons: null}, 
+{kind: 1, offset: "encoding", len: 0, typ: NTI33554440, name: "encoding", sons: null}, 
+{kind: 1, offset: "enctype", len: 0, typ: NTI33554440, name: "enctype", sons: null}, 
+{kind: 1, offset: "length", len: 0, typ: NTI33554456, name: "length", sons: null}, 
+{kind: 1, offset: "method", len: 0, typ: NTI33554440, name: "method", sons: null}, 
+{kind: 1, offset: "noValidate", len: 0, typ: NTI33554466, name: "noValidate", sons: null}, 
+{kind: 1, offset: "target", len: 0, typ: NTI33554440, name: "target", sons: null}]};
+NTI654311562.node = NNI654311562;
+NTI654311562.base = NTI654311548;
+NTI654311452.base = NTI654311562;
+var NNI654311561 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "defaultSelected", len: 0, typ: NTI33554466, name: "defaultSelected", sons: null}, 
+{kind: 1, offset: "selected", len: 0, typ: NTI33554466, name: "selected", sons: null}, 
+{kind: 1, offset: "selectedIndex", len: 0, typ: NTI33554456, name: "selectedIndex", sons: null}, 
+{kind: 1, offset: "text", len: 0, typ: NTI33554440, name: "text", sons: null}, 
+{kind: 1, offset: "value", len: 0, typ: NTI33554440, name: "value", sons: null}]};
+NTI654311561.node = NNI654311561;
+NTI654311561.base = NTI654311548;
+NTI654311451.base = NTI654311561;
+NTI654311549.base = NTI654311451;
+NTI654311550.base = NTI654311451;
+var NNI654311548 = {kind: 2, len: 20, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "className", len: 0, typ: NTI33554440, name: "className", sons: null}, 
+{kind: 1, offset: "classList", len: 0, typ: NTI654311438, name: "classList", sons: null}, 
+{kind: 1, offset: "checked", len: 0, typ: NTI33554466, name: "checked", sons: null}, 
+{kind: 1, offset: "defaultChecked", len: 0, typ: NTI33554466, name: "defaultChecked", sons: null}, 
+{kind: 1, offset: "defaultValue", len: 0, typ: NTI33554440, name: "defaultValue", sons: null}, 
+{kind: 1, offset: "disabled", len: 0, typ: NTI33554466, name: "disabled", sons: null}, 
+{kind: 1, offset: "form", len: 0, typ: NTI654311452, name: "form", sons: null}, 
+{kind: 1, offset: "name", len: 0, typ: NTI33554440, name: "name", sons: null}, 
+{kind: 1, offset: "readOnly", len: 0, typ: NTI33554466, name: "readOnly", sons: null}, 
+{kind: 1, offset: "options", len: 0, typ: NTI654311549, name: "options", sons: null}, 
+{kind: 1, offset: "selectedOptions", len: 0, typ: NTI654311550, name: "selectedOptions", sons: null}, 
+{kind: 1, offset: "clientWidth", len: 0, typ: NTI33554456, name: "clientWidth", sons: null}, 
+{kind: 1, offset: "clientHeight", len: 0, typ: NTI33554456, name: "clientHeight", sons: null}, 
+{kind: 1, offset: "contentEditable", len: 0, typ: NTI33554440, name: "contentEditable", sons: null}, 
+{kind: 1, offset: "isContentEditable", len: 0, typ: NTI33554466, name: "isContentEditable", sons: null}, 
+{kind: 1, offset: "dir", len: 0, typ: NTI33554440, name: "dir", sons: null}, 
+{kind: 1, offset: "offsetHeight", len: 0, typ: NTI33554456, name: "offsetHeight", sons: null}, 
+{kind: 1, offset: "offsetWidth", len: 0, typ: NTI33554456, name: "offsetWidth", sons: null}, 
+{kind: 1, offset: "offsetLeft", len: 0, typ: NTI33554456, name: "offsetLeft", sons: null}, 
+{kind: 1, offset: "offsetTop", len: 0, typ: NTI33554456, name: "offsetTop", sons: null}]};
+NTI654311548.node = NNI654311548;
+NTI654311440.base = NTI654311537;
+NTI654311538.base = NTI654311440;
+NTI654311539.base = NTI654311440;
+NTI654311540.base = NTI654311440;
+var NNI654311439 = {kind: 2, offset: 0, typ: null, name: null, len: 12, sons: {"1": {kind: 1, offset: 1, typ: NTI654311439, name: "ElementNode", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI654311439, name: "AttributeNode", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI654311439, name: "TextNode", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI654311439, name: "CDATANode", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI654311439, name: "EntityRefNode", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI654311439, name: "EntityNode", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI654311439, name: "ProcessingInstructionNode", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI654311439, name: "CommentNode", len: 0, sons: null}, 
+"9": {kind: 1, offset: 9, typ: NTI654311439, name: "DocumentNode", len: 0, sons: null}, 
+"10": {kind: 1, offset: 10, typ: NTI654311439, name: "DocumentTypeNode", len: 0, sons: null}, 
+"11": {kind: 1, offset: 11, typ: NTI654311439, name: "DocumentFragmentNode", len: 0, sons: null}, 
+"12": {kind: 1, offset: 12, typ: NTI654311439, name: "NotationNode", len: 0, sons: null}}};
+NTI654311439.node = NNI654311439;
+var NNI654311560 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "text", len: 0, typ: NTI33554440, name: "text", sons: null}, 
+{kind: 1, offset: "x", len: 0, typ: NTI33554456, name: "x", sons: null}, 
+{kind: 1, offset: "y", len: 0, typ: NTI33554456, name: "y", sons: null}]};
+NTI654311560.node = NNI654311560;
+NTI654311560.base = NTI654311548;
+NTI654311450.base = NTI654311560;
+NTI654311542.base = NTI654311450;
+NTI654311543.base = NTI654311452;
+var NNI654311564 = {kind: 2, len: 8, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "border", len: 0, typ: NTI33554456, name: "border", sons: null}, 
+{kind: 1, offset: "complete", len: 0, typ: NTI33554466, name: "complete", sons: null}, 
+{kind: 1, offset: "height", len: 0, typ: NTI33554456, name: "height", sons: null}, 
+{kind: 1, offset: "hspace", len: 0, typ: NTI33554456, name: "hspace", sons: null}, 
+{kind: 1, offset: "lowsrc", len: 0, typ: NTI33554440, name: "lowsrc", sons: null}, 
+{kind: 1, offset: "src", len: 0, typ: NTI33554440, name: "src", sons: null}, 
+{kind: 1, offset: "vspace", len: 0, typ: NTI33554456, name: "vspace", sons: null}, 
+{kind: 1, offset: "width", len: 0, typ: NTI33554456, name: "width", sons: null}]};
+NTI654311564.node = NNI654311564;
+NTI654311564.base = NTI654311548;
+NTI654311453.base = NTI654311564;
+NTI654311544.base = NTI654311453;
+NTI654311545.base = NTI654311442;
+var NNI654311559 = {kind: 2, len: 6, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "height", len: 0, typ: NTI33554456, name: "height", sons: null}, 
+{kind: 1, offset: "hspace", len: 0, typ: NTI33554456, name: "hspace", sons: null}, 
+{kind: 1, offset: "src", len: 0, typ: NTI33554440, name: "src", sons: null}, 
+{kind: 1, offset: "width", len: 0, typ: NTI33554456, name: "width", sons: null}, 
+{kind: 1, offset: "type", len: 0, typ: NTI33554440, name: "type", sons: null}, 
+{kind: 1, offset: "vspace", len: 0, typ: NTI33554456, name: "vspace", sons: null}]};
+NTI654311559.node = NNI654311559;
+NTI654311559.base = NTI654311548;
+NTI654311449.base = NTI654311559;
+NTI654311546.base = NTI654311449;
+var NNI654311558 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "target", len: 0, typ: NTI33554440, name: "target", sons: null}, 
+{kind: 1, offset: "text", len: 0, typ: NTI33554440, name: "text", sons: null}, 
+{kind: 1, offset: "x", len: 0, typ: NTI33554456, name: "x", sons: null}, 
+{kind: 1, offset: "y", len: 0, typ: NTI33554456, name: "y", sons: null}]};
+NTI654311558.node = NNI654311558;
+NTI654311558.base = NTI654311548;
+NTI654311448.base = NTI654311558;
+NTI654311547.base = NTI654311448;
+var NNI654311608 = {kind: 1, offset: "then", len: 0, typ: NTI654311609, name: "then", sons: null};
+NTI654311608.node = NNI654311608;
+NTI654311489.base = NTI654311608;
+var NNI654311611 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "ready", len: 0, typ: NTI654311489, name: "ready", sons: null}, 
+{kind: 1, offset: "onloadingdone", len: 0, typ: NTI654311612, name: "onloadingdone", sons: null}]};
+NTI654311611.node = NNI654311611;
+NTI654311490.base = NTI654311611;
+var NNI654311541 = {kind: 2, len: 23, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "activeElement", len: 0, typ: NTI654311442, name: "activeElement", sons: null}, 
+{kind: 1, offset: "documentElement", len: 0, typ: NTI654311442, name: "documentElement", sons: null}, 
+{kind: 1, offset: "alinkColor", len: 0, typ: NTI33554440, name: "alinkColor", sons: null}, 
+{kind: 1, offset: "bgColor", len: 0, typ: NTI33554440, name: "bgColor", sons: null}, 
+{kind: 1, offset: "body", len: 0, typ: NTI654311442, name: "body", sons: null}, 
+{kind: 1, offset: "charset", len: 0, typ: NTI33554440, name: "charset", sons: null}, 
+{kind: 1, offset: "cookie", len: 0, typ: NTI33554440, name: "cookie", sons: null}, 
+{kind: 1, offset: "defaultCharset", len: 0, typ: NTI33554440, name: "defaultCharset", sons: null}, 
+{kind: 1, offset: "fgColor", len: 0, typ: NTI33554440, name: "fgColor", sons: null}, 
+{kind: 1, offset: "head", len: 0, typ: NTI654311442, name: "head", sons: null}, 
+{kind: 1, offset: "lastModified", len: 0, typ: NTI33554440, name: "lastModified", sons: null}, 
+{kind: 1, offset: "linkColor", len: 0, typ: NTI33554440, name: "linkColor", sons: null}, 
+{kind: 1, offset: "referrer", len: 0, typ: NTI33554440, name: "referrer", sons: null}, 
+{kind: 1, offset: "title", len: 0, typ: NTI33554440, name: "title", sons: null}, 
+{kind: 1, offset: "URL", len: 0, typ: NTI33554440, name: "URL", sons: null}, 
+{kind: 1, offset: "vlinkColor", len: 0, typ: NTI33554440, name: "vlinkColor", sons: null}, 
+{kind: 1, offset: "anchors", len: 0, typ: NTI654311542, name: "anchors", sons: null}, 
+{kind: 1, offset: "forms", len: 0, typ: NTI654311543, name: "forms", sons: null}, 
+{kind: 1, offset: "images", len: 0, typ: NTI654311544, name: "images", sons: null}, 
+{kind: 1, offset: "applets", len: 0, typ: NTI654311545, name: "applets", sons: null}, 
+{kind: 1, offset: "embeds", len: 0, typ: NTI654311546, name: "embeds", sons: null}, 
+{kind: 1, offset: "links", len: 0, typ: NTI654311547, name: "links", sons: null}, 
+{kind: 1, offset: "fonts", len: 0, typ: NTI654311490, name: "fonts", sons: null}]};
+NTI654311541.node = NNI654311541;
+NTI654311541.base = NTI654311537;
+NTI654311441.base = NTI654311541;
+var NNI654311565 = {kind: 2, len: 368, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "alignContent", len: 0, typ: NTI33554440, name: "alignContent", sons: null}, 
+{kind: 1, offset: "alignItems", len: 0, typ: NTI33554440, name: "alignItems", sons: null}, 
+{kind: 1, offset: "alignSelf", len: 0, typ: NTI33554440, name: "alignSelf", sons: null}, 
+{kind: 1, offset: "all", len: 0, typ: NTI33554440, name: "all", sons: null}, 
+{kind: 1, offset: "animation", len: 0, typ: NTI33554440, name: "animation", sons: null}, 
+{kind: 1, offset: "animationDelay", len: 0, typ: NTI33554440, name: "animationDelay", sons: null}, 
+{kind: 1, offset: "animationDirection", len: 0, typ: NTI33554440, name: "animationDirection", sons: null}, 
+{kind: 1, offset: "animationDuration", len: 0, typ: NTI33554440, name: "animationDuration", sons: null}, 
+{kind: 1, offset: "animationFillMode", len: 0, typ: NTI33554440, name: "animationFillMode", sons: null}, 
+{kind: 1, offset: "animationIterationCount", len: 0, typ: NTI33554440, name: "animationIterationCount", sons: null}, 
+{kind: 1, offset: "animationName", len: 0, typ: NTI33554440, name: "animationName", sons: null}, 
+{kind: 1, offset: "animationPlayState", len: 0, typ: NTI33554440, name: "animationPlayState", sons: null}, 
+{kind: 1, offset: "animationTimingFunction", len: 0, typ: NTI33554440, name: "animationTimingFunction", sons: null}, 
+{kind: 1, offset: "backdropFilter", len: 0, typ: NTI33554440, name: "backdropFilter", sons: null}, 
+{kind: 1, offset: "backfaceVisibility", len: 0, typ: NTI33554440, name: "backfaceVisibility", sons: null}, 
+{kind: 1, offset: "background", len: 0, typ: NTI33554440, name: "background", sons: null}, 
+{kind: 1, offset: "backgroundAttachment", len: 0, typ: NTI33554440, name: "backgroundAttachment", sons: null}, 
+{kind: 1, offset: "backgroundBlendMode", len: 0, typ: NTI33554440, name: "backgroundBlendMode", sons: null}, 
+{kind: 1, offset: "backgroundClip", len: 0, typ: NTI33554440, name: "backgroundClip", sons: null}, 
+{kind: 1, offset: "backgroundColor", len: 0, typ: NTI33554440, name: "backgroundColor", sons: null}, 
+{kind: 1, offset: "backgroundImage", len: 0, typ: NTI33554440, name: "backgroundImage", sons: null}, 
+{kind: 1, offset: "backgroundOrigin", len: 0, typ: NTI33554440, name: "backgroundOrigin", sons: null}, 
+{kind: 1, offset: "backgroundPosition", len: 0, typ: NTI33554440, name: "backgroundPosition", sons: null}, 
+{kind: 1, offset: "backgroundRepeat", len: 0, typ: NTI33554440, name: "backgroundRepeat", sons: null}, 
+{kind: 1, offset: "backgroundSize", len: 0, typ: NTI33554440, name: "backgroundSize", sons: null}, 
+{kind: 1, offset: "blockSize", len: 0, typ: NTI33554440, name: "blockSize", sons: null}, 
+{kind: 1, offset: "border", len: 0, typ: NTI33554440, name: "border", sons: null}, 
+{kind: 1, offset: "borderBlock", len: 0, typ: NTI33554440, name: "borderBlock", sons: null}, 
+{kind: 1, offset: "borderBlockColor", len: 0, typ: NTI33554440, name: "borderBlockColor", sons: null}, 
+{kind: 1, offset: "borderBlockEnd", len: 0, typ: NTI33554440, name: "borderBlockEnd", sons: null}, 
+{kind: 1, offset: "borderBlockEndColor", len: 0, typ: NTI33554440, name: "borderBlockEndColor", sons: null}, 
+{kind: 1, offset: "borderBlockEndStyle", len: 0, typ: NTI33554440, name: "borderBlockEndStyle", sons: null}, 
+{kind: 1, offset: "borderBlockEndWidth", len: 0, typ: NTI33554440, name: "borderBlockEndWidth", sons: null}, 
+{kind: 1, offset: "borderBlockStart", len: 0, typ: NTI33554440, name: "borderBlockStart", sons: null}, 
+{kind: 1, offset: "borderBlockStartColor", len: 0, typ: NTI33554440, name: "borderBlockStartColor", sons: null}, 
+{kind: 1, offset: "borderBlockStartStyle", len: 0, typ: NTI33554440, name: "borderBlockStartStyle", sons: null}, 
+{kind: 1, offset: "borderBlockStartWidth", len: 0, typ: NTI33554440, name: "borderBlockStartWidth", sons: null}, 
+{kind: 1, offset: "borderBlockStyle", len: 0, typ: NTI33554440, name: "borderBlockStyle", sons: null}, 
+{kind: 1, offset: "borderBlockWidth", len: 0, typ: NTI33554440, name: "borderBlockWidth", sons: null}, 
+{kind: 1, offset: "borderBottom", len: 0, typ: NTI33554440, name: "borderBottom", sons: null}, 
+{kind: 1, offset: "borderBottomColor", len: 0, typ: NTI33554440, name: "borderBottomColor", sons: null}, 
+{kind: 1, offset: "borderBottomLeftRadius", len: 0, typ: NTI33554440, name: "borderBottomLeftRadius", sons: null}, 
+{kind: 1, offset: "borderBottomRightRadius", len: 0, typ: NTI33554440, name: "borderBottomRightRadius", sons: null}, 
+{kind: 1, offset: "borderBottomStyle", len: 0, typ: NTI33554440, name: "borderBottomStyle", sons: null}, 
+{kind: 1, offset: "borderBottomWidth", len: 0, typ: NTI33554440, name: "borderBottomWidth", sons: null}, 
+{kind: 1, offset: "borderCollapse", len: 0, typ: NTI33554440, name: "borderCollapse", sons: null}, 
+{kind: 1, offset: "borderColor", len: 0, typ: NTI33554440, name: "borderColor", sons: null}, 
+{kind: 1, offset: "borderEndEndRadius", len: 0, typ: NTI33554440, name: "borderEndEndRadius", sons: null}, 
+{kind: 1, offset: "borderEndStartRadius", len: 0, typ: NTI33554440, name: "borderEndStartRadius", sons: null}, 
+{kind: 1, offset: "borderImage", len: 0, typ: NTI33554440, name: "borderImage", sons: null}, 
+{kind: 1, offset: "borderImageOutset", len: 0, typ: NTI33554440, name: "borderImageOutset", sons: null}, 
+{kind: 1, offset: "borderImageRepeat", len: 0, typ: NTI33554440, name: "borderImageRepeat", sons: null}, 
+{kind: 1, offset: "borderImageSlice", len: 0, typ: NTI33554440, name: "borderImageSlice", sons: null}, 
+{kind: 1, offset: "borderImageSource", len: 0, typ: NTI33554440, name: "borderImageSource", sons: null}, 
+{kind: 1, offset: "borderImageWidth", len: 0, typ: NTI33554440, name: "borderImageWidth", sons: null}, 
+{kind: 1, offset: "borderInline", len: 0, typ: NTI33554440, name: "borderInline", sons: null}, 
+{kind: 1, offset: "borderInlineColor", len: 0, typ: NTI33554440, name: "borderInlineColor", sons: null}, 
+{kind: 1, offset: "borderInlineEnd", len: 0, typ: NTI33554440, name: "borderInlineEnd", sons: null}, 
+{kind: 1, offset: "borderInlineEndColor", len: 0, typ: NTI33554440, name: "borderInlineEndColor", sons: null}, 
+{kind: 1, offset: "borderInlineEndStyle", len: 0, typ: NTI33554440, name: "borderInlineEndStyle", sons: null}, 
+{kind: 1, offset: "borderInlineEndWidth", len: 0, typ: NTI33554440, name: "borderInlineEndWidth", sons: null}, 
+{kind: 1, offset: "borderInlineStart", len: 0, typ: NTI33554440, name: "borderInlineStart", sons: null}, 
+{kind: 1, offset: "borderInlineStartColor", len: 0, typ: NTI33554440, name: "borderInlineStartColor", sons: null}, 
+{kind: 1, offset: "borderInlineStartStyle", len: 0, typ: NTI33554440, name: "borderInlineStartStyle", sons: null}, 
+{kind: 1, offset: "borderInlineStartWidth", len: 0, typ: NTI33554440, name: "borderInlineStartWidth", sons: null}, 
+{kind: 1, offset: "borderInlineStyle", len: 0, typ: NTI33554440, name: "borderInlineStyle", sons: null}, 
+{kind: 1, offset: "borderInlineWidth", len: 0, typ: NTI33554440, name: "borderInlineWidth", sons: null}, 
+{kind: 1, offset: "borderLeft", len: 0, typ: NTI33554440, name: "borderLeft", sons: null}, 
+{kind: 1, offset: "borderLeftColor", len: 0, typ: NTI33554440, name: "borderLeftColor", sons: null}, 
+{kind: 1, offset: "borderLeftStyle", len: 0, typ: NTI33554440, name: "borderLeftStyle", sons: null}, 
+{kind: 1, offset: "borderLeftWidth", len: 0, typ: NTI33554440, name: "borderLeftWidth", sons: null}, 
+{kind: 1, offset: "borderRadius", len: 0, typ: NTI33554440, name: "borderRadius", sons: null}, 
+{kind: 1, offset: "borderRight", len: 0, typ: NTI33554440, name: "borderRight", sons: null}, 
+{kind: 1, offset: "borderRightColor", len: 0, typ: NTI33554440, name: "borderRightColor", sons: null}, 
+{kind: 1, offset: "borderRightStyle", len: 0, typ: NTI33554440, name: "borderRightStyle", sons: null}, 
+{kind: 1, offset: "borderRightWidth", len: 0, typ: NTI33554440, name: "borderRightWidth", sons: null}, 
+{kind: 1, offset: "borderSpacing", len: 0, typ: NTI33554440, name: "borderSpacing", sons: null}, 
+{kind: 1, offset: "borderStartEndRadius", len: 0, typ: NTI33554440, name: "borderStartEndRadius", sons: null}, 
+{kind: 1, offset: "borderStartStartRadius", len: 0, typ: NTI33554440, name: "borderStartStartRadius", sons: null}, 
+{kind: 1, offset: "borderStyle", len: 0, typ: NTI33554440, name: "borderStyle", sons: null}, 
+{kind: 1, offset: "borderTop", len: 0, typ: NTI33554440, name: "borderTop", sons: null}, 
+{kind: 1, offset: "borderTopColor", len: 0, typ: NTI33554440, name: "borderTopColor", sons: null}, 
+{kind: 1, offset: "borderTopLeftRadius", len: 0, typ: NTI33554440, name: "borderTopLeftRadius", sons: null}, 
+{kind: 1, offset: "borderTopRightRadius", len: 0, typ: NTI33554440, name: "borderTopRightRadius", sons: null}, 
+{kind: 1, offset: "borderTopStyle", len: 0, typ: NTI33554440, name: "borderTopStyle", sons: null}, 
+{kind: 1, offset: "borderTopWidth", len: 0, typ: NTI33554440, name: "borderTopWidth", sons: null}, 
+{kind: 1, offset: "borderWidth", len: 0, typ: NTI33554440, name: "borderWidth", sons: null}, 
+{kind: 1, offset: "bottom", len: 0, typ: NTI33554440, name: "bottom", sons: null}, 
+{kind: 1, offset: "boxDecorationBreak", len: 0, typ: NTI33554440, name: "boxDecorationBreak", sons: null}, 
+{kind: 1, offset: "boxShadow", len: 0, typ: NTI33554440, name: "boxShadow", sons: null}, 
+{kind: 1, offset: "boxSizing", len: 0, typ: NTI33554440, name: "boxSizing", sons: null}, 
+{kind: 1, offset: "breakAfter", len: 0, typ: NTI33554440, name: "breakAfter", sons: null}, 
+{kind: 1, offset: "breakBefore", len: 0, typ: NTI33554440, name: "breakBefore", sons: null}, 
+{kind: 1, offset: "breakInside", len: 0, typ: NTI33554440, name: "breakInside", sons: null}, 
+{kind: 1, offset: "captionSide", len: 0, typ: NTI33554440, name: "captionSide", sons: null}, 
+{kind: 1, offset: "caretColor", len: 0, typ: NTI33554440, name: "caretColor", sons: null}, 
+{kind: 1, offset: "clear", len: 0, typ: NTI33554440, name: "clear", sons: null}, 
+{kind: 1, offset: "clip", len: 0, typ: NTI33554440, name: "clip", sons: null}, 
+{kind: 1, offset: "clipPath", len: 0, typ: NTI33554440, name: "clipPath", sons: null}, 
+{kind: 1, offset: "color", len: 0, typ: NTI33554440, name: "color", sons: null}, 
+{kind: 1, offset: "colorAdjust", len: 0, typ: NTI33554440, name: "colorAdjust", sons: null}, 
+{kind: 1, offset: "columnCount", len: 0, typ: NTI33554440, name: "columnCount", sons: null}, 
+{kind: 1, offset: "columnFill", len: 0, typ: NTI33554440, name: "columnFill", sons: null}, 
+{kind: 1, offset: "columnGap", len: 0, typ: NTI33554440, name: "columnGap", sons: null}, 
+{kind: 1, offset: "columnRule", len: 0, typ: NTI33554440, name: "columnRule", sons: null}, 
+{kind: 1, offset: "columnRuleColor", len: 0, typ: NTI33554440, name: "columnRuleColor", sons: null}, 
+{kind: 1, offset: "columnRuleStyle", len: 0, typ: NTI33554440, name: "columnRuleStyle", sons: null}, 
+{kind: 1, offset: "columnRuleWidth", len: 0, typ: NTI33554440, name: "columnRuleWidth", sons: null}, 
+{kind: 1, offset: "columnSpan", len: 0, typ: NTI33554440, name: "columnSpan", sons: null}, 
+{kind: 1, offset: "columnWidth", len: 0, typ: NTI33554440, name: "columnWidth", sons: null}, 
+{kind: 1, offset: "columns", len: 0, typ: NTI33554440, name: "columns", sons: null}, 
+{kind: 1, offset: "contain", len: 0, typ: NTI33554440, name: "contain", sons: null}, 
+{kind: 1, offset: "content", len: 0, typ: NTI33554440, name: "content", sons: null}, 
+{kind: 1, offset: "counterIncrement", len: 0, typ: NTI33554440, name: "counterIncrement", sons: null}, 
+{kind: 1, offset: "counterReset", len: 0, typ: NTI33554440, name: "counterReset", sons: null}, 
+{kind: 1, offset: "counterSet", len: 0, typ: NTI33554440, name: "counterSet", sons: null}, 
+{kind: 1, offset: "cursor", len: 0, typ: NTI33554440, name: "cursor", sons: null}, 
+{kind: 1, offset: "direction", len: 0, typ: NTI33554440, name: "direction", sons: null}, 
+{kind: 1, offset: "display", len: 0, typ: NTI33554440, name: "display", sons: null}, 
+{kind: 1, offset: "emptyCells", len: 0, typ: NTI33554440, name: "emptyCells", sons: null}, 
+{kind: 1, offset: "filter", len: 0, typ: NTI33554440, name: "filter", sons: null}, 
+{kind: 1, offset: "flex", len: 0, typ: NTI33554440, name: "flex", sons: null}, 
+{kind: 1, offset: "flexBasis", len: 0, typ: NTI33554440, name: "flexBasis", sons: null}, 
+{kind: 1, offset: "flexDirection", len: 0, typ: NTI33554440, name: "flexDirection", sons: null}, 
+{kind: 1, offset: "flexFlow", len: 0, typ: NTI33554440, name: "flexFlow", sons: null}, 
+{kind: 1, offset: "flexGrow", len: 0, typ: NTI33554440, name: "flexGrow", sons: null}, 
+{kind: 1, offset: "flexShrink", len: 0, typ: NTI33554440, name: "flexShrink", sons: null}, 
+{kind: 1, offset: "flexWrap", len: 0, typ: NTI33554440, name: "flexWrap", sons: null}, 
+{kind: 1, offset: "cssFloat", len: 0, typ: NTI33554440, name: "cssFloat", sons: null}, 
+{kind: 1, offset: "font", len: 0, typ: NTI33554440, name: "font", sons: null}, 
+{kind: 1, offset: "fontFamily", len: 0, typ: NTI33554440, name: "fontFamily", sons: null}, 
+{kind: 1, offset: "fontFeatureSettings", len: 0, typ: NTI33554440, name: "fontFeatureSettings", sons: null}, 
+{kind: 1, offset: "fontKerning", len: 0, typ: NTI33554440, name: "fontKerning", sons: null}, 
+{kind: 1, offset: "fontLanguageOverride", len: 0, typ: NTI33554440, name: "fontLanguageOverride", sons: null}, 
+{kind: 1, offset: "fontOpticalSizing", len: 0, typ: NTI33554440, name: "fontOpticalSizing", sons: null}, 
+{kind: 1, offset: "fontSize", len: 0, typ: NTI33554440, name: "fontSize", sons: null}, 
+{kind: 1, offset: "fontSizeAdjust", len: 0, typ: NTI33554440, name: "fontSizeAdjust", sons: null}, 
+{kind: 1, offset: "fontStretch", len: 0, typ: NTI33554440, name: "fontStretch", sons: null}, 
+{kind: 1, offset: "fontStyle", len: 0, typ: NTI33554440, name: "fontStyle", sons: null}, 
+{kind: 1, offset: "fontSynthesis", len: 0, typ: NTI33554440, name: "fontSynthesis", sons: null}, 
+{kind: 1, offset: "fontVariant", len: 0, typ: NTI33554440, name: "fontVariant", sons: null}, 
+{kind: 1, offset: "fontVariantAlternates", len: 0, typ: NTI33554440, name: "fontVariantAlternates", sons: null}, 
+{kind: 1, offset: "fontVariantCaps", len: 0, typ: NTI33554440, name: "fontVariantCaps", sons: null}, 
+{kind: 1, offset: "fontVariantEastAsian", len: 0, typ: NTI33554440, name: "fontVariantEastAsian", sons: null}, 
+{kind: 1, offset: "fontVariantLigatures", len: 0, typ: NTI33554440, name: "fontVariantLigatures", sons: null}, 
+{kind: 1, offset: "fontVariantNumeric", len: 0, typ: NTI33554440, name: "fontVariantNumeric", sons: null}, 
+{kind: 1, offset: "fontVariantPosition", len: 0, typ: NTI33554440, name: "fontVariantPosition", sons: null}, 
+{kind: 1, offset: "fontVariationSettings", len: 0, typ: NTI33554440, name: "fontVariationSettings", sons: null}, 
+{kind: 1, offset: "fontWeight", len: 0, typ: NTI33554440, name: "fontWeight", sons: null}, 
+{kind: 1, offset: "gap", len: 0, typ: NTI33554440, name: "gap", sons: null}, 
+{kind: 1, offset: "grid", len: 0, typ: NTI33554440, name: "grid", sons: null}, 
+{kind: 1, offset: "gridArea", len: 0, typ: NTI33554440, name: "gridArea", sons: null}, 
+{kind: 1, offset: "gridAutoColumns", len: 0, typ: NTI33554440, name: "gridAutoColumns", sons: null}, 
+{kind: 1, offset: "gridAutoFlow", len: 0, typ: NTI33554440, name: "gridAutoFlow", sons: null}, 
+{kind: 1, offset: "gridAutoRows", len: 0, typ: NTI33554440, name: "gridAutoRows", sons: null}, 
+{kind: 1, offset: "gridColumn", len: 0, typ: NTI33554440, name: "gridColumn", sons: null}, 
+{kind: 1, offset: "gridColumnEnd", len: 0, typ: NTI33554440, name: "gridColumnEnd", sons: null}, 
+{kind: 1, offset: "gridColumnStart", len: 0, typ: NTI33554440, name: "gridColumnStart", sons: null}, 
+{kind: 1, offset: "gridRow", len: 0, typ: NTI33554440, name: "gridRow", sons: null}, 
+{kind: 1, offset: "gridRowEnd", len: 0, typ: NTI33554440, name: "gridRowEnd", sons: null}, 
+{kind: 1, offset: "gridRowStart", len: 0, typ: NTI33554440, name: "gridRowStart", sons: null}, 
+{kind: 1, offset: "gridTemplate", len: 0, typ: NTI33554440, name: "gridTemplate", sons: null}, 
+{kind: 1, offset: "gridTemplateAreas", len: 0, typ: NTI33554440, name: "gridTemplateAreas", sons: null}, 
+{kind: 1, offset: "gridTemplateColumns", len: 0, typ: NTI33554440, name: "gridTemplateColumns", sons: null}, 
+{kind: 1, offset: "gridTemplateRows", len: 0, typ: NTI33554440, name: "gridTemplateRows", sons: null}, 
+{kind: 1, offset: "hangingPunctuation", len: 0, typ: NTI33554440, name: "hangingPunctuation", sons: null}, 
+{kind: 1, offset: "height", len: 0, typ: NTI33554440, name: "height", sons: null}, 
+{kind: 1, offset: "hyphens", len: 0, typ: NTI33554440, name: "hyphens", sons: null}, 
+{kind: 1, offset: "imageOrientation", len: 0, typ: NTI33554440, name: "imageOrientation", sons: null}, 
+{kind: 1, offset: "imageRendering", len: 0, typ: NTI33554440, name: "imageRendering", sons: null}, 
+{kind: 1, offset: "inlineSize", len: 0, typ: NTI33554440, name: "inlineSize", sons: null}, 
+{kind: 1, offset: "inset", len: 0, typ: NTI33554440, name: "inset", sons: null}, 
+{kind: 1, offset: "insetBlock", len: 0, typ: NTI33554440, name: "insetBlock", sons: null}, 
+{kind: 1, offset: "insetBlockEnd", len: 0, typ: NTI33554440, name: "insetBlockEnd", sons: null}, 
+{kind: 1, offset: "insetBlockStart", len: 0, typ: NTI33554440, name: "insetBlockStart", sons: null}, 
+{kind: 1, offset: "insetInline", len: 0, typ: NTI33554440, name: "insetInline", sons: null}, 
+{kind: 1, offset: "insetInlineEnd", len: 0, typ: NTI33554440, name: "insetInlineEnd", sons: null}, 
+{kind: 1, offset: "insetInlineStart", len: 0, typ: NTI33554440, name: "insetInlineStart", sons: null}, 
+{kind: 1, offset: "isolation", len: 0, typ: NTI33554440, name: "isolation", sons: null}, 
+{kind: 1, offset: "justifyContent", len: 0, typ: NTI33554440, name: "justifyContent", sons: null}, 
+{kind: 1, offset: "justifyItems", len: 0, typ: NTI33554440, name: "justifyItems", sons: null}, 
+{kind: 1, offset: "justifySelf", len: 0, typ: NTI33554440, name: "justifySelf", sons: null}, 
+{kind: 1, offset: "left", len: 0, typ: NTI33554440, name: "left", sons: null}, 
+{kind: 1, offset: "letterSpacing", len: 0, typ: NTI33554440, name: "letterSpacing", sons: null}, 
+{kind: 1, offset: "lineBreak", len: 0, typ: NTI33554440, name: "lineBreak", sons: null}, 
+{kind: 1, offset: "lineHeight", len: 0, typ: NTI33554440, name: "lineHeight", sons: null}, 
+{kind: 1, offset: "listStyle", len: 0, typ: NTI33554440, name: "listStyle", sons: null}, 
+{kind: 1, offset: "listStyleImage", len: 0, typ: NTI33554440, name: "listStyleImage", sons: null}, 
+{kind: 1, offset: "listStylePosition", len: 0, typ: NTI33554440, name: "listStylePosition", sons: null}, 
+{kind: 1, offset: "listStyleType", len: 0, typ: NTI33554440, name: "listStyleType", sons: null}, 
+{kind: 1, offset: "margin", len: 0, typ: NTI33554440, name: "margin", sons: null}, 
+{kind: 1, offset: "marginBlock", len: 0, typ: NTI33554440, name: "marginBlock", sons: null}, 
+{kind: 1, offset: "marginBlockEnd", len: 0, typ: NTI33554440, name: "marginBlockEnd", sons: null}, 
+{kind: 1, offset: "marginBlockStart", len: 0, typ: NTI33554440, name: "marginBlockStart", sons: null}, 
+{kind: 1, offset: "marginBottom", len: 0, typ: NTI33554440, name: "marginBottom", sons: null}, 
+{kind: 1, offset: "marginInline", len: 0, typ: NTI33554440, name: "marginInline", sons: null}, 
+{kind: 1, offset: "marginInlineEnd", len: 0, typ: NTI33554440, name: "marginInlineEnd", sons: null}, 
+{kind: 1, offset: "marginInlineStart", len: 0, typ: NTI33554440, name: "marginInlineStart", sons: null}, 
+{kind: 1, offset: "marginLeft", len: 0, typ: NTI33554440, name: "marginLeft", sons: null}, 
+{kind: 1, offset: "marginRight", len: 0, typ: NTI33554440, name: "marginRight", sons: null}, 
+{kind: 1, offset: "marginTop", len: 0, typ: NTI33554440, name: "marginTop", sons: null}, 
+{kind: 1, offset: "mask", len: 0, typ: NTI33554440, name: "mask", sons: null}, 
+{kind: 1, offset: "maskBorder", len: 0, typ: NTI33554440, name: "maskBorder", sons: null}, 
+{kind: 1, offset: "maskBorderMode", len: 0, typ: NTI33554440, name: "maskBorderMode", sons: null}, 
+{kind: 1, offset: "maskBorderOutset", len: 0, typ: NTI33554440, name: "maskBorderOutset", sons: null}, 
+{kind: 1, offset: "maskBorderRepeat", len: 0, typ: NTI33554440, name: "maskBorderRepeat", sons: null}, 
+{kind: 1, offset: "maskBorderSlice", len: 0, typ: NTI33554440, name: "maskBorderSlice", sons: null}, 
+{kind: 1, offset: "maskBorderSource", len: 0, typ: NTI33554440, name: "maskBorderSource", sons: null}, 
+{kind: 1, offset: "maskBorderWidth", len: 0, typ: NTI33554440, name: "maskBorderWidth", sons: null}, 
+{kind: 1, offset: "maskClip", len: 0, typ: NTI33554440, name: "maskClip", sons: null}, 
+{kind: 1, offset: "maskComposite", len: 0, typ: NTI33554440, name: "maskComposite", sons: null}, 
+{kind: 1, offset: "maskImage", len: 0, typ: NTI33554440, name: "maskImage", sons: null}, 
+{kind: 1, offset: "maskMode", len: 0, typ: NTI33554440, name: "maskMode", sons: null}, 
+{kind: 1, offset: "maskOrigin", len: 0, typ: NTI33554440, name: "maskOrigin", sons: null}, 
+{kind: 1, offset: "maskPosition", len: 0, typ: NTI33554440, name: "maskPosition", sons: null}, 
+{kind: 1, offset: "maskRepeat", len: 0, typ: NTI33554440, name: "maskRepeat", sons: null}, 
+{kind: 1, offset: "maskSize", len: 0, typ: NTI33554440, name: "maskSize", sons: null}, 
+{kind: 1, offset: "maskType", len: 0, typ: NTI33554440, name: "maskType", sons: null}, 
+{kind: 1, offset: "maxBlockSize", len: 0, typ: NTI33554440, name: "maxBlockSize", sons: null}, 
+{kind: 1, offset: "maxHeight", len: 0, typ: NTI33554440, name: "maxHeight", sons: null}, 
+{kind: 1, offset: "maxInlineSize", len: 0, typ: NTI33554440, name: "maxInlineSize", sons: null}, 
+{kind: 1, offset: "maxWidth", len: 0, typ: NTI33554440, name: "maxWidth", sons: null}, 
+{kind: 1, offset: "minBlockSize", len: 0, typ: NTI33554440, name: "minBlockSize", sons: null}, 
+{kind: 1, offset: "minHeight", len: 0, typ: NTI33554440, name: "minHeight", sons: null}, 
+{kind: 1, offset: "minInlineSize", len: 0, typ: NTI33554440, name: "minInlineSize", sons: null}, 
+{kind: 1, offset: "minWidth", len: 0, typ: NTI33554440, name: "minWidth", sons: null}, 
+{kind: 1, offset: "mixBlendMode", len: 0, typ: NTI33554440, name: "mixBlendMode", sons: null}, 
+{kind: 1, offset: "objectFit", len: 0, typ: NTI33554440, name: "objectFit", sons: null}, 
+{kind: 1, offset: "objectPosition", len: 0, typ: NTI33554440, name: "objectPosition", sons: null}, 
+{kind: 1, offset: "offset", len: 0, typ: NTI33554440, name: "offset", sons: null}, 
+{kind: 1, offset: "offsetAnchor", len: 0, typ: NTI33554440, name: "offsetAnchor", sons: null}, 
+{kind: 1, offset: "offsetDistance", len: 0, typ: NTI33554440, name: "offsetDistance", sons: null}, 
+{kind: 1, offset: "offsetPath", len: 0, typ: NTI33554440, name: "offsetPath", sons: null}, 
+{kind: 1, offset: "offsetRotate", len: 0, typ: NTI33554440, name: "offsetRotate", sons: null}, 
+{kind: 1, offset: "opacity", len: 0, typ: NTI33554440, name: "opacity", sons: null}, 
+{kind: 1, offset: "order", len: 0, typ: NTI33554440, name: "order", sons: null}, 
+{kind: 1, offset: "orphans", len: 0, typ: NTI33554440, name: "orphans", sons: null}, 
+{kind: 1, offset: "outline", len: 0, typ: NTI33554440, name: "outline", sons: null}, 
+{kind: 1, offset: "outlineColor", len: 0, typ: NTI33554440, name: "outlineColor", sons: null}, 
+{kind: 1, offset: "outlineOffset", len: 0, typ: NTI33554440, name: "outlineOffset", sons: null}, 
+{kind: 1, offset: "outlineStyle", len: 0, typ: NTI33554440, name: "outlineStyle", sons: null}, 
+{kind: 1, offset: "outlineWidth", len: 0, typ: NTI33554440, name: "outlineWidth", sons: null}, 
+{kind: 1, offset: "overflow", len: 0, typ: NTI33554440, name: "overflow", sons: null}, 
+{kind: 1, offset: "overflowAnchor", len: 0, typ: NTI33554440, name: "overflowAnchor", sons: null}, 
+{kind: 1, offset: "overflowBlock", len: 0, typ: NTI33554440, name: "overflowBlock", sons: null}, 
+{kind: 1, offset: "overflowInline", len: 0, typ: NTI33554440, name: "overflowInline", sons: null}, 
+{kind: 1, offset: "overflowWrap", len: 0, typ: NTI33554440, name: "overflowWrap", sons: null}, 
+{kind: 1, offset: "overflowX", len: 0, typ: NTI33554440, name: "overflowX", sons: null}, 
+{kind: 1, offset: "overflowY", len: 0, typ: NTI33554440, name: "overflowY", sons: null}, 
+{kind: 1, offset: "overscrollBehavior", len: 0, typ: NTI33554440, name: "overscrollBehavior", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorBlock", len: 0, typ: NTI33554440, name: "overscrollBehaviorBlock", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorInline", len: 0, typ: NTI33554440, name: "overscrollBehaviorInline", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorX", len: 0, typ: NTI33554440, name: "overscrollBehaviorX", sons: null}, 
+{kind: 1, offset: "overscrollBehaviorY", len: 0, typ: NTI33554440, name: "overscrollBehaviorY", sons: null}, 
+{kind: 1, offset: "padding", len: 0, typ: NTI33554440, name: "padding", sons: null}, 
+{kind: 1, offset: "paddingBlock", len: 0, typ: NTI33554440, name: "paddingBlock", sons: null}, 
+{kind: 1, offset: "paddingBlockEnd", len: 0, typ: NTI33554440, name: "paddingBlockEnd", sons: null}, 
+{kind: 1, offset: "paddingBlockStart", len: 0, typ: NTI33554440, name: "paddingBlockStart", sons: null}, 
+{kind: 1, offset: "paddingBottom", len: 0, typ: NTI33554440, name: "paddingBottom", sons: null}, 
+{kind: 1, offset: "paddingInline", len: 0, typ: NTI33554440, name: "paddingInline", sons: null}, 
+{kind: 1, offset: "paddingInlineEnd", len: 0, typ: NTI33554440, name: "paddingInlineEnd", sons: null}, 
+{kind: 1, offset: "paddingInlineStart", len: 0, typ: NTI33554440, name: "paddingInlineStart", sons: null}, 
+{kind: 1, offset: "paddingLeft", len: 0, typ: NTI33554440, name: "paddingLeft", sons: null}, 
+{kind: 1, offset: "paddingRight", len: 0, typ: NTI33554440, name: "paddingRight", sons: null}, 
+{kind: 1, offset: "paddingTop", len: 0, typ: NTI33554440, name: "paddingTop", sons: null}, 
+{kind: 1, offset: "pageBreakAfter", len: 0, typ: NTI33554440, name: "pageBreakAfter", sons: null}, 
+{kind: 1, offset: "pageBreakBefore", len: 0, typ: NTI33554440, name: "pageBreakBefore", sons: null}, 
+{kind: 1, offset: "pageBreakInside", len: 0, typ: NTI33554440, name: "pageBreakInside", sons: null}, 
+{kind: 1, offset: "paintOrder", len: 0, typ: NTI33554440, name: "paintOrder", sons: null}, 
+{kind: 1, offset: "perspective", len: 0, typ: NTI33554440, name: "perspective", sons: null}, 
+{kind: 1, offset: "perspectiveOrigin", len: 0, typ: NTI33554440, name: "perspectiveOrigin", sons: null}, 
+{kind: 1, offset: "placeContent", len: 0, typ: NTI33554440, name: "placeContent", sons: null}, 
+{kind: 1, offset: "placeItems", len: 0, typ: NTI33554440, name: "placeItems", sons: null}, 
+{kind: 1, offset: "placeSelf", len: 0, typ: NTI33554440, name: "placeSelf", sons: null}, 
+{kind: 1, offset: "pointerEvents", len: 0, typ: NTI33554440, name: "pointerEvents", sons: null}, 
+{kind: 1, offset: "position", len: 0, typ: NTI33554440, name: "position", sons: null}, 
+{kind: 1, offset: "quotes", len: 0, typ: NTI33554440, name: "quotes", sons: null}, 
+{kind: 1, offset: "resize", len: 0, typ: NTI33554440, name: "resize", sons: null}, 
+{kind: 1, offset: "right", len: 0, typ: NTI33554440, name: "right", sons: null}, 
+{kind: 1, offset: "rotate", len: 0, typ: NTI33554440, name: "rotate", sons: null}, 
+{kind: 1, offset: "rowGap", len: 0, typ: NTI33554440, name: "rowGap", sons: null}, 
+{kind: 1, offset: "scale", len: 0, typ: NTI33554440, name: "scale", sons: null}, 
+{kind: 1, offset: "scrollBehavior", len: 0, typ: NTI33554440, name: "scrollBehavior", sons: null}, 
+{kind: 1, offset: "scrollMargin", len: 0, typ: NTI33554440, name: "scrollMargin", sons: null}, 
+{kind: 1, offset: "scrollMarginBlock", len: 0, typ: NTI33554440, name: "scrollMarginBlock", sons: null}, 
+{kind: 1, offset: "scrollMarginBlockEnd", len: 0, typ: NTI33554440, name: "scrollMarginBlockEnd", sons: null}, 
+{kind: 1, offset: "scrollMarginBlockStart", len: 0, typ: NTI33554440, name: "scrollMarginBlockStart", sons: null}, 
+{kind: 1, offset: "scrollMarginBottom", len: 0, typ: NTI33554440, name: "scrollMarginBottom", sons: null}, 
+{kind: 1, offset: "scrollMarginInline", len: 0, typ: NTI33554440, name: "scrollMarginInline", sons: null}, 
+{kind: 1, offset: "scrollMarginInlineEnd", len: 0, typ: NTI33554440, name: "scrollMarginInlineEnd", sons: null}, 
+{kind: 1, offset: "scrollMarginInlineStart", len: 0, typ: NTI33554440, name: "scrollMarginInlineStart", sons: null}, 
+{kind: 1, offset: "scrollMarginLeft", len: 0, typ: NTI33554440, name: "scrollMarginLeft", sons: null}, 
+{kind: 1, offset: "scrollMarginRight", len: 0, typ: NTI33554440, name: "scrollMarginRight", sons: null}, 
+{kind: 1, offset: "scrollMarginTop", len: 0, typ: NTI33554440, name: "scrollMarginTop", sons: null}, 
+{kind: 1, offset: "scrollPadding", len: 0, typ: NTI33554440, name: "scrollPadding", sons: null}, 
+{kind: 1, offset: "scrollPaddingBlock", len: 0, typ: NTI33554440, name: "scrollPaddingBlock", sons: null}, 
+{kind: 1, offset: "scrollPaddingBlockEnd", len: 0, typ: NTI33554440, name: "scrollPaddingBlockEnd", sons: null}, 
+{kind: 1, offset: "scrollPaddingBlockStart", len: 0, typ: NTI33554440, name: "scrollPaddingBlockStart", sons: null}, 
+{kind: 1, offset: "scrollPaddingBottom", len: 0, typ: NTI33554440, name: "scrollPaddingBottom", sons: null}, 
+{kind: 1, offset: "scrollPaddingInline", len: 0, typ: NTI33554440, name: "scrollPaddingInline", sons: null}, 
+{kind: 1, offset: "scrollPaddingInlineEnd", len: 0, typ: NTI33554440, name: "scrollPaddingInlineEnd", sons: null}, 
+{kind: 1, offset: "scrollPaddingInlineStart", len: 0, typ: NTI33554440, name: "scrollPaddingInlineStart", sons: null}, 
+{kind: 1, offset: "scrollPaddingLeft", len: 0, typ: NTI33554440, name: "scrollPaddingLeft", sons: null}, 
+{kind: 1, offset: "scrollPaddingRight", len: 0, typ: NTI33554440, name: "scrollPaddingRight", sons: null}, 
+{kind: 1, offset: "scrollPaddingTop", len: 0, typ: NTI33554440, name: "scrollPaddingTop", sons: null}, 
+{kind: 1, offset: "scrollSnapAlign", len: 0, typ: NTI33554440, name: "scrollSnapAlign", sons: null}, 
+{kind: 1, offset: "scrollSnapStop", len: 0, typ: NTI33554440, name: "scrollSnapStop", sons: null}, 
+{kind: 1, offset: "scrollSnapType", len: 0, typ: NTI33554440, name: "scrollSnapType", sons: null}, 
+{kind: 1, offset: "scrollbar3dLightColor", len: 0, typ: NTI33554440, name: "scrollbar3dLightColor", sons: null}, 
+{kind: 1, offset: "scrollbarArrowColor", len: 0, typ: NTI33554440, name: "scrollbarArrowColor", sons: null}, 
+{kind: 1, offset: "scrollbarBaseColor", len: 0, typ: NTI33554440, name: "scrollbarBaseColor", sons: null}, 
+{kind: 1, offset: "scrollbarColor", len: 0, typ: NTI33554440, name: "scrollbarColor", sons: null}, 
+{kind: 1, offset: "scrollbarDarkshadowColor", len: 0, typ: NTI33554440, name: "scrollbarDarkshadowColor", sons: null}, 
+{kind: 1, offset: "scrollbarFaceColor", len: 0, typ: NTI33554440, name: "scrollbarFaceColor", sons: null}, 
+{kind: 1, offset: "scrollbarHighlightColor", len: 0, typ: NTI33554440, name: "scrollbarHighlightColor", sons: null}, 
+{kind: 1, offset: "scrollbarShadowColor", len: 0, typ: NTI33554440, name: "scrollbarShadowColor", sons: null}, 
+{kind: 1, offset: "scrollbarTrackColor", len: 0, typ: NTI33554440, name: "scrollbarTrackColor", sons: null}, 
+{kind: 1, offset: "scrollbarWidth", len: 0, typ: NTI33554440, name: "scrollbarWidth", sons: null}, 
+{kind: 1, offset: "shapeImageThreshold", len: 0, typ: NTI33554440, name: "shapeImageThreshold", sons: null}, 
+{kind: 1, offset: "shapeMargin", len: 0, typ: NTI33554440, name: "shapeMargin", sons: null}, 
+{kind: 1, offset: "shapeOutside", len: 0, typ: NTI33554440, name: "shapeOutside", sons: null}, 
+{kind: 1, offset: "tabSize", len: 0, typ: NTI33554440, name: "tabSize", sons: null}, 
+{kind: 1, offset: "tableLayout", len: 0, typ: NTI33554440, name: "tableLayout", sons: null}, 
+{kind: 1, offset: "textAlign", len: 0, typ: NTI33554440, name: "textAlign", sons: null}, 
+{kind: 1, offset: "textAlignLast", len: 0, typ: NTI33554440, name: "textAlignLast", sons: null}, 
+{kind: 1, offset: "textCombineUpright", len: 0, typ: NTI33554440, name: "textCombineUpright", sons: null}, 
+{kind: 1, offset: "textDecoration", len: 0, typ: NTI33554440, name: "textDecoration", sons: null}, 
+{kind: 1, offset: "textDecorationColor", len: 0, typ: NTI33554440, name: "textDecorationColor", sons: null}, 
+{kind: 1, offset: "textDecorationLine", len: 0, typ: NTI33554440, name: "textDecorationLine", sons: null}, 
+{kind: 1, offset: "textDecorationSkipInk", len: 0, typ: NTI33554440, name: "textDecorationSkipInk", sons: null}, 
+{kind: 1, offset: "textDecorationStyle", len: 0, typ: NTI33554440, name: "textDecorationStyle", sons: null}, 
+{kind: 1, offset: "textDecorationThickness", len: 0, typ: NTI33554440, name: "textDecorationThickness", sons: null}, 
+{kind: 1, offset: "textEmphasis", len: 0, typ: NTI33554440, name: "textEmphasis", sons: null}, 
+{kind: 1, offset: "textEmphasisColor", len: 0, typ: NTI33554440, name: "textEmphasisColor", sons: null}, 
+{kind: 1, offset: "textEmphasisPosition", len: 0, typ: NTI33554440, name: "textEmphasisPosition", sons: null}, 
+{kind: 1, offset: "textEmphasisStyle", len: 0, typ: NTI33554440, name: "textEmphasisStyle", sons: null}, 
+{kind: 1, offset: "textIndent", len: 0, typ: NTI33554440, name: "textIndent", sons: null}, 
+{kind: 1, offset: "textJustify", len: 0, typ: NTI33554440, name: "textJustify", sons: null}, 
+{kind: 1, offset: "textOrientation", len: 0, typ: NTI33554440, name: "textOrientation", sons: null}, 
+{kind: 1, offset: "textOverflow", len: 0, typ: NTI33554440, name: "textOverflow", sons: null}, 
+{kind: 1, offset: "textRendering", len: 0, typ: NTI33554440, name: "textRendering", sons: null}, 
+{kind: 1, offset: "textShadow", len: 0, typ: NTI33554440, name: "textShadow", sons: null}, 
+{kind: 1, offset: "textTransform", len: 0, typ: NTI33554440, name: "textTransform", sons: null}, 
+{kind: 1, offset: "textUnderlineOffset", len: 0, typ: NTI33554440, name: "textUnderlineOffset", sons: null}, 
+{kind: 1, offset: "textUnderlinePosition", len: 0, typ: NTI33554440, name: "textUnderlinePosition", sons: null}, 
+{kind: 1, offset: "top", len: 0, typ: NTI33554440, name: "top", sons: null}, 
+{kind: 1, offset: "touchAction", len: 0, typ: NTI33554440, name: "touchAction", sons: null}, 
+{kind: 1, offset: "transform", len: 0, typ: NTI33554440, name: "transform", sons: null}, 
+{kind: 1, offset: "transformBox", len: 0, typ: NTI33554440, name: "transformBox", sons: null}, 
+{kind: 1, offset: "transformOrigin", len: 0, typ: NTI33554440, name: "transformOrigin", sons: null}, 
+{kind: 1, offset: "transformStyle", len: 0, typ: NTI33554440, name: "transformStyle", sons: null}, 
+{kind: 1, offset: "transition", len: 0, typ: NTI33554440, name: "transition", sons: null}, 
+{kind: 1, offset: "transitionDelay", len: 0, typ: NTI33554440, name: "transitionDelay", sons: null}, 
+{kind: 1, offset: "transitionDuration", len: 0, typ: NTI33554440, name: "transitionDuration", sons: null}, 
+{kind: 1, offset: "transitionProperty", len: 0, typ: NTI33554440, name: "transitionProperty", sons: null}, 
+{kind: 1, offset: "transitionTimingFunction", len: 0, typ: NTI33554440, name: "transitionTimingFunction", sons: null}, 
+{kind: 1, offset: "translate", len: 0, typ: NTI33554440, name: "translate", sons: null}, 
+{kind: 1, offset: "unicodeBidi", len: 0, typ: NTI33554440, name: "unicodeBidi", sons: null}, 
+{kind: 1, offset: "verticalAlign", len: 0, typ: NTI33554440, name: "verticalAlign", sons: null}, 
+{kind: 1, offset: "visibility", len: 0, typ: NTI33554440, name: "visibility", sons: null}, 
+{kind: 1, offset: "whiteSpace", len: 0, typ: NTI33554440, name: "whiteSpace", sons: null}, 
+{kind: 1, offset: "widows", len: 0, typ: NTI33554440, name: "widows", sons: null}, 
+{kind: 1, offset: "width", len: 0, typ: NTI33554440, name: "width", sons: null}, 
+{kind: 1, offset: "willChange", len: 0, typ: NTI33554440, name: "willChange", sons: null}, 
+{kind: 1, offset: "wordBreak", len: 0, typ: NTI33554440, name: "wordBreak", sons: null}, 
+{kind: 1, offset: "wordSpacing", len: 0, typ: NTI33554440, name: "wordSpacing", sons: null}, 
+{kind: 1, offset: "writingMode", len: 0, typ: NTI33554440, name: "writingMode", sons: null}, 
+{kind: 1, offset: "zIndex", len: 0, typ: NTI33554440, name: "zIndex", sons: null}]};
+NTI654311565.node = NNI654311565;
+NTI654311565.base = NTI33555083;
+NTI654311454.base = NTI654311565;
+var NNI654311537 = {kind: 2, len: 22, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "attributes", len: 0, typ: NTI654311538, name: "attributes", sons: null}, 
+{kind: 1, offset: "childNodes", len: 0, typ: NTI654311539, name: "childNodes", sons: null}, 
+{kind: 1, offset: "children", len: 0, typ: NTI654311540, name: "children", sons: null}, 
+{kind: 1, offset: "data", len: 0, typ: NTI33554440, name: "data", sons: null}, 
+{kind: 1, offset: "firstChild", len: 0, typ: NTI654311440, name: "firstChild", sons: null}, 
+{kind: 1, offset: "lastChild", len: 0, typ: NTI654311440, name: "lastChild", sons: null}, 
+{kind: 1, offset: "nextSibling", len: 0, typ: NTI654311440, name: "nextSibling", sons: null}, 
+{kind: 1, offset: "nodeName", len: 0, typ: NTI33554440, name: "nodeName", sons: null}, 
+{kind: 1, offset: "nodeType", len: 0, typ: NTI654311439, name: "nodeType", sons: null}, 
+{kind: 1, offset: "nodeValue", len: 0, typ: NTI33554440, name: "nodeValue", sons: null}, 
+{kind: 1, offset: "parentNode", len: 0, typ: NTI654311440, name: "parentNode", sons: null}, 
+{kind: 1, offset: "content", len: 0, typ: NTI654311440, name: "content", sons: null}, 
+{kind: 1, offset: "previousSibling", len: 0, typ: NTI654311440, name: "previousSibling", sons: null}, 
+{kind: 1, offset: "ownerDocument", len: 0, typ: NTI654311441, name: "ownerDocument", sons: null}, 
+{kind: 1, offset: "innerHTML", len: 0, typ: NTI33554440, name: "innerHTML", sons: null}, 
+{kind: 1, offset: "outerHTML", len: 0, typ: NTI33554440, name: "outerHTML", sons: null}, 
+{kind: 1, offset: "innerText", len: 0, typ: NTI33554440, name: "innerText", sons: null}, 
+{kind: 1, offset: "textContent", len: 0, typ: NTI33554440, name: "textContent", sons: null}, 
+{kind: 1, offset: "style", len: 0, typ: NTI654311454, name: "style", sons: null}, 
+{kind: 1, offset: "baseURI", len: 0, typ: NTI33554440, name: "baseURI", sons: null}, 
+{kind: 1, offset: "parentElement", len: 0, typ: NTI654311442, name: "parentElement", sons: null}, 
+{kind: 1, offset: "isConnected", len: 0, typ: NTI33554466, name: "isConnected", sons: null}]};
+NTI654311537.node = NNI654311537;
+var NNI654311492 = {kind: 2, len: 24, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "onabort", len: 0, typ: NTI654311493, name: "onabort", sons: null}, 
+{kind: 1, offset: "onblur", len: 0, typ: NTI654311494, name: "onblur", sons: null}, 
+{kind: 1, offset: "onchange", len: 0, typ: NTI654311495, name: "onchange", sons: null}, 
+{kind: 1, offset: "onclick", len: 0, typ: NTI654311496, name: "onclick", sons: null}, 
+{kind: 1, offset: "ondblclick", len: 0, typ: NTI654311497, name: "ondblclick", sons: null}, 
+{kind: 1, offset: "onerror", len: 0, typ: NTI654311498, name: "onerror", sons: null}, 
+{kind: 1, offset: "onfocus", len: 0, typ: NTI654311499, name: "onfocus", sons: null}, 
+{kind: 1, offset: "onkeydown", len: 0, typ: NTI654311500, name: "onkeydown", sons: null}, 
+{kind: 1, offset: "onkeypress", len: 0, typ: NTI654311501, name: "onkeypress", sons: null}, 
+{kind: 1, offset: "onkeyup", len: 0, typ: NTI654311502, name: "onkeyup", sons: null}, 
+{kind: 1, offset: "onload", len: 0, typ: NTI654311503, name: "onload", sons: null}, 
+{kind: 1, offset: "onmousedown", len: 0, typ: NTI654311504, name: "onmousedown", sons: null}, 
+{kind: 1, offset: "onmousemove", len: 0, typ: NTI654311505, name: "onmousemove", sons: null}, 
+{kind: 1, offset: "onmouseout", len: 0, typ: NTI654311506, name: "onmouseout", sons: null}, 
+{kind: 1, offset: "onmouseover", len: 0, typ: NTI654311507, name: "onmouseover", sons: null}, 
+{kind: 1, offset: "onmouseup", len: 0, typ: NTI654311508, name: "onmouseup", sons: null}, 
+{kind: 1, offset: "onreset", len: 0, typ: NTI654311509, name: "onreset", sons: null}, 
+{kind: 1, offset: "onselect", len: 0, typ: NTI654311510, name: "onselect", sons: null}, 
+{kind: 1, offset: "onstorage", len: 0, typ: NTI654311511, name: "onstorage", sons: null}, 
+{kind: 1, offset: "onsubmit", len: 0, typ: NTI654311512, name: "onsubmit", sons: null}, 
+{kind: 1, offset: "onunload", len: 0, typ: NTI654311513, name: "onunload", sons: null}, 
+{kind: 1, offset: "onloadstart", len: 0, typ: NTI654311514, name: "onloadstart", sons: null}, 
+{kind: 1, offset: "onprogress", len: 0, typ: NTI654311515, name: "onprogress", sons: null}, 
+{kind: 1, offset: "onloadend", len: 0, typ: NTI654311516, name: "onloadend", sons: null}]};
+NTI654311492.node = NNI654311492;
+NTI654311492.base = NTI33555083;
+NTI654311537.base = NTI654311492;
+NTI654311548.base = NTI654311537;
+NTI654311442.base = NTI654311548;
+var NNI587202570 = {kind: 1, offset: "val", len: 0, typ: NTI654311442, name: "val", sons: null};
+NTI587202570.node = NNI587202570;
+var NNI452984942 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI33554439, name: "Field1", sons: null}]};
-NTI452984837.node = NNI452984837;
+NTI452984942.node = NNI452984942;
+var NNI452984857 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554439, name: "Field0", sons: null}, 
+{kind: 1, offset: "Field1", len: 0, typ: NTI33554439, name: "Field1", sons: null}]};
+NTI452984857.node = NNI452984857;
 
-function cstrToNimstr(c_33556804) {
-      var ln = c_33556804.length;
-  var result = new Array(ln);
-  var r = 0;
-  for (var i = 0; i < ln; ++i) {
-    var ch = c_33556804.charCodeAt(i);
+function toJSStr(s_33556807) {
+                    var Temporary5;
+            var Temporary7;
 
-    if (ch < 128) {
-      result[r] = ch;
-    }
-    else {
-      if (ch < 2048) {
-        result[r] = (ch >> 6) | 192;
-      }
-      else {
-        if (ch < 55296 || ch >= 57344) {
-          result[r] = (ch >> 12) | 224;
+  var result_33556808 = null;
+
+    var res_33556842 = newSeq_33556825((s_33556807).length);
+    var i_33556843 = 0;
+    var j_33556844 = 0;
+    Label1: do {
+        Label2: while (true) {
+        if (!(i_33556843 < (s_33556807).length)) break Label2;
+          var c_33556845 = s_33556807[i_33556843];
+          if ((c_33556845 < 128)) {
+          res_33556842[j_33556844] = String.fromCharCode(c_33556845);
+          i_33556843 += 1;
+          }
+          else {
+            var helper_33556857 = newSeq_33556825(0);
+            Label3: do {
+                Label4: while (true) {
+                if (!true) break Label4;
+                  var code_33556858 = c_33556845.toString(16);
+                  if ((((code_33556858) == null ? 0 : (code_33556858).length) == 1)) {
+                  helper_33556857.push("%0");;
+                  }
+                  else {
+                  helper_33556857.push("%");;
+                  }
+                  
+                  helper_33556857.push(code_33556858);;
+                  i_33556843 += 1;
+                    if (((s_33556807).length <= i_33556843)) Temporary5 = true; else {                      Temporary5 = (s_33556807[i_33556843] < 128);                    }                  if (Temporary5) {
+                  break Label3;
+                  }
+                  
+                  c_33556845 = s_33556807[i_33556843];
+                }
+            } while (false);
+++excHandler;
+            Temporary7 = framePtr;
+            try {
+            res_33556842[j_33556844] = decodeURIComponent(helper_33556857.join(""));
+--excHandler;
+} catch (EXCEPTION) {
+ var prevJSError = lastJSError;
+ lastJSError = EXCEPTION;
+ --excHandler;
+            framePtr = Temporary7;
+            res_33556842[j_33556844] = helper_33556857.join("");
+            lastJSError = prevJSError;
+            } finally {
+            framePtr = Temporary7;
+            }
+          }
+          
+          j_33556844 += 1;
         }
-        else {
-            ++i;
-            ch = 65536 + (((ch & 1023) << 10) | (c_33556804.charCodeAt(i) & 1023));
-            result[r] = (ch >> 18) | 240;
-            ++r;
-            result[r] = ((ch >> 12) & 63) | 128;
-        }
-        ++r;
-        result[r] = ((ch >> 6) & 63) | 128;
-      }
-      ++r;
-      result[r] = (ch & 63) | 128;
-    }
-    ++r;
-  }
-  return result;
-  
+    } while (false);
+    if (res_33556842.length < j_33556844) { for (var i = res_33556842.length ; i < j_33556844 ; ++i) res_33556842.push(null); }
+               else { res_33556842.length = j_33556844; };
+    result_33556808 = res_33556842.join("");
 
-  
+  return result_33556808;
+
 }
 
 function makeNimstrLit(c_33556801) {
@@ -146,13 +823,6 @@ function makeNimstrLit(c_33556801) {
     result[i] = c_33556801.charCodeAt(i);
   }
   return result;
-  
-
-  
-}
-
-function mnewString(len_33556893) {
-        return new Array(len_33556893);
   
 
   
@@ -261,81 +931,9 @@ function nimCopy(dest_33557140, src_33557141, ti_33557142) {
 
 }
 
-function toJSStr(s_33556807) {
-                    var Temporary5;
-            var Temporary7;
-
-  var result_33556808 = null;
-
-    var res_33556842 = newSeq_33556825((s_33556807).length);
-    var i_33556843 = 0;
-    var j_33556844 = 0;
-    Label1: do {
-        Label2: while (true) {
-        if (!(i_33556843 < (s_33556807).length)) break Label2;
-          var c_33556845 = s_33556807[i_33556843];
-          if ((c_33556845 < 128)) {
-          res_33556842[j_33556844] = String.fromCharCode(c_33556845);
-          i_33556843 += 1;
-          }
-          else {
-            var helper_33556857 = newSeq_33556825(0);
-            Label3: do {
-                Label4: while (true) {
-                if (!true) break Label4;
-                  var code_33556858 = c_33556845.toString(16);
-                  if ((((code_33556858) == null ? 0 : (code_33556858).length) == 1)) {
-                  helper_33556857.push("%0");;
-                  }
-                  else {
-                  helper_33556857.push("%");;
-                  }
-                  
-                  helper_33556857.push(code_33556858);;
-                  i_33556843 += 1;
-                    if (((s_33556807).length <= i_33556843)) Temporary5 = true; else {                      Temporary5 = (s_33556807[i_33556843] < 128);                    }                  if (Temporary5) {
-                  break Label3;
-                  }
-                  
-                  c_33556845 = s_33556807[i_33556843];
-                }
-            } while (false);
-++excHandler;
-            Temporary7 = framePtr;
-            try {
-            res_33556842[j_33556844] = decodeURIComponent(helper_33556857.join(""));
---excHandler;
-} catch (EXCEPTION) {
- var prevJSError = lastJSError;
- lastJSError = EXCEPTION;
- --excHandler;
-            framePtr = Temporary7;
-            res_33556842[j_33556844] = helper_33556857.join("");
-            lastJSError = prevJSError;
-            } finally {
-            framePtr = Temporary7;
-            }
-          }
-          
-          j_33556844 += 1;
-        }
-    } while (false);
-    if (res_33556842.length < j_33556844) { for (var i = res_33556842.length ; i < j_33556844 ; ++i) res_33556842.push(null); }
-               else { res_33556842.length = j_33556844; };
-    result_33556808 = res_33556842.join("");
-
-  return result_33556808;
-
-}
-
-function raiseException(e_33556667, ename_33556668) {
-    e_33556667.name = ename_33556668;
-    if ((excHandler == 0)) {
-    unhandledException(e_33556667);
-    }
-    
-    e_33556667.trace = nimCopy(null, rawWriteStackTrace_33556631(), NTI33554439);
-    throw e_33556667;
+function mnewString(len_33556893) {
+        return new Array(len_33556893);
+  
 
   
 }
@@ -388,8 +986,70 @@ function chckIndx(i_33557184, a_33557185, b_33557186) {
   return result_33557187;
 
 }
+
+function cstrToNimstr(c_33556804) {
+      var ln = c_33556804.length;
+  var result = new Array(ln);
+  var r = 0;
+  for (var i = 0; i < ln; ++i) {
+    var ch = c_33556804.charCodeAt(i);
+
+    if (ch < 128) {
+      result[r] = ch;
+    }
+    else {
+      if (ch < 2048) {
+        result[r] = (ch >> 6) | 192;
+      }
+      else {
+        if (ch < 55296 || ch >= 57344) {
+          result[r] = (ch >> 12) | 224;
+        }
+        else {
+            ++i;
+            ch = 65536 + (((ch & 1023) << 10) | (c_33556804.charCodeAt(i) & 1023));
+            result[r] = (ch >> 18) | 240;
+            ++r;
+            result[r] = ((ch >> 12) & 63) | 128;
+        }
+        ++r;
+        result[r] = ((ch >> 6) & 63) | 128;
+      }
+      ++r;
+      result[r] = (ch & 63) | 128;
+    }
+    ++r;
+  }
+  return result;
+  
+
+  
+}
+
+function raiseException(e_33556667, ename_33556668) {
+    e_33556667.name = ename_33556668;
+    if ((excHandler == 0)) {
+    unhandledException(e_33556667);
+    }
+    
+    e_33556667.trace = nimCopy(null, rawWriteStackTrace_33556631(), NTI33554439);
+    throw e_33556667;
+
+  
+}
+
+function rawEcho() {
+          var buf = "";
+      for (var i = 0; i < arguments.length; ++i) {
+        buf += toJSStr(arguments[i]);
+      }
+      console.log(buf);
+    
+
+  
+}
 var ConstSet2 = setConstr(32, 10, 9, 13);
-            var whiteSpace_1241513995 = nimCopy(null, ConstSet2, NTI1241513988);
+            var whiteSpace_1174405131 = nimCopy(null, ConstSet2, NTI1174405124);
 
 function addChar(x_33557255, c_33557256) {
     x_33557255.push(c_33557256);
@@ -442,24 +1102,23 @@ function eqStrings(a_33556931, b_33556932) {
 
   
 }
+var ConstSet4 = setConstr([48, 57]);
 
-function rawEcho() {
-          var buf = "";
-      for (var i = 0; i < arguments.length; ++i) {
-        buf += toJSStr(arguments[i]);
-      }
-      console.log(buf);
-    
+function negInt(a_33556982) {
+  var result_33556983 = 0;
 
-  
+    result_33556983 = (a_33556982 * -1);
+
+  return result_33556983;
+
 }
-var ConstSet4 = setConstr();
-var ConstSet5 = setConstr(60, 62, 94);
+var ConstSet5 = setConstr();
 var ConstSet6 = setConstr(60, 62, 94);
-var ConstSet7 = setConstr(45, 43, 32);
-var ConstSet8 = setConstr([48, 57]);
+var ConstSet7 = setConstr(60, 62, 94);
+var ConstSet8 = setConstr(45, 43, 32);
 var ConstSet9 = setConstr([48, 57]);
 var ConstSet10 = setConstr([48, 57]);
+var ConstSet11 = setConstr([48, 57]);
 
 function divInt(a_33556952, b_33556953) {
         if (b_33556953 == 0) raiseDivByZero();
@@ -478,7 +1137,7 @@ function mulInt(a_33556948, b_33556949) {
 
   
 }
-var ConstSet11 = setConstr([65, 90], [97, 122]);
+var ConstSet12 = setConstr([65, 90], [97, 122]);
 
 function nimCharToStr(x_33556517) {
   var result_33556518 = [];
@@ -489,6 +1148,21 @@ function nimCharToStr(x_33556517) {
   return result_33556518;
 
 }
+
+function nimBoolToStr(x_33556514) {
+  var result_33556515 = [];
+
+    if (x_33556514) {
+    result_33556515 = nimCopy(null, makeNimstrLit("true"), NTI33554439);
+    }
+    else {
+      result_33556515 = nimCopy(null, makeNimstrLit("false"), NTI33554439);
+    }
+    
+
+  return result_33556515;
+
+}
 if (!Math.trunc) {
   Math.trunc = function(v) {
     v = +v;
@@ -497,1276 +1171,7 @@ if (!Math.trunc) {
   };
 }
 
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module typetraits", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/typetraits.nim", line: 0};
@@ -1808,7 +1213,631 @@ framePtr = F.prev;
 var F = {procname: "module typetraits", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/typetraits.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module typetraits", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/typetraits.nim", line: 0};
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module macros", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/core/macros.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module typetraits", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/typetraits.nim", line: 0};
@@ -1829,766 +1858,673 @@ framePtr = F.prev;
 var F = {procname: "module typetraits", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/typetraits.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module typetraits", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/typetraits.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module unpack", prev: framePtr, filename: "/root/.nimble/pkgs/unpack-0.4.0/unpack.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+var F = {procname: "module asyncjs", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/asyncjs.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+var F = {procname: "module jsffi", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsffi.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
@@ -2616,6 +2552,132 @@ var F = {procname: "module hashes", prev: framePtr, filename: "/root/.choosenim/
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module hashes", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/hashes.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsbigints", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsbigints.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/jsutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/jsutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/jsutils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module hashes", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/hashes.nim", line: 0};
@@ -2633,7 +2695,7 @@ framePtr = F.prev;
 var F = {procname: "module hashes", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/hashes.nim", line: 0};
 framePtr = F;
 F.line = 214;
-var objectID_905969826 = [0];
+var objectID_738197666 = [0];
 framePtr = F.prev;
 var F = {procname: "module hashes", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/hashes.nim", line: 0};
 framePtr = F;
@@ -2710,514 +2772,514 @@ framePtr = F.prev;
 var F = {procname: "module hashes", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/hashes.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops_utils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/bitops_utils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module countbits_impl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/countbits_impl.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module bitops", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/bitops.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module fenv", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/fenv.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module math", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/math.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
+var F = {procname: "module algorithm", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/algorithm.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
@@ -3236,759 +3298,516 @@ var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module dom", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/dom.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsre", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsre.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsfetch", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsfetch.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module asyncjs", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/asyncjs.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module jsffi", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsffi.nim", line: 0};
+var F = {procname: "module tables", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/tables.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module jsffi", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/jsffi.nim", line: 0};
@@ -4245,6 +4064,72 @@ framePtr = F.prev;
 var F = {procname: "module asyncjs", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/js/asyncjs.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimjs", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsfetch", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsfetch.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 var F = {procname: "module jsheaders", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/jsheaders.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
@@ -4363,6 +4248,846 @@ var F = {procname: "module httpcore", prev: framePtr, filename: "/root/.chooseni
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module httpcore", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/httpcore.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module httpcore", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/httpcore.nim", line: 0};
@@ -4593,82 +5318,265 @@ framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sequtils", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sequtils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+var F = {procname: "module consts", prev: framePtr, filename: "/root/app/src/repo/consts.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+var F = {procname: "module consts", prev: framePtr, filename: "/root/app/src/repo/consts.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+var F = {procname: "module consts", prev: framePtr, filename: "/root/app/src/repo/consts.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module json", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/json.nim", line: 0};
@@ -5025,69 +5933,6 @@ framePtr = F.prev;
 var F = {procname: "module json", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/json.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module options", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
 var F = {procname: "module json", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/json.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
@@ -5341,39 +6186,6 @@ var F = {procname: "module json", prev: framePtr, filename: "/root/.choosenim/to
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module json", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/json.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony/objvar.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module sets", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/collections/sets.nim", line: 0};
@@ -5820,10 +6632,259 @@ framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module underscored_calls", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/underscored_calls.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sugar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/sugar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module nimwind", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module annotate", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates/annotate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module annotate", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates/annotate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module annotate", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates/annotate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module annotate", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates/annotate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module annotate", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates/annotate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module annotate", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates/annotate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module annotate", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates/annotate.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module templates", prev: framePtr, filename: "/root/.nimble/pkgs/templates-0.5/templates.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimwebc", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwebc.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module nimwind", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
@@ -5880,7 +6941,10 @@ framePtr = F.prev;
 var F = {procname: "module nimwind", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+var F = {procname: "module nimwind", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module nimalpine", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimalpine.nim", line: 0};
@@ -5916,114 +6980,126 @@ framePtr = F.prev;
 var F = {procname: "module nimalpine", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimalpine.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module nimsvgicons", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module enumerate", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/enumerate.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-F.line = 20;
-var prompt_452984856 = "You are story telling AI\nHere is the premise of a story I want to tell\n\nIn a future where technology has turned against humanity, plunging society into chaos, a young woman named Gaia embarks on a transformative journey that blends the mysticism of nature with the remnants of advanced technology. The story follows Gaia as she discovers a hidden power long forgotten by her people.\n\nSet in a world where civilization has regressed to a simpler, country-style existence, yet still relies on remnants of advanced technology, Gaia struggles to find her place. Tragically, her mother's unexpected death leaves her feeling lost and desperate, yearning for an escape from her pain. In an impulsive act, she ventures into the wilderness, hoping to find solace and perhaps even join her mother in death.\n\nAs Gaia aimlessly wanders through the vast woods, the weight of her grief becomes almost unbearable. Exhausted and on the brink of despair, she seeks refuge beneath a majestic tree perched on the edge of a towering cliff overlooking the endless ocean. There, amidst her tears, she catches a glimpse of something extraordinary—a plant she recognizes from her storybooks, believed to be deadly poisonous. Its radiant red petals adorned with enchanting white circles atop a bulbous stalk captivate her in a moment of profound desperation.\n\nDriven by a deep longing to reconnect with her mother's memory and with nothing left to lose, Gaia consumes the forbidden plant. Anticipating her impending demise, she stares out at the horizon, bracing herself for what she believes will be her final moments. However, instead of death's cold embrace, Gaia experiences a remarkable transformation. The world around her erupts in an explosion of vibrant colors, her senses heightened to an unimaginable degree. As her heart races with newfound intensity, she questions whether this is death or something altogether unexpected.\n\nNow blessed with heightened perception and a mysterious connection to the psychedelic plant's power, Gaia embarks on a quest to uncover the truth behind this lost knowledge and rediscover her purpose. Along the way, she encounters a diverse cast of characters—an eclectic group of individuals with their own unique talents, scars, and aspirations. Together, they navigate a treacherous landscape, where advanced technology clashes with the raw forces of nature and humanity teeters on the edge of oblivion.\n\n\"WIDE FEELS\" is an enthralling comic book series that combines elements of dystopian sci-fi, mystical exploration, and the power of personal transformation. As Gaia unravels the secrets of the psychedelic plant medicine, she discovers not only her own inner strength but also the potential for humanity's redemption in a world that has turned its back on its own creations.\n\nHere is the over arching conflict of the story\nAs Gaia discovers her newfound ability to perceive the world in extraordinary ways through the consumption of the psychedelic plant, she becomes aware of the profound healing potential it possesses. However, the society she inhabits has long forgotten this knowledge, gripped by despair and the fear of their impending extinction. With the global population reduced to a mere 3 billion and dwindling rapidly, hope is a scarce commodity.\n\nAs Gaia delves deeper into her exploration of the plant's powers, she realizes that its healing properties could hold the key to revitalizing humanity and restoring their lost connection to nature. The conflict arises as she faces the daunting task of reawakening this forgotten knowledge within her society. She must confront the prevailing skepticism, fear, and resistance that permeate the hearts and minds of those around her.\n\nThe desperate remnants of humanity, clinging to their country-style existence amid the remnants of advanced technology, view the plant with suspicion and ignorance. Powerful factions, driven by a desire to maintain control and order in a chaotic world, seek to suppress any potential threats to their dominance, including the rediscovery of the plant's medicinal abilities.\n\nGaia finds herself torn between her newfound purpose and the overwhelming opposition she encounters. She must navigate treacherous alliances, evade capture, and gather a group of like-minded individuals who share her vision of healing and restoration. Together, they form an underground movement, working in secrecy to protect the plant's knowledge and bring hope back to their desolate world.\n\nThe conflict intensifies as Gaia and her allies face off against formidable adversaries, including those who seek to exploit the plant's power for their own selfish gain. They must overcome their own doubts and limitations while staying one step ahead of those who would silence them. Along the way, they uncover the dark secrets behind the loss of knowledge and the true origins of the technology that turned against humanity.\n\nThrough their daring actions and unwavering determination, Gaia and her companions become beacons of hope in a world gripped by despair. Their quest to restore the healing powers of the psychedelic plant medicine becomes a race against time, as they strive to revitalize a dying world and awaken the dormant potential within humanity.\n\nIn this conflict-ridden landscape, where the forces of oppression and ignorance collide with the resilience and courage of a small group, \"WIDE FEELS\" explores themes of redemption, self-discovery, and the transformative power of reconnecting with nature. It is a tale of hope, resistance, and the triumph of the human spirit in the face of seemingly insurmountable odds\n\nUsing this issue create THREE different scenarios for chapter 1.1.\nMake sure to return excatly three scenarios\n\nIssue 1: \"Awakening\"\nThe story begins with Gaia mourning the loss of her mother, feeling lost and desperate. She runs away into the woods, seeking solace but ends up getting lost.\nExhausted and emotionally drained, she finds herself near a cliff overlooking the ocean. Resting under a large tree, she notices a beautiful but supposedly poisonous plant. Driven by despair and longing for her mother, she consumes it, expecting death.\nTo her surprise, instead of dying,Gaia experiences a vivid awakening. Colors intensify, and her senses become heightened, leading her to question whether this is death or something entirely different.\n\nformat your response as a json array repsonse that looks like this\n\n[\n\t{\n\t\t\"title\": \"hehe\",\n\t\t\"content\": \"..\"\n\t},\n\t{\n\t\t\"title\": \"...\",\n\t\t\"content\": \"..\"\n\t},\n\t{\n\t\t\"title\": \"...\",\n\t\t\"content\": \"..\"\n\t}\n\n]\n";
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-F.line = 167;
-var cgpt_resp_452984905 = await fetch(
-        "https://api.openai.com/v1/chat/completions", 
-        {
-            method: 'POST',
-            headers: {
-                'Accept'        : 'application/json',
-                'Content-Type'  : 'application/json',
-                'Authorization' : "Bearer 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" 
-            },
-            body: JSON.stringify(
-                                 {
-                                     "model": "gpt-3.5-turbo-16k",
-                                     "temperature": 0.2,
-                                     "messages": [{"role": "user", "content": prompt_452984856}],
-                                 }
-                             )
-        }
-    )
-    ;
-F.line = 168;
-var cgpt_resp_json = await cgpt_resp_452984905.json();
-F.line = 170;
-var resp_text = "";
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-F.line = 171;
-resp_text = cgpt_resp_json.choices[0].message.content
-console.log(resp_text)
 
-framePtr = F.prev;
+function newSeq_33556825(len_33556827) {
+  var result_33556828 = [];
+
+  var F = {procname: "newSeq.newSeq", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 680;
+    result_33556828 = new Array(len_33556827); for (var i = 0 ; i < len_33556827 ; ++i) { result_33556828[i] = null; }  framePtr = F.prev;
+
+  return result_33556828;
+
+}
 
 function add_33556419(x_33556420, x_33556420_Idx, y_33556421) {
           if (x_33556420[x_33556420_Idx] === null) { x_33556420[x_33556420_Idx] = []; }
@@ -6075,127 +7151,6 @@ function nimCopyAux(dest_33557144, src_33557145, n_33557146) {
   
 }
 
-function auxWriteStackTrace_33556559(f_33556560) {
-          var Temporary3;
-
-  var result_33556561 = [[]];
-
-    var it_33556569 = f_33556560;
-    var i_33556570 = 0;
-    var total_33556571 = 0;
-    var tempFrames_33556572 = arrayConstr(64, {Field0: null, Field1: 0, Field2: null}, NTI33555919);
-    Label1: do {
-        Label2: while (true) {
-          if (!!((it_33556569 == null))) Temporary3 = false; else {            Temporary3 = (i_33556570 <= 63);          }        if (!Temporary3) break Label2;
-          tempFrames_33556572[i_33556570].Field0 = it_33556569.procname;
-          tempFrames_33556572[i_33556570].Field1 = it_33556569.line;
-          tempFrames_33556572[i_33556570].Field2 = it_33556569.filename;
-          i_33556570 += 1;
-          total_33556571 += 1;
-          it_33556569 = it_33556569.prev;
-        }
-    } while (false);
-    Label4: do {
-        Label5: while (true) {
-        if (!!((it_33556569 == null))) break Label5;
-          total_33556571 += 1;
-          it_33556569 = it_33556569.prev;
-        }
-    } while (false);
-    result_33556561[0] = nimCopy(null, [], NTI33554439);
-    if (!((total_33556571 == i_33556570))) {
-    result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("("));;
-    result_33556561[0].push.apply(result_33556561[0], HEX24_335544323((total_33556571 - i_33556570)));;
-    result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(" calls omitted) ...\x0A"));;
-    }
-    
-    Label6: do {
-      var j_33556602 = 0;
-      var colontmp__452985178 = 0;
-      colontmp__452985178 = (i_33556570 - 1);
-      var res_452985180 = colontmp__452985178;
-      Label7: do {
-          Label8: while (true) {
-          if (!(0 <= res_452985180)) break Label8;
-            j_33556602 = res_452985180;
-            result_33556561[0].push.apply(result_33556561[0], cstrToNimstr(tempFrames_33556572[j_33556602].Field2));;
-            if ((0 < tempFrames_33556572[j_33556602].Field1)) {
-            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("("));;
-            addInt_251658457(result_33556561, 0, tempFrames_33556572[j_33556602].Field1);
-            if (false) {
-            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(", "));;
-            addInt_251658457(result_33556561, 0, 0);
-            }
-            
-            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(")"));;
-            }
-            
-            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(" at "));;
-            add_33556419(result_33556561, 0, tempFrames_33556572[j_33556602].Field0);
-            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("\x0A"));;
-            res_452985180 -= 1;
-          }
-      } while (false);
-    } while (false);
-
-  return result_33556561[0];
-
-}
-
-function rawWriteStackTrace_33556631() {
-  var result_33556632 = [];
-
-    if (!((framePtr == null))) {
-    result_33556632 = nimCopy(null, (makeNimstrLit("Traceback (most recent call last)\x0A") || []).concat(auxWriteStackTrace_33556559(framePtr) || []), NTI33554439);
-    }
-    else {
-      result_33556632 = nimCopy(null, makeNimstrLit("No stack traceback available\x0A"), NTI33554439);
-    }
-    
-
-  return result_33556632;
-
-}
-
-function newSeq_33556825(len_33556827) {
-  var result_33556828 = [];
-
-  var F = {procname: "newSeq.newSeq", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
-  framePtr = F;
-    F.line = 680;
-    result_33556828 = new Array(len_33556827); for (var i = 0 ; i < len_33556827 ; ++i) { result_33556828[i] = null; }  framePtr = F.prev;
-
-  return result_33556828;
-
-}
-
-function unhandledException(e_33556663) {
-    var buf_33556664 = [[]];
-    if (!(((e_33556663.message).length == 0))) {
-    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit("Error: unhandled exception: "));;
-    buf_33556664[0].push.apply(buf_33556664[0], e_33556663.message);;
-    }
-    else {
-    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit("Error: unhandled exception"));;
-    }
-    
-    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit(" ["));;
-    add_33556419(buf_33556664, 0, e_33556663.name);
-    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit("]\x0A"));;
-    buf_33556664[0].push.apply(buf_33556664[0], rawWriteStackTrace_33556631());;
-    var cbuf_33556665 = toJSStr(buf_33556664[0]);
-    framePtr = null;
-      if (typeof(Error) !== "undefined") {
-    throw new Error(cbuf_33556665);
-  }
-  else {
-    throw cbuf_33556665;
-  }
-  
-
-  
-}
-
 function raiseOverflow() {
     raiseException({message: makeNimstrLit("over- or underflow"), parent: null, m_type: NTI33555122, name: null, trace: [], up: null}, "OverflowDefect");
 
@@ -6215,6 +7170,21 @@ function raiseRangeError() {
   
 }
 
+function raiseIndexError(i_33556754, a_33556755, b_33556756) {
+    var Temporary1;
+
+    if ((b_33556756 < a_33556755)) {
+    Temporary1 = makeNimstrLit("index out of bounds, the container is empty");
+    }
+    else {
+    Temporary1 = (makeNimstrLit("index ") || []).concat(HEX24_335544323(i_33556754) || [],makeNimstrLit(" not in ") || [],HEX24_335544323(a_33556755) || [],makeNimstrLit(" .. ") || [],HEX24_335544323(b_33556756) || []);
+    }
+    
+    raiseException({message: nimCopy(null, Temporary1, NTI33554439), parent: null, m_type: NTI33555128, name: null, trace: [], up: null}, "IndexDefect");
+
+  
+}
+
 function addChars_251658415(result_251658417, result_251658417_Idx, x_251658418, start_251658419, n_251658420) {
   var F = {procname: "addChars.addChars", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/std/private/digitsutils.nim", line: 0};
   framePtr = F;
@@ -6226,17 +7196,17 @@ function addChars_251658415(result_251658417, result_251658417_Idx, x_251658418,
       F.line = 46;
       var iHEX60gensym4_251658435 = 0;
       F.line = 119;
-      var i_452985173 = 0;
+      var i_452984870 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_452985173 < n_251658420)) break Label3;
+          if (!(i_452984870 < n_251658420)) break Label3;
             F.line = 49;
-            iHEX60gensym4_251658435 = i_452985173;
+            iHEX60gensym4_251658435 = i_452984870;
             F.line = 49;
             result_251658417[result_251658417_Idx][chckIndx(addInt(old_251658421, iHEX60gensym4_251658435), 0, (result_251658417[result_251658417_Idx]).length - 1)] = x_251658418.charCodeAt(chckIndx(addInt(start_251658419, iHEX60gensym4_251658435), 0, (x_251658418).length - 1));
             F.line = 122;
-            i_452985173 = addInt(i_452985173, 1);
+            i_452984870 = addInt(i_452984870, 1);
           }
       } while (false);
     } while (false);
@@ -6288,20 +7258,176 @@ function HEX24_335544323(x_335544324) {
 
 }
 
-function raiseIndexError(i_33556754, a_33556755, b_33556756) {
-    var Temporary1;
+function auxWriteStackTrace_33556559(f_33556560) {
+          var Temporary3;
 
-    if ((b_33556756 < a_33556755)) {
-    Temporary1 = makeNimstrLit("index out of bounds, the container is empty");
-    }
-    else {
-    Temporary1 = (makeNimstrLit("index ") || []).concat(HEX24_335544323(i_33556754) || [],makeNimstrLit(" not in ") || [],HEX24_335544323(a_33556755) || [],makeNimstrLit(" .. ") || [],HEX24_335544323(b_33556756) || []);
+  var result_33556561 = [[]];
+
+    var it_33556569 = f_33556560;
+    var i_33556570 = 0;
+    var total_33556571 = 0;
+    var tempFrames_33556572 = arrayConstr(64, {Field0: null, Field1: 0, Field2: null}, NTI33555919);
+    Label1: do {
+        Label2: while (true) {
+          if (!!((it_33556569 == null))) Temporary3 = false; else {            Temporary3 = (i_33556570 <= 63);          }        if (!Temporary3) break Label2;
+          tempFrames_33556572[i_33556570].Field0 = it_33556569.procname;
+          tempFrames_33556572[i_33556570].Field1 = it_33556569.line;
+          tempFrames_33556572[i_33556570].Field2 = it_33556569.filename;
+          i_33556570 += 1;
+          total_33556571 += 1;
+          it_33556569 = it_33556569.prev;
+        }
+    } while (false);
+    Label4: do {
+        Label5: while (true) {
+        if (!!((it_33556569 == null))) break Label5;
+          total_33556571 += 1;
+          it_33556569 = it_33556569.prev;
+        }
+    } while (false);
+    result_33556561[0] = nimCopy(null, [], NTI33554439);
+    if (!((total_33556571 == i_33556570))) {
+    result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("("));;
+    result_33556561[0].push.apply(result_33556561[0], HEX24_335544323((total_33556571 - i_33556570)));;
+    result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(" calls omitted) ...\x0A"));;
     }
     
-    raiseException({message: nimCopy(null, Temporary1, NTI33554439), parent: null, m_type: NTI33555128, name: null, trace: [], up: null}, "IndexDefect");
+    Label6: do {
+      var j_33556602 = 0;
+      var colontmp__452984863 = 0;
+      colontmp__452984863 = (i_33556570 - 1);
+      var res_452984864 = colontmp__452984863;
+      Label7: do {
+          Label8: while (true) {
+          if (!(0 <= res_452984864)) break Label8;
+            j_33556602 = res_452984864;
+            result_33556561[0].push.apply(result_33556561[0], cstrToNimstr(tempFrames_33556572[j_33556602].Field2));;
+            if ((0 < tempFrames_33556572[j_33556602].Field1)) {
+            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("("));;
+            addInt_251658457(result_33556561, 0, tempFrames_33556572[j_33556602].Field1);
+            if (false) {
+            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(", "));;
+            addInt_251658457(result_33556561, 0, 0);
+            }
+            
+            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(")"));;
+            }
+            
+            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(" at "));;
+            add_33556419(result_33556561, 0, tempFrames_33556572[j_33556602].Field0);
+            result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("\x0A"));;
+            res_452984864 -= 1;
+          }
+      } while (false);
+    } while (false);
+
+  return result_33556561[0];
+
+}
+
+function rawWriteStackTrace_33556631() {
+  var result_33556632 = [];
+
+    if (!((framePtr == null))) {
+    result_33556632 = nimCopy(null, (makeNimstrLit("Traceback (most recent call last)\x0A") || []).concat(auxWriteStackTrace_33556559(framePtr) || []), NTI33554439);
+    }
+    else {
+      result_33556632 = nimCopy(null, makeNimstrLit("No stack traceback available\x0A"), NTI33554439);
+    }
+    
+
+  return result_33556632;
+
+}
+
+function unhandledException(e_33556663) {
+    var buf_33556664 = [[]];
+    if (!(((e_33556663.message).length == 0))) {
+    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit("Error: unhandled exception: "));;
+    buf_33556664[0].push.apply(buf_33556664[0], e_33556663.message);;
+    }
+    else {
+    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit("Error: unhandled exception"));;
+    }
+    
+    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit(" ["));;
+    add_33556419(buf_33556664, 0, e_33556663.name);
+    buf_33556664[0].push.apply(buf_33556664[0], makeNimstrLit("]\x0A"));;
+    buf_33556664[0].push.apply(buf_33556664[0], rawWriteStackTrace_33556631());;
+    var cbuf_33556665 = toJSStr(buf_33556664[0]);
+    framePtr = null;
+      if (typeof(Error) !== "undefined") {
+    throw new Error(cbuf_33556665);
+  }
+  else {
+    throw cbuf_33556665;
+  }
+  
 
   
 }
+
+function gebi_strict_587202720(id_587202721) {
+  var result_587202722 = null;
+
+  var F = {procname: "nimjs.gebi_strict", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 45;
+    var el_587202723 = document.getElementById(toJSStr(id_587202721));
+    if ((el_587202723 == null)) {
+    F.line = 47;
+    raiseException({message: (makeNimstrLit("Element with id \'") || []).concat(id_587202721 || [],makeNimstrLit("\' not found") || []), parent: null, m_type: NTI587202563, name: null, trace: [], up: null}, "ElementNotFound");
+    }
+    else {
+      F.line = 49;
+      result_587202722 = el_587202723;
+      break BeforeRet;
+    }
+    
+  } while (false);
+  framePtr = F.prev;
+
+  return result_587202722;
+
+}
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+F.line = 23;
+var gen_scenario_btn_452984856 = gebi_strict_587202720(makeNimstrLit("generate-scenario-btn"));
+F.line = 24;
+var ghost_writer_card_1_452984857 = gen_scenario_btn_452984856.parentElement;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 
 function HEX3CHEX3DHEX25_33555429(x_33555430, y_33555431) {
   var result_33555432 = false;
@@ -6316,133 +7442,133 @@ function HEX3CHEX3DHEX25_33555429(x_33555430, y_33555431) {
 
 }
 
-function nuctoUTF8(c_855638357) {
-  var result_855638358 = [];
+function nuctoUTF8(c_1040187733) {
+  var result_1040187734 = [];
 
   var F = {procname: "unicode.toUTF8", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
   framePtr = F;
     F.line = 266;
-    result_855638358 = nimCopy(null, [], NTI33554439);
+    result_1040187734 = nimCopy(null, [], NTI33554439);
     F.line = 211;
-    var iHEX60gensym49_855638360 = c_855638357;
-    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_855638360, 127)) {
+    var iHEX60gensym49_1040187736 = c_1040187733;
+    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_1040187736, 127)) {
     F.line = 213;
-    (result_855638358.length = 1);
+    (result_1040187734.length = 1);
     F.line = 214;
-    result_855638358[chckIndx(0, 0, (result_855638358).length - 1)] = chckRange(iHEX60gensym49_855638360, 0, 255);
+    result_1040187734[chckIndx(0, 0, (result_1040187734).length - 1)] = chckRange(iHEX60gensym49_1040187736, 0, 255);
     }
     else {
-    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_855638360, 2047)) {
+    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_1040187736, 2047)) {
     F.line = 217;
-    (result_855638358.length = 2);
+    (result_1040187734.length = 2);
     F.line = 218;
-    result_855638358[chckIndx(0, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 >> 6) | 192), 0, 255);
+    result_1040187734[chckIndx(0, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 >> 6) | 192), 0, 255);
     F.line = 219;
-    result_855638358[chckIndx(1, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(1, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 & 63) | 128), 0, 255);
     }
     else {
-    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_855638360, 65535)) {
+    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_1040187736, 65535)) {
     F.line = 222;
-    (result_855638358.length = 3);
+    (result_1040187734.length = 3);
     F.line = 223;
-    result_855638358[chckIndx(0, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 >> 12) | 224), 0, 255);
+    result_1040187734[chckIndx(0, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 >> 12) | 224), 0, 255);
     F.line = 224;
-    result_855638358[chckIndx(1, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 6) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(1, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 6) & 63) | 128), 0, 255);
     F.line = 225;
-    result_855638358[chckIndx(2, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(2, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 & 63) | 128), 0, 255);
     }
     else {
-    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_855638360, 2097151)) {
+    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_1040187736, 2097151)) {
     F.line = 228;
-    (result_855638358.length = 4);
+    (result_1040187734.length = 4);
     F.line = 229;
-    result_855638358[chckIndx(0, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 >> 18) | 240), 0, 255);
+    result_1040187734[chckIndx(0, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 >> 18) | 240), 0, 255);
     F.line = 230;
-    result_855638358[chckIndx(1, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 12) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(1, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 12) & 63) | 128), 0, 255);
     F.line = 231;
-    result_855638358[chckIndx(2, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 6) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(2, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 6) & 63) | 128), 0, 255);
     F.line = 232;
-    result_855638358[chckIndx(3, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(3, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 & 63) | 128), 0, 255);
     }
     else {
-    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_855638360, 67108863)) {
+    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_1040187736, 67108863)) {
     F.line = 235;
-    (result_855638358.length = 5);
+    (result_1040187734.length = 5);
     F.line = 236;
-    result_855638358[chckIndx(0, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 >> 24) | 248), 0, 255);
+    result_1040187734[chckIndx(0, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 >> 24) | 248), 0, 255);
     F.line = 237;
-    result_855638358[chckIndx(1, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 18) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(1, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 18) & 63) | 128), 0, 255);
     F.line = 238;
-    result_855638358[chckIndx(2, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 12) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(2, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 12) & 63) | 128), 0, 255);
     F.line = 239;
-    result_855638358[chckIndx(3, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 6) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(3, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 6) & 63) | 128), 0, 255);
     F.line = 240;
-    result_855638358[chckIndx(4, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(4, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 & 63) | 128), 0, 255);
     }
     else {
-    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_855638360, 2147483647)) {
+    if (HEX3CHEX3DHEX25_33555429(iHEX60gensym49_1040187736, 2147483647)) {
     F.line = 243;
-    (result_855638358.length = 6);
+    (result_1040187734.length = 6);
     F.line = 244;
-    result_855638358[chckIndx(0, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 >> 30) | 252), 0, 255);
+    result_1040187734[chckIndx(0, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 >> 30) | 252), 0, 255);
     F.line = 245;
-    result_855638358[chckIndx(1, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 24) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(1, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 24) & 63) | 128), 0, 255);
     F.line = 246;
-    result_855638358[chckIndx(2, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 18) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(2, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 18) & 63) | 128), 0, 255);
     F.line = 247;
-    result_855638358[chckIndx(3, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 12) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(3, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 12) & 63) | 128), 0, 255);
     F.line = 248;
-    result_855638358[chckIndx(4, 0, (result_855638358).length - 1)] = chckRange((((iHEX60gensym49_855638360 >> 6) & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(4, 0, (result_1040187734).length - 1)] = chckRange((((iHEX60gensym49_1040187736 >> 6) & 63) | 128), 0, 255);
     F.line = 249;
-    result_855638358[chckIndx(5, 0, (result_855638358).length - 1)] = chckRange(((iHEX60gensym49_855638360 & 63) | 128), 0, 255);
+    result_1040187734[chckIndx(5, 0, (result_1040187734).length - 1)] = chckRange(((iHEX60gensym49_1040187736 & 63) | 128), 0, 255);
     }
     else {
     }
     }}}}}
   framePtr = F.prev;
 
-  return result_855638358;
+  return result_1040187734;
 
 }
 
-function parseHex_587203461(s_587203463, number_587203464, number_587203464_Idx, start_587203465, maxLen_587203466) {
+function parseHex_989856645(s_989856647, number_989856648, number_989856648_Idx, start_989856649, maxLen_989856650) {
     var Temporary1;
 
-  var result_587203467 = 0;
+  var result_989856651 = 0;
 
   var F = {procname: "parseHex.parseHex", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
   framePtr = F;
     F.line = 187;
-    var i_587203468 = start_587203465;
+    var i_989856652 = start_989856649;
     F.line = 188;
-    var output_587203469 = 0;
+    var output_989856653 = 0;
     F.line = 189;
-    var foundDigit_587203470 = false;
+    var foundDigit_989856654 = false;
     F.line = 190;
-    if ((maxLen_587203466 == 0)) {
-    Temporary1 = (s_587203463).length;
+    if ((maxLen_989856650 == 0)) {
+    Temporary1 = (s_989856647).length;
     }
     else {
-    Temporary1 = addInt(i_587203468, maxLen_587203466);
+    Temporary1 = addInt(i_989856652, maxLen_989856650);
     }
     
-    var last_587203471 = nimMin((s_587203463).length, Temporary1);
-    if ((((addInt(i_587203468, 1) < last_587203471) && (s_587203463[chckIndx(i_587203468, 0, (s_587203463).length - 1)] == 48)) && (ConstSet3[s_587203463[chckIndx(addInt(i_587203468, 1), 0, (s_587203463).length - 1)]] != undefined))) {
+    var last_989856655 = nimMin((s_989856647).length, Temporary1);
+    if ((((addInt(i_989856652, 1) < last_989856655) && (s_989856647[chckIndx(i_989856652, 0, (s_989856647).length - 1)] == 48)) && (ConstSet3[s_989856647[chckIndx(addInt(i_989856652, 1), 0, (s_989856647).length - 1)]] != undefined))) {
     F.line = 191;
-    i_587203468 = addInt(i_587203468, 2);
+    i_989856652 = addInt(i_989856652, 2);
     }
     else {
-    if (((i_587203468 < last_587203471) && (s_587203463[chckIndx(i_587203468, 0, (s_587203463).length - 1)] == 35))) {
+    if (((i_989856652 < last_989856655) && (s_989856647[chckIndx(i_989856652, 0, (s_989856647).length - 1)] == 35))) {
     F.line = 192;
-    i_587203468 = addInt(i_587203468, 1);
+    i_989856652 = addInt(i_989856652, 1);
     }
     }
     Label2: do {
       F.line = 193;
         Label3: while (true) {
-        if (!(i_587203468 < last_587203471)) break Label3;
+        if (!(i_989856652 < last_989856655)) break Label3;
           F.line = 194;
-          switch (s_587203463[chckIndx(i_587203468, 0, (s_587203463).length - 1)]) {
+          switch (s_989856647[chckIndx(i_989856652, 0, (s_989856647).length - 1)]) {
           case 95:
             break;
           case 48:
@@ -6456,9 +7582,9 @@ function parseHex_587203461(s_587203463, number_587203464, number_587203464_Idx,
           case 56:
           case 57:
             F.line = 197;
-            output_587203469 = ((output_587203469 << 4) | subInt(s_587203463[chckIndx(i_587203468, 0, (s_587203463).length - 1)], 48));
+            output_989856653 = ((output_989856653 << 4) | subInt(s_989856647[chckIndx(i_989856652, 0, (s_989856647).length - 1)], 48));
             F.line = 198;
-            foundDigit_587203470 = true;
+            foundDigit_989856654 = true;
             break;
           case 97:
           case 98:
@@ -6467,9 +7593,9 @@ function parseHex_587203461(s_587203463, number_587203464, number_587203464_Idx,
           case 101:
           case 102:
             F.line = 200;
-            output_587203469 = ((output_587203469 << 4) | addInt(subInt(s_587203463[chckIndx(i_587203468, 0, (s_587203463).length - 1)], 97), 10));
+            output_989856653 = ((output_989856653 << 4) | addInt(subInt(s_989856647[chckIndx(i_989856652, 0, (s_989856647).length - 1)], 97), 10));
             F.line = 201;
-            foundDigit_587203470 = true;
+            foundDigit_989856654 = true;
             break;
           case 65:
           case 66:
@@ -6478,9 +7604,9 @@ function parseHex_587203461(s_587203463, number_587203464, number_587203464_Idx,
           case 69:
           case 70:
             F.line = 203;
-            output_587203469 = ((output_587203469 << 4) | addInt(subInt(s_587203463[chckIndx(i_587203468, 0, (s_587203463).length - 1)], 65), 10));
+            output_989856653 = ((output_989856653 << 4) | addInt(subInt(s_989856647[chckIndx(i_989856652, 0, (s_989856647).length - 1)], 65), 10));
             F.line = 204;
-            foundDigit_587203470 = true;
+            foundDigit_989856654 = true;
             break;
           default: 
             F.line = 205;
@@ -6488,231 +7614,231 @@ function parseHex_587203461(s_587203463, number_587203464, number_587203464_Idx,
             break;
           }
           F.line = 206;
-          i_587203468 = addInt(i_587203468, 1);
+          i_989856652 = addInt(i_989856652, 1);
         }
     } while (false);
-    if (foundDigit_587203470) {
+    if (foundDigit_989856654) {
     F.line = 208;
-    number_587203464[number_587203464_Idx] = output_587203469;
+    number_989856648[number_989856648_Idx] = output_989856653;
     F.line = 209;
-    result_587203467 = subInt(i_587203468, start_587203465);
+    result_989856651 = subInt(i_989856652, start_989856649);
     }
     
   framePtr = F.prev;
 
-  return result_587203467;
+  return result_989856651;
 
 }
 
-function nsuParseHexInt(s_587203459) {
+function nsuParseHexInt(s_989856643) {
       var Temporary1;
 
-  var result_587203460 = [0];
+  var result_989856644 = [0];
 
   var F = {procname: "strutils.parseHexInt", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
   framePtr = F;
     F.line = 1151;
-    result_587203460[0] = 0;
+    result_989856644[0] = 0;
     F.line = 1152;
-    var L_587203518 = parseHex_587203461(s_587203459, result_587203460, 0, 0, 0);
-      if (!((L_587203518 == (s_587203459).length))) Temporary1 = true; else {        Temporary1 = (L_587203518 == 0);      }    if (Temporary1) {
+    var L_989856702 = parseHex_989856645(s_989856643, result_989856644, 0, 0, 0);
+      if (!((L_989856702 == (s_989856643).length))) Temporary1 = true; else {        Temporary1 = (L_989856702 == 0);      }    if (Temporary1) {
     F.line = 1154;
-    raiseException({message: (makeNimstrLit("invalid hex integer: ") || []).concat(s_587203459 || []), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
+    raiseException({message: (makeNimstrLit("invalid hex integer: ") || []).concat(s_989856643 || []), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
     }
     
   framePtr = F.prev;
 
-  return result_587203460[0];
+  return result_989856644[0];
 
 }
 
-function HEX5BHEX5D_855638892(s_855638895, x_855638896) {
-  var result_855638897 = [];
+function HEX5BHEX5D_1040188268(s_1040188271, x_1040188272) {
+  var result_1040188273 = [];
 
   var F = {procname: "[].[]", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
   framePtr = F;
     F.line = 2549;
-    var a_855638899 = x_855638896.a;
+    var a_1040188275 = x_1040188272.a;
     F.line = 2550;
-    var L_855638901 = addInt(subInt(x_855638896.b, a_855638899), 1);
+    var L_1040188277 = addInt(subInt(x_1040188272.b, a_1040188275), 1);
     F.line = 2551;
-    result_855638897 = nimCopy(null, mnewString(chckRange(L_855638901, 0, 2147483647)), NTI33554439);
+    result_1040188273 = nimCopy(null, mnewString(chckRange(L_1040188277, 0, 2147483647)), NTI33554439);
     Label1: do {
       F.line = 2552;
-      var i_855638906 = 0;
+      var i_1040188282 = 0;
       F.line = 119;
-      var i_452985198 = 0;
+      var i_452985759 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_452985198 < L_855638901)) break Label3;
+          if (!(i_452985759 < L_1040188277)) break Label3;
             F.line = 2552;
-            i_855638906 = i_452985198;
+            i_1040188282 = i_452985759;
             F.line = 2552;
-            result_855638897[chckIndx(i_855638906, 0, (result_855638897).length - 1)] = s_855638895[chckIndx(addInt(i_855638906, a_855638899), 0, (s_855638895).length - 1)];
+            result_1040188273[chckIndx(i_1040188282, 0, (result_1040188273).length - 1)] = s_1040188271[chckIndx(addInt(i_1040188282, a_1040188275), 0, (s_1040188271).length - 1)];
             F.line = 122;
-            i_452985198 = addInt(i_452985198, 1);
+            i_452985759 = addInt(i_452985759, 1);
           }
       } while (false);
     } while (false);
   framePtr = F.prev;
 
-  return result_855638897;
+  return result_1040188273;
 
 }
 
-function HEX2EHEX2E_855638867(a_855638870, b_855638871) {
-  var result_855638872 = ({a: 0, b: 0});
+function HEX2EHEX2E_1040188243(a_1040188246, b_1040188247) {
+  var result_1040188248 = ({a: 0, b: 0});
 
   var F = {procname: ".....", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
   framePtr = F;
     F.line = 512;
-    result_855638872 = nimCopy(result_855638872, {a: a_855638870, b: b_855638871}, NTI687865917);
+    result_1040188248 = nimCopy(result_1040188248, {a: a_1040188246, b: b_1040188247}, NTI805306429);
   framePtr = F.prev;
 
-  return result_855638872;
+  return result_1040188248;
 
 }
 
-function parseUnicodeEscape_1241514170(s_1241514171, i_1241514172, i_1241514172_Idx) {
-  var result_1241514173 = 0;
+function parseUnicodeEscape_1174405306(s_1174405307, i_1174405308, i_1174405308_Idx) {
+  var result_1174405309 = 0;
 
   var F = {procname: "jsony.parseUnicodeEscape", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
   framePtr = F;
     F.line = 144;
-    i_1241514172[i_1241514172_Idx] = addInt(i_1241514172[i_1241514172_Idx], 1);
+    i_1174405308[i_1174405308_Idx] = addInt(i_1174405308[i_1174405308_Idx], 1);
     F.line = 145;
-    result_1241514173 = nsuParseHexInt(HEX5BHEX5D_855638892(s_1241514171, HEX2EHEX2E_855638867(i_1241514172[i_1241514172_Idx], subInt(addInt(i_1241514172[i_1241514172_Idx], 4), 1))));
+    result_1174405309 = nsuParseHexInt(HEX5BHEX5D_1040188268(s_1174405307, HEX2EHEX2E_1040188243(i_1174405308[i_1174405308_Idx], subInt(addInt(i_1174405308[i_1174405308_Idx], 4), 1))));
     F.line = 146;
-    i_1241514172[i_1241514172_Idx] = addInt(i_1241514172[i_1241514172_Idx], 3);
-    if (((result_1241514173 & 64512) == 55296)) {
+    i_1174405308[i_1174405308_Idx] = addInt(i_1174405308[i_1174405308_Idx], 3);
+    if (((result_1174405309 & 64512) == 55296)) {
     F.line = 151;
-    i_1241514172[i_1241514172_Idx] = addInt(i_1241514172[i_1241514172_Idx], 1);
-    if (!((s_1241514171[chckIndx(i_1241514172[i_1241514172_Idx], 0, (s_1241514171).length - 1)] == 92))) {
+    i_1174405308[i_1174405308_Idx] = addInt(i_1174405308[i_1174405308_Idx], 1);
+    if (!((s_1174405307[chckIndx(i_1174405308[i_1174405308_Idx], 0, (s_1174405307).length - 1)] == 92))) {
     F.line = 153;
-    raiseException({message: (makeNimstrLit("Found an Orphan Surrogate. At offset: ") || []).concat(HEX24_335544323(i_1241514172[i_1241514172_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Found an Orphan Surrogate. At offset: ") || []).concat(HEX24_335544323(i_1174405308[i_1174405308_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     F.line = 154;
-    i_1241514172[i_1241514172_Idx] = addInt(i_1241514172[i_1241514172_Idx], 1);
-    if (!((s_1241514171[chckIndx(i_1241514172[i_1241514172_Idx], 0, (s_1241514171).length - 1)] == 117))) {
+    i_1174405308[i_1174405308_Idx] = addInt(i_1174405308[i_1174405308_Idx], 1);
+    if (!((s_1174405307[chckIndx(i_1174405308[i_1174405308_Idx], 0, (s_1174405307).length - 1)] == 117))) {
     F.line = 156;
-    raiseException({message: (makeNimstrLit("Found an Orphan Surrogate. At offset: ") || []).concat(HEX24_335544323(i_1241514172[i_1241514172_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Found an Orphan Surrogate. At offset: ") || []).concat(HEX24_335544323(i_1174405308[i_1174405308_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     F.line = 157;
-    i_1241514172[i_1241514172_Idx] = addInt(i_1241514172[i_1241514172_Idx], 1);
+    i_1174405308[i_1174405308_Idx] = addInt(i_1174405308[i_1174405308_Idx], 1);
     F.line = 158;
-    var nextRune_1241514242 = nsuParseHexInt(HEX5BHEX5D_855638892(s_1241514171, HEX2EHEX2E_855638867(i_1241514172[i_1241514172_Idx], subInt(addInt(i_1241514172[i_1241514172_Idx], 4), 1))));
+    var nextRune_1174405378 = nsuParseHexInt(HEX5BHEX5D_1040188268(s_1174405307, HEX2EHEX2E_1040188243(i_1174405308[i_1174405308_Idx], subInt(addInt(i_1174405308[i_1174405308_Idx], 4), 1))));
     F.line = 159;
-    i_1241514172[i_1241514172_Idx] = addInt(i_1241514172[i_1241514172_Idx], 3);
-    if (((nextRune_1241514242 & 64512) == 56320)) {
+    i_1174405308[i_1174405308_Idx] = addInt(i_1174405308[i_1174405308_Idx], 3);
+    if (((nextRune_1174405378 & 64512) == 56320)) {
     F.line = 161;
-    result_1241514173 = addInt(65536, ((subInt(result_1241514173, 55296) << 10) | subInt(nextRune_1241514242, 56320)));
+    result_1174405309 = addInt(65536, ((subInt(result_1174405309, 55296) << 10) | subInt(nextRune_1174405378, 56320)));
     }
     
     }
     
   framePtr = F.prev;
 
-  return result_1241514173;
+  return result_1174405309;
 
 }
 
-function parseStringSlow_1241514251(s_1241514252, i_1241514253, i_1241514253_Idx, v_1241514254, v_1241514254_Idx) {
+function parseStringSlow_1174405387(s_1174405388, i_1174405389, i_1174405389_Idx, v_1174405390, v_1174405390_Idx) {
   var F = {procname: "jsony.parseStringSlow", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
   framePtr = F;
     Label1: do {
       F.line = 164;
         Label2: while (true) {
-        if (!(i_1241514253[i_1241514253_Idx] < (s_1241514252).length)) break Label2;
+        if (!(i_1174405389[i_1174405389_Idx] < (s_1174405388).length)) break Label2;
           F.line = 165;
-          var c_1241514255 = s_1241514252[chckIndx(i_1241514253[i_1241514253_Idx], 0, (s_1241514252).length - 1)];
+          var c_1174405391 = s_1174405388[chckIndx(i_1174405389[i_1174405389_Idx], 0, (s_1174405388).length - 1)];
           F.line = 166;
-          switch (c_1241514255) {
+          switch (c_1174405391) {
           case 34:
             F.line = 168;
             break Label1;
             break;
           case 92:
             F.line = 170;
-            i_1241514253[i_1241514253_Idx] = addInt(i_1241514253[i_1241514253_Idx], 1);
+            i_1174405389[i_1174405389_Idx] = addInt(i_1174405389[i_1174405389_Idx], 1);
             F.line = 171;
-            var c_1241514260 = s_1241514252[chckIndx(i_1241514253[i_1241514253_Idx], 0, (s_1241514252).length - 1)];
+            var c_1174405396 = s_1174405388[chckIndx(i_1174405389[i_1174405389_Idx], 0, (s_1174405388).length - 1)];
             F.line = 172;
-            switch (c_1241514260) {
+            switch (c_1174405396) {
             case 34:
             case 92:
             case 47:
               F.line = 173;
-              addChar(v_1241514254[v_1241514254_Idx], c_1241514260);;
+              addChar(v_1174405390[v_1174405390_Idx], c_1174405396);;
               break;
             case 98:
               F.line = 174;
-              addChar(v_1241514254[v_1241514254_Idx], 8);;
+              addChar(v_1174405390[v_1174405390_Idx], 8);;
               break;
             case 102:
               F.line = 175;
-              addChar(v_1241514254[v_1241514254_Idx], 12);;
+              addChar(v_1174405390[v_1174405390_Idx], 12);;
               break;
             case 110:
               F.line = 176;
-              addChar(v_1241514254[v_1241514254_Idx], 10);;
+              addChar(v_1174405390[v_1174405390_Idx], 10);;
               break;
             case 114:
               F.line = 177;
-              addChar(v_1241514254[v_1241514254_Idx], 13);;
+              addChar(v_1174405390[v_1174405390_Idx], 13);;
               break;
             case 116:
               F.line = 178;
-              addChar(v_1241514254[v_1241514254_Idx], 9);;
+              addChar(v_1174405390[v_1174405390_Idx], 9);;
               break;
             case 117:
               F.line = 180;
-              v_1241514254[v_1241514254_Idx].push.apply(v_1241514254[v_1241514254_Idx], nuctoUTF8(((parseUnicodeEscape_1241514170(s_1241514252, i_1241514253, i_1241514253_Idx)) | 0)));;
+              v_1174405390[v_1174405390_Idx].push.apply(v_1174405390[v_1174405390_Idx], nuctoUTF8(((parseUnicodeEscape_1174405306(s_1174405388, i_1174405389, i_1174405389_Idx)) | 0)));;
               break;
             default: 
               F.line = 182;
-              addChar(v_1241514254[v_1241514254_Idx], c_1241514260);;
+              addChar(v_1174405390[v_1174405390_Idx], c_1174405396);;
               break;
             }
             break;
           default: 
             F.line = 184;
-            addChar(v_1241514254[v_1241514254_Idx], c_1241514255);;
+            addChar(v_1174405390[v_1174405390_Idx], c_1174405391);;
             break;
           }
           F.line = 185;
-          i_1241514253[i_1241514253_Idx] = addInt(i_1241514253[i_1241514253_Idx], 1);
+          i_1174405389[i_1174405389_Idx] = addInt(i_1174405389[i_1174405389_Idx], 1);
         }
     } while (false);
     Label3: do {
       F.line = 43;
         Label4: while (true) {
-        if (!(i_1241514253[i_1241514253_Idx] < (s_1241514252).length)) break Label4;
+        if (!(i_1174405389[i_1174405389_Idx] < (s_1174405388).length)) break Label4;
           F.line = 35;
-          var cHEX60gensym21_1241514266 = s_1241514252[chckIndx(i_1241514253[i_1241514253_Idx], 0, (s_1241514252).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym21_1241514266] != undefined))) {
+          var cHEX60gensym21_1174405402 = s_1174405388[chckIndx(i_1174405389[i_1174405389_Idx], 0, (s_1174405388).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym21_1174405402] != undefined))) {
           F.line = 37;
           break Label3;
           }
           
           F.line = 38;
-          i_1241514253[i_1241514253_Idx] = addInt(i_1241514253[i_1241514253_Idx], 1);
+          i_1174405389[i_1174405389_Idx] = addInt(i_1174405389[i_1174405389_Idx], 1);
         }
     } while (false);
-    if (((s_1241514252).length <= i_1241514253[i_1241514253_Idx])) {
+    if (((s_1174405388).length <= i_1174405389[i_1174405389_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected \" but end reached. At offset: ") || []).concat(HEX24_335544323(i_1241514253[i_1241514253_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected \" but end reached. At offset: ") || []).concat(HEX24_335544323(i_1174405389[i_1174405389_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_1241514252[chckIndx(i_1241514253[i_1241514253_Idx], 0, (s_1241514252).length - 1)] == 34)) {
+    if ((s_1174405388[chckIndx(i_1174405389[i_1174405389_Idx], 0, (s_1174405388).length - 1)] == 34)) {
     F.line = 47;
-    i_1241514253[i_1241514253_Idx] = addInt(i_1241514253[i_1241514253_Idx], 1);
+    i_1174405389[i_1174405389_Idx] = addInt(i_1174405389[i_1174405389_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected \" but got ") || []).concat([s_1241514252[chckIndx(i_1241514253[i_1241514253_Idx], 0, (s_1241514252).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1241514253[i_1241514253_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected \" but got ") || []).concat([s_1174405388[chckIndx(i_1174405389[i_1174405389_Idx], 0, (s_1174405388).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1174405389[i_1174405389_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
   framePtr = F.prev;
@@ -6720,7 +7846,7 @@ function parseStringSlow_1241514251(s_1241514252, i_1241514253, i_1241514253_Idx
   
 }
 
-function parseHook_1241514386(s_1241514387, i_1241514388, i_1241514388_Idx, v_1241514389, v_1241514389_Idx) {
+function parseHook_1174405522(s_1174405523, i_1174405524, i_1174405524_Idx, v_1174405525, v_1174405525_Idx) {
       var Temporary3;
       var Temporary4;
       var Temporary5;
@@ -6732,21 +7858,21 @@ function parseHook_1241514386(s_1241514387, i_1241514388, i_1241514388_Idx, v_12
     Label1: do {
       F.line = 247;
         Label2: while (true) {
-        if (!(i_1241514388[i_1241514388_Idx] < (s_1241514387).length)) break Label2;
+        if (!(i_1174405524[i_1174405524_Idx] < (s_1174405523).length)) break Label2;
           F.line = 35;
-          var cHEX60gensym52_1241514391 = s_1241514387[chckIndx(i_1241514388[i_1241514388_Idx], 0, (s_1241514387).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym52_1241514391] != undefined))) {
+          var cHEX60gensym52_1174405527 = s_1174405523[chckIndx(i_1174405524[i_1174405524_Idx], 0, (s_1174405523).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym52_1174405527] != undefined))) {
           F.line = 37;
           break Label1;
           }
           
           F.line = 38;
-          i_1241514388[i_1241514388_Idx] = addInt(i_1241514388[i_1241514388_Idx], 1);
+          i_1174405524[i_1174405524_Idx] = addInt(i_1174405524[i_1174405524_Idx], 1);
         }
     } while (false);
-      if (!(addInt(i_1241514388[i_1241514388_Idx], 3) < (s_1241514387).length)) Temporary6 = false; else {        Temporary6 = (s_1241514387[chckIndx(addInt(i_1241514388[i_1241514388_Idx], 0), 0, (s_1241514387).length - 1)] == 110);      }      if (!Temporary6) Temporary5 = false; else {        Temporary5 = (s_1241514387[chckIndx(addInt(i_1241514388[i_1241514388_Idx], 1), 0, (s_1241514387).length - 1)] == 117);      }      if (!Temporary5) Temporary4 = false; else {        Temporary4 = (s_1241514387[chckIndx(addInt(i_1241514388[i_1241514388_Idx], 2), 0, (s_1241514387).length - 1)] == 108);      }      if (!Temporary4) Temporary3 = false; else {        Temporary3 = (s_1241514387[chckIndx(addInt(i_1241514388[i_1241514388_Idx], 3), 0, (s_1241514387).length - 1)] == 108);      }    if (Temporary3) {
+      if (!(addInt(i_1174405524[i_1174405524_Idx], 3) < (s_1174405523).length)) Temporary6 = false; else {        Temporary6 = (s_1174405523[chckIndx(addInt(i_1174405524[i_1174405524_Idx], 0), 0, (s_1174405523).length - 1)] == 110);      }      if (!Temporary6) Temporary5 = false; else {        Temporary5 = (s_1174405523[chckIndx(addInt(i_1174405524[i_1174405524_Idx], 1), 0, (s_1174405523).length - 1)] == 117);      }      if (!Temporary5) Temporary4 = false; else {        Temporary4 = (s_1174405523[chckIndx(addInt(i_1174405524[i_1174405524_Idx], 2), 0, (s_1174405523).length - 1)] == 108);      }      if (!Temporary4) Temporary3 = false; else {        Temporary3 = (s_1174405523[chckIndx(addInt(i_1174405524[i_1174405524_Idx], 3), 0, (s_1174405523).length - 1)] == 108);      }    if (Temporary3) {
     F.line = 253;
-    i_1241514388[i_1241514388_Idx] = addInt(i_1241514388[i_1241514388_Idx], 4);
+    i_1174405524[i_1174405524_Idx] = addInt(i_1174405524[i_1174405524_Idx], 4);
     F.line = 254;
     break BeforeRet;
     }
@@ -6754,42 +7880,204 @@ function parseHook_1241514386(s_1241514387, i_1241514388, i_1241514388_Idx, v_12
     Label7: do {
       F.line = 43;
         Label8: while (true) {
-        if (!(i_1241514388[i_1241514388_Idx] < (s_1241514387).length)) break Label8;
+        if (!(i_1174405524[i_1174405524_Idx] < (s_1174405523).length)) break Label8;
           F.line = 35;
-          var cHEX60gensym56_1241514405 = s_1241514387[chckIndx(i_1241514388[i_1241514388_Idx], 0, (s_1241514387).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym56_1241514405] != undefined))) {
+          var cHEX60gensym56_1174405541 = s_1174405523[chckIndx(i_1174405524[i_1174405524_Idx], 0, (s_1174405523).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym56_1174405541] != undefined))) {
           F.line = 37;
           break Label7;
           }
           
           F.line = 38;
-          i_1241514388[i_1241514388_Idx] = addInt(i_1241514388[i_1241514388_Idx], 1);
+          i_1174405524[i_1174405524_Idx] = addInt(i_1174405524[i_1174405524_Idx], 1);
         }
     } while (false);
-    if (((s_1241514387).length <= i_1241514388[i_1241514388_Idx])) {
+    if (((s_1174405523).length <= i_1174405524[i_1174405524_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected \" but end reached. At offset: ") || []).concat(HEX24_335544323(i_1241514388[i_1241514388_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected \" but end reached. At offset: ") || []).concat(HEX24_335544323(i_1174405524[i_1174405524_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_1241514387[chckIndx(i_1241514388[i_1241514388_Idx], 0, (s_1241514387).length - 1)] == 34)) {
+    if ((s_1174405523[chckIndx(i_1174405524[i_1174405524_Idx], 0, (s_1174405523).length - 1)] == 34)) {
     F.line = 47;
-    i_1241514388[i_1241514388_Idx] = addInt(i_1241514388[i_1241514388_Idx], 1);
+    i_1174405524[i_1174405524_Idx] = addInt(i_1174405524[i_1174405524_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected \" but got ") || []).concat([s_1241514387[chckIndx(i_1241514388[i_1241514388_Idx], 0, (s_1241514387).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1241514388[i_1241514388_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected \" but got ") || []).concat([s_1174405523[chckIndx(i_1174405524[i_1174405524_Idx], 0, (s_1174405523).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1174405524[i_1174405524_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     F.line = 261;
-    parseStringSlow_1241514251(s_1241514387, i_1241514388, i_1241514388_Idx, v_1241514389, v_1241514389_Idx);
+    parseStringSlow_1174405387(s_1174405523, i_1174405524, i_1174405524_Idx, v_1174405525, v_1174405525_Idx);
   } while (false);
   framePtr = F.prev;
 
   
 }
 
-function parseSymbol_1241514065(s_1241514066, i_1241514067, i_1241514067_Idx) {
-  var result_1241514068 = [];
+function parseHook_1174405243(s_1174405244, i_1174405245, i_1174405245_Idx, v_1174405246, v_1174405246_Idx) {
+      var Temporary3;
+      var Temporary4;
+      var Temporary5;
+      var Temporary6;
+      var Temporary7;
+      var Temporary8;
+      var Temporary9;
+      var Temporary10;
+      var Temporary11;
+
+  var F = {procname: "jsony.parseHook", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
+  framePtr = F;
+    Label1: do {
+      F.line = 77;
+        Label2: while (true) {
+        if (!(i_1174405245[i_1174405245_Idx] < (s_1174405244).length)) break Label2;
+          F.line = 35;
+          var cHEX60gensym6_1174405249 = s_1174405244[chckIndx(i_1174405245[i_1174405245_Idx], 0, (s_1174405244).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym6_1174405249] != undefined))) {
+          F.line = 37;
+          break Label1;
+          }
+          
+          F.line = 38;
+          i_1174405245[i_1174405245_Idx] = addInt(i_1174405245[i_1174405245_Idx], 1);
+        }
+    } while (false);
+      if (!(addInt(i_1174405245[i_1174405245_Idx], 3) < (s_1174405244).length)) Temporary6 = false; else {        Temporary6 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 0), 0, (s_1174405244).length - 1)] == 116);      }      if (!Temporary6) Temporary5 = false; else {        Temporary5 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 1), 0, (s_1174405244).length - 1)] == 114);      }      if (!Temporary5) Temporary4 = false; else {        Temporary4 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 2), 0, (s_1174405244).length - 1)] == 117);      }      if (!Temporary4) Temporary3 = false; else {        Temporary3 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 3), 0, (s_1174405244).length - 1)] == 101);      }    if (Temporary3) {
+    F.line = 83;
+    i_1174405245[i_1174405245_Idx] = addInt(i_1174405245[i_1174405245_Idx], 4);
+    F.line = 84;
+    v_1174405246[v_1174405246_Idx] = true;
+    }
+    else {
+      if (!(addInt(i_1174405245[i_1174405245_Idx], 4) < (s_1174405244).length)) Temporary11 = false; else {        Temporary11 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 0), 0, (s_1174405244).length - 1)] == 102);      }      if (!Temporary11) Temporary10 = false; else {        Temporary10 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 1), 0, (s_1174405244).length - 1)] == 97);      }      if (!Temporary10) Temporary9 = false; else {        Temporary9 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 2), 0, (s_1174405244).length - 1)] == 108);      }      if (!Temporary9) Temporary8 = false; else {        Temporary8 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 3), 0, (s_1174405244).length - 1)] == 115);      }      if (!Temporary8) Temporary7 = false; else {        Temporary7 = (s_1174405244[chckIndx(addInt(i_1174405245[i_1174405245_Idx], 4), 0, (s_1174405244).length - 1)] == 101);      }    if (Temporary7) {
+    F.line = 91;
+    i_1174405245[i_1174405245_Idx] = addInt(i_1174405245[i_1174405245_Idx], 5);
+    F.line = 92;
+    v_1174405246[v_1174405246_Idx] = false;
+    }
+    else {
+      F.line = 94;
+      raiseException({message: (makeNimstrLit("Boolean true or false expected. At offset: ") || []).concat(HEX24_335544323(i_1174405245[i_1174405245_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
+    }
+    }
+  framePtr = F.prev;
+
+  
+}
+
+function parseHook_452985167(s_452985169, i_452985170, i_452985170_Idx, v_452985171, v_452985171_Idx) {
+          var Temporary5;
+
+  var F = {procname: "parseHook.parseHook", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
+  framePtr = F;
+    Label1: do {
+      F.line = 101;
+        Label2: while (true) {
+        if (!(i_452985170[i_452985170_Idx] < (s_452985169).length)) break Label2;
+          F.line = 35;
+          var cHEX60gensym52_452985173 = s_452985169[chckIndx(i_452985170[i_452985170_Idx], 0, (s_452985169).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym52_452985173] != undefined))) {
+          F.line = 37;
+          break Label1;
+          }
+          
+          F.line = 38;
+          i_452985170[i_452985170_Idx] = addInt(i_452985170[i_452985170_Idx], 1);
+        }
+    } while (false);
+    F.line = 103;
+    var v2_452985182 = 0;
+    F.line = 104;
+    var startI_452985183 = i_452985170[i_452985170_Idx];
+    Label3: do {
+      F.line = 105;
+        Label4: while (true) {
+          if (!(i_452985170[i_452985170_Idx] < (s_452985169).length)) Temporary5 = false; else {            Temporary5 = (ConstSet4[s_452985169[chckIndx(i_452985170[i_452985170_Idx], 0, (s_452985169).length - 1)]] != undefined);          }        if (!Temporary5) break Label4;
+          F.line = 106;
+          v2_452985182 = ((((v2_452985182 * 10) ) + subInt(s_452985169[chckIndx(i_452985170[i_452985170_Idx], 0, (s_452985169).length - 1)], 48)) );
+          F.line = 107;
+          i_452985170[i_452985170_Idx] = addInt(i_452985170[i_452985170_Idx], 1);
+        }
+    } while (false);
+    if ((startI_452985183 == i_452985170[i_452985170_Idx])) {
+    F.line = 109;
+    raiseException({message: (makeNimstrLit("Number expected. At offset: ") || []).concat(HEX24_335544323(i_452985170[i_452985170_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
+    }
+    
+    F.line = 110;
+    v_452985171[v_452985171_Idx] = v2_452985182;
+  framePtr = F.prev;
+
+  
+}
+
+function parseHook_452985143(s_452985145, i_452985146, i_452985146_Idx, v_452985147, v_452985147_Idx) {
+      var Temporary3;
+      var Temporary4;
+
+  var F = {procname: "parseHook.parseHook", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
+  framePtr = F;
+    Label1: do {
+      F.line = 117;
+        Label2: while (true) {
+        if (!(i_452985146[i_452985146_Idx] < (s_452985145).length)) break Label2;
+          F.line = 35;
+          var cHEX60gensym47_452985149 = s_452985145[chckIndx(i_452985146[i_452985146_Idx], 0, (s_452985145).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym47_452985149] != undefined))) {
+          F.line = 37;
+          break Label1;
+          }
+          
+          F.line = 38;
+          i_452985146[i_452985146_Idx] = addInt(i_452985146[i_452985146_Idx], 1);
+        }
+    } while (false);
+      if (!(i_452985146[i_452985146_Idx] < (s_452985145).length)) Temporary3 = false; else {        Temporary3 = (s_452985145[chckIndx(i_452985146[i_452985146_Idx], 0, (s_452985145).length - 1)] == 43);      }    if (Temporary3) {
+    F.line = 119;
+    i_452985146[i_452985146_Idx] = addInt(i_452985146[i_452985146_Idx], 1);
+    }
+    
+      if (!(i_452985146[i_452985146_Idx] < (s_452985145).length)) Temporary4 = false; else {        Temporary4 = (s_452985145[chckIndx(i_452985146[i_452985146_Idx], 0, (s_452985145).length - 1)] == 45);      }    if (Temporary4) {
+    F.line = 121;
+    var v2_452985162 = [0];
+    F.line = 122;
+    i_452985146[i_452985146_Idx] = addInt(i_452985146[i_452985146_Idx], 1);
+    F.line = 123;
+    parseHook_452985167(s_452985145, i_452985146, i_452985146_Idx, v2_452985162, 0);
+    F.line = 124;
+    v_452985147[v_452985147_Idx] = negInt(chckRange(v2_452985162[0], -2147483648, 2147483647));
+    }
+    else {
+      F.line = 126;
+      var v2_452985199 = [0];
+      F.line = 127;
+      parseHook_452985167(s_452985145, i_452985146, i_452985146_Idx, v2_452985199, 0);
+      F.line = 128;
+++excHandler;
+      try {
+      F.line = 129;
+      v_452985147[v_452985147_Idx] = chckRange(v2_452985199[0], -2147483648, 2147483647);
+--excHandler;
+} catch (EXCEPTION) {
+ var prevJSError = lastJSError;
+ lastJSError = EXCEPTION;
+ --excHandler;
+      framePtr = F;
+      F.line = 131;
+      raiseException({message: (makeNimstrLit("Number type to small to contain the number. At offset: ") || []).concat(HEX24_335544323(i_452985146[i_452985146_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
+      lastJSError = prevJSError;
+      } finally {
+      framePtr = F;
+      }
+    }
+    
+  framePtr = F.prev;
+
+  
+}
+
+function parseSymbol_1174405201(s_1174405202, i_1174405203, i_1174405203_Idx) {
+  var result_1174405204 = [];
 
   var F = {procname: "jsony.parseSymbol", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
   framePtr = F;
@@ -6797,26 +8085,26 @@ function parseSymbol_1241514065(s_1241514066, i_1241514067, i_1241514067_Idx) {
     Label1: do {
       F.line = 54;
         Label2: while (true) {
-        if (!(i_1241514067[i_1241514067_Idx] < (s_1241514066).length)) break Label2;
+        if (!(i_1174405203[i_1174405203_Idx] < (s_1174405202).length)) break Label2;
           F.line = 35;
-          var cHEX60gensym0_1241514070 = s_1241514066[chckIndx(i_1241514067[i_1241514067_Idx], 0, (s_1241514066).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym0_1241514070] != undefined))) {
+          var cHEX60gensym0_1174405206 = s_1174405202[chckIndx(i_1174405203[i_1174405203_Idx], 0, (s_1174405202).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym0_1174405206] != undefined))) {
           F.line = 37;
           break Label1;
           }
           
           F.line = 38;
-          i_1241514067[i_1241514067_Idx] = addInt(i_1241514067[i_1241514067_Idx], 1);
+          i_1174405203[i_1174405203_Idx] = addInt(i_1174405203[i_1174405203_Idx], 1);
         }
     } while (false);
     F.line = 55;
-    var j_1241514079 = i_1241514067[i_1241514067_Idx];
+    var j_1174405215 = i_1174405203[i_1174405203_Idx];
     Label3: do {
       F.line = 56;
         Label4: while (true) {
-        if (!(i_1241514067[i_1241514067_Idx] < (s_1241514066).length)) break Label4;
+        if (!(i_1174405203[i_1174405203_Idx] < (s_1174405202).length)) break Label4;
           F.line = 57;
-          switch (s_1241514066[chckIndx(i_1241514067[i_1241514067_Idx], 0, (s_1241514066).length - 1)]) {
+          switch (s_1174405202[chckIndx(i_1174405203[i_1174405203_Idx], 0, (s_1174405202).length - 1)]) {
           case 44:
           case 125:
           case 93:
@@ -6831,20 +8119,20 @@ function parseSymbol_1241514065(s_1241514066, i_1241514067, i_1241514067_Idx) {
             break;
           }
           F.line = 62;
-          i_1241514067[i_1241514067_Idx] = addInt(i_1241514067[i_1241514067_Idx], 1);
+          i_1174405203[i_1174405203_Idx] = addInt(i_1174405203[i_1174405203_Idx], 1);
         }
     } while (false);
     F.line = 63;
-    result_1241514068 = nimCopy(null, HEX5BHEX5D_855638892(s_1241514066, HEX2EHEX2E_855638867(j_1241514079, subInt(i_1241514067[i_1241514067_Idx], 1))), NTI33554439);
+    result_1174405204 = nimCopy(null, HEX5BHEX5D_1040188268(s_1174405202, HEX2EHEX2E_1040188243(j_1174405215, subInt(i_1174405203[i_1174405203_Idx], 1))), NTI33554439);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_1241514068;
+  return result_1174405204;
 
 }
 
-function skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx) {
+function skipValue_1174405579(s_1174405580, i_1174405581, i_1174405581_Idx) {
       var Temporary3;
             var Temporary10;
             var Temporary15;
@@ -6858,123 +8146,123 @@ function skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx) {
     Label1: do {
       F.line = 314;
         Label2: while (true) {
-        if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label2;
+        if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label2;
           F.line = 35;
-          var cHEX60gensym69_1241514447 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym69_1241514447] != undefined))) {
+          var cHEX60gensym69_1174405583 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym69_1174405583] != undefined))) {
           F.line = 37;
           break Label1;
           }
           
           F.line = 38;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
         }
     } while (false);
-      if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) Temporary3 = false; else {        Temporary3 = (s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 123);      }    if (Temporary3) {
+      if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) Temporary3 = false; else {        Temporary3 = (s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 123);      }    if (Temporary3) {
     Label4: do {
       F.line = 43;
         Label5: while (true) {
-        if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label5;
+        if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label5;
           F.line = 35;
-          var cHEX60gensym73_1241514457 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym73_1241514457] != undefined))) {
+          var cHEX60gensym73_1174405593 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym73_1174405593] != undefined))) {
           F.line = 37;
           break Label4;
           }
           
           F.line = 38;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
         }
     } while (false);
-    if (((s_1241514444).length <= i_1241514445[i_1241514445_Idx])) {
+    if (((s_1174405580).length <= i_1174405581[i_1174405581_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected { but end reached. At offset: ") || []).concat(HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected { but end reached. At offset: ") || []).concat(HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 123)) {
+    if ((s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 123)) {
     F.line = 47;
-    i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+    i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected { but got ") || []).concat([s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected { but got ") || []).concat([s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     Label6: do {
       F.line = 317;
         Label7: while (true) {
-        if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label7;
+        if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label7;
           Label8: do {
             F.line = 318;
               Label9: while (true) {
-              if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label9;
+              if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label9;
                 F.line = 35;
-                var cHEX60gensym83_1241514473 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym83_1241514473] != undefined))) {
+                var cHEX60gensym83_1174405609 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym83_1174405609] != undefined))) {
                 F.line = 37;
                 break Label8;
                 }
                 
                 F.line = 38;
-                i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+                i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
               }
           } while (false);
-            if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) Temporary10 = false; else {              Temporary10 = (s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 125);            }          if (Temporary10) {
+            if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) Temporary10 = false; else {              Temporary10 = (s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 125);            }          if (Temporary10) {
           F.line = 320;
           break Label6;
           }
           
           F.line = 321;
-          skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx);
+          skipValue_1174405579(s_1174405580, i_1174405581, i_1174405581_Idx);
           Label11: do {
             F.line = 43;
               Label12: while (true) {
-              if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label12;
+              if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label12;
                 F.line = 35;
-                var cHEX60gensym87_1241514483 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym87_1241514483] != undefined))) {
+                var cHEX60gensym87_1174405619 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym87_1174405619] != undefined))) {
                 F.line = 37;
                 break Label11;
                 }
                 
                 F.line = 38;
-                i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+                i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
               }
           } while (false);
-          if (((s_1241514444).length <= i_1241514445[i_1241514445_Idx])) {
+          if (((s_1174405580).length <= i_1174405581[i_1174405581_Idx])) {
           F.line = 45;
-          raiseException({message: (makeNimstrLit("Expected : but end reached. At offset: ") || []).concat(HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+          raiseException({message: (makeNimstrLit("Expected : but end reached. At offset: ") || []).concat(HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
           }
           
-          if ((s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 58)) {
+          if ((s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 58)) {
           F.line = 47;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
           }
           else {
             F.line = 49;
-            raiseException({message: (makeNimstrLit("Expected : but got ") || []).concat([s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+            raiseException({message: (makeNimstrLit("Expected : but got ") || []).concat([s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
           }
           
           F.line = 323;
-          skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx);
+          skipValue_1174405579(s_1174405580, i_1174405581, i_1174405581_Idx);
           Label13: do {
             F.line = 324;
               Label14: while (true) {
-              if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label14;
+              if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label14;
                 F.line = 35;
-                var cHEX60gensym97_1241514499 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym97_1241514499] != undefined))) {
+                var cHEX60gensym97_1174405635 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym97_1174405635] != undefined))) {
                 F.line = 37;
                 break Label13;
                 }
                 
                 F.line = 38;
-                i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+                i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
               }
           } while (false);
-            if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) Temporary15 = false; else {              Temporary15 = (s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 44);            }          if (Temporary15) {
+            if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) Temporary15 = false; else {              Temporary15 = (s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 44);            }          if (Temporary15) {
           F.line = 326;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
           }
           
         }
@@ -6982,108 +8270,108 @@ function skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx) {
     Label16: do {
       F.line = 43;
         Label17: while (true) {
-        if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label17;
+        if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label17;
           F.line = 35;
-          var cHEX60gensym101_1241514513 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym101_1241514513] != undefined))) {
+          var cHEX60gensym101_1174405649 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym101_1174405649] != undefined))) {
           F.line = 37;
           break Label16;
           }
           
           F.line = 38;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
         }
     } while (false);
-    if (((s_1241514444).length <= i_1241514445[i_1241514445_Idx])) {
+    if (((s_1174405580).length <= i_1174405581[i_1174405581_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected } but end reached. At offset: ") || []).concat(HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected } but end reached. At offset: ") || []).concat(HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 125)) {
+    if ((s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 125)) {
     F.line = 47;
-    i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+    i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected } but got ") || []).concat([s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected } but got ") || []).concat([s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     }
     else {
-      if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) Temporary18 = false; else {        Temporary18 = (s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 91);      }    if (Temporary18) {
+      if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) Temporary18 = false; else {        Temporary18 = (s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 91);      }    if (Temporary18) {
     Label19: do {
       F.line = 43;
         Label20: while (true) {
-        if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label20;
+        if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label20;
           F.line = 35;
-          var cHEX60gensym112_1241514529 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym112_1241514529] != undefined))) {
+          var cHEX60gensym112_1174405665 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym112_1174405665] != undefined))) {
           F.line = 37;
           break Label19;
           }
           
           F.line = 38;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
         }
     } while (false);
-    if (((s_1241514444).length <= i_1241514445[i_1241514445_Idx])) {
+    if (((s_1174405580).length <= i_1174405581[i_1174405581_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected [ but end reached. At offset: ") || []).concat(HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected [ but end reached. At offset: ") || []).concat(HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 91)) {
+    if ((s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 91)) {
     F.line = 47;
-    i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+    i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected [ but got ") || []).concat([s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected [ but got ") || []).concat([s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     Label21: do {
       F.line = 330;
         Label22: while (true) {
-        if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label22;
+        if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label22;
           Label23: do {
             F.line = 331;
               Label24: while (true) {
-              if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label24;
+              if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label24;
                 F.line = 35;
-                var cHEX60gensym122_1241514545 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym122_1241514545] != undefined))) {
+                var cHEX60gensym122_1174405681 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym122_1174405681] != undefined))) {
                 F.line = 37;
                 break Label23;
                 }
                 
                 F.line = 38;
-                i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+                i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
               }
           } while (false);
-            if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) Temporary25 = false; else {              Temporary25 = (s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 93);            }          if (Temporary25) {
+            if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) Temporary25 = false; else {              Temporary25 = (s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 93);            }          if (Temporary25) {
           F.line = 333;
           break Label21;
           }
           
           F.line = 334;
-          skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx);
+          skipValue_1174405579(s_1174405580, i_1174405581, i_1174405581_Idx);
           Label26: do {
             F.line = 335;
               Label27: while (true) {
-              if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label27;
+              if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label27;
                 F.line = 35;
-                var cHEX60gensym125_1241514555 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym125_1241514555] != undefined))) {
+                var cHEX60gensym125_1174405691 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym125_1174405691] != undefined))) {
                 F.line = 37;
                 break Label26;
                 }
                 
                 F.line = 38;
-                i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+                i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
               }
           } while (false);
-            if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) Temporary28 = false; else {              Temporary28 = (s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 44);            }          if (Temporary28) {
+            if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) Temporary28 = false; else {              Temporary28 = (s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 44);            }          if (Temporary28) {
           F.line = 337;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
           }
           
         }
@@ -7091,43 +8379,43 @@ function skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx) {
     Label29: do {
       F.line = 43;
         Label30: while (true) {
-        if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) break Label30;
+        if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) break Label30;
           F.line = 35;
-          var cHEX60gensym129_1241514569 = s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym129_1241514569] != undefined))) {
+          var cHEX60gensym129_1174405705 = s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym129_1174405705] != undefined))) {
           F.line = 37;
           break Label29;
           }
           
           F.line = 38;
-          i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+          i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
         }
     } while (false);
-    if (((s_1241514444).length <= i_1241514445[i_1241514445_Idx])) {
+    if (((s_1174405580).length <= i_1174405581[i_1174405581_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected ] but end reached. At offset: ") || []).concat(HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected ] but end reached. At offset: ") || []).concat(HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 93)) {
+    if ((s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 93)) {
     F.line = 47;
-    i_1241514445[i_1241514445_Idx] = addInt(i_1241514445[i_1241514445_Idx], 1);
+    i_1174405581[i_1174405581_Idx] = addInt(i_1174405581[i_1174405581_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected ] but got ") || []).concat([s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1241514445[i_1241514445_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected ] but got ") || []).concat([s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_1174405581[i_1174405581_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     }
     else {
-      if (!(i_1241514445[i_1241514445_Idx] < (s_1241514444).length)) Temporary31 = false; else {        Temporary31 = (s_1241514444[chckIndx(i_1241514445[i_1241514445_Idx], 0, (s_1241514444).length - 1)] == 34);      }    if (Temporary31) {
+      if (!(i_1174405581[i_1174405581_Idx] < (s_1174405580).length)) Temporary31 = false; else {        Temporary31 = (s_1174405580[chckIndx(i_1174405581[i_1174405581_Idx], 0, (s_1174405580).length - 1)] == 34);      }    if (Temporary31) {
     F.line = 340;
-    var str_1241514584 = [[]];
+    var str_1174405720 = [[]];
     F.line = 341;
-    parseHook_1241514386(s_1241514444, i_1241514445, i_1241514445_Idx, str_1241514584, 0);
+    parseHook_1174405522(s_1174405580, i_1174405581, i_1174405581_Idx, str_1174405720, 0);
     }
     else {
       F.line = 343;
-    var _ = parseSymbol_1241514065(s_1241514444, i_1241514445, i_1241514445_Idx);
+    var _ = parseSymbol_1174405201(s_1174405580, i_1174405581, i_1174405581_Idx);
     }
     }}
   framePtr = F.prev;
@@ -7135,69 +8423,71 @@ function skipValue_1241514443(s_1241514444, i_1241514445, i_1241514445_Idx) {
   
 }
 
-function parseObjectInner_452985030(s_452985032, i_452985033, i_452985033_Idx, v_452985034) {
+function parseObjectInner_452985088(s_452985090, i_452985091, i_452985091_Idx, v_452985092) {
             var Temporary5;
                     var Temporary11;
                     var Temporary12;
-            var Temporary15;
+                    var Temporary13;
+                    var Temporary14;
+            var Temporary17;
 
   var F = {procname: "parseObjectInner.parseObjectInner", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
   framePtr = F;
     Label1: do {
       F.line = 364;
         Label2: while (true) {
-        if (!(i_452985033[i_452985033_Idx] < (s_452985032).length)) break Label2;
+        if (!(i_452985091[i_452985091_Idx] < (s_452985090).length)) break Label2;
           Label3: do {
             F.line = 365;
               Label4: while (true) {
-              if (!(i_452985033[i_452985033_Idx] < (s_452985032).length)) break Label4;
+              if (!(i_452985091[i_452985091_Idx] < (s_452985090).length)) break Label4;
                 F.line = 35;
-                var cHEX60gensym34_452985036 = s_452985032[chckIndx(i_452985033[i_452985033_Idx], 0, (s_452985032).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym34_452985036] != undefined))) {
+                var cHEX60gensym28_452985094 = s_452985090[chckIndx(i_452985091[i_452985091_Idx], 0, (s_452985090).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym28_452985094] != undefined))) {
                 F.line = 37;
                 break Label3;
                 }
                 
                 F.line = 38;
-                i_452985033[i_452985033_Idx] = addInt(i_452985033[i_452985033_Idx], 1);
+                i_452985091[i_452985091_Idx] = addInt(i_452985091[i_452985091_Idx], 1);
               }
           } while (false);
-            if (!(i_452985033[i_452985033_Idx] < (s_452985032).length)) Temporary5 = false; else {              Temporary5 = (s_452985032[chckIndx(i_452985033[i_452985033_Idx], 0, (s_452985032).length - 1)] == 125);            }          if (Temporary5) {
+            if (!(i_452985091[i_452985091_Idx] < (s_452985090).length)) Temporary5 = false; else {              Temporary5 = (s_452985090[chckIndx(i_452985091[i_452985091_Idx], 0, (s_452985090).length - 1)] == 125);            }          if (Temporary5) {
           F.line = 367;
           break Label1;
           }
           
           F.line = 368;
-          var key_452985045 = [[]];
+          var key_452985103 = [[]];
           F.line = 369;
-          parseHook_1241514386(s_452985032, i_452985033, i_452985033_Idx, key_452985045, 0);
+          parseHook_1174405522(s_452985090, i_452985091, i_452985091_Idx, key_452985103, 0);
           Label6: do {
             F.line = 43;
               Label7: while (true) {
-              if (!(i_452985033[i_452985033_Idx] < (s_452985032).length)) break Label7;
+              if (!(i_452985091[i_452985091_Idx] < (s_452985090).length)) break Label7;
                 F.line = 35;
-                var cHEX60gensym39_452985047 = s_452985032[chckIndx(i_452985033[i_452985033_Idx], 0, (s_452985032).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym39_452985047] != undefined))) {
+                var cHEX60gensym33_452985105 = s_452985090[chckIndx(i_452985091[i_452985091_Idx], 0, (s_452985090).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym33_452985105] != undefined))) {
                 F.line = 37;
                 break Label6;
                 }
                 
                 F.line = 38;
-                i_452985033[i_452985033_Idx] = addInt(i_452985033[i_452985033_Idx], 1);
+                i_452985091[i_452985091_Idx] = addInt(i_452985091[i_452985091_Idx], 1);
               }
           } while (false);
-          if (((s_452985032).length <= i_452985033[i_452985033_Idx])) {
+          if (((s_452985090).length <= i_452985091[i_452985091_Idx])) {
           F.line = 45;
-          raiseException({message: (makeNimstrLit("Expected : but end reached. At offset: ") || []).concat(HEX24_335544323(i_452985033[i_452985033_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+          raiseException({message: (makeNimstrLit("Expected : but end reached. At offset: ") || []).concat(HEX24_335544323(i_452985091[i_452985091_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
           }
           
-          if ((s_452985032[chckIndx(i_452985033[i_452985033_Idx], 0, (s_452985032).length - 1)] == 58)) {
+          if ((s_452985090[chckIndx(i_452985091[i_452985091_Idx], 0, (s_452985090).length - 1)] == 58)) {
           F.line = 47;
-          i_452985033[i_452985033_Idx] = addInt(i_452985033[i_452985033_Idx], 1);
+          i_452985091[i_452985091_Idx] = addInt(i_452985091[i_452985091_Idx], 1);
           }
           else {
             F.line = 49;
-            raiseException({message: (makeNimstrLit("Expected : but got ") || []).concat([s_452985032[chckIndx(i_452985033[i_452985033_Idx], 0, (s_452985032).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452985033[i_452985033_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+            raiseException({message: (makeNimstrLit("Expected : but got ") || []).concat([s_452985090[chckIndx(i_452985091[i_452985091_Idx], 0, (s_452985090).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452985091[i_452985091_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
           }
           
           Label8: do {
@@ -7205,24 +8495,46 @@ function parseObjectInner_452985030(s_452985032, i_452985033, i_452985033_Idx, v
               F.line = 374;
                 Label10: while (true) {
                 if (!true) break Label10;
-                    if (eqStrings(makeNimstrLit("title"), key_452985045[0])) Temporary11 = true; else {                      Temporary11 = eqStrings(makeNimstrLit("title"), key_452985045[0]);                    }                  if (Temporary11) {
+                    if (eqStrings(makeNimstrLit("title"), key_452985103[0])) Temporary11 = true; else {                      Temporary11 = eqStrings(makeNimstrLit("title"), key_452985103[0]);                    }                  if (Temporary11) {
                   F.line = 376;
-                  var v2_452985075 = [[]];
+                  var v2_452985133 = [[]];
                   F.line = 377;
-                  parseHook_1241514386(s_452985032, i_452985033, i_452985033_Idx, v2_452985075, 0);
+                  parseHook_1174405522(s_452985090, i_452985091, i_452985091_Idx, v2_452985133, 0);
                   F.line = 378;
-                  v_452985034.title = nimCopy(null, v2_452985075[0], NTI33554439);
+                  v_452985092.title = nimCopy(null, v2_452985133[0], NTI33554439);
                   F.line = 379;
                   break Label8;
                   }
                   
-                    if (eqStrings(makeNimstrLit("content"), key_452985045[0])) Temporary12 = true; else {                      Temporary12 = eqStrings(makeNimstrLit("content"), key_452985045[0]);                    }                  if (Temporary12) {
+                    if (eqStrings(makeNimstrLit("content"), key_452985103[0])) Temporary12 = true; else {                      Temporary12 = eqStrings(makeNimstrLit("content"), key_452985103[0]);                    }                  if (Temporary12) {
                   F.line = 376;
-                  var v2_452985078 = [[]];
+                  var v2_452985136 = [[]];
                   F.line = 377;
-                  parseHook_1241514386(s_452985032, i_452985033, i_452985033_Idx, v2_452985078, 0);
+                  parseHook_1174405522(s_452985090, i_452985091, i_452985091_Idx, v2_452985136, 0);
                   F.line = 378;
-                  v_452985034.content = nimCopy(null, v2_452985078[0], NTI33554439);
+                  v_452985092.content = nimCopy(null, v2_452985136[0], NTI33554439);
+                  F.line = 379;
+                  break Label8;
+                  }
+                  
+                    if (eqStrings(makeNimstrLit("selected"), key_452985103[0])) Temporary13 = true; else {                      Temporary13 = eqStrings(makeNimstrLit("selected"), key_452985103[0]);                    }                  if (Temporary13) {
+                  F.line = 376;
+                  var v2_452985139 = [false];
+                  F.line = 377;
+                  parseHook_1174405243(s_452985090, i_452985091, i_452985091_Idx, v2_452985139, 0);
+                  F.line = 378;
+                  v_452985092.selected = v2_452985139[0];
+                  F.line = 379;
+                  break Label8;
+                  }
+                  
+                    if (eqStrings(makeNimstrLit("number"), key_452985103[0])) Temporary14 = true; else {                      Temporary14 = eqStrings(makeNimstrLit("number"), key_452985103[0]);                    }                  if (Temporary14) {
+                  F.line = 376;
+                  var v2_452985142 = [0];
+                  F.line = 377;
+                  parseHook_452985143(s_452985090, i_452985091, i_452985091_Idx, v2_452985142, 0);
+                  F.line = 378;
+                  v_452985092.number = v2_452985142[0];
                   F.line = 379;
                   break Label8;
                   }
@@ -7232,26 +8544,26 @@ function parseObjectInner_452985030(s_452985032, i_452985033, i_452985033_Idx, v
                 }
             } while (false);
             F.line = 380;
-            skipValue_1241514443(s_452985032, i_452985033, i_452985033_Idx);
+            skipValue_1174405579(s_452985090, i_452985091, i_452985091_Idx);
           } while (false);
-          Label13: do {
+          Label15: do {
             F.line = 381;
-              Label14: while (true) {
-              if (!(i_452985033[i_452985033_Idx] < (s_452985032).length)) break Label14;
+              Label16: while (true) {
+              if (!(i_452985091[i_452985091_Idx] < (s_452985090).length)) break Label16;
                 F.line = 35;
-                var cHEX60gensym51_452985080 = s_452985032[chckIndx(i_452985033[i_452985033_Idx], 0, (s_452985032).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym51_452985080] != undefined))) {
+                var cHEX60gensym61_452985207 = s_452985090[chckIndx(i_452985091[i_452985091_Idx], 0, (s_452985090).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym61_452985207] != undefined))) {
                 F.line = 37;
-                break Label13;
+                break Label15;
                 }
                 
                 F.line = 38;
-                i_452985033[i_452985033_Idx] = addInt(i_452985033[i_452985033_Idx], 1);
+                i_452985091[i_452985091_Idx] = addInt(i_452985091[i_452985091_Idx], 1);
               }
           } while (false);
-            if (!(i_452985033[i_452985033_Idx] < (s_452985032).length)) Temporary15 = false; else {              Temporary15 = (s_452985032[chckIndx(i_452985033[i_452985033_Idx], 0, (s_452985032).length - 1)] == 44);            }          if (Temporary15) {
+            if (!(i_452985091[i_452985091_Idx] < (s_452985090).length)) Temporary17 = false; else {              Temporary17 = (s_452985090[chckIndx(i_452985091[i_452985091_Idx], 0, (s_452985090).length - 1)] == 44);            }          if (Temporary17) {
           F.line = 383;
-          i_452985033[i_452985033_Idx] = addInt(i_452985033[i_452985033_Idx], 1);
+          i_452985091[i_452985091_Idx] = addInt(i_452985091[i_452985091_Idx], 1);
           }
           else {
             F.line = 385;
@@ -7265,7 +8577,7 @@ function parseObjectInner_452985030(s_452985032, i_452985033, i_452985033_Idx, v
   
 }
 
-function parseHook_452984982(s_452984984, i_452984985, i_452984985_Idx, v_452984986) {
+function parseHook_452985040(s_452985042, i_452985043, i_452985043_Idx, v_452985044) {
       var Temporary3;
       var Temporary4;
       var Temporary5;
@@ -7277,21 +8589,21 @@ function parseHook_452984982(s_452984984, i_452984985, i_452984985_Idx, v_452984
     Label1: do {
       F.line = 427;
         Label2: while (true) {
-        if (!(i_452984985[i_452984985_Idx] < (s_452984984).length)) break Label2;
+        if (!(i_452985043[i_452985043_Idx] < (s_452985042).length)) break Label2;
           F.line = 35;
-          var cHEX60gensym16_452984988 = s_452984984[chckIndx(i_452984985[i_452984985_Idx], 0, (s_452984984).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym16_452984988] != undefined))) {
+          var cHEX60gensym10_452985046 = s_452985042[chckIndx(i_452985043[i_452985043_Idx], 0, (s_452985042).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym10_452985046] != undefined))) {
           F.line = 37;
           break Label1;
           }
           
           F.line = 38;
-          i_452984985[i_452984985_Idx] = addInt(i_452984985[i_452984985_Idx], 1);
+          i_452985043[i_452985043_Idx] = addInt(i_452985043[i_452985043_Idx], 1);
         }
     } while (false);
-      if (!(addInt(i_452984985[i_452984985_Idx], 3) < (s_452984984).length)) Temporary6 = false; else {        Temporary6 = (s_452984984[chckIndx(addInt(i_452984985[i_452984985_Idx], 0), 0, (s_452984984).length - 1)] == 110);      }      if (!Temporary6) Temporary5 = false; else {        Temporary5 = (s_452984984[chckIndx(addInt(i_452984985[i_452984985_Idx], 1), 0, (s_452984984).length - 1)] == 117);      }      if (!Temporary5) Temporary4 = false; else {        Temporary4 = (s_452984984[chckIndx(addInt(i_452984985[i_452984985_Idx], 2), 0, (s_452984984).length - 1)] == 108);      }      if (!Temporary4) Temporary3 = false; else {        Temporary3 = (s_452984984[chckIndx(addInt(i_452984985[i_452984985_Idx], 3), 0, (s_452984984).length - 1)] == 108);      }    if (Temporary3) {
+      if (!(addInt(i_452985043[i_452985043_Idx], 3) < (s_452985042).length)) Temporary6 = false; else {        Temporary6 = (s_452985042[chckIndx(addInt(i_452985043[i_452985043_Idx], 0), 0, (s_452985042).length - 1)] == 110);      }      if (!Temporary6) Temporary5 = false; else {        Temporary5 = (s_452985042[chckIndx(addInt(i_452985043[i_452985043_Idx], 1), 0, (s_452985042).length - 1)] == 117);      }      if (!Temporary5) Temporary4 = false; else {        Temporary4 = (s_452985042[chckIndx(addInt(i_452985043[i_452985043_Idx], 2), 0, (s_452985042).length - 1)] == 108);      }      if (!Temporary4) Temporary3 = false; else {        Temporary3 = (s_452985042[chckIndx(addInt(i_452985043[i_452985043_Idx], 3), 0, (s_452985042).length - 1)] == 108);      }    if (Temporary3) {
     F.line = 433;
-    i_452984985[i_452984985_Idx] = addInt(i_452984985[i_452984985_Idx], 4);
+    i_452985043[i_452985043_Idx] = addInt(i_452985043[i_452985043_Idx], 4);
     F.line = 434;
     break BeforeRet;
     }
@@ -7299,61 +8611,61 @@ function parseHook_452984982(s_452984984, i_452984985, i_452984985_Idx, v_452984
     Label7: do {
       F.line = 43;
         Label8: while (true) {
-        if (!(i_452984985[i_452984985_Idx] < (s_452984984).length)) break Label8;
+        if (!(i_452985043[i_452985043_Idx] < (s_452985042).length)) break Label8;
           F.line = 35;
-          var cHEX60gensym24_452985002 = s_452984984[chckIndx(i_452984985[i_452984985_Idx], 0, (s_452984984).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym24_452985002] != undefined))) {
+          var cHEX60gensym18_452985060 = s_452985042[chckIndx(i_452985043[i_452985043_Idx], 0, (s_452985042).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym18_452985060] != undefined))) {
           F.line = 37;
           break Label7;
           }
           
           F.line = 38;
-          i_452984985[i_452984985_Idx] = addInt(i_452984985[i_452984985_Idx], 1);
+          i_452985043[i_452985043_Idx] = addInt(i_452985043[i_452985043_Idx], 1);
         }
     } while (false);
-    if (((s_452984984).length <= i_452984985[i_452984985_Idx])) {
+    if (((s_452985042).length <= i_452985043[i_452985043_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected { but end reached. At offset: ") || []).concat(HEX24_335544323(i_452984985[i_452984985_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected { but end reached. At offset: ") || []).concat(HEX24_335544323(i_452985043[i_452985043_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_452984984[chckIndx(i_452984985[i_452984985_Idx], 0, (s_452984984).length - 1)] == 123)) {
+    if ((s_452985042[chckIndx(i_452985043[i_452985043_Idx], 0, (s_452985042).length - 1)] == 123)) {
     F.line = 47;
-    i_452984985[i_452984985_Idx] = addInt(i_452984985[i_452984985_Idx], 1);
+    i_452985043[i_452985043_Idx] = addInt(i_452985043[i_452985043_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected { but got ") || []).concat([s_452984984[chckIndx(i_452984985[i_452984985_Idx], 0, (s_452984984).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452984985[i_452984985_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected { but got ") || []).concat([s_452985042[chckIndx(i_452985043[i_452985043_Idx], 0, (s_452985042).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452985043[i_452985043_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
     F.line = 468;
-    parseObjectInner_452985030(s_452984984, i_452984985, i_452984985_Idx, v_452984986);
+    parseObjectInner_452985088(s_452985042, i_452985043, i_452985043_Idx, v_452985044);
     Label9: do {
       F.line = 43;
         Label10: while (true) {
-        if (!(i_452984985[i_452984985_Idx] < (s_452984984).length)) break Label10;
+        if (!(i_452985043[i_452985043_Idx] < (s_452985042).length)) break Label10;
           F.line = 35;
-          var cHEX60gensym56_452985096 = s_452984984[chckIndx(i_452984985[i_452984985_Idx], 0, (s_452984984).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym56_452985096] != undefined))) {
+          var cHEX60gensym66_452985223 = s_452985042[chckIndx(i_452985043[i_452985043_Idx], 0, (s_452985042).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym66_452985223] != undefined))) {
           F.line = 37;
           break Label9;
           }
           
           F.line = 38;
-          i_452984985[i_452984985_Idx] = addInt(i_452984985[i_452984985_Idx], 1);
+          i_452985043[i_452985043_Idx] = addInt(i_452985043[i_452985043_Idx], 1);
         }
     } while (false);
-    if (((s_452984984).length <= i_452984985[i_452984985_Idx])) {
+    if (((s_452985042).length <= i_452985043[i_452985043_Idx])) {
     F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected } but end reached. At offset: ") || []).concat(HEX24_335544323(i_452984985[i_452984985_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+    raiseException({message: (makeNimstrLit("Expected } but end reached. At offset: ") || []).concat(HEX24_335544323(i_452985043[i_452985043_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
-    if ((s_452984984[chckIndx(i_452984985[i_452984985_Idx], 0, (s_452984984).length - 1)] == 125)) {
+    if ((s_452985042[chckIndx(i_452985043[i_452985043_Idx], 0, (s_452985042).length - 1)] == 125)) {
     F.line = 47;
-    i_452984985[i_452984985_Idx] = addInt(i_452984985[i_452984985_Idx], 1);
+    i_452985043[i_452985043_Idx] = addInt(i_452985043[i_452985043_Idx], 1);
     }
     else {
       F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected } but got ") || []).concat([s_452984984[chckIndx(i_452984985[i_452984985_Idx], 0, (s_452984984).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452984985[i_452984985_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
+      raiseException({message: (makeNimstrLit("Expected } but got ") || []).concat([s_452985042[chckIndx(i_452985043[i_452985043_Idx], 0, (s_452985042).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452985043[i_452985043_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
     }
     
   } while (false);
@@ -7362,315 +8674,1146 @@ function parseHook_452984982(s_452984984, i_452984985, i_452984985_Idx, v_452984
   
 }
 
-function parseHook_452984950(s_452984952, i_452984953, i_452984953_Idx, v_452984954, v_452984954_Idx) {
-            var Temporary7;
-            var Temporary11;
-
-  var F = {procname: "parseHook.parseHook", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
-  framePtr = F;
-    Label1: do {
-      F.line = 43;
-        Label2: while (true) {
-        if (!(i_452984953[i_452984953_Idx] < (s_452984952).length)) break Label2;
-          F.line = 35;
-          var cHEX60gensym2_452984956 = s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym2_452984956] != undefined))) {
-          F.line = 37;
-          break Label1;
-          }
-          
-          F.line = 38;
-          i_452984953[i_452984953_Idx] = addInt(i_452984953[i_452984953_Idx], 1);
-        }
-    } while (false);
-    if (((s_452984952).length <= i_452984953[i_452984953_Idx])) {
-    F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected [ but end reached. At offset: ") || []).concat(HEX24_335544323(i_452984953[i_452984953_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
-    }
-    
-    if ((s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)] == 91)) {
-    F.line = 47;
-    i_452984953[i_452984953_Idx] = addInt(i_452984953[i_452984953_Idx], 1);
-    }
-    else {
-      F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected [ but got ") || []).concat([s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452984953[i_452984953_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
-    }
-    
-    Label3: do {
-      F.line = 275;
-        Label4: while (true) {
-        if (!(i_452984953[i_452984953_Idx] < (s_452984952).length)) break Label4;
-          Label5: do {
-            F.line = 276;
-              Label6: while (true) {
-              if (!(i_452984953[i_452984953_Idx] < (s_452984952).length)) break Label6;
-                F.line = 35;
-                var cHEX60gensym12_452984972 = s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym12_452984972] != undefined))) {
-                F.line = 37;
-                break Label5;
-                }
-                
-                F.line = 38;
-                i_452984953[i_452984953_Idx] = addInt(i_452984953[i_452984953_Idx], 1);
-              }
-          } while (false);
-            if (!(i_452984953[i_452984953_Idx] < (s_452984952).length)) Temporary7 = false; else {              Temporary7 = (s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)] == 93);            }          if (Temporary7) {
-          F.line = 278;
-          break Label3;
-          }
-          
-          F.line = 279;
-          var element_452984981 = [({title: [], content: []})];
-          F.line = 280;
-          parseHook_452984982(s_452984952, i_452984953, i_452984953_Idx, element_452984981[0]);
-          F.line = 281;
-          var Temporary8 = nimCopy(null, element_452984981[0], NTI452984885);
-          v_452984954[v_452984954_Idx].push(Temporary8);;
-          Label9: do {
-            F.line = 282;
-              Label10: while (true) {
-              if (!(i_452984953[i_452984953_Idx] < (s_452984952).length)) break Label10;
-                F.line = 35;
-                var cHEX60gensym66_452985116 = s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)];
-                if (!((whiteSpace_1241513995[cHEX60gensym66_452985116] != undefined))) {
-                F.line = 37;
-                break Label9;
-                }
-                
-                F.line = 38;
-                i_452984953[i_452984953_Idx] = addInt(i_452984953[i_452984953_Idx], 1);
-              }
-          } while (false);
-            if (!(i_452984953[i_452984953_Idx] < (s_452984952).length)) Temporary11 = false; else {              Temporary11 = (s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)] == 44);            }          if (Temporary11) {
-          F.line = 284;
-          i_452984953[i_452984953_Idx] = addInt(i_452984953[i_452984953_Idx], 1);
-          }
-          else {
-            F.line = 286;
-            break Label3;
-          }
-          
-        }
-    } while (false);
-    Label12: do {
-      F.line = 43;
-        Label13: while (true) {
-        if (!(i_452984953[i_452984953_Idx] < (s_452984952).length)) break Label13;
-          F.line = 35;
-          var cHEX60gensym71_452985130 = s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)];
-          if (!((whiteSpace_1241513995[cHEX60gensym71_452985130] != undefined))) {
-          F.line = 37;
-          break Label12;
-          }
-          
-          F.line = 38;
-          i_452984953[i_452984953_Idx] = addInt(i_452984953[i_452984953_Idx], 1);
-        }
-    } while (false);
-    if (((s_452984952).length <= i_452984953[i_452984953_Idx])) {
-    F.line = 45;
-    raiseException({message: (makeNimstrLit("Expected ] but end reached. At offset: ") || []).concat(HEX24_335544323(i_452984953[i_452984953_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
-    }
-    
-    if ((s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)] == 93)) {
-    F.line = 47;
-    i_452984953[i_452984953_Idx] = addInt(i_452984953[i_452984953_Idx], 1);
-    }
-    else {
-      F.line = 49;
-      raiseException({message: (makeNimstrLit("Expected ] but got ") || []).concat([s_452984952[chckIndx(i_452984953[i_452984953_Idx], 0, (s_452984952).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452984953[i_452984953_Idx]) || []), parent: null, m_type: NTI1241513987, name: null, trace: [], up: null}, "JsonError");
-    }
-    
-  framePtr = F.prev;
-
-  
-}
-
-function fromJson_452984943(s_452984946) {
-  var result_452984948 = [[]];
+function fromJson_452985033(s_452985036) {
+  var result_452985038 = [({title: [], content: [], selected: false, number: 0})];
 
   var F = {procname: "fromJson.fromJson", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
   framePtr = F;
     F.line = 589;
-    var i_452984949 = [0];
+    var i_452985039 = [0];
     F.line = 590;
-    parseHook_452984950(s_452984946, i_452984949, 0, result_452984948, 0);
+    parseHook_452985040(s_452985036, i_452985039, 0, result_452985038[0]);
   framePtr = F.prev;
 
-  return result_452984948[0];
+  return result_452985038[0];
 
 }
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-F.line = 183;
-var resp_text_string_452984942 = cstrToNimstr(resp_text);
-F.line = 184;
-var scenarios_452985154 = fromJson_452984943(resp_text_string_452984942);
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
 
-function addEscapedChar_33557860(s_33557861, s_33557861_Idx, c_33557862) {
-  var F = {procname: "system.addEscapedChar", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
+function some_452985239(val_452985241) {
+  var result_452985242 = ({val: ({title: [], content: [], selected: false, number: 0}), has: false});
+
+  var F = {procname: "some.some", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
   framePtr = F;
-    F.line = 2853;
-    switch (c_33557862) {
-    case 7:
-      F.line = 2854;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\a"));;
-      break;
-    case 8:
-      F.line = 2855;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\b"));;
-      break;
-    case 9:
-      F.line = 2856;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\t"));;
-      break;
-    case 10:
-      F.line = 2857;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\n"));;
-      break;
-    case 11:
-      F.line = 2858;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\v"));;
-      break;
-    case 12:
-      F.line = 2859;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\f"));;
-      break;
-    case 13:
-      F.line = 2860;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\r"));;
-      break;
-    case 27:
-      F.line = 2861;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\e"));;
-      break;
-    case 92:
-      F.line = 2862;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\\\"));;
-      break;
-    case 39:
-      F.line = 2863;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\\'"));;
-      break;
-    case 34:
-      F.line = 2864;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\\""));;
-      break;
-    case 32:
-    case 33:
-    case 35:
-    case 36:
-    case 37:
-    case 38:
-    case 40:
-    case 41:
-    case 42:
-    case 43:
-    case 44:
-    case 45:
-    case 46:
-    case 47:
-    case 48:
-    case 49:
-    case 50:
-    case 51:
-    case 52:
-    case 53:
-    case 54:
-    case 55:
-    case 56:
-    case 57:
-    case 58:
-    case 59:
-    case 60:
-    case 61:
-    case 62:
-    case 63:
-    case 64:
-    case 65:
-    case 66:
-    case 67:
-    case 68:
-    case 69:
-    case 70:
-    case 71:
-    case 72:
-    case 73:
-    case 74:
-    case 75:
-    case 76:
-    case 77:
-    case 78:
-    case 79:
-    case 80:
-    case 81:
-    case 82:
-    case 83:
-    case 84:
-    case 85:
-    case 86:
-    case 87:
-    case 88:
-    case 89:
-    case 90:
-    case 91:
-    case 93:
-    case 94:
-    case 95:
-    case 96:
-    case 97:
-    case 98:
-    case 99:
-    case 100:
-    case 101:
-    case 102:
-    case 103:
-    case 104:
-    case 105:
-    case 106:
-    case 107:
-    case 108:
-    case 109:
-    case 110:
-    case 111:
-    case 112:
-    case 113:
-    case 114:
-    case 115:
-    case 116:
-    case 117:
-    case 118:
-    case 119:
-    case 120:
-    case 121:
-    case 122:
-    case 123:
-    case 124:
-    case 125:
-    case 126:
-      F.line = 2865;
-      addChar(s_33557861[s_33557861_Idx], c_33557862);;
-      break;
-    default: 
-      F.line = 2867;
-      s_33557861[s_33557861_Idx].push.apply(s_33557861[s_33557861_Idx], makeNimstrLit("\\x"));;
-      F.line = 2869;
-      var n_33557872 = c_33557862;
-      F.line = 2870;
-      addChar(s_33557861[s_33557861_Idx], makeNimstrLit("0123456789ABCDEF")[chckIndx(((n_33557872 & 240) >> 4), 0, (makeNimstrLit("0123456789ABCDEF")).length - 1)]);;
-      F.line = 2871;
-      addChar(s_33557861[s_33557861_Idx], makeNimstrLit("0123456789ABCDEF")[chckIndx((n_33557872 & 15), 0, (makeNimstrLit("0123456789ABCDEF")).length - 1)]);;
-      break;
+    F.line = 136;
+    result_452985242.has = true;
+    F.line = 137;
+    result_452985242.val = nimCopy(result_452985242.val, val_452985241, NTI452984835);
+  framePtr = F.prev;
+
+  return result_452985242;
+
+}
+
+function none_452985253() {
+  var result_452985260 = ({val: ({title: [], content: [], selected: false, number: 0}), has: false});
+
+  var F = {procname: "none.none", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+  framePtr = F.prev;
+
+  return result_452985260;
+
+}
+
+function selected_scenario_in_local_storage_452985018(scenario_number_452985019) {
+  var result_452985025 = ({val: ({title: [], content: [], selected: false, number: 0}), has: false});
+
+  var F = {procname: "cgpt_page_fe.selected_scenario_in_local_storage", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 192;
+    F.line = 192;
+    var fmtRes_452985030 = mnewString(0);
+    F.line = 192;
+    fmtRes_452985030.push.apply(fmtRes_452985030, makeNimstrLit("scenario_"));;
+    var scenario_json_452985031 = window.localStorage.getItem(toJSStr((fmtRes_452985030 || []).concat(HEX24_335544323(scenario_number_452985019) || [])));
+    if (!((scenario_json_452985031 == null))) {
+    F.line = 194;
+    var scenario_json_text_452985032 = cstrToNimstr(scenario_json_452985031);
+    F.line = 195;
+    rawEcho(scenario_json_text_452985032);
+    F.line = 196;
+    var scenario_452985238 = fromJson_452985033(scenario_json_text_452985032);
+    F.line = 197;
+    result_452985025 = nimCopy(result_452985025, some_452985239(scenario_452985238), NTI452984963);
+    break BeforeRet;
     }
+    
+    F.line = 198;
+    result_452985025 = nimCopy(result_452985025, none_452985253(), NTI452984963);
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_452985025;
+
+}
+
+function isSome_452985606(self_452985608) {
+  var result_452985609 = false;
+
+  var F = {procname: "isSome.isSome", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+    F.line = 157;
+    result_452985609 = self_452985608.has;
+  framePtr = F.prev;
+
+  return result_452985609;
+
+}
+
+function hide_452985611(el_452985613) {
+  var F = {procname: "hide.hide", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+  framePtr = F;
+    F.line = 83;
+    el_452985613.style.display = "none";
   framePtr = F.prev;
 
   
+}
+
+function Template_587202740(content_587202741) {
+  var result_587202742 = null;
+
+  var F = {procname: "nimjs.Template", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 77;
+    var p_587202743 = document.createElement("template");
+    F.line = 78;
+    p_587202743.innerHTML = toJSStr(content_587202741);
+    F.line = 79;
+    var node_587202744 = p_587202743.content.cloneNode(true);
+    F.line = 80;
+    result_587202742 = node_587202744;
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_587202742;
+
+}
+
+function addElement_587202760(el_587202761, child_587202762) {
+  var F = {procname: "nimjs.addElement", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+  framePtr = F;
+    F.line = 88;
+    el_587202761.appendChild(Template_587202740(child_587202762));
+  framePtr = F.prev;
+
+  
+}
+
+function xdd_1442840581() {
+  var result_1442840585 = {Field0: [], Field1: [], Field2: []};
+
+  var F = {procname: "nimalpine.xdd", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimalpine.nim", line: 0};
+  framePtr = F;
+    F.line = 19;
+    var colontmp__452985779 = makeNimstrLit(" x-data=\"{ showDropdown: false }\" ");
+    F.line = 21;
+    var colontmp__452985780 = makeNimstrLit("    @click=\"showDropdown = !showDropdown\" \x0A    ");
+    F.line = 25;
+    var colontmp__452985781 = makeNimstrLit("    x-cloak x-show=\"showDropdown\" \x0A    x-transition:enter=\"transition ease-out duration-300\" \x0A    x-transition:enter-start=\"opacity-0\" \x0A    x-transition:enter-end=\"opacity-100\" \x0A    x-transition:leave=\"transition ease-in duration-200\" \x0A    x-transition:leave-start=\"opacity-100\" \x0A    x-transition:leave-end=\"opacity-0\" \x0A    \x0A    ");
+    F.line = 18;
+    result_1442840585 = nimCopy(result_1442840585, {Field0: nimCopy(null, colontmp__452985779, NTI33554439), Field1: nimCopy(null, colontmp__452985780, NTI33554439), Field2: nimCopy(null, colontmp__452985781, NTI33554439)}, NTI1442840581);
+  framePtr = F.prev;
+
+  return result_1442840585;
+
+}
+
+function nsuContinuesWith(s_989857093, substr_989857094, start_989857095) {
+            var Temporary3;
+
+  var result_989857096 = false;
+
+  var F = {procname: "strutils.continuesWith", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 1602;
+    var i_989857097 = 0;
+    Label1: do {
+      F.line = 1603;
+        Label2: while (true) {
+        if (!true) break Label2;
+          if (((substr_989857094).length <= i_989857097)) {
+          F.line = 1604;
+          result_989857096 = true;
+          break BeforeRet;
+          }
+          
+            if (((s_989857093).length <= addInt(i_989857097, start_989857095))) Temporary3 = true; else {              Temporary3 = !((s_989857093[chckIndx(addInt(i_989857097, start_989857095), 0, (s_989857093).length - 1)] == substr_989857094[chckIndx(i_989857097, 0, (substr_989857094).length - 1)]));            }          if (Temporary3) {
+          F.line = 1605;
+          result_989857096 = false;
+          break BeforeRet;
+          }
+          
+          F.line = 1606;
+          i_989857097 = addInt(i_989857097, 1);
+        }
+    } while (false);
+  } while (false);
+  framePtr = F.prev;
+
+  return result_989857096;
+
+}
+
+function multiReplace_989857483(s_989857484, replacements_989857485) {
+                      var Temporary10;
+
+  var result_989857486 = [];
+
+  var F = {procname: "strutils.multiReplace", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+    F.line = 2168;
+    result_989857486 = nimCopy(null, mnewString(0), NTI33554439);
+    F.line = 2169;
+    var i_989857487 = 0;
+    F.line = 2170;
+    var fastChk_989857488 = nimCopy(null, ConstSet5, NTI989856945);
+    Label1: do {
+      F.line = 2171;
+      var sub_989857501 = [];
+      F.line = 2171;
+      var by_989857502 = [];
+      F.line = 8;
+      var i_1375731903 = 0;
+      Label2: do {
+        F.line = 9;
+          Label3: while (true) {
+          if (!(i_1375731903 < (replacements_989857485).length)) break Label3;
+            F.line = 2171;
+            sub_989857501 = replacements_989857485[chckIndx(i_1375731903, 0, (replacements_989857485).length - 1)]["Field0"];
+            F.line = 2171;
+            by_989857502 = replacements_989857485[chckIndx(i_1375731903, 0, (replacements_989857485).length - 1)]["Field1"];
+            if ((0 < (sub_989857501).length)) {
+            F.line = 2174;
+            fastChk_989857488[sub_989857501[chckIndx(0, 0, (sub_989857501).length - 1)]] = true;
+            }
+            
+            F.line = 11;
+            i_1375731903 = addInt(i_1375731903, 1);
+          }
+      } while (false);
+    } while (false);
+    Label4: do {
+      F.line = 2175;
+        Label5: while (true) {
+        if (!(i_989857487 < (s_989857484).length)) break Label5;
+          Label6: do {
+            if ((fastChk_989857488[s_989857484[chckIndx(i_989857487, 0, (s_989857484).length - 1)]] != undefined)) {
+            Label7: do {
+              F.line = 2179;
+              var sub_989857515 = [];
+              F.line = 2179;
+              var by_989857516 = [];
+              F.line = 8;
+              var i_1375731907 = 0;
+              Label8: do {
+                F.line = 9;
+                  Label9: while (true) {
+                  if (!(i_1375731907 < (replacements_989857485).length)) break Label9;
+                    F.line = 2179;
+                    sub_989857515 = replacements_989857485[chckIndx(i_1375731907, 0, (replacements_989857485).length - 1)]["Field0"];
+                    F.line = 2179;
+                    by_989857516 = replacements_989857485[chckIndx(i_1375731907, 0, (replacements_989857485).length - 1)]["Field1"];
+                      if (!(0 < (sub_989857515).length)) Temporary10 = false; else {                        Temporary10 = nsuContinuesWith(s_989857484, sub_989857515, chckRange(i_989857487, 0, 2147483647));                      }                    if (Temporary10) {
+                    F.line = 2181;
+                    result_989857486.push.apply(result_989857486, by_989857516);;
+                    F.line = 2182;
+                    i_989857487 = addInt(i_989857487, (sub_989857515).length);
+                    F.line = 2183;
+                    break Label6;
+                    }
+                    
+                    F.line = 11;
+                    i_1375731907 = addInt(i_1375731907, 1);
+                  }
+              } while (false);
+            } while (false);
+            }
+            
+            F.line = 2186;
+            addChar(result_989857486, s_989857484[chckIndx(i_989857487, 0, (s_989857484).length - 1)]);;
+            F.line = 2187;
+            i_989857487 = addInt(i_989857487, 1);
+          } while (false);
+        }
+    } while (false);
+  framePtr = F.prev;
+
+  return result_989857486;
+
+}
+
+function raiseDivByZero() {
+    raiseException({message: makeNimstrLit("division by zero"), parent: null, m_type: NTI33555121, name: null, trace: [], up: null}, "DivByZeroDefect");
+
+  
+}
+
+function parseSaturatedNatural_1006633276(s_1006633277, b_1006633278, b_1006633278_Idx, start_1006633279) {
+      var Temporary1;
+          var Temporary4;
+
+  var result_1006633280 = 0;
+
+  var F = {procname: "parseutils.parseSaturatedNatural", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
+  framePtr = F;
+    F.line = 505;
+    var i_1006633281 = start_1006633279;
+    if (((i_1006633281 < (s_1006633277).length) && (s_1006633277[chckIndx(i_1006633281, 0, (s_1006633277).length - 1)] == 43))) {
+    F.line = 506;
+    i_1006633281 = addInt(i_1006633281, 1);
+    }
+    
+      if (!(i_1006633281 < (s_1006633277).length)) Temporary1 = false; else {        Temporary1 = (ConstSet10[s_1006633277[chckIndx(i_1006633281, 0, (s_1006633277).length - 1)]] != undefined);      }    if (Temporary1) {
+    F.line = 508;
+    b_1006633278[b_1006633278_Idx] = 0;
+    Label2: do {
+      F.line = 509;
+        Label3: while (true) {
+          if (!(i_1006633281 < (s_1006633277).length)) Temporary4 = false; else {            Temporary4 = (ConstSet11[s_1006633277[chckIndx(i_1006633281, 0, (s_1006633277).length - 1)]] != undefined);          }        if (!Temporary4) break Label3;
+          F.line = 510;
+          var c_1006633300 = subInt(s_1006633277[chckIndx(i_1006633281, 0, (s_1006633277).length - 1)], 48);
+          if ((b_1006633278[b_1006633278_Idx] <= divInt(subInt(2147483647, c_1006633300), 10))) {
+          F.line = 512;
+          b_1006633278[b_1006633278_Idx] = addInt(mulInt(b_1006633278[b_1006633278_Idx], 10), c_1006633300);
+          }
+          else {
+            F.line = 514;
+            b_1006633278[b_1006633278_Idx] = 2147483647;
+          }
+          
+          F.line = 515;
+          i_1006633281 = addInt(i_1006633281, 1);
+          Label5: do {
+            F.line = 516;
+              Label6: while (true) {
+              if (!((i_1006633281 < (s_1006633277).length) && (s_1006633277[chckIndx(i_1006633281, 0, (s_1006633277).length - 1)] == 95))) break Label6;
+                F.line = 516;
+                i_1006633281 = addInt(i_1006633281, 1);
+              }
+          } while (false);
+        }
+    } while (false);
+    F.line = 517;
+    result_1006633280 = subInt(i_1006633281, start_1006633279);
+    }
+    
+  framePtr = F.prev;
+
+  return result_1006633280;
+
+}
+
+function HEX5BHEX5D_1040190618(s_1040190621, x_1040190622) {
+  var result_1040190623 = [];
+
+  var F = {procname: "[].[]", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 2549;
+    var a_1040190625 = x_1040190622.a;
+    F.line = 2550;
+    var L_1040190627 = addInt(subInt(subInt((s_1040190621).length, x_1040190622.b), a_1040190625), 1);
+    F.line = 2551;
+    result_1040190623 = nimCopy(null, mnewString(chckRange(L_1040190627, 0, 2147483647)), NTI33554439);
+    Label1: do {
+      F.line = 2552;
+      var i_1040190632 = 0;
+      F.line = 119;
+      var i_452985785 = 0;
+      Label2: do {
+        F.line = 120;
+          Label3: while (true) {
+          if (!(i_452985785 < L_1040190627)) break Label3;
+            F.line = 2552;
+            i_1040190632 = i_452985785;
+            F.line = 2552;
+            result_1040190623[chckIndx(i_1040190632, 0, (result_1040190623).length - 1)] = s_1040190621[chckIndx(addInt(i_1040190632, a_1040190625), 0, (s_1040190621).length - 1)];
+            F.line = 122;
+            i_452985785 = addInt(i_452985785, 1);
+          }
+      } while (false);
+    } while (false);
+  framePtr = F.prev;
+
+  return result_1040190623;
+
+}
+
+function HEX2EHEX2E_1023410256(a_1023410259, b_1023410260) {
+  var result_1023410263 = ({a: 0, b: 0});
+
+  var F = {procname: ".....", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 512;
+    result_1023410263 = nimCopy(result_1023410263, {a: a_1023410259, b: b_1023410260}, NTI1023410255);
+  framePtr = F.prev;
+
+  return result_1023410263;
+
+}
+
+function parseStandardFormatSpecifier_1107296314(s_1107296315, start_1107296316, ignoreUnknownSuffix_1107296317) {
+      var Temporary1;
+      var Temporary2;
+      var Temporary3;
+
+  var result_1107296318 = ({fill: 0, align: 0, sign: 0, alternateForm: false, padWithZero: false, minimumWidth: 0, precision: 0, typ: 0, endPosition: 0});
+
+  var F = {procname: "strformat.parseStandardFormatSpecifier", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+  framePtr = F;
+    F.line = 430;
+    result_1107296318.fill = 32;
+    F.line = 431;
+    result_1107296318.align = 0;
+    F.line = 432;
+    result_1107296318.sign = 45;
+    F.line = 433;
+    var i_1107296320 = start_1107296316;
+    if (((addInt(i_1107296320, 1) < (s_1107296315).length) && (ConstSet6[s_1107296315[chckIndx(addInt(i_1107296320, 1), 0, (s_1107296315).length - 1)]] != undefined))) {
+    F.line = 435;
+    result_1107296318.fill = s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)];
+    F.line = 436;
+    result_1107296318.align = s_1107296315[chckIndx(addInt(i_1107296320, 1), 0, (s_1107296315).length - 1)];
+    F.line = 437;
+    i_1107296320 = addInt(i_1107296320, 2);
+    }
+    else {
+    if (((i_1107296320 < (s_1107296315).length) && (ConstSet7[s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)]] != undefined))) {
+    F.line = 439;
+    result_1107296318.align = s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)];
+    F.line = 440;
+    i_1107296320 = addInt(i_1107296320, 1);
+    }
+    }
+    if (((i_1107296320 < (s_1107296315).length) && (ConstSet8[s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)]] != undefined))) {
+    F.line = 443;
+    result_1107296318.sign = s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)];
+    F.line = 444;
+    i_1107296320 = addInt(i_1107296320, 1);
+    }
+    
+    if (((i_1107296320 < (s_1107296315).length) && (s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)] == 35))) {
+    F.line = 447;
+    result_1107296318.alternateForm = true;
+    F.line = 448;
+    i_1107296320 = addInt(i_1107296320, 1);
+    }
+    
+      if (!((addInt(i_1107296320, 1) < (s_1107296315).length) && (s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)] == 48))) Temporary1 = false; else {        Temporary1 = (ConstSet9[s_1107296315[chckIndx(addInt(i_1107296320, 1), 0, (s_1107296315).length - 1)]] != undefined);      }    if (Temporary1) {
+    F.line = 451;
+    result_1107296318.padWithZero = true;
+    F.line = 452;
+    i_1107296320 = addInt(i_1107296320, 1);
+    }
+    
+    F.line = 454;
+    var parsedLength_1107296357 = parseSaturatedNatural_1006633276(s_1107296315, result_1107296318, "minimumWidth", i_1107296320);
+    F.line = 455;
+    i_1107296320 = addInt(i_1107296320, parsedLength_1107296357);
+    if (((i_1107296320 < (s_1107296315).length) && (s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)] == 46))) {
+    F.line = 457;
+    i_1107296320 = addInt(i_1107296320, 1);
+    F.line = 458;
+    var parsedLengthB_1107296366 = parseSaturatedNatural_1006633276(s_1107296315, result_1107296318, "precision", i_1107296320);
+    F.line = 459;
+    i_1107296320 = addInt(i_1107296320, parsedLengthB_1107296366);
+    }
+    else {
+      F.line = 461;
+      result_1107296318.precision = -1;
+    }
+    
+      if (!(i_1107296320 < (s_1107296315).length)) Temporary2 = false; else {        Temporary2 = (ConstSet12[s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)]] != undefined);      }    if (Temporary2) {
+    F.line = 464;
+    result_1107296318.typ = s_1107296315[chckIndx(i_1107296320, 0, (s_1107296315).length - 1)];
+    F.line = 465;
+    i_1107296320 = addInt(i_1107296320, 1);
+    }
+    
+    F.line = 466;
+    result_1107296318.endPosition = i_1107296320;
+      if (!!((i_1107296320 == (s_1107296315).length))) Temporary3 = false; else {        Temporary3 = !(ignoreUnknownSuffix_1107296317);      }    if (Temporary3) {
+    F.line = 468;
+    raiseException({message: (makeNimstrLit("invalid format string, cannot parse: ") || []).concat(HEX5BHEX5D_1040190618(s_1107296315, HEX2EHEX2E_1023410256(i_1107296320, 1)) || []), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
+    }
+    
+  framePtr = F.prev;
+
+  return result_1107296318;
+
+}
+
+function nucruneLen(s_1040187402) {
+  var result_1040187403 = 0;
+
+  var F = {procname: "unicode.runeLen", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+    F.line = 42;
+    result_1040187403 = 0;
+    F.line = 43;
+    var i_1040187404 = 0;
+    Label1: do {
+      F.line = 44;
+        Label2: while (true) {
+        if (!(i_1040187404 < (s_1040187402).length)) break Label2;
+          if ((s_1040187402[chckIndx(i_1040187404, 0, (s_1040187402).length - 1)] <= 127)) {
+          F.line = 45;
+          i_1040187404 = addInt(i_1040187404, 1);
+          }
+          else {
+          if (((s_1040187402[chckIndx(i_1040187404, 0, (s_1040187402).length - 1)] >>> 5) == 6)) {
+          F.line = 46;
+          i_1040187404 = addInt(i_1040187404, 2);
+          }
+          else {
+          if (((s_1040187402[chckIndx(i_1040187404, 0, (s_1040187402).length - 1)] >>> 4) == 14)) {
+          F.line = 47;
+          i_1040187404 = addInt(i_1040187404, 3);
+          }
+          else {
+          if (((s_1040187402[chckIndx(i_1040187404, 0, (s_1040187402).length - 1)] >>> 3) == 30)) {
+          F.line = 48;
+          i_1040187404 = addInt(i_1040187404, 4);
+          }
+          else {
+          if (((s_1040187402[chckIndx(i_1040187404, 0, (s_1040187402).length - 1)] >>> 2) == 62)) {
+          F.line = 49;
+          i_1040187404 = addInt(i_1040187404, 5);
+          }
+          else {
+          if (((s_1040187402[chckIndx(i_1040187404, 0, (s_1040187402).length - 1)] >>> 1) == 126)) {
+          F.line = 50;
+          i_1040187404 = addInt(i_1040187404, 6);
+          }
+          else {
+            F.line = 51;
+          i_1040187404 = addInt(i_1040187404, 1);
+          }
+          }}}}}
+          F.line = 52;
+          result_1040187403 = addInt(result_1040187403, 1);
+        }
+    } while (false);
+  framePtr = F.prev;
+
+  return result_1040187403;
+
+}
+
+function runeLenAt_1040187457(s_1040187458, i_1040187459) {
+  var result_1040187460 = 0;
+
+  var F = {procname: "unicode.runeLenAt", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+    if ((s_1040187458[chckIndx(i_1040187459, 0, (s_1040187458).length - 1)] <= 127)) {
+    F.line = 64;
+    result_1040187460 = 1;
+    }
+    else {
+    if (((s_1040187458[chckIndx(i_1040187459, 0, (s_1040187458).length - 1)] >>> 5) == 6)) {
+    F.line = 65;
+    result_1040187460 = 2;
+    }
+    else {
+    if (((s_1040187458[chckIndx(i_1040187459, 0, (s_1040187458).length - 1)] >>> 4) == 14)) {
+    F.line = 66;
+    result_1040187460 = 3;
+    }
+    else {
+    if (((s_1040187458[chckIndx(i_1040187459, 0, (s_1040187458).length - 1)] >>> 3) == 30)) {
+    F.line = 67;
+    result_1040187460 = 4;
+    }
+    else {
+    if (((s_1040187458[chckIndx(i_1040187459, 0, (s_1040187458).length - 1)] >>> 2) == 62)) {
+    F.line = 68;
+    result_1040187460 = 5;
+    }
+    else {
+    if (((s_1040187458[chckIndx(i_1040187459, 0, (s_1040187458).length - 1)] >>> 1) == 126)) {
+    F.line = 69;
+    result_1040187460 = 6;
+    }
+    else {
+      F.line = 70;
+      result_1040187460 = 1;
+    }
+    }}}}}
+  framePtr = F.prev;
+
+  return result_1040187460;
+
+}
+
+function runeOffset_1040188029(s_1040188030, pos_1040188031, start_1040188032) {
+  var result_1040188033 = 0;
+
+  var F = {procname: "unicode.runeOffset", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 321;
+    var i_1040188034 = 0;
+    F.line = 322;
+    var o_1040188035 = start_1040188032;
+    Label1: do {
+      F.line = 323;
+        Label2: while (true) {
+        if (!(i_1040188034 < pos_1040188031)) break Label2;
+          F.line = 324;
+          o_1040188035 = addInt(o_1040188035, chckRange(runeLenAt_1040187457(s_1040188030, o_1040188035), 0, 2147483647));
+          if (((s_1040188030).length <= o_1040188035)) {
+          F.line = 326;
+          result_1040188033 = -1;
+          break BeforeRet;
+          }
+          
+          F.line = 327;
+          i_1040188034 = addInt(i_1040188034, 1);
+        }
+    } while (false);
+    F.line = 328;
+    result_1040188033 = o_1040188035;
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1040188033;
+
+}
+
+function validateUtf8_1040187669(s_1040187670) {
+            var Temporary3;
+            var Temporary4;
+            var Temporary5;
+            var Temporary6;
+            var Temporary7;
+            var Temporary8;
+
+  var result_1040187671 = 0;
+
+  var F = {procname: "unicode.validateUtf8", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 174;
+    var i_1040187672 = 0;
+    F.line = 175;
+    var L_1040187673 = (s_1040187670).length;
+    Label1: do {
+      F.line = 176;
+        Label2: while (true) {
+        if (!(i_1040187672 < L_1040187673)) break Label2;
+          if ((s_1040187670[chckIndx(i_1040187672, 0, (s_1040187670).length - 1)] <= 127)) {
+          F.line = 178;
+          i_1040187672 = addInt(i_1040187672, 1);
+          }
+          else {
+          if (((s_1040187670[chckIndx(i_1040187672, 0, (s_1040187670).length - 1)] >>> 5) == 6)) {
+          if ((s_1040187670[chckIndx(i_1040187672, 0, (s_1040187670).length - 1)] < 194)) {
+          F.line = 180;
+          result_1040187671 = i_1040187672;
+          break BeforeRet;
+          }
+          
+            if (!(addInt(i_1040187672, 1) < L_1040187673)) Temporary3 = false; else {              Temporary3 = ((s_1040187670[chckIndx(addInt(i_1040187672, 1), 0, (s_1040187670).length - 1)] >>> 6) == 2);            }          if (Temporary3) {
+          F.line = 181;
+          i_1040187672 = addInt(i_1040187672, 2);
+          }
+          else {
+            F.line = 182;
+            result_1040187671 = i_1040187672;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+          if (((s_1040187670[chckIndx(i_1040187672, 0, (s_1040187670).length - 1)] >>> 4) == 14)) {
+            if (!(addInt(i_1040187672, 2) < L_1040187673)) Temporary5 = false; else {              Temporary5 = ((s_1040187670[chckIndx(addInt(i_1040187672, 1), 0, (s_1040187670).length - 1)] >>> 6) == 2);            }            if (!Temporary5) Temporary4 = false; else {              Temporary4 = ((s_1040187670[chckIndx(addInt(i_1040187672, 2), 0, (s_1040187670).length - 1)] >>> 6) == 2);            }          if (Temporary4) {
+          F.line = 185;
+          i_1040187672 = addInt(i_1040187672, 3);
+          }
+          else {
+            F.line = 186;
+            result_1040187671 = i_1040187672;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+          if (((s_1040187670[chckIndx(i_1040187672, 0, (s_1040187670).length - 1)] >>> 3) == 30)) {
+            if (!(addInt(i_1040187672, 3) < L_1040187673)) Temporary8 = false; else {              Temporary8 = ((s_1040187670[chckIndx(addInt(i_1040187672, 1), 0, (s_1040187670).length - 1)] >>> 6) == 2);            }            if (!Temporary8) Temporary7 = false; else {              Temporary7 = ((s_1040187670[chckIndx(addInt(i_1040187672, 2), 0, (s_1040187670).length - 1)] >>> 6) == 2);            }            if (!Temporary7) Temporary6 = false; else {              Temporary6 = ((s_1040187670[chckIndx(addInt(i_1040187672, 3), 0, (s_1040187670).length - 1)] >>> 6) == 2);            }          if (Temporary6) {
+          F.line = 191;
+          i_1040187672 = addInt(i_1040187672, 4);
+          }
+          else {
+            F.line = 192;
+            result_1040187671 = i_1040187672;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+            F.line = 194;
+            result_1040187671 = i_1040187672;
+            break BeforeRet;
+          }
+          }}}
+        }
+    } while (false);
+    F.line = 195;
+    result_1040187671 = -1;
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1040187671;
+
+}
+
+function nsuRepeatChar(c_989856763, count_989856764) {
+  var result_989856765 = [];
+
+  var F = {procname: "strutils.repeat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+    F.line = 1263;
+    result_989856765 = nimCopy(null, mnewString(count_989856764), NTI33554439);
+    Label1: do {
+      F.line = 1264;
+      var i_989856770 = 0;
+      F.line = 75;
+      var colontmp__452985791 = 0;
+      F.line = 1264;
+      colontmp__452985791 = subInt(count_989856764, 1);
+      F.line = 90;
+      var res_452985792 = 0;
+      Label2: do {
+        F.line = 91;
+          Label3: while (true) {
+          if (!(res_452985792 <= colontmp__452985791)) break Label3;
+            F.line = 1264;
+            i_989856770 = res_452985792;
+            F.line = 1264;
+            result_989856765[chckIndx(i_989856770, 0, (result_989856765).length - 1)] = c_989856763;
+            F.line = 93;
+            res_452985792 = addInt(res_452985792, 1);
+          }
+      } while (false);
+    } while (false);
+  framePtr = F.prev;
+
+  return result_989856765;
+
+}
+
+function alignString_1107296276(s_1107296277, minimumWidth_1107296278, align_1107296279, fill_1107296280) {
+      var Temporary1;
+
+  var result_1107296281 = [];
+
+  var F = {procname: "strformat.alignString", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+  framePtr = F;
+    if ((minimumWidth_1107296278 == 0)) {
+    F.line = 331;
+    result_1107296281 = nimCopy(null, s_1107296277, NTI33554439);
+    }
+    else {
+      F.line = 333;
+      if ((validateUtf8_1040187669(s_1107296277) == -1)) {
+      Temporary1 = nucruneLen(s_1107296277);
+      }
+      else {
+      Temporary1 = (s_1107296277).length;
+      }
+      
+      var sRuneLen_1107296282 = Temporary1;
+      F.line = 334;
+      var toFill_1107296283 = subInt(minimumWidth_1107296278, sRuneLen_1107296282);
+      if ((toFill_1107296283 <= 0)) {
+      F.line = 336;
+      result_1107296281 = nimCopy(null, s_1107296277, NTI33554439);
+      }
+      else {
+      if (((align_1107296279 == 60) || (align_1107296279 == 0))) {
+      F.line = 338;
+      result_1107296281 = nimCopy(null, (s_1107296277 || []).concat(nsuRepeatChar(fill_1107296280, chckRange(toFill_1107296283, 0, 2147483647)) || []), NTI33554439);
+      }
+      else {
+      if ((align_1107296279 == 94)) {
+      F.line = 340;
+      var half_1107296284 = divInt(toFill_1107296283, 2);
+      F.line = 341;
+      result_1107296281 = nimCopy(null, (nsuRepeatChar(fill_1107296280, chckRange(half_1107296284, 0, 2147483647)) || []).concat(s_1107296277 || [],nsuRepeatChar(fill_1107296280, chckRange(subInt(toFill_1107296283, half_1107296284), 0, 2147483647)) || []), NTI33554439);
+      }
+      else {
+        F.line = 343;
+        result_1107296281 = nimCopy(null, (nsuRepeatChar(fill_1107296280, chckRange(toFill_1107296283, 0, 2147483647)) || []).concat(s_1107296277 || []), NTI33554439);
+      }
+      }}
+    }
+    
+  framePtr = F.prev;
+
+  return result_1107296281;
+
+}
+
+function formatValue_1107296418(result_1107296419, result_1107296419_Idx, value_1107296420, specifier_1107296421) {
+  var F = {procname: "strformat.formatValue", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
+  framePtr = F;
+    F.line = 553;
+    var spec_1107296422 = parseStandardFormatSpecifier_1107296314(specifier_1107296421, 0, false);
+    F.line = 554;
+    var value_1107296423 = nimCopy(null, value_1107296420, NTI33554439);
+    F.line = 555;
+    switch (spec_1107296422.typ) {
+    case 115:
+    case 0:
+      break;
+    default: 
+      F.line = 558;
+      raiseException({message: (makeNimstrLit("invalid type in format string for string, expected \'s\', but got ") || []).concat([spec_1107296422.typ]), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
+      break;
+    }
+    if (!((spec_1107296422.precision == -1))) {
+    if ((spec_1107296422.precision < nucruneLen(value_1107296423))) {
+    F.line = 563;
+    (value_1107296423.length = chckRange(runeOffset_1040188029(value_1107296423, chckRange(spec_1107296422.precision, 0, 2147483647), 0), 0, 2147483647));
+    }
+    
+    }
+    
+    F.line = 564;
+    result_1107296419[result_1107296419_Idx].push.apply(result_1107296419[result_1107296419_Idx], alignString_1107296276(value_1107296423, spec_1107296422.minimumWidth, spec_1107296422.align, spec_1107296422.fill));;
+  framePtr = F.prev;
+
+  
+}
+
+function buildGap_1358954563(gap_1358954565) {
+  var result_1358954566 = [];
+
+  var F = {procname: "buildGap.buildGap", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    if ((1 < (gap_1358954565).length)) {
+    F.line = 42;
+    F.line = 42;
+    var fmtRes_1358954572 = [mnewString(0)];
+    F.line = 42;
+    fmtRes_1358954572[0].push.apply(fmtRes_1358954572[0], makeNimstrLit("gap-["));;
+    F.line = 42;
+    formatValue_1107296418(fmtRes_1358954572, 0, gap_1358954565, []);
+    F.line = 42;
+    fmtRes_1358954572[0].push.apply(fmtRes_1358954572[0], makeNimstrLit("]"));;
+    result_1358954566 = nimCopy(null, fmtRes_1358954572[0], NTI33554439);
+    break BeforeRet;
+    }
+    else {
+      F.line = 44;
+      result_1358954566 = nimCopy(null, [], NTI33554439);
+      break BeforeRet;
+    }
+    
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1358954566;
+
+}
+
+function bgColor_1426063418(bgColor_1426063419) {
+  var result_1426063420 = [];
+
+  var F = {procname: "nimwind.bgColor", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    if (eqStrings(bgColor_1426063419, [])) {
+    F.line = 48;
+    result_1426063420 = nimCopy(null, [], NTI33554439);
+    break BeforeRet;
+    }
+    else {
+      F.line = 50;
+      result_1426063420 = nimCopy(null, (makeNimstrLit("bg-[") || []).concat(bgColor_1426063419 || [],makeNimstrLit("]") || []), NTI33554439);
+      break BeforeRet;
+    }
+    
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1426063420;
+
+}
+
+function justify_1358954573(justify_1358954575) {
+  var result_1358954576 = [];
+
+  var F = {procname: "justify.justify", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    if (eqStrings(justify_1358954575, makeNimstrLit("start"))) {
+    F.line = 73;
+    result_1358954576 = nimCopy(null, makeNimstrLit("justify-start"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(justify_1358954575, makeNimstrLit("center"))) {
+    F.line = 75;
+    result_1358954576 = nimCopy(null, makeNimstrLit("justify-center"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(justify_1358954575, makeNimstrLit("c"))) {
+    F.line = 77;
+    result_1358954576 = nimCopy(null, makeNimstrLit("justify-center"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(justify_1358954575, makeNimstrLit("end"))) {
+    F.line = 79;
+    result_1358954576 = nimCopy(null, makeNimstrLit("justify-end"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(justify_1358954575, makeNimstrLit("between"))) {
+    F.line = 81;
+    result_1358954576 = nimCopy(null, makeNimstrLit("justify-between"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(justify_1358954575, makeNimstrLit("around"))) {
+    F.line = 83;
+    result_1358954576 = nimCopy(null, makeNimstrLit("justify-around"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(justify_1358954575, makeNimstrLit("evenly"))) {
+    F.line = 85;
+    result_1358954576 = nimCopy(null, makeNimstrLit("justify-evenly"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+      F.line = 87;
+      result_1358954576 = nimCopy(null, [], NTI33554439);
+      break BeforeRet;
+    }
+    }}}}}}
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1358954576;
+
+}
+
+function alignItems_1358954588(alignItems_1358954590) {
+  var result_1358954591 = [];
+
+  var F = {procname: "alignItems.alignItems", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    if (eqStrings(alignItems_1358954590, makeNimstrLit("start"))) {
+    F.line = 108;
+    result_1358954591 = nimCopy(null, makeNimstrLit("items-start"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(alignItems_1358954590, makeNimstrLit("center"))) {
+    F.line = 110;
+    result_1358954591 = nimCopy(null, makeNimstrLit("items-center"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(alignItems_1358954590, makeNimstrLit("c"))) {
+    F.line = 112;
+    result_1358954591 = nimCopy(null, makeNimstrLit("items-center"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(alignItems_1358954590, makeNimstrLit("end"))) {
+    F.line = 114;
+    result_1358954591 = nimCopy(null, makeNimstrLit("items-end"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(alignItems_1358954590, makeNimstrLit("baseline"))) {
+    F.line = 116;
+    result_1358954591 = nimCopy(null, makeNimstrLit("items-baseline"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(alignItems_1358954590, makeNimstrLit("stretch"))) {
+    F.line = 118;
+    result_1358954591 = nimCopy(null, makeNimstrLit("items-stretch"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+      F.line = 120;
+      result_1358954591 = nimCopy(null, [], NTI33554439);
+      break BeforeRet;
+    }
+    }}}}}
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1358954591;
+
+}
+
+function buildHeight_1358954578(height_1358954580) {
+  var result_1358954581 = [];
+
+  var F = {procname: "buildHeight.buildHeight", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    if (eqStrings(height_1358954580, makeNimstrLit("full"))) {
+    F.line = 127;
+    result_1358954581 = nimCopy(null, makeNimstrLit("h-full"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if (eqStrings(height_1358954580, makeNimstrLit("screen"))) {
+    F.line = 129;
+    result_1358954581 = nimCopy(null, makeNimstrLit("h-screen"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+      F.line = 131;
+      result_1358954581 = nimCopy(null, [], NTI33554439);
+      break BeforeRet;
+    }
+    }
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1358954581;
+
+}
+
+function buildWidth_1358954583(width_1358954585) {
+  var result_1358954586 = [];
+
+  var F = {procname: "buildWidth.buildWidth", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    if ((eqStrings(width_1358954585, makeNimstrLit("full")) || eqStrings(width_1358954585, makeNimstrLit("w-full")))) {
+    F.line = 138;
+    result_1358954586 = nimCopy(null, makeNimstrLit("w-full"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+    if ((eqStrings(width_1358954585, makeNimstrLit("screen")) || eqStrings(width_1358954585, makeNimstrLit("w-screen")))) {
+    F.line = 140;
+    result_1358954586 = nimCopy(null, makeNimstrLit("w-screen"), NTI33554439);
+    break BeforeRet;
+    }
+    else {
+      F.line = 142;
+      result_1358954586 = nimCopy(null, [], NTI33554439);
+      break BeforeRet;
+    }
+    }
+  } while (false);
+  framePtr = F.prev;
+
+  return result_1358954586;
+
+}
+
+function buildRound_1358954593(round_1358954595) {
+  var result_1358954596 = [];
+
+  var F = {procname: "buildRound.buildRound", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
+  framePtr = F;
+  framePtr = F.prev;
+
+  return result_1358954596;
+
+}
+
+function nsuJoinSep(a_989857169, sep_989857170) {
+  var result_989857171 = [];
+
+  var F = {procname: "strutils.join", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+    if ((0 < (a_989857169).length)) {
+    F.line = 1779;
+    var L_989857178 = mulInt((sep_989857170).length, subInt((a_989857169).length, 1));
+    Label1: do {
+      F.line = 1780;
+      var i_989857186 = 0;
+      F.line = 75;
+      var colontmp__452985800 = 0;
+      F.line = 1780;
+      colontmp__452985800 = (a_989857169).length - 1;
+      F.line = 90;
+      var res_452985801 = 0;
+      Label2: do {
+        F.line = 91;
+          Label3: while (true) {
+          if (!(res_452985801 <= colontmp__452985800)) break Label3;
+            F.line = 1780;
+            i_989857186 = res_452985801;
+            F.line = 1780;
+            L_989857178 = addInt(L_989857178, (a_989857169[chckIndx(i_989857186, 0, (a_989857169).length - 1)]).length);
+            F.line = 93;
+            res_452985801 = addInt(res_452985801, 1);
+          }
+      } while (false);
+    } while (false);
+    F.line = 1781;
+    result_989857171 = nimCopy(null, mnewString(0), NTI33554439);
+    F.line = 1782;
+    result_989857171.push.apply(result_989857171, a_989857169[chckIndx(0, 0, (a_989857169).length - 1)]);;
+    Label4: do {
+      F.line = 1783;
+      var i_989857198 = 0;
+      F.line = 75;
+      var colontmp__452985804 = 0;
+      F.line = 1783;
+      colontmp__452985804 = (a_989857169).length - 1;
+      F.line = 90;
+      var res_452985805 = 1;
+      Label5: do {
+        F.line = 91;
+          Label6: while (true) {
+          if (!(res_452985805 <= colontmp__452985804)) break Label6;
+            F.line = 1783;
+            i_989857198 = res_452985805;
+            F.line = 1783;
+            result_989857171.push.apply(result_989857171, sep_989857170);;
+            F.line = 1783;
+            result_989857171.push.apply(result_989857171, a_989857169[chckIndx(i_989857198, 0, (a_989857169).length - 1)]);;
+            F.line = 93;
+            res_452985805 = addInt(res_452985805, 1);
+          }
+      } while (false);
+    } while (false);
+    }
+    else {
+      F.line = 1787;
+      result_989857171 = nimCopy(null, [], NTI33554439);
+    }
+    
+  framePtr = F.prev;
+
+  return result_989857171;
+
+}
+
+function newSeq_436208085(len_436208087) {
+  var result_436208088 = [];
+
+  var F = {procname: "newSeq.newSeq", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 680;
+    result_436208088 = new Array(len_436208087); for (var i = 0 ; i < len_436208087 ; ++i) { result_436208088[i] = []; }  framePtr = F.prev;
+
+  return result_436208088;
+
 }
 
 function sysFatal_218103842(message_218103845) {
@@ -7703,1399 +9846,192 @@ function failedAssertImpl_218103864(msg_218103865) {
   
 }
 
-function addQuoted_1073744433(s_1073744435, s_1073744435_Idx, x_1073744436) {
-  var F = {procname: "addQuoted.addQuoted", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
-  framePtr = F;
-    F.line = 2898;
-    s_1073744435[s_1073744435_Idx].push.apply(s_1073744435[s_1073744435_Idx], makeNimstrLit("\""));;
-    Label1: do {
-      F.line = 2899;
-      var c_1073744437 = 0;
-      F.line = 253;
-      var i_452985412 = 0;
-      F.line = 254;
-      var L_452985413 = (x_1073744436).length;
-      Label2: do {
-        F.line = 255;
-          Label3: while (true) {
-          if (!(i_452985412 < L_452985413)) break Label3;
-            F.line = 2899;
-            c_1073744437 = x_1073744436[chckIndx(i_452985412, 0, (x_1073744436).length - 1)];
-            if ((c_1073744437 <= 127)) {
-            F.line = 2903;
-            addEscapedChar_33557860(s_1073744435, s_1073744435_Idx, c_1073744437);
-            }
-            else {
-              F.line = 2905;
-            addChar(s_1073744435[s_1073744435_Idx], c_1073744437);;
-            }
-            
-            F.line = 257;
-            i_452985412 = addInt(i_452985412, 1);
-            if (!(((x_1073744436).length == L_452985413))) {
-            F.line = 258;
-            failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(258, 11) `len(a) == L` the length of the string changed while iterating over it"));
-            }
-            
-          }
-      } while (false);
-    } while (false);
-    F.line = 2906;
-    s_1073744435[s_1073744435_Idx].push.apply(s_1073744435[s_1073744435_Idx], makeNimstrLit("\""));;
-  framePtr = F.prev;
-
-  
-}
-
-function HEX24_452985367(x_452985369) {
-  var result_452985370 = [[]];
-
-  var F = {procname: "$.$", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/dollars.nim", line: 0};
-  framePtr = F;
-    F.line = 97;
-    result_452985370[0] = nimCopy(null, makeNimstrLit("("), NTI33554439);
-    F.line = 99;
-    var count_452985376 = 0;
-    if ((0 < count_452985376)) {
-    F.line = 101;
-    result_452985370[0].push.apply(result_452985370[0], makeNimstrLit(", "));;
-    }
-    
-    F.line = 103;
-    result_452985370[0].push.apply(result_452985370[0], makeNimstrLit("title"));;
-    F.line = 104;
-    result_452985370[0].push.apply(result_452985370[0], makeNimstrLit(": "));;
-    F.line = 105;
-    count_452985376 += 1;
-    F.line = 111;
-    addQuoted_1073744433(result_452985370, 0, x_452985369.title);
-    if ((0 < count_452985376)) {
-    F.line = 101;
-    result_452985370[0].push.apply(result_452985370[0], makeNimstrLit(", "));;
-    }
-    
-    F.line = 103;
-    result_452985370[0].push.apply(result_452985370[0], makeNimstrLit("content"));;
-    F.line = 104;
-    result_452985370[0].push.apply(result_452985370[0], makeNimstrLit(": "));;
-    F.line = 105;
-    count_452985376 += 1;
-    F.line = 111;
-    addQuoted_1073744433(result_452985370, 0, x_452985369.content);
-    F.line = 117;
-    result_452985370[0].push.apply(result_452985370[0], makeNimstrLit(")"));;
-  framePtr = F.prev;
-
-  return result_452985370[0];
-
-}
-
-function addQuoted_452985361(s_452985363, s_452985363_Idx, x_452985364) {
-  var F = {procname: "addQuoted.addQuoted", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
-  framePtr = F;
-    F.line = 2919;
-    s_452985363[s_452985363_Idx].push.apply(s_452985363[s_452985363_Idx], HEX24_452985367(x_452985364));;
-  framePtr = F.prev;
-
-  
-}
-
-function collectionToString_452985328(x_452985330, prefix_452985331, separator_452985332, suffix_452985333) {
-  var result_452985334 = [[]];
-
-  var F = {procname: "collectionToString.collectionToString", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/dollars.nim", line: 0};
-  framePtr = F;
-    F.line = 121;
-    result_452985334[0] = nimCopy(null, prefix_452985331, NTI33554439);
-    F.line = 122;
-    var firstElement_452985335 = true;
-    Label1: do {
-      F.line = 123;
-      var value_452985357 = ({title: [], content: []});
-      F.line = 235;
-      var i_452985408 = 0;
-      F.line = 236;
-      var L_452985409 = (x_452985330).length;
-      Label2: do {
-        F.line = 237;
-          Label3: while (true) {
-          if (!(i_452985408 < L_452985409)) break Label3;
-            F.line = 123;
-            value_452985357 = x_452985330[i_452985408];
-            if (firstElement_452985335) {
-            F.line = 125;
-            firstElement_452985335 = false;
-            }
-            else {
-              F.line = 127;
-            result_452985334[0].push.apply(result_452985334[0], separator_452985332);;
-            }
-            
-            F.line = 123;
-            addQuoted_452985361(result_452985334, 0, value_452985357);
-            F.line = 239;
-            i_452985408 += 1;
-            if (!(((x_452985330).length == L_452985409))) {
-            F.line = 240;
-            failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
-            }
-            
-          }
-      } while (false);
-    } while (false);
-    F.line = 137;
-    result_452985334[0].push.apply(result_452985334[0], suffix_452985333);;
-  framePtr = F.prev;
-
-  return result_452985334[0];
-
-}
-
-function HEX24_452985324(x_452985326) {
-  var result_452985327 = [];
-
-  var F = {procname: "$.$", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system/dollars.nim", line: 0};
-  framePtr = F;
-    F.line = 148;
-    result_452985327 = nimCopy(null, collectionToString_452985328(x_452985326, makeNimstrLit("@["), makeNimstrLit(", "), makeNimstrLit("]")), NTI33554439);
-  framePtr = F.prev;
-
-  return result_452985327;
-
-}
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-F.line = 192;
-rawEcho(HEX24_452985324(scenarios_452985154));
-F.line = 194;
-var ghost_writer_row_mobile_452985402 = document.getElementById("ghost-writer-row-mobile");
-F.line = 195;
-console.log(ghost_writer_row_mobile_452985402);
-framePtr = F.prev;
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-
-function Template_452985214(content_452985215) {
-  var result_452985216 = null;
-
-  var F = {procname: "cgpt_page_fe.Template", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    F.line = 187;
-    var p_452985217 = document.createElement("template");
-    F.line = 188;
-    p_452985217.innerHTML = toJSStr(content_452985215);
-    F.line = 189;
-    var node_452985218 = p_452985217.content.cloneNode(true);
-    F.line = 190;
-    result_452985216 = node_452985218;
-    break BeforeRet;
-  } while (false);
-  framePtr = F.prev;
-
-  return result_452985216;
-
-}
-
-function xdd_1325400069() {
-  var result_1325400073 = {Field0: [], Field1: [], Field2: []};
-
-  var F = {procname: "nimalpine.xdd", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimalpine.nim", line: 0};
-  framePtr = F;
-    F.line = 19;
-    var colontmp__452985557 = makeNimstrLit(" x-data=\"{ showDropdown: false }\" ");
-    F.line = 21;
-    var colontmp__452985558 = makeNimstrLit("    @click=\"showDropdown = !showDropdown\" \x0A    ");
-    F.line = 25;
-    var colontmp__452985559 = makeNimstrLit("    x-cloak x-show=\"showDropdown\" \x0A    x-transition:enter=\"transition ease-out duration-300\" \x0A    x-transition:enter-start=\"opacity-0\" \x0A    x-transition:enter-end=\"opacity-100\" \x0A    x-transition:leave=\"transition ease-in duration-200\" \x0A    x-transition:leave-start=\"opacity-100\" \x0A    x-transition:leave-end=\"opacity-0\" \x0A    \x0A    ");
-    F.line = 18;
-    result_1325400073 = nimCopy(result_1325400073, {Field0: nimCopy(null, colontmp__452985557, NTI33554439), Field1: nimCopy(null, colontmp__452985558, NTI33554439), Field2: nimCopy(null, colontmp__452985559, NTI33554439)}, NTI1325400069);
-  framePtr = F.prev;
-
-  return result_1325400073;
-
-}
-
-function nsuContinuesWith(s_587203909, substr_587203910, start_587203911) {
-            var Temporary3;
-
-  var result_587203912 = false;
-
-  var F = {procname: "strutils.continuesWith", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    F.line = 1602;
-    var i_587203913 = 0;
-    Label1: do {
-      F.line = 1603;
-        Label2: while (true) {
-        if (!true) break Label2;
-          if (((substr_587203910).length <= i_587203913)) {
-          F.line = 1604;
-          result_587203912 = true;
-          break BeforeRet;
-          }
-          
-            if (((s_587203909).length <= addInt(i_587203913, start_587203911))) Temporary3 = true; else {              Temporary3 = !((s_587203909[chckIndx(addInt(i_587203913, start_587203911), 0, (s_587203909).length - 1)] == substr_587203910[chckIndx(i_587203913, 0, (substr_587203910).length - 1)]));            }          if (Temporary3) {
-          F.line = 1605;
-          result_587203912 = false;
-          break BeforeRet;
-          }
-          
-          F.line = 1606;
-          i_587203913 = addInt(i_587203913, 1);
-        }
-    } while (false);
-  } while (false);
-  framePtr = F.prev;
-
-  return result_587203912;
-
-}
-
-function multiReplace_587204299(s_587204300, replacements_587204301) {
-                      var Temporary10;
-
-  var result_587204302 = [];
-
-  var F = {procname: "strutils.multiReplace", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-  framePtr = F;
-    F.line = 2168;
-    result_587204302 = nimCopy(null, mnewString(0), NTI33554439);
-    F.line = 2169;
-    var i_587204303 = 0;
-    F.line = 2170;
-    var fastChk_587204304 = nimCopy(null, ConstSet4, NTI587203761);
-    Label1: do {
-      F.line = 2171;
-      var sub_587204317 = [];
-      F.line = 2171;
-      var by_587204318 = [];
-      F.line = 8;
-      var i_452985562 = 0;
-      Label2: do {
-        F.line = 9;
-          Label3: while (true) {
-          if (!(i_452985562 < (replacements_587204301).length)) break Label3;
-            F.line = 2171;
-            sub_587204317 = replacements_587204301[chckIndx(i_452985562, 0, (replacements_587204301).length - 1)]["Field0"];
-            F.line = 2171;
-            by_587204318 = replacements_587204301[chckIndx(i_452985562, 0, (replacements_587204301).length - 1)]["Field1"];
-            if ((0 < (sub_587204317).length)) {
-            F.line = 2174;
-            fastChk_587204304[sub_587204317[chckIndx(0, 0, (sub_587204317).length - 1)]] = true;
-            }
-            
-            F.line = 11;
-            i_452985562 = addInt(i_452985562, 1);
-          }
-      } while (false);
-    } while (false);
-    Label4: do {
-      F.line = 2175;
-        Label5: while (true) {
-        if (!(i_587204303 < (s_587204300).length)) break Label5;
-          Label6: do {
-            if ((fastChk_587204304[s_587204300[chckIndx(i_587204303, 0, (s_587204300).length - 1)]] != undefined)) {
-            Label7: do {
-              F.line = 2179;
-              var sub_587204331 = [];
-              F.line = 2179;
-              var by_587204332 = [];
-              F.line = 8;
-              var i_452985566 = 0;
-              Label8: do {
-                F.line = 9;
-                  Label9: while (true) {
-                  if (!(i_452985566 < (replacements_587204301).length)) break Label9;
-                    F.line = 2179;
-                    sub_587204331 = replacements_587204301[chckIndx(i_452985566, 0, (replacements_587204301).length - 1)]["Field0"];
-                    F.line = 2179;
-                    by_587204332 = replacements_587204301[chckIndx(i_452985566, 0, (replacements_587204301).length - 1)]["Field1"];
-                      if (!(0 < (sub_587204331).length)) Temporary10 = false; else {                        Temporary10 = nsuContinuesWith(s_587204300, sub_587204331, chckRange(i_587204303, 0, 2147483647));                      }                    if (Temporary10) {
-                    F.line = 2181;
-                    result_587204302.push.apply(result_587204302, by_587204332);;
-                    F.line = 2182;
-                    i_587204303 = addInt(i_587204303, (sub_587204331).length);
-                    F.line = 2183;
-                    break Label6;
-                    }
-                    
-                    F.line = 11;
-                    i_452985566 = addInt(i_452985566, 1);
-                  }
-              } while (false);
-            } while (false);
-            }
-            
-            F.line = 2186;
-            addChar(result_587204302, s_587204300[chckIndx(i_587204303, 0, (s_587204300).length - 1)]);;
-            F.line = 2187;
-            i_587204303 = addInt(i_587204303, 1);
-          } while (false);
-        }
-    } while (false);
-  framePtr = F.prev;
-
-  return result_587204302;
-
-}
-
-function raiseDivByZero() {
-    raiseException({message: makeNimstrLit("division by zero"), parent: null, m_type: NTI33555121, name: null, trace: [], up: null}, "DivByZeroDefect");
-
-  
-}
-
-function parseSaturatedNatural_654311758(s_654311759, b_654311760, b_654311760_Idx, start_654311761) {
-      var Temporary1;
-          var Temporary4;
-
-  var result_654311762 = 0;
-
-  var F = {procname: "parseutils.parseSaturatedNatural", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/parseutils.nim", line: 0};
-  framePtr = F;
-    F.line = 505;
-    var i_654311763 = start_654311761;
-    if (((i_654311763 < (s_654311759).length) && (s_654311759[chckIndx(i_654311763, 0, (s_654311759).length - 1)] == 43))) {
-    F.line = 506;
-    i_654311763 = addInt(i_654311763, 1);
-    }
-    
-      if (!(i_654311763 < (s_654311759).length)) Temporary1 = false; else {        Temporary1 = (ConstSet9[s_654311759[chckIndx(i_654311763, 0, (s_654311759).length - 1)]] != undefined);      }    if (Temporary1) {
-    F.line = 508;
-    b_654311760[b_654311760_Idx] = 0;
-    Label2: do {
-      F.line = 509;
-        Label3: while (true) {
-          if (!(i_654311763 < (s_654311759).length)) Temporary4 = false; else {            Temporary4 = (ConstSet10[s_654311759[chckIndx(i_654311763, 0, (s_654311759).length - 1)]] != undefined);          }        if (!Temporary4) break Label3;
-          F.line = 510;
-          var c_654311782 = subInt(s_654311759[chckIndx(i_654311763, 0, (s_654311759).length - 1)], 48);
-          if ((b_654311760[b_654311760_Idx] <= divInt(subInt(2147483647, c_654311782), 10))) {
-          F.line = 512;
-          b_654311760[b_654311760_Idx] = addInt(mulInt(b_654311760[b_654311760_Idx], 10), c_654311782);
-          }
-          else {
-            F.line = 514;
-            b_654311760[b_654311760_Idx] = 2147483647;
-          }
-          
-          F.line = 515;
-          i_654311763 = addInt(i_654311763, 1);
-          Label5: do {
-            F.line = 516;
-              Label6: while (true) {
-              if (!((i_654311763 < (s_654311759).length) && (s_654311759[chckIndx(i_654311763, 0, (s_654311759).length - 1)] == 95))) break Label6;
-                F.line = 516;
-                i_654311763 = addInt(i_654311763, 1);
-              }
-          } while (false);
-        }
-    } while (false);
-    F.line = 517;
-    result_654311762 = subInt(i_654311763, start_654311761);
-    }
-    
-  framePtr = F.prev;
-
-  return result_654311762;
-
-}
-
-function HEX5BHEX5D_855641242(s_855641245, x_855641246) {
-  var result_855641247 = [];
-
-  var F = {procname: "[].[]", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
-  framePtr = F;
-    F.line = 2549;
-    var a_855641249 = x_855641246.a;
-    F.line = 2550;
-    var L_855641251 = addInt(subInt(subInt((s_855641245).length, x_855641246.b), a_855641249), 1);
-    F.line = 2551;
-    result_855641247 = nimCopy(null, mnewString(chckRange(L_855641251, 0, 2147483647)), NTI33554439);
-    Label1: do {
-      F.line = 2552;
-      var i_855641256 = 0;
-      F.line = 119;
-      var i_452985572 = 0;
-      Label2: do {
-        F.line = 120;
-          Label3: while (true) {
-          if (!(i_452985572 < L_855641251)) break Label3;
-            F.line = 2552;
-            i_855641256 = i_452985572;
-            F.line = 2552;
-            result_855641247[chckIndx(i_855641256, 0, (result_855641247).length - 1)] = s_855641245[chckIndx(addInt(i_855641256, a_855641249), 0, (s_855641245).length - 1)];
-            F.line = 122;
-            i_452985572 = addInt(i_452985572, 1);
-          }
-      } while (false);
-    } while (false);
-  framePtr = F.prev;
-
-  return result_855641247;
-
-}
-
-function HEX2EHEX2E_822083664(a_822083667, b_822083668) {
-  var result_822083671 = ({a: 0, b: 0});
-
-  var F = {procname: ".....", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
-  framePtr = F;
-    F.line = 512;
-    result_822083671 = nimCopy(result_822083671, {a: a_822083667, b: b_822083668}, NTI822083663);
-  framePtr = F.prev;
-
-  return result_822083671;
-
-}
-
-function parseStandardFormatSpecifier_603979834(s_603979835, start_603979836, ignoreUnknownSuffix_603979837) {
-      var Temporary1;
-      var Temporary2;
-      var Temporary3;
-
-  var result_603979838 = ({fill: 0, align: 0, sign: 0, alternateForm: false, padWithZero: false, minimumWidth: 0, precision: 0, typ: 0, endPosition: 0});
-
-  var F = {procname: "strformat.parseStandardFormatSpecifier", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-  framePtr = F;
-    F.line = 430;
-    result_603979838.fill = 32;
-    F.line = 431;
-    result_603979838.align = 0;
-    F.line = 432;
-    result_603979838.sign = 45;
-    F.line = 433;
-    var i_603979840 = start_603979836;
-    if (((addInt(i_603979840, 1) < (s_603979835).length) && (ConstSet5[s_603979835[chckIndx(addInt(i_603979840, 1), 0, (s_603979835).length - 1)]] != undefined))) {
-    F.line = 435;
-    result_603979838.fill = s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)];
-    F.line = 436;
-    result_603979838.align = s_603979835[chckIndx(addInt(i_603979840, 1), 0, (s_603979835).length - 1)];
-    F.line = 437;
-    i_603979840 = addInt(i_603979840, 2);
-    }
-    else {
-    if (((i_603979840 < (s_603979835).length) && (ConstSet6[s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)]] != undefined))) {
-    F.line = 439;
-    result_603979838.align = s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)];
-    F.line = 440;
-    i_603979840 = addInt(i_603979840, 1);
-    }
-    }
-    if (((i_603979840 < (s_603979835).length) && (ConstSet7[s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)]] != undefined))) {
-    F.line = 443;
-    result_603979838.sign = s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)];
-    F.line = 444;
-    i_603979840 = addInt(i_603979840, 1);
-    }
-    
-    if (((i_603979840 < (s_603979835).length) && (s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)] == 35))) {
-    F.line = 447;
-    result_603979838.alternateForm = true;
-    F.line = 448;
-    i_603979840 = addInt(i_603979840, 1);
-    }
-    
-      if (!((addInt(i_603979840, 1) < (s_603979835).length) && (s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)] == 48))) Temporary1 = false; else {        Temporary1 = (ConstSet8[s_603979835[chckIndx(addInt(i_603979840, 1), 0, (s_603979835).length - 1)]] != undefined);      }    if (Temporary1) {
-    F.line = 451;
-    result_603979838.padWithZero = true;
-    F.line = 452;
-    i_603979840 = addInt(i_603979840, 1);
-    }
-    
-    F.line = 454;
-    var parsedLength_603979877 = parseSaturatedNatural_654311758(s_603979835, result_603979838, "minimumWidth", i_603979840);
-    F.line = 455;
-    i_603979840 = addInt(i_603979840, parsedLength_603979877);
-    if (((i_603979840 < (s_603979835).length) && (s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)] == 46))) {
-    F.line = 457;
-    i_603979840 = addInt(i_603979840, 1);
-    F.line = 458;
-    var parsedLengthB_603979886 = parseSaturatedNatural_654311758(s_603979835, result_603979838, "precision", i_603979840);
-    F.line = 459;
-    i_603979840 = addInt(i_603979840, parsedLengthB_603979886);
-    }
-    else {
-      F.line = 461;
-      result_603979838.precision = -1;
-    }
-    
-      if (!(i_603979840 < (s_603979835).length)) Temporary2 = false; else {        Temporary2 = (ConstSet11[s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)]] != undefined);      }    if (Temporary2) {
-    F.line = 464;
-    result_603979838.typ = s_603979835[chckIndx(i_603979840, 0, (s_603979835).length - 1)];
-    F.line = 465;
-    i_603979840 = addInt(i_603979840, 1);
-    }
-    
-    F.line = 466;
-    result_603979838.endPosition = i_603979840;
-      if (!!((i_603979840 == (s_603979835).length))) Temporary3 = false; else {        Temporary3 = !(ignoreUnknownSuffix_603979837);      }    if (Temporary3) {
-    F.line = 468;
-    raiseException({message: (makeNimstrLit("invalid format string, cannot parse: ") || []).concat(HEX5BHEX5D_855641242(s_603979835, HEX2EHEX2E_822083664(i_603979840, 1)) || []), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
-    }
-    
-  framePtr = F.prev;
-
-  return result_603979838;
-
-}
-
-function nucruneLen(s_855638026) {
-  var result_855638027 = 0;
-
-  var F = {procname: "unicode.runeLen", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
-  framePtr = F;
-    F.line = 42;
-    result_855638027 = 0;
-    F.line = 43;
-    var i_855638028 = 0;
-    Label1: do {
-      F.line = 44;
-        Label2: while (true) {
-        if (!(i_855638028 < (s_855638026).length)) break Label2;
-          if ((s_855638026[chckIndx(i_855638028, 0, (s_855638026).length - 1)] <= 127)) {
-          F.line = 45;
-          i_855638028 = addInt(i_855638028, 1);
-          }
-          else {
-          if (((s_855638026[chckIndx(i_855638028, 0, (s_855638026).length - 1)] >>> 5) == 6)) {
-          F.line = 46;
-          i_855638028 = addInt(i_855638028, 2);
-          }
-          else {
-          if (((s_855638026[chckIndx(i_855638028, 0, (s_855638026).length - 1)] >>> 4) == 14)) {
-          F.line = 47;
-          i_855638028 = addInt(i_855638028, 3);
-          }
-          else {
-          if (((s_855638026[chckIndx(i_855638028, 0, (s_855638026).length - 1)] >>> 3) == 30)) {
-          F.line = 48;
-          i_855638028 = addInt(i_855638028, 4);
-          }
-          else {
-          if (((s_855638026[chckIndx(i_855638028, 0, (s_855638026).length - 1)] >>> 2) == 62)) {
-          F.line = 49;
-          i_855638028 = addInt(i_855638028, 5);
-          }
-          else {
-          if (((s_855638026[chckIndx(i_855638028, 0, (s_855638026).length - 1)] >>> 1) == 126)) {
-          F.line = 50;
-          i_855638028 = addInt(i_855638028, 6);
-          }
-          else {
-            F.line = 51;
-          i_855638028 = addInt(i_855638028, 1);
-          }
-          }}}}}
-          F.line = 52;
-          result_855638027 = addInt(result_855638027, 1);
-        }
-    } while (false);
-  framePtr = F.prev;
-
-  return result_855638027;
-
-}
-
-function runeLenAt_855638081(s_855638082, i_855638083) {
-  var result_855638084 = 0;
-
-  var F = {procname: "unicode.runeLenAt", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
-  framePtr = F;
-    if ((s_855638082[chckIndx(i_855638083, 0, (s_855638082).length - 1)] <= 127)) {
-    F.line = 64;
-    result_855638084 = 1;
-    }
-    else {
-    if (((s_855638082[chckIndx(i_855638083, 0, (s_855638082).length - 1)] >>> 5) == 6)) {
-    F.line = 65;
-    result_855638084 = 2;
-    }
-    else {
-    if (((s_855638082[chckIndx(i_855638083, 0, (s_855638082).length - 1)] >>> 4) == 14)) {
-    F.line = 66;
-    result_855638084 = 3;
-    }
-    else {
-    if (((s_855638082[chckIndx(i_855638083, 0, (s_855638082).length - 1)] >>> 3) == 30)) {
-    F.line = 67;
-    result_855638084 = 4;
-    }
-    else {
-    if (((s_855638082[chckIndx(i_855638083, 0, (s_855638082).length - 1)] >>> 2) == 62)) {
-    F.line = 68;
-    result_855638084 = 5;
-    }
-    else {
-    if (((s_855638082[chckIndx(i_855638083, 0, (s_855638082).length - 1)] >>> 1) == 126)) {
-    F.line = 69;
-    result_855638084 = 6;
-    }
-    else {
-      F.line = 70;
-      result_855638084 = 1;
-    }
-    }}}}}
-  framePtr = F.prev;
-
-  return result_855638084;
-
-}
-
-function runeOffset_855638653(s_855638654, pos_855638655, start_855638656) {
-  var result_855638657 = 0;
-
-  var F = {procname: "unicode.runeOffset", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    F.line = 321;
-    var i_855638658 = 0;
-    F.line = 322;
-    var o_855638659 = start_855638656;
-    Label1: do {
-      F.line = 323;
-        Label2: while (true) {
-        if (!(i_855638658 < pos_855638655)) break Label2;
-          F.line = 324;
-          o_855638659 = addInt(o_855638659, chckRange(runeLenAt_855638081(s_855638654, o_855638659), 0, 2147483647));
-          if (((s_855638654).length <= o_855638659)) {
-          F.line = 326;
-          result_855638657 = -1;
-          break BeforeRet;
-          }
-          
-          F.line = 327;
-          i_855638658 = addInt(i_855638658, 1);
-        }
-    } while (false);
-    F.line = 328;
-    result_855638657 = o_855638659;
-    break BeforeRet;
-  } while (false);
-  framePtr = F.prev;
-
-  return result_855638657;
-
-}
-
-function validateUtf8_855638293(s_855638294) {
-            var Temporary3;
-            var Temporary4;
-            var Temporary5;
-            var Temporary6;
-            var Temporary7;
-            var Temporary8;
-
-  var result_855638295 = 0;
-
-  var F = {procname: "unicode.validateUtf8", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/unicode.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    F.line = 174;
-    var i_855638296 = 0;
-    F.line = 175;
-    var L_855638297 = (s_855638294).length;
-    Label1: do {
-      F.line = 176;
-        Label2: while (true) {
-        if (!(i_855638296 < L_855638297)) break Label2;
-          if ((s_855638294[chckIndx(i_855638296, 0, (s_855638294).length - 1)] <= 127)) {
-          F.line = 178;
-          i_855638296 = addInt(i_855638296, 1);
-          }
-          else {
-          if (((s_855638294[chckIndx(i_855638296, 0, (s_855638294).length - 1)] >>> 5) == 6)) {
-          if ((s_855638294[chckIndx(i_855638296, 0, (s_855638294).length - 1)] < 194)) {
-          F.line = 180;
-          result_855638295 = i_855638296;
-          break BeforeRet;
-          }
-          
-            if (!(addInt(i_855638296, 1) < L_855638297)) Temporary3 = false; else {              Temporary3 = ((s_855638294[chckIndx(addInt(i_855638296, 1), 0, (s_855638294).length - 1)] >>> 6) == 2);            }          if (Temporary3) {
-          F.line = 181;
-          i_855638296 = addInt(i_855638296, 2);
-          }
-          else {
-            F.line = 182;
-            result_855638295 = i_855638296;
-            break BeforeRet;
-          }
-          
-          }
-          else {
-          if (((s_855638294[chckIndx(i_855638296, 0, (s_855638294).length - 1)] >>> 4) == 14)) {
-            if (!(addInt(i_855638296, 2) < L_855638297)) Temporary5 = false; else {              Temporary5 = ((s_855638294[chckIndx(addInt(i_855638296, 1), 0, (s_855638294).length - 1)] >>> 6) == 2);            }            if (!Temporary5) Temporary4 = false; else {              Temporary4 = ((s_855638294[chckIndx(addInt(i_855638296, 2), 0, (s_855638294).length - 1)] >>> 6) == 2);            }          if (Temporary4) {
-          F.line = 185;
-          i_855638296 = addInt(i_855638296, 3);
-          }
-          else {
-            F.line = 186;
-            result_855638295 = i_855638296;
-            break BeforeRet;
-          }
-          
-          }
-          else {
-          if (((s_855638294[chckIndx(i_855638296, 0, (s_855638294).length - 1)] >>> 3) == 30)) {
-            if (!(addInt(i_855638296, 3) < L_855638297)) Temporary8 = false; else {              Temporary8 = ((s_855638294[chckIndx(addInt(i_855638296, 1), 0, (s_855638294).length - 1)] >>> 6) == 2);            }            if (!Temporary8) Temporary7 = false; else {              Temporary7 = ((s_855638294[chckIndx(addInt(i_855638296, 2), 0, (s_855638294).length - 1)] >>> 6) == 2);            }            if (!Temporary7) Temporary6 = false; else {              Temporary6 = ((s_855638294[chckIndx(addInt(i_855638296, 3), 0, (s_855638294).length - 1)] >>> 6) == 2);            }          if (Temporary6) {
-          F.line = 191;
-          i_855638296 = addInt(i_855638296, 4);
-          }
-          else {
-            F.line = 192;
-            result_855638295 = i_855638296;
-            break BeforeRet;
-          }
-          
-          }
-          else {
-            F.line = 194;
-            result_855638295 = i_855638296;
-            break BeforeRet;
-          }
-          }}}
-        }
-    } while (false);
-    F.line = 195;
-    result_855638295 = -1;
-    break BeforeRet;
-  } while (false);
-  framePtr = F.prev;
-
-  return result_855638295;
-
-}
-
-function nsuRepeatChar(c_587203579, count_587203580) {
-  var result_587203581 = [];
-
-  var F = {procname: "strutils.repeat", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-  framePtr = F;
-    F.line = 1263;
-    result_587203581 = nimCopy(null, mnewString(count_587203580), NTI33554439);
-    Label1: do {
-      F.line = 1264;
-      var i_587203586 = 0;
-      F.line = 75;
-      var colontmp__452985578 = 0;
-      F.line = 1264;
-      colontmp__452985578 = subInt(count_587203580, 1);
-      F.line = 90;
-      var res_452985579 = 0;
-      Label2: do {
-        F.line = 91;
-          Label3: while (true) {
-          if (!(res_452985579 <= colontmp__452985578)) break Label3;
-            F.line = 1264;
-            i_587203586 = res_452985579;
-            F.line = 1264;
-            result_587203581[chckIndx(i_587203586, 0, (result_587203581).length - 1)] = c_587203579;
-            F.line = 93;
-            res_452985579 = addInt(res_452985579, 1);
-          }
-      } while (false);
-    } while (false);
-  framePtr = F.prev;
-
-  return result_587203581;
-
-}
-
-function alignString_603979796(s_603979797, minimumWidth_603979798, align_603979799, fill_603979800) {
+function mkDigit_1107296261(v_1107296262, typ_1107296263) {
       var Temporary1;
 
-  var result_603979801 = [];
-
-  var F = {procname: "strformat.alignString", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-  framePtr = F;
-    if ((minimumWidth_603979798 == 0)) {
-    F.line = 331;
-    result_603979801 = nimCopy(null, s_603979797, NTI33554439);
-    }
-    else {
-      F.line = 333;
-      if ((validateUtf8_855638293(s_603979797) == -1)) {
-      Temporary1 = nucruneLen(s_603979797);
-      }
-      else {
-      Temporary1 = (s_603979797).length;
-      }
-      
-      var sRuneLen_603979802 = Temporary1;
-      F.line = 334;
-      var toFill_603979803 = subInt(minimumWidth_603979798, sRuneLen_603979802);
-      if ((toFill_603979803 <= 0)) {
-      F.line = 336;
-      result_603979801 = nimCopy(null, s_603979797, NTI33554439);
-      }
-      else {
-      if (((align_603979799 == 60) || (align_603979799 == 0))) {
-      F.line = 338;
-      result_603979801 = nimCopy(null, (s_603979797 || []).concat(nsuRepeatChar(fill_603979800, chckRange(toFill_603979803, 0, 2147483647)) || []), NTI33554439);
-      }
-      else {
-      if ((align_603979799 == 94)) {
-      F.line = 340;
-      var half_603979804 = divInt(toFill_603979803, 2);
-      F.line = 341;
-      result_603979801 = nimCopy(null, (nsuRepeatChar(fill_603979800, chckRange(half_603979804, 0, 2147483647)) || []).concat(s_603979797 || [],nsuRepeatChar(fill_603979800, chckRange(subInt(toFill_603979803, half_603979804), 0, 2147483647)) || []), NTI33554439);
-      }
-      else {
-        F.line = 343;
-        result_603979801 = nimCopy(null, (nsuRepeatChar(fill_603979800, chckRange(toFill_603979803, 0, 2147483647)) || []).concat(s_603979797 || []), NTI33554439);
-      }
-      }}
-    }
-    
-  framePtr = F.prev;
-
-  return result_603979801;
-
-}
-
-function formatValue_603979938(result_603979939, result_603979939_Idx, value_603979940, specifier_603979941) {
-  var F = {procname: "strformat.formatValue", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
-  framePtr = F;
-    F.line = 553;
-    var spec_603979942 = parseStandardFormatSpecifier_603979834(specifier_603979941, 0, false);
-    F.line = 554;
-    var value_603979943 = nimCopy(null, value_603979940, NTI33554439);
-    F.line = 555;
-    switch (spec_603979942.typ) {
-    case 115:
-    case 0:
-      break;
-    default: 
-      F.line = 558;
-      raiseException({message: (makeNimstrLit("invalid type in format string for string, expected \'s\', but got ") || []).concat([spec_603979942.typ]), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
-      break;
-    }
-    if (!((spec_603979942.precision == -1))) {
-    if ((spec_603979942.precision < nucruneLen(value_603979943))) {
-    F.line = 563;
-    (value_603979943.length = chckRange(runeOffset_855638653(value_603979943, chckRange(spec_603979942.precision, 0, 2147483647), 0), 0, 2147483647));
-    }
-    
-    }
-    
-    F.line = 564;
-    result_603979939[result_603979939_Idx].push.apply(result_603979939[result_603979939_Idx], alignString_603979796(value_603979943, spec_603979942.minimumWidth, spec_603979942.align, spec_603979942.fill));;
-  framePtr = F.prev;
-
-  
-}
-
-function buildGap_452985466(gap_452985468) {
-  var result_452985469 = [];
-
-  var F = {procname: "buildGap.buildGap", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    if ((1 < (gap_452985468).length)) {
-    F.line = 42;
-    F.line = 42;
-    var fmtRes_452985475 = [mnewString(0)];
-    F.line = 42;
-    fmtRes_452985475[0].push.apply(fmtRes_452985475[0], makeNimstrLit("gap-["));;
-    F.line = 42;
-    formatValue_603979938(fmtRes_452985475, 0, gap_452985468, []);
-    F.line = 42;
-    fmtRes_452985475[0].push.apply(fmtRes_452985475[0], makeNimstrLit("]"));;
-    result_452985469 = nimCopy(null, fmtRes_452985475[0], NTI33554439);
-    break BeforeRet;
-    }
-    else {
-      F.line = 44;
-      result_452985469 = nimCopy(null, [], NTI33554439);
-      break BeforeRet;
-    }
-    
-  } while (false);
-  framePtr = F.prev;
-
-  return result_452985469;
-
-}
-
-function bgColor_1308622910(bgColor_1308622911) {
-  var result_1308622912 = [];
-
-  var F = {procname: "nimwind.bgColor", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    if (eqStrings(bgColor_1308622911, [])) {
-    F.line = 48;
-    result_1308622912 = nimCopy(null, [], NTI33554439);
-    break BeforeRet;
-    }
-    else {
-      F.line = 50;
-      result_1308622912 = nimCopy(null, (makeNimstrLit("bg-[") || []).concat(bgColor_1308622911 || [],makeNimstrLit("]") || []), NTI33554439);
-      break BeforeRet;
-    }
-    
-  } while (false);
-  framePtr = F.prev;
-
-  return result_1308622912;
-
-}
-
-function justify_452985476(justify_452985478) {
-  var result_452985479 = [];
-
-  var F = {procname: "justify.justify", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    if (eqStrings(justify_452985478, makeNimstrLit("start"))) {
-    F.line = 73;
-    result_452985479 = nimCopy(null, makeNimstrLit("justify-start"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(justify_452985478, makeNimstrLit("center"))) {
-    F.line = 75;
-    result_452985479 = nimCopy(null, makeNimstrLit("justify-center"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(justify_452985478, makeNimstrLit("c"))) {
-    F.line = 77;
-    result_452985479 = nimCopy(null, makeNimstrLit("justify-center"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(justify_452985478, makeNimstrLit("end"))) {
-    F.line = 79;
-    result_452985479 = nimCopy(null, makeNimstrLit("justify-end"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(justify_452985478, makeNimstrLit("between"))) {
-    F.line = 81;
-    result_452985479 = nimCopy(null, makeNimstrLit("justify-between"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(justify_452985478, makeNimstrLit("around"))) {
-    F.line = 83;
-    result_452985479 = nimCopy(null, makeNimstrLit("justify-around"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(justify_452985478, makeNimstrLit("evenly"))) {
-    F.line = 85;
-    result_452985479 = nimCopy(null, makeNimstrLit("justify-evenly"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-      F.line = 87;
-      result_452985479 = nimCopy(null, [], NTI33554439);
-      break BeforeRet;
-    }
-    }}}}}}
-  } while (false);
-  framePtr = F.prev;
-
-  return result_452985479;
-
-}
-
-function alignItems_452985481(alignItems_452985483) {
-  var result_452985484 = [];
-
-  var F = {procname: "alignItems.alignItems", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    if (eqStrings(alignItems_452985483, makeNimstrLit("start"))) {
-    F.line = 108;
-    result_452985484 = nimCopy(null, makeNimstrLit("items-start"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(alignItems_452985483, makeNimstrLit("center"))) {
-    F.line = 110;
-    result_452985484 = nimCopy(null, makeNimstrLit("items-center"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(alignItems_452985483, makeNimstrLit("c"))) {
-    F.line = 112;
-    result_452985484 = nimCopy(null, makeNimstrLit("items-center"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(alignItems_452985483, makeNimstrLit("end"))) {
-    F.line = 114;
-    result_452985484 = nimCopy(null, makeNimstrLit("items-end"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(alignItems_452985483, makeNimstrLit("baseline"))) {
-    F.line = 116;
-    result_452985484 = nimCopy(null, makeNimstrLit("items-baseline"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(alignItems_452985483, makeNimstrLit("stretch"))) {
-    F.line = 118;
-    result_452985484 = nimCopy(null, makeNimstrLit("items-stretch"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-      F.line = 120;
-      result_452985484 = nimCopy(null, [], NTI33554439);
-      break BeforeRet;
-    }
-    }}}}}
-  } while (false);
-  framePtr = F.prev;
-
-  return result_452985484;
-
-}
-
-function buildHeight_452985486(height_452985488) {
-  var result_452985489 = [];
-
-  var F = {procname: "buildHeight.buildHeight", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    if (eqStrings(height_452985488, makeNimstrLit("full"))) {
-    F.line = 127;
-    result_452985489 = nimCopy(null, makeNimstrLit("h-full"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if (eqStrings(height_452985488, makeNimstrLit("screen"))) {
-    F.line = 129;
-    result_452985489 = nimCopy(null, makeNimstrLit("h-screen"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-      F.line = 131;
-      result_452985489 = nimCopy(null, [], NTI33554439);
-      break BeforeRet;
-    }
-    }
-  } while (false);
-  framePtr = F.prev;
-
-  return result_452985489;
-
-}
-
-function buildWidth_452985491(width_452985493) {
-  var result_452985494 = [];
-
-  var F = {procname: "buildWidth.buildWidth", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
-  framePtr = F;
-  BeforeRet: do {
-    if ((eqStrings(width_452985493, makeNimstrLit("full")) || eqStrings(width_452985493, makeNimstrLit("w-full")))) {
-    F.line = 138;
-    result_452985494 = nimCopy(null, makeNimstrLit("w-full"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-    if ((eqStrings(width_452985493, makeNimstrLit("screen")) || eqStrings(width_452985493, makeNimstrLit("w-screen")))) {
-    F.line = 140;
-    result_452985494 = nimCopy(null, makeNimstrLit("w-screen"), NTI33554439);
-    break BeforeRet;
-    }
-    else {
-      F.line = 142;
-      result_452985494 = nimCopy(null, [], NTI33554439);
-      break BeforeRet;
-    }
-    }
-  } while (false);
-  framePtr = F.prev;
-
-  return result_452985494;
-
-}
-
-function buildRound_452985496(round_452985498) {
-  var result_452985499 = [];
-
-  var F = {procname: "buildRound.buildRound", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
-  framePtr = F;
-  framePtr = F.prev;
-
-  return result_452985499;
-
-}
-
-function nsuJoinSep(a_587203985, sep_587203986) {
-  var result_587203987 = [];
-
-  var F = {procname: "strutils.join", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strutils.nim", line: 0};
-  framePtr = F;
-    if ((0 < (a_587203985).length)) {
-    F.line = 1779;
-    var L_587203994 = mulInt((sep_587203986).length, subInt((a_587203985).length, 1));
-    Label1: do {
-      F.line = 1780;
-      var i_587204002 = 0;
-      F.line = 75;
-      var colontmp__452985588 = 0;
-      F.line = 1780;
-      colontmp__452985588 = (a_587203985).length - 1;
-      F.line = 90;
-      var res_452985589 = 0;
-      Label2: do {
-        F.line = 91;
-          Label3: while (true) {
-          if (!(res_452985589 <= colontmp__452985588)) break Label3;
-            F.line = 1780;
-            i_587204002 = res_452985589;
-            F.line = 1780;
-            L_587203994 = addInt(L_587203994, (a_587203985[chckIndx(i_587204002, 0, (a_587203985).length - 1)]).length);
-            F.line = 93;
-            res_452985589 = addInt(res_452985589, 1);
-          }
-      } while (false);
-    } while (false);
-    F.line = 1781;
-    result_587203987 = nimCopy(null, mnewString(0), NTI33554439);
-    F.line = 1782;
-    result_587203987.push.apply(result_587203987, a_587203985[chckIndx(0, 0, (a_587203985).length - 1)]);;
-    Label4: do {
-      F.line = 1783;
-      var i_587204014 = 0;
-      F.line = 75;
-      var colontmp__452985592 = 0;
-      F.line = 1783;
-      colontmp__452985592 = (a_587203985).length - 1;
-      F.line = 90;
-      var res_452985593 = 1;
-      Label5: do {
-        F.line = 91;
-          Label6: while (true) {
-          if (!(res_452985593 <= colontmp__452985592)) break Label6;
-            F.line = 1783;
-            i_587204014 = res_452985593;
-            F.line = 1783;
-            result_587203987.push.apply(result_587203987, sep_587203986);;
-            F.line = 1783;
-            result_587203987.push.apply(result_587203987, a_587203985[chckIndx(i_587204014, 0, (a_587203985).length - 1)]);;
-            F.line = 93;
-            res_452985593 = addInt(res_452985593, 1);
-          }
-      } while (false);
-    } while (false);
-    }
-    else {
-      F.line = 1787;
-      result_587203987 = nimCopy(null, [], NTI33554439);
-    }
-    
-  framePtr = F.prev;
-
-  return result_587203987;
-
-}
-
-function newSeq_436208085(len_436208087) {
-  var result_436208088 = [];
-
-  var F = {procname: "newSeq.newSeq", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/system.nim", line: 0};
-  framePtr = F;
-    F.line = 680;
-    result_436208088 = new Array(len_436208087); for (var i = 0 ; i < len_436208087 ; ++i) { result_436208088[i] = []; }  framePtr = F.prev;
-
-  return result_436208088;
-
-}
-
-function mkDigit_603979781(v_603979782, typ_603979783) {
-      var Temporary1;
-
-  var result_603979784 = [];
+  var result_1107296264 = [];
 
   var F = {procname: "strformat.mkDigit", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
   framePtr = F;
-    if (!((v_603979782 < 26))) {
+    if (!((v_1107296262 < 26))) {
     F.line = 320;
     failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim(320, 9) `v < 26` "));
     }
     
-    if ((v_603979782 < 10)) {
+    if ((v_1107296262 < 10)) {
     F.line = 322;
-    result_603979784 = nimCopy(null, nimCharToStr(chckRange(addInt(48, v_603979782), 0, 255)), NTI33554439);
+    result_1107296264 = nimCopy(null, nimCharToStr(chckRange(addInt(48, v_1107296262), 0, 255)), NTI33554439);
     }
     else {
       F.line = 324;
-      if ((typ_603979783 == 120)) {
+      if ((typ_1107296263 == 120)) {
       Temporary1 = 97;
       }
       else {
       Temporary1 = 65;
       }
       
-      result_603979784 = nimCopy(null, nimCharToStr(chckRange(subInt(addInt(Temporary1, v_603979782), 10), 0, 255)), NTI33554439);
+      result_1107296264 = nimCopy(null, nimCharToStr(chckRange(subInt(addInt(Temporary1, v_1107296262), 10), 0, 255)), NTI33554439);
     }
     
   framePtr = F.prev;
 
-  return result_603979784;
+  return result_1107296264;
 
 }
 
-function formatInt_1308622992(n_1308622994, radix_1308622995, spec_1308622996) {
+function formatInt_1426063491(n_1426063493, radix_1426063494, spec_1426063495) {
     var Temporary1;
     var Temporary8;
 
-  var result_1308622997 = [];
+  var result_1426063496 = [];
 
   var F = {procname: "formatInt.formatInt", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
   framePtr = F;
     F.line = 366;
-    var n_1308623000 = n_1308622994;
+    var n_1426063499 = n_1426063493;
     F.line = 367;
-    var negative_1308623001 = (n_1308623000 < 0);
+    var negative_1426063500 = (n_1426063499 < 0);
     F.line = 368;
-    if (negative_1308623001) {
-    Temporary1 = ((~(n_1308623000) + 1) );
+    if (negative_1426063500) {
+    Temporary1 = ((~(n_1426063499) + 1) );
     }
     else {
-    Temporary1 = n_1308623000;
+    Temporary1 = n_1426063499;
     }
     
-    var v_1308623002 = Temporary1;
+    var v_1426063501 = Temporary1;
     F.line = 375;
-    var xx_1308623003 = [];
-    if (spec_1308622996.alternateForm) {
+    var xx_1426063502 = [];
+    if (spec_1426063495.alternateForm) {
     F.line = 377;
-    switch (spec_1308622996.typ) {
+    switch (spec_1426063495.typ) {
     case 88:
       F.line = 378;
-      xx_1308623003 = nimCopy(null, makeNimstrLit("0x"), NTI33554439);
+      xx_1426063502 = nimCopy(null, makeNimstrLit("0x"), NTI33554439);
       break;
     case 120:
       F.line = 379;
-      xx_1308623003 = nimCopy(null, makeNimstrLit("0x"), NTI33554439);
+      xx_1426063502 = nimCopy(null, makeNimstrLit("0x"), NTI33554439);
       break;
     case 98:
       F.line = 380;
-      xx_1308623003 = nimCopy(null, makeNimstrLit("0b"), NTI33554439);
+      xx_1426063502 = nimCopy(null, makeNimstrLit("0b"), NTI33554439);
       break;
     case 111:
       F.line = 381;
-      xx_1308623003 = nimCopy(null, makeNimstrLit("0o"), NTI33554439);
+      xx_1426063502 = nimCopy(null, makeNimstrLit("0o"), NTI33554439);
       break;
     default: 
       break;
     }
     }
     
-    if ((v_1308623002 == 0)) {
+    if ((v_1426063501 == 0)) {
     F.line = 385;
-    result_1308622997 = nimCopy(null, makeNimstrLit("0"), NTI33554439);
+    result_1426063496 = nimCopy(null, makeNimstrLit("0"), NTI33554439);
     }
     else {
       F.line = 387;
-      result_1308622997 = nimCopy(null, [], NTI33554439);
+      result_1426063496 = nimCopy(null, [], NTI33554439);
       Label2: do {
         F.line = 388;
           Label3: while (true) {
-          if (!(0 < v_1308623002)) break Label3;
+          if (!(0 < v_1426063501)) break Label3;
             F.line = 389;
-            var d_1308623004 = (v_1308623002 % radix_1308622995);
+            var d_1426063503 = (v_1426063501 % radix_1426063494);
             F.line = 390;
-            v_1308623002 = Math.trunc(((v_1308623002 / radix_1308622995) ));
+            v_1426063501 = Math.trunc(((v_1426063501 / radix_1426063494) ));
             F.line = 391;
-            result_1308622997.push.apply(result_1308622997, mkDigit_603979781(chckRange(d_1308623004, -2147483648, 2147483647), spec_1308622996.typ));;
+            result_1426063496.push.apply(result_1426063496, mkDigit_1107296261(chckRange(d_1426063503, -2147483648, 2147483647), spec_1426063495.typ));;
           }
       } while (false);
       Label4: do {
         F.line = 392;
-        var idx_1308623009 = 0;
+        var idx_1426063508 = 0;
         F.line = 117;
-        var colontmp__452985597 = 0;
+        var colontmp__452985809 = 0;
         F.line = 392;
-        colontmp__452985597 = divInt((result_1308622997).length, 2);
+        colontmp__452985809 = divInt((result_1426063496).length, 2);
         F.line = 119;
-        var i_452985598 = 0;
+        var i_452985810 = 0;
         Label5: do {
           F.line = 120;
             Label6: while (true) {
-            if (!(i_452985598 < colontmp__452985597)) break Label6;
+            if (!(i_452985810 < colontmp__452985809)) break Label6;
               F.line = 392;
-              idx_1308623009 = i_452985598;
+              idx_1426063508 = i_452985810;
               F.line = 392;
-              var Temporary7 = result_1308622997[chckIndx(idx_1308623009, 0, (result_1308622997).length - 1)]; result_1308622997[chckIndx(idx_1308623009, 0, (result_1308622997).length - 1)] = result_1308622997[chckIndx(subInt(subInt((result_1308622997).length, idx_1308623009), 1), 0, (result_1308622997).length - 1)]; result_1308622997[chckIndx(subInt(subInt((result_1308622997).length, idx_1308623009), 1), 0, (result_1308622997).length - 1)] = Temporary7;              F.line = 122;
-              i_452985598 = addInt(i_452985598, 1);
+              var Temporary7 = result_1426063496[chckIndx(idx_1426063508, 0, (result_1426063496).length - 1)]; result_1426063496[chckIndx(idx_1426063508, 0, (result_1426063496).length - 1)] = result_1426063496[chckIndx(subInt(subInt((result_1426063496).length, idx_1426063508), 1), 0, (result_1426063496).length - 1)]; result_1426063496[chckIndx(subInt(subInt((result_1426063496).length, idx_1426063508), 1), 0, (result_1426063496).length - 1)] = Temporary7;              F.line = 122;
+              i_452985810 = addInt(i_452985810, 1);
             }
         } while (false);
       } while (false);
     }
     
-    if (spec_1308622996.padWithZero) {
+    if (spec_1426063495.padWithZero) {
     F.line = 395;
-    if (negative_1308623001) Temporary8 = true; else {      Temporary8 = !((spec_1308622996.sign == 45));    }    var sign_1308623014 = Temporary8;
+    if (negative_1426063500) Temporary8 = true; else {      Temporary8 = !((spec_1426063495.sign == 45));    }    var sign_1426063513 = Temporary8;
     F.line = 396;
-    var toFill_1308623018 = subInt(subInt(subInt(spec_1308622996.minimumWidth, (result_1308622997).length), (xx_1308623003).length), (sign_1308623014 ? 1 : 0));
-    if ((0 < toFill_1308623018)) {
+    var toFill_1426063517 = subInt(subInt(subInt(spec_1426063495.minimumWidth, (result_1426063496).length), (xx_1426063502).length), (sign_1426063513 ? 1 : 0));
+    if ((0 < toFill_1426063517)) {
     F.line = 398;
-    result_1308622997 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_1308623018, 0, 2147483647)) || []).concat(result_1308622997 || []), NTI33554439);
+    result_1426063496 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_1426063517, 0, 2147483647)) || []).concat(result_1426063496 || []), NTI33554439);
     }
     
     }
     
-    if (negative_1308623001) {
+    if (negative_1426063500) {
     F.line = 401;
-    result_1308622997 = nimCopy(null, (makeNimstrLit("-") || []).concat(xx_1308623003 || [],result_1308622997 || []), NTI33554439);
+    result_1426063496 = nimCopy(null, (makeNimstrLit("-") || []).concat(xx_1426063502 || [],result_1426063496 || []), NTI33554439);
     }
     else {
-    if (!((spec_1308622996.sign == 45))) {
+    if (!((spec_1426063495.sign == 45))) {
     F.line = 403;
-    result_1308622997 = nimCopy(null, [spec_1308622996.sign].concat(xx_1308623003 || [],result_1308622997 || []), NTI33554439);
+    result_1426063496 = nimCopy(null, [spec_1426063495.sign].concat(xx_1426063502 || [],result_1426063496 || []), NTI33554439);
     }
     else {
       F.line = 405;
-      result_1308622997 = nimCopy(null, (xx_1308623003 || []).concat(result_1308622997 || []), NTI33554439);
+      result_1426063496 = nimCopy(null, (xx_1426063502 || []).concat(result_1426063496 || []), NTI33554439);
     }
     }
-    if ((spec_1308622996.align == 60)) {
+    if ((spec_1426063495.align == 60)) {
     Label9: do {
       F.line = 408;
-      var i_1308623023 = 0;
+      var i_1426063522 = 0;
       F.line = 117;
-      var colontmp__452985601 = 0;
+      var colontmp__452985813 = 0;
       F.line = 408;
-      colontmp__452985601 = (result_1308622997).length;
+      colontmp__452985813 = (result_1426063496).length;
       F.line = 119;
-      var i_452985602 = colontmp__452985601;
+      var i_452985814 = colontmp__452985813;
       Label10: do {
         F.line = 120;
           Label11: while (true) {
-          if (!(i_452985602 < spec_1308622996.minimumWidth)) break Label11;
+          if (!(i_452985814 < spec_1426063495.minimumWidth)) break Label11;
             F.line = 408;
-            i_1308623023 = i_452985602;
+            i_1426063522 = i_452985814;
             F.line = 408;
-            addChar(result_1308622997, spec_1308622996.fill);;
+            addChar(result_1426063496, spec_1426063495.fill);;
             F.line = 122;
-            i_452985602 = addInt(i_452985602, 1);
+            i_452985814 = addInt(i_452985814, 1);
           }
       } while (false);
     } while (false);
     }
     else {
       F.line = 411;
-      var toFill_1308623024 = subInt(spec_1308622996.minimumWidth, (result_1308622997).length);
-      if ((spec_1308622996.align == 94)) {
+      var toFill_1426063523 = subInt(spec_1426063495.minimumWidth, (result_1426063496).length);
+      if ((spec_1426063495.align == 94)) {
       F.line = 413;
-      var half_1308623025 = divInt(toFill_1308623024, 2);
+      var half_1426063524 = divInt(toFill_1426063523, 2);
       F.line = 414;
-      result_1308622997 = nimCopy(null, (nsuRepeatChar(spec_1308622996.fill, chckRange(half_1308623025, 0, 2147483647)) || []).concat(result_1308622997 || [],nsuRepeatChar(spec_1308622996.fill, chckRange(subInt(toFill_1308623024, half_1308623025), 0, 2147483647)) || []), NTI33554439);
+      result_1426063496 = nimCopy(null, (nsuRepeatChar(spec_1426063495.fill, chckRange(half_1426063524, 0, 2147483647)) || []).concat(result_1426063496 || [],nsuRepeatChar(spec_1426063495.fill, chckRange(subInt(toFill_1426063523, half_1426063524), 0, 2147483647)) || []), NTI33554439);
       }
       else {
-        if ((0 < toFill_1308623024)) {
+        if ((0 < toFill_1426063523)) {
         F.line = 417;
-        result_1308622997 = nimCopy(null, (nsuRepeatChar(spec_1308622996.fill, chckRange(toFill_1308623024, 0, 2147483647)) || []).concat(result_1308622997 || []), NTI33554439);
+        result_1426063496 = nimCopy(null, (nsuRepeatChar(spec_1426063495.fill, chckRange(toFill_1426063523, 0, 2147483647)) || []).concat(result_1426063496 || []), NTI33554439);
         }
         
       }
@@ -9104,118 +10040,118 @@ function formatInt_1308622992(n_1308622994, radix_1308622995, spec_1308622996) {
     
   framePtr = F.prev;
 
-  return result_1308622997;
+  return result_1426063496;
 
 }
 
-function formatValue_1308622984(result_1308622986, result_1308622986_Idx, value_1308622987, specifier_1308622988) {
+function formatValue_1426063483(result_1426063485, result_1426063485_Idx, value_1426063486, specifier_1426063487) {
   var F = {procname: "formatValue.formatValue", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/strformat.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    if (((specifier_1308622988).length == 0)) {
+    if (((specifier_1426063487).length == 0)) {
     F.line = 477;
-    result_1308622986[result_1308622986_Idx].push.apply(result_1308622986[result_1308622986_Idx], HEX24_335544323(value_1308622987));;
+    result_1426063485[result_1426063485_Idx].push.apply(result_1426063485[result_1426063485_Idx], HEX24_335544323(value_1426063486));;
     F.line = 478;
     break BeforeRet;
     }
     
     F.line = 479;
-    var spec_1308622989 = parseStandardFormatSpecifier_603979834(specifier_1308622988, 0, false);
+    var spec_1426063488 = parseStandardFormatSpecifier_1107296314(specifier_1426063487, 0, false);
     F.line = 480;
-    var radix_1308622990 = 10;
+    var radix_1426063489 = 10;
     F.line = 481;
-    switch (spec_1308622989.typ) {
+    switch (spec_1426063488.typ) {
     case 120:
     case 88:
       F.line = 482;
-      radix_1308622990 = 16;
+      radix_1426063489 = 16;
       break;
     case 100:
     case 0:
       break;
     case 98:
       F.line = 484;
-      radix_1308622990 = 2;
+      radix_1426063489 = 2;
       break;
     case 111:
       F.line = 485;
-      radix_1308622990 = 8;
+      radix_1426063489 = 8;
       break;
     default: 
       F.line = 487;
-      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_1308622989.typ]), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
+      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_1426063488.typ]), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
       break;
     }
     F.line = 490;
-    result_1308622986[result_1308622986_Idx].push.apply(result_1308622986[result_1308622986_Idx], formatInt_1308622992(value_1308622987, radix_1308622990, spec_1308622989));;
+    result_1426063485[result_1426063485_Idx].push.apply(result_1426063485[result_1426063485_Idx], formatInt_1426063491(value_1426063486, radix_1426063489, spec_1426063488));;
   } while (false);
   framePtr = F.prev;
 
   
 }
 
-function WhenBelow_1308622968(breakpoint_1308622969, body_1308622970) {
+function WhenBelow_1426063467(breakpoint_1426063468, body_1426063469) {
               
-function single_1308622975(item_1308622976, breakpoint_1308622977) {
-                var result_1308622978 = [];
+function single_1426063474(item_1426063475, breakpoint_1426063476) {
+                var result_1426063477 = [];
 
                 var F = {procname: "WhenBelow.single", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
                 framePtr = F;
                   F.line = 176;
                   F.line = 176;
-                  var fmtRes_1308622983 = [mnewString(0)];
+                  var fmtRes_1426063482 = [mnewString(0)];
                   F.line = 176;
-                  fmtRes_1308622983[0].push.apply(fmtRes_1308622983[0], makeNimstrLit("max-["));;
+                  fmtRes_1426063482[0].push.apply(fmtRes_1426063482[0], makeNimstrLit("max-["));;
                   F.line = 176;
-                  formatValue_1308622984(fmtRes_1308622983, 0, breakpoint_1308622977, []);
+                  formatValue_1426063483(fmtRes_1426063482, 0, breakpoint_1426063476, []);
                   F.line = 176;
-                  fmtRes_1308622983[0].push.apply(fmtRes_1308622983[0], makeNimstrLit("px]:"));;
+                  fmtRes_1426063482[0].push.apply(fmtRes_1426063482[0], makeNimstrLit("px]:"));;
                   F.line = 176;
-                  formatValue_603979938(fmtRes_1308622983, 0, item_1308622976, []);
-                  result_1308622978 = nimCopy(null, fmtRes_1308622983[0], NTI33554439);
+                  formatValue_1107296418(fmtRes_1426063482, 0, item_1426063475, []);
+                  result_1426063477 = nimCopy(null, fmtRes_1426063482[0], NTI33554439);
                 framePtr = F.prev;
 
-                return result_1308622978;
+                return result_1426063477;
 
               }
 
-  var result_1308622971 = [];
+  var result_1426063470 = [];
 
   var F = {procname: "nimwind.WhenBelow", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    if (((body_1308622970).length == 0)) {
+    if (((body_1426063469).length == 0)) {
     F.line = 175;
-    result_1308622971 = nimCopy(null, [], NTI33554439);
+    result_1426063470 = nimCopy(null, [], NTI33554439);
     break BeforeRet;
     }
     
     F.line = 177;
     Label1: do {
       F.line = 1012;
-      var iHEX60gensym13_1308623047 = 0;
+      var iHEX60gensym13_1426063546 = 0;
       F.line = 1013;
-      var resultHEX60gensym13_1308623054 = newSeq_436208085(chckRange((body_1308622970).length, 0, 2147483647));
+      var resultHEX60gensym13_1426063553 = newSeq_436208085(chckRange((body_1426063469).length, 0, 2147483647));
       Label2: do {
         F.line = 1014;
-        var it_1308623058 = [];
+        var it_1426063557 = [];
         F.line = 235;
-        var i_452985584 = 0;
+        var i_452985796 = 0;
         F.line = 236;
-        var L_452985585 = (body_1308622970).length;
+        var L_452985797 = (body_1426063469).length;
         Label3: do {
           F.line = 237;
             Label4: while (true) {
-            if (!(i_452985584 < L_452985585)) break Label4;
+            if (!(i_452985796 < L_452985797)) break Label4;
               F.line = 1014;
-              it_1308623058 = body_1308622970[chckIndx(i_452985584, 0, (body_1308622970).length - 1)];
+              it_1426063557 = body_1426063469[chckIndx(i_452985796, 0, (body_1426063469).length - 1)];
               F.line = 177;
-              resultHEX60gensym13_1308623054[chckIndx(iHEX60gensym13_1308623047, 0, (resultHEX60gensym13_1308623054).length - 1)] = nimCopy(null, single_1308622975(it_1308623058, breakpoint_1308622969), NTI33554439);
+              resultHEX60gensym13_1426063553[chckIndx(iHEX60gensym13_1426063546, 0, (resultHEX60gensym13_1426063553).length - 1)] = nimCopy(null, single_1426063474(it_1426063557, breakpoint_1426063468), NTI33554439);
               F.line = 1014;
-              iHEX60gensym13_1308623047 = addInt(iHEX60gensym13_1308623047, 1);
+              iHEX60gensym13_1426063546 = addInt(iHEX60gensym13_1426063546, 1);
               F.line = 239;
-              i_452985584 = addInt(i_452985584, 1);
-              if (!(((body_1308622970).length == L_452985585))) {
+              i_452985796 = addInt(i_452985796, 1);
+              if (!(((body_1426063469).length == L_452985797))) {
               F.line = 240;
               failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
               }
@@ -9224,77 +10160,77 @@ function single_1308622975(item_1308622976, breakpoint_1308622977) {
         } while (false);
       } while (false);
     } while (false);
-    result_1308622971 = nimCopy(null, nsuJoinSep(resultHEX60gensym13_1308623054, makeNimstrLit(" ")), NTI33554439);
+    result_1426063470 = nimCopy(null, nsuJoinSep(resultHEX60gensym13_1426063553, makeNimstrLit(" ")), NTI33554439);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_1308622971;
+  return result_1426063470;
 
 }
 
-function WhenAbove_1308623063(breakpoint_1308623064, body_1308623065) {
+function WhenAbove_1426063562(breakpoint_1426063563, body_1426063564) {
               
-function single_1308623070(item_1308623071, breakpoint_1308623072) {
-                var result_1308623073 = [];
+function single_1426063569(item_1426063570, breakpoint_1426063571) {
+                var result_1426063572 = [];
 
                 var F = {procname: "WhenAbove.single", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
                 framePtr = F;
                   F.line = 182;
                   F.line = 182;
-                  var fmtRes_1308623078 = [mnewString(0)];
+                  var fmtRes_1426063577 = [mnewString(0)];
                   F.line = 182;
-                  fmtRes_1308623078[0].push.apply(fmtRes_1308623078[0], makeNimstrLit("min-["));;
+                  fmtRes_1426063577[0].push.apply(fmtRes_1426063577[0], makeNimstrLit("min-["));;
                   F.line = 182;
-                  formatValue_1308622984(fmtRes_1308623078, 0, breakpoint_1308623072, []);
+                  formatValue_1426063483(fmtRes_1426063577, 0, breakpoint_1426063571, []);
                   F.line = 182;
-                  fmtRes_1308623078[0].push.apply(fmtRes_1308623078[0], makeNimstrLit("px]:"));;
+                  fmtRes_1426063577[0].push.apply(fmtRes_1426063577[0], makeNimstrLit("px]:"));;
                   F.line = 182;
-                  formatValue_603979938(fmtRes_1308623078, 0, item_1308623071, []);
-                  result_1308623073 = nimCopy(null, fmtRes_1308623078[0], NTI33554439);
+                  formatValue_1107296418(fmtRes_1426063577, 0, item_1426063570, []);
+                  result_1426063572 = nimCopy(null, fmtRes_1426063577[0], NTI33554439);
                 framePtr = F.prev;
 
-                return result_1308623073;
+                return result_1426063572;
 
               }
 
-  var result_1308623066 = [];
+  var result_1426063565 = [];
 
   var F = {procname: "nimwind.WhenAbove", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    if (((body_1308623065).length == 0)) {
+    if (((body_1426063564).length == 0)) {
     F.line = 181;
-    result_1308623066 = nimCopy(null, [], NTI33554439);
+    result_1426063565 = nimCopy(null, [], NTI33554439);
     break BeforeRet;
     }
     
     F.line = 183;
     Label1: do {
       F.line = 1012;
-      var iHEX60gensym17_1308623105 = 0;
+      var iHEX60gensym17_1426063604 = 0;
       F.line = 1013;
-      var resultHEX60gensym17_1308623112 = newSeq_436208085(chckRange((body_1308623065).length, 0, 2147483647));
+      var resultHEX60gensym17_1426063611 = newSeq_436208085(chckRange((body_1426063564).length, 0, 2147483647));
       Label2: do {
         F.line = 1014;
-        var it_1308623116 = [];
+        var it_1426063615 = [];
         F.line = 235;
-        var i_452985606 = 0;
+        var i_452985818 = 0;
         F.line = 236;
-        var L_452985607 = (body_1308623065).length;
+        var L_452985819 = (body_1426063564).length;
         Label3: do {
           F.line = 237;
             Label4: while (true) {
-            if (!(i_452985606 < L_452985607)) break Label4;
+            if (!(i_452985818 < L_452985819)) break Label4;
               F.line = 1014;
-              it_1308623116 = body_1308623065[chckIndx(i_452985606, 0, (body_1308623065).length - 1)];
+              it_1426063615 = body_1426063564[chckIndx(i_452985818, 0, (body_1426063564).length - 1)];
               F.line = 183;
-              resultHEX60gensym17_1308623112[chckIndx(iHEX60gensym17_1308623105, 0, (resultHEX60gensym17_1308623112).length - 1)] = nimCopy(null, single_1308623070(it_1308623116, breakpoint_1308623064), NTI33554439);
+              resultHEX60gensym17_1426063611[chckIndx(iHEX60gensym17_1426063604, 0, (resultHEX60gensym17_1426063611).length - 1)] = nimCopy(null, single_1426063569(it_1426063615, breakpoint_1426063563), NTI33554439);
               F.line = 1014;
-              iHEX60gensym17_1308623105 = addInt(iHEX60gensym17_1308623105, 1);
+              iHEX60gensym17_1426063604 = addInt(iHEX60gensym17_1426063604, 1);
               F.line = 239;
-              i_452985606 = addInt(i_452985606, 1);
-              if (!(((body_1308623065).length == L_452985607))) {
+              i_452985818 = addInt(i_452985818, 1);
+              if (!(((body_1426063564).length == L_452985819))) {
               F.line = 240;
               failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
               }
@@ -9303,305 +10239,1030 @@ function single_1308623070(item_1308623071, breakpoint_1308623072) {
         } while (false);
       } while (false);
     } while (false);
-    result_1308623066 = nimCopy(null, nsuJoinSep(resultHEX60gensym17_1308623112, makeNimstrLit(" ")), NTI33554439);
+    result_1426063565 = nimCopy(null, nsuJoinSep(resultHEX60gensym17_1426063611, makeNimstrLit(" ")), NTI33554439);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_1308623066;
+  return result_1426063565;
 
 }
 
-function buildName_1308623121(name_1308623122) {
-  var result_1308623123 = [];
+function buildName_1426063620(name_1426063621) {
+  var result_1426063622 = [];
 
   var F = {procname: "nimwind.buildName", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    if (eqStrings(name_1308623122, [])) {
+    if (eqStrings(name_1426063621, [])) {
     F.line = 188;
-    result_1308623123 = nimCopy(null, [], NTI33554439);
+    result_1426063622 = nimCopy(null, [], NTI33554439);
     break BeforeRet;
     }
     else {
       F.line = 190;
-      result_1308623123 = nimCopy(null, (makeNimstrLit("<!-- ") || []).concat(name_1308623122 || [],makeNimstrLit(" -->") || []), NTI33554439);
+      result_1426063622 = nimCopy(null, (makeNimstrLit("<!-- ") || []).concat(name_1426063621 || [],makeNimstrLit(" -->") || []), NTI33554439);
       break BeforeRet;
     }
     
   } while (false);
   framePtr = F.prev;
 
-  return result_1308623123;
+  return result_1426063622;
 
 }
 
-function col_452985442(body_452985449, name_452985450, hover_452985451, gap_452985452, itemposh_452985453, itemposv_452985454, bgColor_452985455, round_452985456, p_452985457, h_452985458, w_452985459, head_452985460, whenBelow_452985461, whenAbove_452985462, extra_class_452985463, wrap_452985464) {
+function col_1358954634(body_1358954641, name_1358954642, hover_1358954643, gap_1358954644, itemposh_1358954645, itemposv_1358954646, bgColor_1358954647, round_1358954648, p_1358954649, h_1358954650, w_1358954651, head_1358954652, whenBelow_1358954653, whenAbove_1358954654, extra_class_1358954655, wrap_1358954656) {
     var Temporary1;
 
-  var result_452985465 = [];
+  var result_1358954657 = [];
 
   var F = {procname: "col.col", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimwind.nim", line: 0};
   framePtr = F;
     F.line = 276;
-    if (wrap_452985464) {
+    if (wrap_1358954656) {
     Temporary1 = makeNimstrLit("flex-wrap");
     }
     else {
     Temporary1 = [];
     }
     
-    result_452985465 = nimCopy(null, multiReplace_587204299(makeNimstrLit("    __name__\x0A    <div \x0A        class=\"\x0A        flex flex-col __gap__ __bgColor__ __itemposv__ \x0A        __padding__ __h__ __w__ __round__ __whenBelow__ __whenAbove__ __extra_class__ \x0A        __itemposh__ __wrap__\"\x0A        \x0A        __head__ \x0A    >\x0A        __body__\x0A    </div>\x0A    "), [nimCopy(null, {Field0: makeNimstrLit("__body__"), Field1: nimCopy(null, body_452985449, NTI33554439)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__gap__"), Field1: buildGap_452985466(gap_452985452)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__bgColor__"), Field1: bgColor_1308622910(bgColor_452985455)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__head__"), Field1: nimCopy(null, head_452985460, NTI33554439)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__itemposv__"), Field1: justify_452985476(itemposv_452985454)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__itemposh__"), Field1: alignItems_452985481(itemposh_452985453)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__padding__"), Field1: nimCopy(null, p_452985457, NTI33554439)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__h__"), Field1: buildHeight_452985486(h_452985458)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__w__"), Field1: buildWidth_452985491(w_452985459)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__round__"), Field1: buildRound_452985496(round_452985456)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__whenBelow__"), Field1: WhenBelow_1308622968(whenBelow_452985461["Field0"], whenBelow_452985461["Field1"])}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__whenAbove__"), Field1: WhenAbove_1308623063(whenAbove_452985462["Field0"], whenAbove_452985462["Field1"])}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__extra_class__"), Field1: nimCopy(null, extra_class_452985463, NTI33554439)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__name__"), Field1: buildName_1308623121(name_452985450)}, NTI452985350), nimCopy(null, {Field0: makeNimstrLit("__wrap__"), Field1: nimCopy(null, Temporary1, NTI33554439)}, NTI452985350)]), NTI33554439);
+    result_1358954657 = nimCopy(null, multiReplace_989857483(makeNimstrLit("    __name__\x0A    <div \x0A        class=\"\x0A        flex flex-col __gap__ __bgColor__ __itemposv__ \x0A        __padding__ __h__ __w__ __round__ __whenBelow__ __whenAbove__ __extra_class__ \x0A        __itemposh__ __wrap__\"\x0A        \x0A        __head__ \x0A    >\x0A        __body__\x0A    </div>\x0A    "), [nimCopy(null, {Field0: makeNimstrLit("__body__"), Field1: nimCopy(null, body_1358954641, NTI33554439)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__gap__"), Field1: buildGap_1358954563(gap_1358954644)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__bgColor__"), Field1: bgColor_1426063418(bgColor_1358954647)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__head__"), Field1: nimCopy(null, head_1358954652, NTI33554439)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__itemposv__"), Field1: justify_1358954573(itemposv_1358954646)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__itemposh__"), Field1: alignItems_1358954588(itemposh_1358954645)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__padding__"), Field1: nimCopy(null, p_1358954649, NTI33554439)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__h__"), Field1: buildHeight_1358954578(h_1358954650)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__w__"), Field1: buildWidth_1358954583(w_1358954651)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__round__"), Field1: buildRound_1358954593(round_1358954648)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__whenBelow__"), Field1: WhenBelow_1426063467(whenBelow_1358954653["Field0"], whenBelow_1358954653["Field1"])}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__whenAbove__"), Field1: WhenAbove_1426063562(whenAbove_1358954654["Field0"], whenAbove_1358954654["Field1"])}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__extra_class__"), Field1: nimCopy(null, extra_class_1358954655, NTI33554439)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__name__"), Field1: buildName_1426063620(name_1358954642)}, NTI1358954621), nimCopy(null, {Field0: makeNimstrLit("__wrap__"), Field1: nimCopy(null, Temporary1, NTI33554439)}, NTI1358954621)]), NTI33554439);
   framePtr = F.prev;
 
-  return result_452985465;
+  return result_1358954657;
 
 }
 
-function icon_1342177282(svg_1342177283, color_1342177284, size_1342177285) {
+function icon_1459617794(svg_1459617795, color_1459617796, size_1459617797) {
     var Temporary1;
     var Temporary2;
 
-  var result_1342177286 = [];
+  var result_1459617798 = [];
 
   var F = {procname: "nimsvgicons.icon", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
   framePtr = F;
     F.line = 4;
-    if ((0 < (color_1342177284).length)) {
-    Temporary1 = color_1342177284;
+    if ((0 < (color_1459617796).length)) {
+    Temporary1 = color_1459617796;
     }
     else {
     Temporary1 = makeNimstrLit("white");
     }
     
-    if ((0 < (size_1342177285).length)) {
-    Temporary2 = size_1342177285;
+    if ((0 < (size_1459617797).length)) {
+    Temporary2 = size_1459617797;
     }
     else {
     Temporary2 = makeNimstrLit("100px");
     }
     
-    result_1342177286 = nimCopy(null, multiReplace_587204299(svg_1342177283, [nimCopy(null, {Field0: makeNimstrLit("__color__"), Field1: nimCopy(null, Temporary1, NTI33554439)}, NTI1342177285), nimCopy(null, {Field0: makeNimstrLit("__size__"), Field1: nimCopy(null, Temporary2, NTI33554439)}, NTI1342177285)]), NTI33554439);
+    result_1459617798 = nimCopy(null, multiReplace_989857483(svg_1459617795, [nimCopy(null, {Field0: makeNimstrLit("__color__"), Field1: nimCopy(null, Temporary1, NTI33554439)}, NTI1459617797), nimCopy(null, {Field0: makeNimstrLit("__size__"), Field1: nimCopy(null, Temporary2, NTI33554439)}, NTI1459617797)]), NTI33554439);
   framePtr = F.prev;
 
-  return result_1342177286;
+  return result_1459617798;
 
 }
 
-function chevron_down_1342177325(color_1342177326, size_1342177327) {
-  var result_1342177328 = [];
+function chevron_down_1459617819(color_1459617820, size_1459617821) {
+  var result_1459617822 = [];
 
   var F = {procname: "nimsvgicons.chevron_down", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimsvgicons.nim", line: 0};
   framePtr = F;
     F.line = 118;
-    result_1342177328 = nimCopy(null, icon_1342177282(makeNimstrLit("<?xml version=\"1.0\" encoding=\"utf-8\"?>\x0A<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\x0A<svg \x0A                width=\'__size__\'\x0A                fill=\"__color__\"\x0A                \x0Aversion=\"1.1\" id=\"Design_here\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\"\x0A\x09 y=\"0px\" viewBox=\"0 0 24 24\" style=\"enable-background:new 0 0 24 24;\" xml:space=\"preserve\">\x0A<g>\x0A\x09<polygon points=\"12,17.414 3.293,8.707 4.707,7.293 12,14.586 19.293,7.293 20.707,8.707 \x09\"/>\x0A</g>\x0A</svg>\x0A\x0A"), color_1342177326, size_1342177327), NTI33554439);
+    result_1459617822 = nimCopy(null, icon_1459617794(makeNimstrLit("<?xml version=\"1.0\" encoding=\"utf-8\"?>\x0A<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\x0A<svg \x0A                width=\'__size__\'\x0A                fill=\"__color__\"\x0A                \x0Aversion=\"1.1\" id=\"Design_here\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\"\x0A\x09 y=\"0px\" viewBox=\"0 0 24 24\" style=\"enable-background:new 0 0 24 24;\" xml:space=\"preserve\">\x0A<g>\x0A\x09<polygon points=\"12,17.414 3.293,8.707 4.707,7.293 12,14.586 19.293,7.293 20.707,8.707 \x09\"/>\x0A</g>\x0A</svg>\x0A\x0A"), color_1459617820, size_1459617821), NTI33554439);
   framePtr = F.prev;
 
-  return result_1342177328;
+  return result_1459617822;
 
 }
 
-function ghost_writer_tab_mobile_452985415(title_452985416, content_452985417, tab_name_452985418) {
+function ghost_writer_tab_1358955314(title_1358955315, content_1358955316, tab_name_1358955317, scenario_num_1358955318, id_1358955319) {
     
-function text_452985421(text_452985422) {
-      var result_452985423 = [];
+function text_1358955322(text_1358955323) {
+      var result_1358955324 = [];
 
-      var F = {procname: "ghost_writer_tab_mobile.text", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+      var F = {procname: "ghost_writer_tab.text", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
       framePtr = F;
-        F.line = 199;
-        F.line = 199;
-        var fmtRes_452985428 = [mnewString(0)];
-        F.line = 199;
-        fmtRes_452985428[0].push.apply(fmtRes_452985428[0], makeNimstrLit("<p "));;
-        F.line = 199;
-        formatValue_603979938(fmtRes_452985428, 0, xdd_452985420.Field1, []);
-        F.line = 199;
-        fmtRes_452985428[0].push.apply(fmtRes_452985428[0], makeNimstrLit(" >"));;
-        F.line = 199;
-        formatValue_603979938(fmtRes_452985428, 0, text_452985422, []);
-        F.line = 199;
-        fmtRes_452985428[0].push.apply(fmtRes_452985428[0], makeNimstrLit("</p>"));;
-        result_452985423 = nimCopy(null, fmtRes_452985428[0], NTI33554439);
+        F.line = 228;
+        F.line = 228;
+        var fmtRes_1358955329 = [mnewString(0)];
+        F.line = 228;
+        fmtRes_1358955329[0].push.apply(fmtRes_1358955329[0], makeNimstrLit("<p "));;
+        F.line = 228;
+        formatValue_1107296418(fmtRes_1358955329, 0, xdd_1358955321.Field1, []);
+        F.line = 228;
+        fmtRes_1358955329[0].push.apply(fmtRes_1358955329[0], makeNimstrLit(" >"));;
+        F.line = 228;
+        formatValue_1107296418(fmtRes_1358955329, 0, text_1358955323, []);
+        F.line = 228;
+        fmtRes_1358955329[0].push.apply(fmtRes_1358955329[0], makeNimstrLit("</p>"));;
+        result_1358955324 = nimCopy(null, fmtRes_1358955329[0], NTI33554439);
       framePtr = F.prev;
 
-      return result_452985423;
+      return result_1358955324;
 
     }
     
-function Content_452985429(content_452985430) {
-      var result_452985431 = [];
+function Content_1358955330(content_1358955331) {
+      var result_1358955332 = [];
 
-      var F = {procname: "ghost_writer_tab_mobile.Content", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+      var F = {procname: "ghost_writer_tab.Content", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
       framePtr = F;
-        F.line = 200;
-        F.line = 200;
-        var fmtRes_452985436 = [mnewString(0)];
-        F.line = 200;
-        fmtRes_452985436[0].push.apply(fmtRes_452985436[0], makeNimstrLit("<p"));;
-        F.line = 200;
-        formatValue_603979938(fmtRes_452985436, 0, xdd_452985420.Field2, []);
-        F.line = 200;
-        fmtRes_452985436[0].push.apply(fmtRes_452985436[0], makeNimstrLit(" >"));;
-        F.line = 200;
-        formatValue_603979938(fmtRes_452985436, 0, content_452985430, []);
-        F.line = 200;
-        fmtRes_452985436[0].push.apply(fmtRes_452985436[0], makeNimstrLit("</p>"));;
-        result_452985431 = nimCopy(null, fmtRes_452985436[0], NTI33554439);
+        F.line = 229;
+        F.line = 229;
+        var fmtRes_1358955337 = [mnewString(0)];
+        F.line = 229;
+        fmtRes_1358955337[0].push.apply(fmtRes_1358955337[0], makeNimstrLit("<p"));;
+        F.line = 229;
+        formatValue_1107296418(fmtRes_1358955337, 0, xdd_1358955321.Field2, []);
+        F.line = 229;
+        fmtRes_1358955337[0].push.apply(fmtRes_1358955337[0], makeNimstrLit(" >"));;
+        F.line = 229;
+        formatValue_1107296418(fmtRes_1358955337, 0, content_1358955331, []);
+        F.line = 229;
+        fmtRes_1358955337[0].push.apply(fmtRes_1358955337[0], makeNimstrLit("</p>"));;
+        result_1358955332 = nimCopy(null, fmtRes_1358955337[0], NTI33554439);
       framePtr = F.prev;
 
-      return result_452985431;
+      return result_1358955332;
 
     }
+    var Temporary1;
+    var Temporary2;
 
-  var result_452985419 = [];
+  var result_1358955320 = [];
 
-  var F = {procname: "cgpt_page_fe.ghost_writer_tab_mobile", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  var F = {procname: "cgpt_page.ghost_writer_tab", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
   framePtr = F;
-    F.line = 198;
-    F.line = 198;
-    var xdd_452985420 = xdd_1325400069();
-    F.line = 206;
-    var fmtRes_452985441 = [mnewString(0)];
-    F.line = 206;
-    formatValue_603979938(fmtRes_452985441, 0, xdd_452985420.Field0, []);
-    F.line = 206;
-    fmtRes_452985441[0].push.apply(fmtRes_452985441[0], makeNimstrLit(" \x0Astyle=\'border-radius:10px; cursor:pointer;\' \x0A@click.prevent=\"activeTab = \'"));;
-    F.line = 206;
-    formatValue_603979938(fmtRes_452985441, 0, tab_name_452985418, []);
-    F.line = 206;
-    fmtRes_452985441[0].push.apply(fmtRes_452985441[0], makeNimstrLit("\'\" \x0A:class=\"activeTab === \'"));;
-    F.line = 206;
-    formatValue_603979938(fmtRes_452985441, 0, tab_name_452985418, []);
-    F.line = 206;
-    fmtRes_452985441[0].push.apply(fmtRes_452985441[0], makeNimstrLit("\' ? \'bg-[#816AFE] text-[white]\' : \'\'\" \x0A:id=\"activeTab === \'"));;
-    F.line = 206;
-    formatValue_603979938(fmtRes_452985441, 0, tab_name_452985418, []);
-    F.line = 206;
-    fmtRes_452985441[0].push.apply(fmtRes_452985441[0], makeNimstrLit("\' ? \'selected-scenario\' : \'\'\" \x0A\x0A"));;
-    result_452985419 = nimCopy(null, col_452985442((text_452985421(title_452985416) || []).concat(chevron_down_1342177325(makeNimstrLit("red"), makeNimstrLit("25px")) || [],Content_452985429(content_452985417) || []), [], [], [], makeNimstrLit("c"), makeNimstrLit("c"), makeNimstrLit("#FFFFFF"), false, makeNimstrLit("p-3"), [], makeNimstrLit("full"), fmtRes_452985441[0], {Field0: 0, Field1: []}, {Field0: 0, Field1: []}, makeNimstrLit("text-slate-700"), false), NTI33554439);
+    F.line = 227;
+    F.line = 227;
+    var xdd_1358955321 = xdd_1442840581();
+    if (eqStrings(id_1358955319, [])) {
+    Temporary1 = makeNimstrLit("#FFFFFF");
+    }
+    else {
+    Temporary1 = makeNimstrLit("#816AFE");
+    }
+    
+    F.line = 246;
+    var fmtRes_1358955355 = [mnewString(0)];
+    F.line = 246;
+    fmtRes_1358955355[0].push.apply(fmtRes_1358955355[0], makeNimstrLit("        id = \'"));;
+    F.line = 246;
+    formatValue_1107296418(fmtRes_1358955355, 0, id_1358955319, []);
+    F.line = 246;
+    fmtRes_1358955355[0].push.apply(fmtRes_1358955355[0], makeNimstrLit("\'\x0A        "));;
+    F.line = 246;
+    formatValue_1107296418(fmtRes_1358955355, 0, xdd_1358955321.Field0, []);
+    F.line = 246;
+    fmtRes_1358955355[0].push.apply(fmtRes_1358955355[0], makeNimstrLit(" \x0A        style=\'border-radius:10px; cursor:pointer;\' \x0A      "));;
+    if (eqStrings(id_1358955319, [])) {
+    Temporary2 = makeNimstrLit("text-slate-700");
+    }
+    else {
+    Temporary2 = makeNimstrLit("text-[white] ");
+    }
+    
+    result_1358955320 = nimCopy(null, col_1358954634((text_1358955322(title_1358955315) || []).concat(chevron_down_1459617819(makeNimstrLit("red"), makeNimstrLit("25px")) || [],Content_1358955330(content_1358955316) || []), [], [], [], makeNimstrLit("c"), makeNimstrLit("c"), Temporary1, false, makeNimstrLit("p-3"), [], makeNimstrLit("full"), fmtRes_1358955355[0], {Field0: 0, Field1: []}, {Field0: 0, Field1: []}, Temporary2, false), NTI33554439);
   framePtr = F.prev;
 
-  return result_452985419;
+  return result_1358955320;
 
 }
-var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
-framePtr = F;
-F.line = 222;
-var spinner_452985523 = document.getElementById("spinner");
-F.line = 223;
-spinner_452985523.style.display = "none";
-Label4: do {
-  F.line = 226;
-  var ii_452985541 = [-1];
-  Label5: do {
-    F.line = 225;
-    var scenario_452985545 = [({title: [], content: []})];
-    F.line = 235;
-    var i_452985554 = 0;
-    F.line = 236;
-    var L_452985555 = (scenarios_452985154).length;
-    Label6: do {
-      F.line = 237;
-        Label7: while (true) {
-        if (!(i_452985554 < L_452985555)) break Label7;
-          F.line = 226;
-          scenario_452985545[0] = scenarios_452985154[chckIndx(i_452985554, 0, (scenarios_452985154).length - 1)];
-          F.line = 226;
-          ii_452985541[0] = addInt(ii_452985541[0], 1);
-          F.line = 226;
-          ghost_writer_row_mobile_452985402.appendChild(Template_452985214(ghost_writer_tab_mobile_452985415(scenario_452985545[0].title, scenario_452985545[0].content, (makeNimstrLit("s") || []).concat(HEX24_335544323(ii_452985541[0]) || []))));
-          F.line = 239;
-          i_452985554 = addInt(i_452985554, 1);
-          if (!(((scenarios_452985154).length == L_452985555))) {
-          F.line = 240;
-          failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
-          }
-          
-        }
-    } while (false);
-  } while (false);
-} while (false);
-F.line = 232;
-var selected_scenario_452985550 = document.getElementById("selected-scenario");
-F.line = 233;
-var next_scenario_btn = document.getElementById("next-scenario-btn");
-framePtr = F.prev;
 
-function buildPrompt2_452984857(selection_452984858) {
-  var result_452984859 = null;
+function isNone_452985634(self_452985636) {
+  var result_452985637 = false;
+
+  var F = {procname: "isNone.isNone", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+    F.line = 172;
+    result_452985637 = !(self_452985636.has);
+  framePtr = F.prev;
+
+  return result_452985637;
+
+}
+
+function get_452985626(self_452985628) {
+  var result_452985629 = ({title: [], content: [], selected: false, number: 0});
+
+  var F = {procname: "get.get", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+    if (isNone_452985634(self_452985628)) {
+    F.line = 198;
+    raiseException({message: makeNimstrLit("Can\'t obtain a value from a `none`"), parent: null, m_type: NTI603979796, name: null, trace: [], up: null}, "UnpackDefect");
+    }
+    
+    F.line = 199;
+    result_452985629 = self_452985628.val;
+  framePtr = F.prev;
+
+  return result_452985629;
+
+}
+
+function gen_second_scenario_btn_1358955299() {
+  var result_1358955300 = [];
+
+  var F = {procname: "cgpt_page.gen_second_scenario_btn", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+  framePtr = F;
+    F.line = 201;
+    F.line = 201;
+    var fmtRes_1358955305 = [mnewString(0)];
+    F.line = 201;
+    fmtRes_1358955305[0].push.apply(fmtRes_1358955305[0], makeNimstrLit("  <button id=\""));;
+    F.line = 201;
+    formatValue_1107296418(fmtRes_1358955305, 0, makeNimstrLit("generate-second-scenario-btn"), []);
+    F.line = 201;
+    fmtRes_1358955305[0].push.apply(fmtRes_1358955305[0], makeNimstrLit("\">\x0A    Generate 3 more scenarios with ChatGPT\x0A  </button>\x0A  "));;
+    result_1358955300 = nimCopy(null, fmtRes_1358955305[0], NTI33554439);
+  framePtr = F.prev;
+
+  return result_1358955300;
+
+}
+
+function none_587202578() {
+  var result_587202584 = ({val: null});
+
+  var F = {procname: "none.none", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+  framePtr = F.prev;
+
+  return result_587202584;
+
+}
+
+function some_587202585(val_587202587) {
+  var result_587202588 = ({val: null});
+
+  var F = {procname: "some.some", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+    if (!(!((val_587202587 == null)))) {
+    F.line = 133;
+    failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim(133, 5) `not val.isNil` "));
+    }
+    
+    F.line = 134;
+    result_587202588.val = val_587202587;
+  framePtr = F.prev;
+
+  return result_587202588;
+
+}
+
+function gebi_587202616(idd_587202617) {
+  var result_587202619 = ({val: null});
+
+  var F = {procname: "nimjs.gebi", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 19;
+    var el_587202620 = document.getElementById(toJSStr(idd_587202617));
+    if ((el_587202620 == null)) {
+    F.line = 21;
+    result_587202619 = nimCopy(result_587202619, none_587202578(), NTI587202570);
+    break BeforeRet;
+    }
+    else {
+      F.line = 23;
+      result_587202619 = nimCopy(result_587202619, some_587202585(el_587202620), NTI587202570);
+      break BeforeRet;
+    }
+    
+  } while (false);
+  framePtr = F.prev;
+
+  return result_587202619;
+
+}
+
+function isNone_452985348(self_452985350) {
+  var result_452985351 = false;
+
+  var F = {procname: "isNone.isNone", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+    F.line = 172;
+    result_452985351 = (self_452985350.val == null);
+  framePtr = F.prev;
+
+  return result_452985351;
+
+}
+
+function isSome_452985361(self_452985363) {
+  var result_452985364 = false;
+
+  var F = {procname: "isSome.isSome", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+    F.line = 157;
+    result_452985364 = !((self_452985363.val == null));
+  framePtr = F.prev;
+
+  return result_452985364;
+
+}
+
+function get_452985381(self_452985383) {
+  var result_452985384 = null;
+
+  var F = {procname: "get.get", prev: framePtr, filename: "/root/.choosenim/toolchains/nim-1.6.12/lib/pure/options.nim", line: 0};
+  framePtr = F;
+    if (isNone_452985348(self_452985383)) {
+    F.line = 198;
+    raiseException({message: makeNimstrLit("Can\'t obtain a value from a `none`"), parent: null, m_type: NTI603979796, name: null, trace: [], up: null}, "UnpackDefect");
+    }
+    
+    F.line = 199;
+    result_452985384 = self_452985383["val"];
+  framePtr = F.prev;
+
+  return result_452985384;
+
+}
+
+function hide_452984928(el_452984930) {
+  var F = {procname: "hide.hide", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+  framePtr = F;
+    F.line = 83;
+    el_452984930.style.display = "none";
+  framePtr = F.prev;
+
+  
+}
+
+function hide_unselected_options_452984903(section_452984904, selected_id_452984905) {
+  var F = {procname: "cgpt_page_fe.hide_unselected_options", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+    Label1: do {
+      F.line = 169;
+      var child_452984927 = null;
+      F.line = 235;
+      var i_452985829 = 0;
+      F.line = 236;
+      var L_452985830 = (section_452984904.children).length;
+      Label2: do {
+        F.line = 237;
+          Label3: while (true) {
+          if (!(i_452985829 < L_452985830)) break Label3;
+            F.line = 169;
+            child_452984927 = section_452984904.children[chckIndx(i_452985829, 0, (section_452984904.children).length - 1)];
+            if (!((child_452984927.id == toJSStr(selected_id_452984905)))) {
+            F.line = 171;
+            hide_452984928(child_452984927);
+            }
+            
+            F.line = 239;
+            i_452985829 = addInt(i_452985829, 1);
+            if (!(((section_452984904.children).length == L_452985830))) {
+            F.line = 240;
+            failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
+            }
+            
+          }
+      } while (false);
+    } while (false);
+  framePtr = F.prev;
+
+  
+}
+
+function add_to_local_storage_452984993(scenario_452984994) {
+  var F = {procname: "cgpt_page_fe.add_to_local_storage", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+    F.line = 183;
+    F.line = 184;
+    var fmtRes_452984999 = [mnewString(0)];
+    F.line = 184;
+    fmtRes_452984999[0].push.apply(fmtRes_452984999[0], makeNimstrLit("scenario_"));;
+    F.line = 184;
+    formatValue_1426063483(fmtRes_452984999, 0, scenario_452984994.number, []);
+    window.localStorage.setItem(toJSStr(fmtRes_452984999[0]), toJSStr(multiReplace_989857483(makeNimstrLit("{\"title\"    : \"__title__\", \"content\"  : \"__content__\", \"selected\" :  __selected__ }"), [nimCopy(null, {Field0: makeNimstrLit("__title__"), Field1: nimCopy(null, scenario_452984994.title, NTI33554439)}, NTI452984942), nimCopy(null, {Field0: makeNimstrLit("__content__"), Field1: nimCopy(null, scenario_452984994.content, NTI33554439)}, NTI452984942), nimCopy(null, {Field0: makeNimstrLit("__selected__"), Field1: nimBoolToStr(scenario_452984994.selected)}, NTI452984942)])));
+  framePtr = F.prev;
+
+  
+}
+
+function buildPrompt2_452984874(selection_452984875) {
+  var result_452984876 = null;
 
   var F = {procname: "cgpt_page_fe.buildPrompt2", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
   framePtr = F;
-    F.line = 135;
-    result_452984859 = toJSStr(multiReplace_587204299(makeNimstrLit("  You are story telling AI\x0A  Here is the premise of a story I want to tell\x0A\x0A  In a future where technology has turned against humanity, plunging society into chaos, a young woman named Gaia embarks on a transformative journey that blends the mysticism of nature with the remnants of advanced technology. The story follows Gaia as she discovers a hidden power long forgotten by her people.\x0A\x0A  Set in a world where civilization has regressed to a simpler, country-style existence, yet still relies on remnants of advanced technology, Gaia struggles to find her place. Tragically, her mother\'s unexpected death leaves her feeling lost and desperate, yearning for an escape from her pain. In an impulsive act, she ventures into the wilderness, hoping to find solace and perhaps even join her mother in death.\x0A\x0A  As Gaia aimlessly wanders through the vast woods, the weight of her grief becomes almost unbearable. Exhausted and on the brink of despair, she seeks refuge beneath a majestic tree perched on the edge of a towering cliff overlooking the endless ocean. There, amidst her tears, she catches a glimpse of something extraordinary\xE2\x80\x94a plant she recognizes from her storybooks, believed to be deadly poisonous. Its radiant red petals adorned with enchanting white circles atop a bulbous stalk captivate her in a moment of profound desperation.\x0A\x0A  Driven by a deep longing to reconnect with her mother\'s memory and with nothing left to lose, Gaia consumes the forbidden plant. Anticipating her impending demise, she stares out at the horizon, bracing herself for what she believes will be her final moments. However, instead of death\'s cold embrace, Gaia experiences a remarkable transformation. The world around her erupts in an explosion of vibrant colors, her senses heightened to an unimaginable degree. As her heart races with newfound intensity, she questions whether this is death or something altogether unexpected.\x0A\x0A  Now blessed with heightened perception and a mysterious connection to the psychedelic plant\'s power, Gaia embarks on a quest to uncover the truth behind this lost knowledge and rediscover her purpose. Along the way, she encounters a diverse cast of characters\xE2\x80\x94an eclectic group of individuals with their own unique talents, scars, and aspirations. Together, they navigate a treacherous landscape, where advanced technology clashes with the raw forces of nature and humanity teeters on the edge of oblivion.\x0A\x0A  \"WIDE FEELS\" is an enthralling comic book series that combines elements of dystopian sci-fi, mystical exploration, and the power of personal transformation. As Gaia unravels the secrets of the psychedelic plant medicine, she discovers not only her own inner strength but also the potential for humanity\'s redemption in a world that has turned its back on its own creations.\x0A\x0A  Here is the over arching conflict of the story\x0A  As Gaia discovers her newfound ability to perceive the world in extraordinary ways through the consumption of the psychedelic plant, she becomes aware of the profound healing potential it possesses. However, the society she inhabits has long forgotten this knowledge, gripped by despair and the fear of their impending extinction. With the global population reduced to a mere 3 billion and dwindling rapidly, hope is a scarce commodity.\x0A\x0A  As Gaia delves deeper into her exploration of the plant\'s powers, she realizes that its healing properties could hold the key to revitalizing humanity and restoring their lost connection to nature. The conflict arises as she faces the daunting task of reawakening this forgotten knowledge within her society. She must confront the prevailing skepticism, fear, and resistance that permeate the hearts and minds of those around her.\x0A\x0A  The desperate remnants of humanity, clinging to their country-style existence amid the remnants of advanced technology, view the plant with suspicion and ignorance. Powerful factions, driven by a desire to maintain control and order in a chaotic world, seek to suppress any potential threats to their dominance, including the rediscovery of the plant\'s medicinal abilities.\x0A\x0A  Gaia finds herself torn between her newfound purpose and the overwhelming opposition she encounters. She must navigate treacherous alliances, evade capture, and gather a group of like-minded individuals who share her vision of healing and restoration. Together, they form an underground movement, working in secrecy to protect the plant\'s knowledge and bring hope back to their desolate world.\x0A\x0A  The conflict intensifies as Gaia and her allies face off against formidable adversaries, including those who seek to exploit the plant\'s power for their own selfish gain. They must overcome their own doubts and limitations while staying one step ahead of those who would silence them. Along the way, they uncover the dark secrets behind the loss of knowledge and the true origins of the technology that turned against humanity.\x0A\x0A  Through their daring actions and unwavering determination, Gaia and her companions become beacons of hope in a world gripped by despair. Their quest to restore the healing powers of the psychedelic plant medicine becomes a race against time, as they strive to revitalize a dying world and awaken the dormant potential within humanity.\x0A\x0A  In this conflict-ridden landscape, where the forces of oppression and ignorance collide with the resilience and courage of a small group, \"WIDE FEELS\" explores themes of redemption, self-discovery, and the transformative power of reconnecting with nature. It is a tale of hope, resistance, and the triumph of the human spirit in the face of seemingly insurmountable odds\x0A\x0A  This is the first scenario the user has chosen\x0A\x0A  __user_selection__\x0A  \x0A  create THREE different scenarios for chapter 1.1 for the user to choose from\x0A  make sure the scenarios you generate are based off of the premise and previous scenario\x0A  Make sure to return excatly three scenarios\x0A\x0A  format your response as a json array repsonse that looks like this\x0A\x0A  [\x0A    {\x0A      \"title\": \"hehe\",\x0A      \"content\": \"..\"\x0A    },\x0A    {\x0A      \"title\": \"...\",\x0A      \"content\": \"..\"\x0A    },\x0A    {\x0A      \"title\": \"...\",\x0A      \"content\": \"..\"\x0A    }\x0A\x0A  ]\x0A  "), [nimCopy(null, {Field0: makeNimstrLit("__user_selection__"), Field1: cstrToNimstr(selection_452984858)}, NTI452984837)]));
+    F.line = 140;
+    result_452984876 = toJSStr(multiReplace_989857483(makeNimstrLit("  You are story telling AI\x0A  Here is the premise of a story I want to tell\x0A\x0A  In a future where technology has turned against humanity, plunging society into chaos, a young woman named Gaia embarks on a transformative journey that blends the mysticism of nature with the remnants of advanced technology. The story follows Gaia as she discovers a hidden power long forgotten by her people.\x0A\x0A  Set in a world where civilization has regressed to a simpler, country-style existence, yet still relies on remnants of advanced technology, Gaia struggles to find her place. Tragically, her mother\'s unexpected death leaves her feeling lost and desperate, yearning for an escape from her pain. In an impulsive act, she ventures into the wilderness, hoping to find solace and perhaps even join her mother in death.\x0A\x0A  As Gaia aimlessly wanders through the vast woods, the weight of her grief becomes almost unbearable. Exhausted and on the brink of despair, she seeks refuge beneath a majestic tree perched on the edge of a towering cliff overlooking the endless ocean. There, amidst her tears, she catches a glimpse of something extraordinary\xE2\x80\x94a plant she recognizes from her storybooks, believed to be deadly poisonous. Its radiant red petals adorned with enchanting white circles atop a bulbous stalk captivate her in a moment of profound desperation.\x0A\x0A  Driven by a deep longing to reconnect with her mother\'s memory and with nothing left to lose, Gaia consumes the forbidden plant. Anticipating her impending demise, she stares out at the horizon, bracing herself for what she believes will be her final moments. However, instead of death\'s cold embrace, Gaia experiences a remarkable transformation. The world around her erupts in an explosion of vibrant colors, her senses heightened to an unimaginable degree. As her heart races with newfound intensity, she questions whether this is death or something altogether unexpected.\x0A\x0A  Now blessed with heightened perception and a mysterious connection to the psychedelic plant\'s power, Gaia embarks on a quest to uncover the truth behind this lost knowledge and rediscover her purpose. Along the way, she encounters a diverse cast of characters\xE2\x80\x94an eclectic group of individuals with their own unique talents, scars, and aspirations. Together, they navigate a treacherous landscape, where advanced technology clashes with the raw forces of nature and humanity teeters on the edge of oblivion.\x0A\x0A  \"WIDE FEELS\" is an enthralling comic book series that combines elements of dystopian sci-fi, mystical exploration, and the power of personal transformation. As Gaia unravels the secrets of the psychedelic plant medicine, she discovers not only her own inner strength but also the potential for humanity\'s redemption in a world that has turned its back on its own creations.\x0A\x0A  Here is the over arching conflict of the story\x0A  As Gaia discovers her newfound ability to perceive the world in extraordinary ways through the consumption of the psychedelic plant, she becomes aware of the profound healing potential it possesses. However, the society she inhabits has long forgotten this knowledge, gripped by despair and the fear of their impending extinction. With the global population reduced to a mere 3 billion and dwindling rapidly, hope is a scarce commodity.\x0A\x0A  As Gaia delves deeper into her exploration of the plant\'s powers, she realizes that its healing properties could hold the key to revitalizing humanity and restoring their lost connection to nature. The conflict arises as she faces the daunting task of reawakening this forgotten knowledge within her society. She must confront the prevailing skepticism, fear, and resistance that permeate the hearts and minds of those around her.\x0A\x0A  The desperate remnants of humanity, clinging to their country-style existence amid the remnants of advanced technology, view the plant with suspicion and ignorance. Powerful factions, driven by a desire to maintain control and order in a chaotic world, seek to suppress any potential threats to their dominance, including the rediscovery of the plant\'s medicinal abilities.\x0A\x0A  Gaia finds herself torn between her newfound purpose and the overwhelming opposition she encounters. She must navigate treacherous alliances, evade capture, and gather a group of like-minded individuals who share her vision of healing and restoration. Together, they form an underground movement, working in secrecy to protect the plant\'s knowledge and bring hope back to their desolate world.\x0A\x0A  The conflict intensifies as Gaia and her allies face off against formidable adversaries, including those who seek to exploit the plant\'s power for their own selfish gain. They must overcome their own doubts and limitations while staying one step ahead of those who would silence them. Along the way, they uncover the dark secrets behind the loss of knowledge and the true origins of the technology that turned against humanity.\x0A\x0A  Through their daring actions and unwavering determination, Gaia and her companions become beacons of hope in a world gripped by despair. Their quest to restore the healing powers of the psychedelic plant medicine becomes a race against time, as they strive to revitalize a dying world and awaken the dormant potential within humanity.\x0A\x0A  In this conflict-ridden landscape, where the forces of oppression and ignorance collide with the resilience and courage of a small group, \"WIDE FEELS\" explores themes of redemption, self-discovery, and the transformative power of reconnecting with nature. It is a tale of hope, resistance, and the triumph of the human spirit in the face of seemingly insurmountable odds\x0A\x0A  This is the first scenario the user has chosen\x0A\x0A  __user_selection__\x0A  \x0A  create THREE different scenarios for chapter 1.1 for the user to choose from\x0A  make sure the scenarios you generate are based off of the premise and previous scenario\x0A  Make sure to return excatly three scenarios\x0A\x0A  format your response as a json array repsonse that looks like this\x0A\x0A  [\x0A    {\x0A      \"title\": \"hehe\",\x0A      \"content\": \"..\"\x0A    },\x0A    {\x0A      \"title\": \"...\",\x0A      \"content\": \"..\"\x0A    },\x0A    {\x0A      \"title\": \"...\",\x0A      \"content\": \"..\"\x0A    }\x0A\x0A  ]\x0A  "), [nimCopy(null, {Field0: makeNimstrLit("__user_selection__"), Field1: cstrToNimstr(selection_452984875)}, NTI452984857)]));
   framePtr = F.prev;
 
-  return result_452984859;
+  return result_452984876;
 
 }
-async function nextBtnClicked() {
-  var result_452985612 = null;
 
-  var F = {procname: "cgpt_page_fe.nextBtnClicked", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+function ghost_writer_card_1358955379(scenarios_1358955380, id_1358955381) {
+  var result_1358955382 = [];
+
+  var F = {procname: "cgpt_page.ghost_writer_card", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+  framePtr = F;
+    F.line = 259;
+    F.line = 259;
+    var bg_color_1358955383 = makeNimstrLit("#816AFE99");
+    F.line = 260;
+    var fmtRes_1358955388 = [mnewString(0)];
+    F.line = 260;
+    fmtRes_1358955388[0].push.apply(fmtRes_1358955388[0], makeNimstrLit("    <!-- Ghost Writer Card --> \x0A    <div\x0A      id=\""));;
+    F.line = 260;
+    formatValue_1107296418(fmtRes_1358955388, 0, id_1358955381, []);
+    F.line = 260;
+    fmtRes_1358955388[0].push.apply(fmtRes_1358955388[0], makeNimstrLit("\" \x0A      class=\"bg-["));;
+    F.line = 260;
+    formatValue_1107296418(fmtRes_1358955388, 0, bg_color_1358955383, []);
+    F.line = 260;
+    fmtRes_1358955388[0].push.apply(fmtRes_1358955388[0], makeNimstrLit("] p-4 gap-4 w-full flex flex-col \"\x0A      style=\'border-radius:10px;\'\x0A      __xdata__\x0A      >\x0A      "));;
+    F.line = 260;
+    formatValue_1107296418(fmtRes_1358955388, 0, nsuJoinSep(scenarios_1358955380, makeNimstrLit("\x0A")), []);
+    F.line = 260;
+    fmtRes_1358955388[0].push.apply(fmtRes_1358955388[0], makeNimstrLit("\x0A    </div> \x0A    "));;
+    result_1358955382 = nimCopy(null, multiReplace_989857483(fmtRes_1358955388[0], [{Field0: makeNimstrLit("__xdata__"), Field1: makeNimstrLit(" x-data=\"{ activeTab: \'\' }\" ")}]), NTI33554439);
+  framePtr = F.prev;
+
+  return result_1358955382;
+
+}
+
+function spinner_1358955306(id_1358955307) {
+  var result_1358955308 = [];
+
+  var F = {procname: "cgpt_page.spinner", prev: framePtr, filename: "/root/app/src/repo/cgpt_page.nim", line: 0};
+  framePtr = F;
+    F.line = 208;
+    F.line = 208;
+    var fmtRes_1358955313 = [mnewString(0)];
+    F.line = 208;
+    fmtRes_1358955313[0].push.apply(fmtRes_1358955313[0], makeNimstrLit("\x0A  <div role=\"status\" id=\""));;
+    F.line = 208;
+    formatValue_1107296418(fmtRes_1358955313, 0, id_1358955307, []);
+    F.line = 208;
+    fmtRes_1358955313[0].push.apply(fmtRes_1358955313[0], makeNimstrLit("\">\x0A      <svg aria-hidden=\"true\" class=\"w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600\" viewBox=\"0 0 100 101\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\x0A          <path d=\"M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z\" fill=\"currentColor\"/>\x0A          <path d=\"M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z\" fill=\"currentFill\"/>\x0A      </svg>\x0A      <span class=\"sr-only\">Loading...</span>\x0A  </div>\x0A  \x0A  "));;
+    result_1358955308 = nimCopy(null, fmtRes_1358955313[0], NTI33554439);
+  framePtr = F.prev;
+
+  return result_1358955308;
+
+}
+async function get_response_text_452984952(response_452984953) {
+  var result_452984955 = null;
+
+  var F = {procname: "cgpt_page_fe.get_response_text", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 236;
-    var title_452985618 = document.querySelector("#selected-scenario p:first-child");
-    F.line = 237;
-    var content_452985619 = document.querySelector("#selected-scenario p:last-child");
-    F.line = 239;
-    rawEcho(cstrToNimstr(title_452985618.innerHTML));
-    F.line = 240;
-    rawEcho(cstrToNimstr(content_452985619.innerHTML));
-    F.line = 241;
-    var prompt_2_452985620 = buildPrompt2_452984857(toJSStr((cstrToNimstr(title_452985618.innerHTML) || []).concat(makeNimstrLit("\x0A") || [],cstrToNimstr(content_452985619.innerHTML) || [])));
-    F.line = 242;
-    rawEcho(cstrToNimstr(prompt_2_452985620));
-    F.line = 244;
-    var cgpt_resp_2_452985626 = (await fetch(
-        "https://api.openai.com/v1/chat/completions", 
-        {
-            method: 'POST',
-            headers: {
-                'Accept'        : 'application/json',
-                'Content-Type'  : 'application/json',
-                'Authorization' : "Bearer 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" 
-            },
-            body: JSON.stringify(
-                                 {
-                                     "model": "gpt-3.5-turbo-16k",
-                                     "temperature": 0.2,
-                                     "messages": [{"role": "user", "content": prompt_2_452985620}],
-                                 }
-                             )
-        }
-    )
-    );
-    F.line = 246;
-    var cgpt_resp_json_2 = (await cgpt_resp_2_452985626.json());
-    F.line = 248;
-    var resp_text_2 = "";
-    F.line = 249;
-      resp_text_2 = cgpt_resp_json_2.choices[0].message.content
-  console.log(resp_text_2)
-  
-    F.line = 134;
-    result_452985612 = undefined;
+    F.line = 174;
+    var resp_json = (await response_452984953.json());
+    F.line = 176;
+    var resp_text = "";
+    F.line = 178;
+    resp_text = resp_json.choices[0].message.content
+    F.line = 180;
+    result_452984955 = resp_text;
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_452985612;
+  return result_452984955;
+
+}
+
+function parseHook_452985446(s_452985448, i_452985449, i_452985449_Idx, v_452985450, v_452985450_Idx) {
+            var Temporary7;
+            var Temporary11;
+
+  var F = {procname: "parseHook.parseHook", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
+  framePtr = F;
+    Label1: do {
+      F.line = 43;
+        Label2: while (true) {
+        if (!(i_452985449[i_452985449_Idx] < (s_452985448).length)) break Label2;
+          F.line = 35;
+          var cHEX60gensym84_452985452 = s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym84_452985452] != undefined))) {
+          F.line = 37;
+          break Label1;
+          }
+          
+          F.line = 38;
+          i_452985449[i_452985449_Idx] = addInt(i_452985449[i_452985449_Idx], 1);
+        }
+    } while (false);
+    if (((s_452985448).length <= i_452985449[i_452985449_Idx])) {
+    F.line = 45;
+    raiseException({message: (makeNimstrLit("Expected [ but end reached. At offset: ") || []).concat(HEX24_335544323(i_452985449[i_452985449_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
+    }
+    
+    if ((s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)] == 91)) {
+    F.line = 47;
+    i_452985449[i_452985449_Idx] = addInt(i_452985449[i_452985449_Idx], 1);
+    }
+    else {
+      F.line = 49;
+      raiseException({message: (makeNimstrLit("Expected [ but got ") || []).concat([s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452985449[i_452985449_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
+    }
+    
+    Label3: do {
+      F.line = 275;
+        Label4: while (true) {
+        if (!(i_452985449[i_452985449_Idx] < (s_452985448).length)) break Label4;
+          Label5: do {
+            F.line = 276;
+              Label6: while (true) {
+              if (!(i_452985449[i_452985449_Idx] < (s_452985448).length)) break Label6;
+                F.line = 35;
+                var cHEX60gensym94_452985468 = s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym94_452985468] != undefined))) {
+                F.line = 37;
+                break Label5;
+                }
+                
+                F.line = 38;
+                i_452985449[i_452985449_Idx] = addInt(i_452985449[i_452985449_Idx], 1);
+              }
+          } while (false);
+            if (!(i_452985449[i_452985449_Idx] < (s_452985448).length)) Temporary7 = false; else {              Temporary7 = (s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)] == 93);            }          if (Temporary7) {
+          F.line = 278;
+          break Label3;
+          }
+          
+          F.line = 279;
+          var element_452985477 = [({title: [], content: [], selected: false, number: 0})];
+          F.line = 280;
+          parseHook_452985040(s_452985448, i_452985449, i_452985449_Idx, element_452985477[0]);
+          F.line = 281;
+          var Temporary8 = nimCopy(null, element_452985477[0], NTI452984835);
+          v_452985450[v_452985450_Idx].push(Temporary8);;
+          Label9: do {
+            F.line = 282;
+              Label10: while (true) {
+              if (!(i_452985449[i_452985449_Idx] < (s_452985448).length)) break Label10;
+                F.line = 35;
+                var cHEX60gensym98_452985488 = s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)];
+                if (!((whiteSpace_1174405131[cHEX60gensym98_452985488] != undefined))) {
+                F.line = 37;
+                break Label9;
+                }
+                
+                F.line = 38;
+                i_452985449[i_452985449_Idx] = addInt(i_452985449[i_452985449_Idx], 1);
+              }
+          } while (false);
+            if (!(i_452985449[i_452985449_Idx] < (s_452985448).length)) Temporary11 = false; else {              Temporary11 = (s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)] == 44);            }          if (Temporary11) {
+          F.line = 284;
+          i_452985449[i_452985449_Idx] = addInt(i_452985449[i_452985449_Idx], 1);
+          }
+          else {
+            F.line = 286;
+            break Label3;
+          }
+          
+        }
+    } while (false);
+    Label12: do {
+      F.line = 43;
+        Label13: while (true) {
+        if (!(i_452985449[i_452985449_Idx] < (s_452985448).length)) break Label13;
+          F.line = 35;
+          var cHEX60gensym103_452985502 = s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)];
+          if (!((whiteSpace_1174405131[cHEX60gensym103_452985502] != undefined))) {
+          F.line = 37;
+          break Label12;
+          }
+          
+          F.line = 38;
+          i_452985449[i_452985449_Idx] = addInt(i_452985449[i_452985449_Idx], 1);
+        }
+    } while (false);
+    if (((s_452985448).length <= i_452985449[i_452985449_Idx])) {
+    F.line = 45;
+    raiseException({message: (makeNimstrLit("Expected ] but end reached. At offset: ") || []).concat(HEX24_335544323(i_452985449[i_452985449_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
+    }
+    
+    if ((s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)] == 93)) {
+    F.line = 47;
+    i_452985449[i_452985449_Idx] = addInt(i_452985449[i_452985449_Idx], 1);
+    }
+    else {
+      F.line = 49;
+      raiseException({message: (makeNimstrLit("Expected ] but got ") || []).concat([s_452985448[chckIndx(i_452985449[i_452985449_Idx], 0, (s_452985448).length - 1)]],makeNimstrLit(" instead. At offset: ") || [],HEX24_335544323(i_452985449[i_452985449_Idx]) || []), parent: null, m_type: NTI1174405123, name: null, trace: [], up: null}, "JsonError");
+    }
+    
+  framePtr = F.prev;
+
+  
+}
+
+function fromJson_452985439(s_452985442) {
+  var result_452985444 = [[]];
+
+  var F = {procname: "fromJson.fromJson", prev: framePtr, filename: "/root/.nimble/pkgs/jsony-1.1.5/jsony.nim", line: 0};
+  framePtr = F;
+    F.line = 589;
+    var i_452985445 = [0];
+    F.line = 590;
+    parseHook_452985446(s_452985442, i_452985445, 0, result_452985444, 0);
+  framePtr = F.prev;
+
+  return result_452985444[0];
+
+}
+
+function click_587202729(el_587202730, cb_587202733) {
+  var F = {procname: "nimjs.click", prev: framePtr, filename: "/root/.nimble/pkgs/mynimlib-1.0.0/mynimlib/nimjs.nim", line: 0};
+  framePtr = F;
+    F.line = 68;
+    el_587202730.addEventListener("click", cb_587202733, false);
+  framePtr = F.prev;
+
+  
+}
+
+function add_ghost_writer_tab_selected_functionality_452985270(tab_452985271, id_452985272) {
+    id_452985272 = nimCopy(null, id_452985272, NTI33554439);
+    
+function HEX3Aanonymous_452985273(e_452985274) {
+      var F = {procname: "add_ghost_writer_tab_selected_functionality.:anonymous", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+      framePtr = F;
+        F.line = 206;
+        var parent_452985275 = tab_452985271.parentElement;
+        F.line = 207;
+        console.log(parent_452985275);
+        Label1: do {
+          F.line = 209;
+          var kid_452985297 = null;
+          F.line = 233;
+          var colontmp__452985844 = [];
+          F.line = 209;
+          colontmp__452985844 = parent_452985275.querySelectorAll("div");
+          F.line = 235;
+          var i_452985845 = 0;
+          F.line = 236;
+          var L_452985846 = (colontmp__452985844).length;
+          Label2: do {
+            F.line = 237;
+              Label3: while (true) {
+              if (!(i_452985845 < L_452985846)) break Label3;
+                F.line = 209;
+                kid_452985297 = colontmp__452985844[chckIndx(i_452985845, 0, (colontmp__452985844).length - 1)];
+                F.line = 209;
+                console.log(kid_452985297);
+                F.line = 212;
+                kid_452985297.style.backgroundColor = "";
+                F.line = 213;
+                kid_452985297.style.color = "slategray";
+                F.line = 209;
+                kid_452985297.id = "";
+                F.line = 239;
+                i_452985845 = addInt(i_452985845, 1);
+                if (!(((colontmp__452985844).length == L_452985846))) {
+                F.line = 240;
+                failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
+                }
+                
+              }
+          } while (false);
+        } while (false);
+        F.line = 218;
+        tab_452985271.style.backgroundColor = "#816AFE";
+        F.line = 219;
+        tab_452985271.style.color = "white";
+        F.line = 220;
+        tab_452985271.id = toJSStr(id_452985272);
+      framePtr = F.prev;
+
+      
+    }
+
+  var F = {procname: "cgpt_page_fe.add_ghost_writer_tab_selected_functionality", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+    F.line = 204;
+    click_587202729(tab_452985271, HEX3Aanonymous_452985273);
+  framePtr = F.prev;
+
+  
+}
+
+function add_tab_clicked_functionality_452985326(el_452985327, id_452985328) {
+  var F = {procname: "cgpt_page_fe.add_tab_clicked_functionality", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+    Label1: do {
+      F.line = 225;
+      var kid_452985332 = null;
+      F.line = 233;
+      var colontmp__452985838 = [];
+      F.line = 225;
+      colontmp__452985838 = el_452985327.querySelectorAll("div");
+      F.line = 235;
+      var i_452985840 = 0;
+      F.line = 236;
+      var L_452985841 = (colontmp__452985838).length;
+      Label2: do {
+        F.line = 237;
+          Label3: while (true) {
+          if (!(i_452985840 < L_452985841)) break Label3;
+            F.line = 225;
+            kid_452985332 = colontmp__452985838[chckIndx(i_452985840, 0, (colontmp__452985838).length - 1)];
+            F.line = 225;
+            console.log(kid_452985332);
+            F.line = 225;
+            add_ghost_writer_tab_selected_functionality_452985270(kid_452985332, id_452985328);
+            F.line = 239;
+            i_452985840 = addInt(i_452985840, 1);
+            if (!(((colontmp__452985838).length == L_452985841))) {
+            F.line = 240;
+            failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
+            }
+            
+          }
+      } while (false);
+    } while (false);
+  framePtr = F.prev;
+
+  
+}
+async function second_scenario_btn_click_452985334(e_452985335) {
+        
+function HEX3Aanonymous_452985554(e_452985555) {
+          var F = {procname: "second_scenario_btn_click.:anonymous", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+          framePtr = F;
+            F.line = 306;
+            hide_unselected_options_452984903(ghost_writer_card_2_452985419, makeNimstrLit("selected-scenario-2"));
+          framePtr = F.prev;
+
+          
+        }
+
+  var result_452985337 = null;
+
+  var F = {procname: "cgpt_page_fe.second_scenario_btn_click", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 232;
+    var selected_scenario_452985343 = gebi_587202616(makeNimstrLit("selected-scenario-1"));
+    if (isNone_452985348(selected_scenario_452985343)) {
+    F.line = 236;
+    console.log("No scenario selected");
+    F.line = 237;
+    addElement_587202760(ghost_writer_card_1_452984857, makeNimstrLit("<p id=\'no-scenario-err\' class=\'text-red-500\'>No scenario selected</p>"));
+    }
+    else {
+      F.line = 240;
+      var no_scenario_err_452985356 = gebi_587202616(makeNimstrLit("no-scenario-err"));
+      if (isSome_452985361(no_scenario_err_452985356)) {
+      F.line = 243;
+      get_452985381(no_scenario_err_452985356).remove();
+      }
+      
+      F.line = 245;
+      hide_unselected_options_452984903(ghost_writer_card_1_452984857, makeNimstrLit("selected-scenario-1"));
+      F.line = 247;
+      var first_selected_scenario_title_452985411 = document.querySelector("#selected-scenario-1 p:first-child").innerHTML;
+      F.line = 248;
+      var first_selected_scenario_content_452985412 = document.querySelector("#selected-scenario-1 p:last-child").innerHTML;
+      F.line = 255;
+      add_to_local_storage_452984993({title: cstrToNimstr(first_selected_scenario_title_452985411), content: cstrToNimstr(first_selected_scenario_content_452985412), selected: true, number: 1});
+      F.line = 257;
+      var prompt_2_452985413 = buildPrompt2_452984874(toJSStr((cstrToNimstr(first_selected_scenario_title_452985411) || []).concat(makeNimstrLit("\x0A") || [],cstrToNimstr(first_selected_scenario_content_452985412) || [])));
+      F.line = 267;
+      var scenario_section_452985414 = gebi_strict_587202720(makeNimstrLit("scenario-section"));
+      F.line = 270;
+      addElement_587202760(scenario_section_452985414, ghost_writer_card_1358955379([spinner_1358955306(makeNimstrLit("cgpt-spinner"))], makeNimstrLit("ghost-writer-card-2")));
+      F.line = 272;
+      var ghost_writer_card_2_452985419 = gebi_strict_587202720(makeNimstrLit("ghost-writer-card-2"));
+      F.line = 273;
+      var spinner_452985420 = gebi_strict_587202720(makeNimstrLit("cgpt-spinner"));
+      F.line = 275;
+      var cgpt_resp_2_452985426 = (await       fetch(
+              "https://api.openai.com/v1/chat/completions", 
+              {
+                  method: 'POST',
+                  headers: {
+                      'Accept'        : 'application/json',
+                      'Content-Type'  : 'application/json',
+                      'Authorization' : "Bearer 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" 
+                  },
+                  body: JSON.stringify(
+                                      {
+                                          "model": "gpt-3.5-turbo-16k",
+                                          "temperature": 0.2,
+                                          "messages": [{"role": "user", "content": prompt_2_452985413}],
+                                      }
+                                  )
+              }
+          )
+    );
+      F.line = 277;
+      spinner_452985420.remove();
+      if (!(cgpt_resp_2_452985426.ok)) {
+      F.line = 280;
+      console.log("Request Failed", (await cgpt_resp_2_452985426.json()));
+      F.line = 281;
+      addElement_587202760(ghost_writer_card_2_452985419, makeNimstrLit("<p id=\'no-scenario-err\' class=\'text-red-500\'>Something went wrong! Try refreshing the page</p>"));
+      }
+      else {
+        F.line = 283;
+        var resp_text_2_452985437 = (await get_response_text_452984952(cgpt_resp_2_452985426));
+        F.line = 284;
+        console.log(resp_text_2_452985437);
+        F.line = 285;
+        var resp_2_text_string_452985438 = cstrToNimstr(resp_text_2_452985437);
+        F.line = 286;
+        var scenarios_2_452985517 = fromJson_452985439(resp_2_text_string_452985438);
+        Label1: do {
+          F.line = 289;
+          var ii_452985526 = -1;
+          Label2: do {
+            F.line = 288;
+            var scenario_452985548 = ({title: [], content: [], selected: false, number: 0});
+            F.line = 235;
+            var i_452985824 = 0;
+            F.line = 236;
+            var L_452985825 = (scenarios_2_452985517).length;
+            Label3: do {
+              F.line = 237;
+                Label4: while (true) {
+                if (!(i_452985824 < L_452985825)) break Label4;
+                  F.line = 289;
+                  scenario_452985548 = scenarios_2_452985517[chckIndx(i_452985824, 0, (scenarios_2_452985517).length - 1)];
+                  F.line = 289;
+                  ii_452985526 = addInt(ii_452985526, 1);
+                  F.line = 289;
+                  addElement_587202760(ghost_writer_card_2_452985419, ghost_writer_tab_1358955314(scenario_452985548.title, scenario_452985548.content, (makeNimstrLit("s") || []).concat(HEX24_335544323(ii_452985526) || []), 2, []));
+                  F.line = 239;
+                  i_452985824 = addInt(i_452985824, 1);
+                  if (!(((scenarios_2_452985517).length == L_452985825))) {
+                  F.line = 240;
+                  failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
+                  }
+                  
+                }
+            } while (false);
+          } while (false);
+        } while (false);
+        F.line = 292;
+        add_tab_clicked_functionality_452985326(ghost_writer_card_2_452985419, makeNimstrLit("selected-scenario-2"));
+        F.line = 295;
+        addElement_587202760(ghost_writer_card_2_452985419, makeNimstrLit("              <button id=\'cgpt-final-submit-btn\'>\x0A                Send your final selections to our Story AI\x0A              </button>\x0A              "));
+        F.line = 303;
+        var final_submit_btn_452985553 = gebi_strict_587202720(makeNimstrLit("cgpt-final-submit-btn"));
+        F.line = 304;
+        click_587202729(final_submit_btn_452985553, HEX3Aanonymous_452985554);
+      }
+      
+    }
+    
+    F.line = 134;
+    result_452985337 = undefined;
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_452985337;
+
+}
+
+function buildPrompt1_452984872() {
+  var result_452984873 = null;
+
+  var F = {procname: "cgpt_page_fe.buildPrompt1", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+    F.line = 26;
+    result_452984873 = "    You are story telling AI\n    Here is the premise of a story I want to tell\n\n    In a future where technology has turned against humanity, plunging society into chaos, a young woman named Gaia embarks on a transformative journey that blends the mysticism of nature with the remnants of advanced technology. The story follows Gaia as she discovers a hidden power long forgotten by her people.\n\n    Set in a world where civilization has regressed to a simpler, country-style existence, yet still relies on remnants of advanced technology, Gaia struggles to find her place. Tragically, her mother's unexpected death leaves her feeling lost and desperate, yearning for an escape from her pain. In an impulsive act, she ventures into the wilderness, hoping to find solace and perhaps even join her mother in death.\n\n    As Gaia aimlessly wanders through the vast woods, the weight of her grief becomes almost unbearable. Exhausted and on the brink of despair, she seeks refuge beneath a majestic tree perched on the edge of a towering cliff overlooking the endless ocean. There, amidst her tears, she catches a glimpse of something extraordinary—a plant she recognizes from her storybooks, believed to be deadly poisonous. Its radiant red petals adorned with enchanting white circles atop a bulbous stalk captivate her in a moment of profound desperation.\n\n    Driven by a deep longing to reconnect with her mother's memory and with nothing left to lose, Gaia consumes the forbidden plant. Anticipating her impending demise, she stares out at the horizon, bracing herself for what she believes will be her final moments. However, instead of death's cold embrace, Gaia experiences a remarkable transformation. The world around her erupts in an explosion of vibrant colors, her senses heightened to an unimaginable degree. As her heart races with newfound intensity, she questions whether this is death or something altogether unexpected.\n\n    Now blessed with heightened perception and a mysterious connection to the psychedelic plant's power, Gaia embarks on a quest to uncover the truth behind this lost knowledge and rediscover her purpose. Along the way, she encounters a diverse cast of characters—an eclectic group of individuals with their own unique talents, scars, and aspirations. Together, they navigate a treacherous landscape, where advanced technology clashes with the raw forces of nature and humanity teeters on the edge of oblivion.\n\n    \"WIDE FEELS\" is an enthralling comic book series that combines elements of dystopian sci-fi, mystical exploration, and the power of personal transformation. As Gaia unravels the secrets of the psychedelic plant medicine, she discovers not only her own inner strength but also the potential for humanity's redemption in a world that has turned its back on its own creations.\n\n    Here is the over arching conflict of the story\n    As Gaia discovers her newfound ability to perceive the world in extraordinary ways through the consumption of the psychedelic plant, she becomes aware of the profound healing potential it possesses. However, the society she inhabits has long forgotten this knowledge, gripped by despair and the fear of their impending extinction. With the global population reduced to a mere 3 billion and dwindling rapidly, hope is a scarce commodity.\n\n    As Gaia delves deeper into her exploration of the plant's powers, she realizes that its healing properties could hold the key to revitalizing humanity and restoring their lost connection to nature. The conflict arises as she faces the daunting task of reawakening this forgotten knowledge within her society. She must confront the prevailing skepticism, fear, and resistance that permeate the hearts and minds of those around her.\n\n    The desperate remnants of humanity, clinging to their country-style existence amid the remnants of advanced technology, view the plant with suspicion and ignorance. Powerful factions, driven by a desire to maintain control and order in a chaotic world, seek to suppress any potential threats to their dominance, including the rediscovery of the plant's medicinal abilities.\n\n    Gaia finds herself torn between her newfound purpose and the overwhelming opposition she encounters. She must navigate treacherous alliances, evade capture, and gather a group of like-minded individuals who share her vision of healing and restoration. Together, they form an underground movement, working in secrecy to protect the plant's knowledge and bring hope back to their desolate world.\n\n    The conflict intensifies as Gaia and her allies face off against formidable adversaries, including those who seek to exploit the plant's power for their own selfish gain. They must overcome their own doubts and limitations while staying one step ahead of those who would silence them. Along the way, they uncover the dark secrets behind the loss of knowledge and the true origins of the technology that turned against humanity.\n\n    Through their daring actions and unwavering determination, Gaia and her companions become beacons of hope in a world gripped by despair. Their quest to restore the healing powers of the psychedelic plant medicine becomes a race against time, as they strive to revitalize a dying world and awaken the dormant potential within humanity.\n\n    In this conflict-ridden landscape, where the forces of oppression and ignorance collide with the resilience and courage of a small group, \"WIDE FEELS\" explores themes of redemption, self-discovery, and the transformative power of reconnecting with nature. It is a tale of hope, resistance, and the triumph of the human spirit in the face of seemingly insurmountable odds\n\n    Using this issue create THREE different scenarios for chapter 1.1.\n    Make sure to return excatly three scenarios\n\n    Issue 1: \"Awakening\"\n    The story begins with Gaia mourning the loss of her mother, feeling lost and desperate. She runs away into the woods, seeking solace but ends up getting lost.\n    Exhausted and emotionally drained, she finds herself near a cliff overlooking the ocean. Resting under a large tree, she notices a beautiful but supposedly poisonous plant. Driven by despair and longing for her mother, she consumes it, expecting death.\n    To her surprise, instead of dying,Gaia experiences a vivid awakening. Colors intensify, and her senses become heightened, leading her to question whether this is death or something entirely different.\n\n    format your response as a json array repsonse that looks like this\n\n    [\n      {\n        \"title\": \"hehe\",\n        \"content\": \"..\"\n      },\n      {\n        \"title\": \"...\",\n        \"content\": \"..\"\n      },\n      {\n        \"title\": \"...\",\n        \"content\": \"..\"\n      }\n\n    ]\n";
+  framePtr = F.prev;
+
+  return result_452984873;
+
+}
+async function HEX3Aanonymous_452985664(e_452985665) {
+  var result_452985667 = null;
+
+  var F = {procname: "cgpt_page_fe.:anonymous", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 334;
+    hide_452985611(gen_scenario_btn_452984856);
+    F.line = 335;
+    addElement_587202760(ghost_writer_card_1_452984857, spinner_1358955306(makeNimstrLit("cgpt-spinner")));
+    F.line = 337;
+    var spinner_452985676 = gebi_strict_587202720(makeNimstrLit("cgpt-spinner"));
+    F.line = 339;
+    var cgpt_resp_452985682 = (await       fetch(
+              "https://api.openai.com/v1/chat/completions", 
+              {
+                  method: 'POST',
+                  headers: {
+                      'Accept'        : 'application/json',
+                      'Content-Type'  : 'application/json',
+                      'Authorization' : "Bearer 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" 
+                  },
+                  body: JSON.stringify(
+                                      {
+                                          "model": "gpt-3.5-turbo-16k",
+                                          "temperature": 0.2,
+                                          "messages": [{"role": "user", "content": buildPrompt1_452984872()}],
+                                      }
+                                  )
+              }
+          )
+    );
+    F.line = 341;
+    spinner_452985676.remove();
+    if (!(cgpt_resp_452985682.ok)) {
+    F.line = 344;
+    console.log("Request Failed", (await cgpt_resp_452985682.json()));
+    F.line = 345;
+    addElement_587202760(ghost_writer_card_1_452984857, makeNimstrLit("<p id=\'no-scenario-err\' class=\'text-red-500\'>Something went wrong! Try refreshing the page</p>"));
+    }
+    else {
+      F.line = 347;
+      var resp_text_452985693 = (await get_response_text_452984952(cgpt_resp_452985682));
+      F.line = 348;
+      console.log(resp_text_452985693);
+      F.line = 350;
+      var resp_text_string_452985694 = cstrToNimstr(resp_text_452985693);
+      F.line = 351;
+      var scenarios_452985700 = fromJson_452985439(resp_text_string_452985694);
+      Label1: do {
+        F.line = 354;
+        var ii_452985701 = -1;
+        Label2: do {
+          F.line = 353;
+          var scenario_452985705 = ({title: [], content: [], selected: false, number: 0});
+          F.line = 235;
+          var i_452985850 = 0;
+          F.line = 236;
+          var L_452985851 = (scenarios_452985700).length;
+          Label3: do {
+            F.line = 237;
+              Label4: while (true) {
+              if (!(i_452985850 < L_452985851)) break Label4;
+                F.line = 354;
+                scenario_452985705 = scenarios_452985700[chckIndx(i_452985850, 0, (scenarios_452985700).length - 1)];
+                F.line = 354;
+                ii_452985701 = addInt(ii_452985701, 1);
+                F.line = 354;
+                addElement_587202760(ghost_writer_card_1_452984857, ghost_writer_tab_1358955314(scenario_452985705.title, scenario_452985705.content, (makeNimstrLit("s") || []).concat(HEX24_335544323(ii_452985701) || []), 1, []));
+                F.line = 239;
+                i_452985850 = addInt(i_452985850, 1);
+                if (!(((scenarios_452985700).length == L_452985851))) {
+                F.line = 240;
+                failedAssertImpl_218103864(makeNimstrLit("/root/.choosenim/toolchains/nim-1.6.12/lib/system/iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
+                }
+                
+              }
+          } while (false);
+        } while (false);
+      } while (false);
+      F.line = 358;
+      add_tab_clicked_functionality_452985326(ghost_writer_card_1_452984857, makeNimstrLit("selected-scenario-1"));
+      F.line = 361;
+      addElement_587202760(ghost_writer_card_1_452984857, gen_second_scenario_btn_1358955299());
+      F.line = 362;
+      var gen_second_scenario_btn_452985710 = gebi_strict_587202720(makeNimstrLit("generate-second-scenario-btn"));
+      F.line = 364;
+      gen_second_scenario_btn_452985710.addEventListener("click", second_scenario_btn_click_452985334)
+;
+    }
+    
+    F.line = 134;
+    result_452985667 = undefined;
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_452985667;
 
 }
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
+F.line = 310;
+var selected_scenario_1_452985601 = selected_scenario_in_local_storage_452985018(1);
+if (isSome_452985606(selected_scenario_1_452985601)) {
+F.line = 312;
+hide_452985611(gen_scenario_btn_452984856);
+F.line = 314;
+addElement_587202760(ghost_writer_card_1_452984857, ghost_writer_tab_1358955314(get_452985626(selected_scenario_1_452985601).title, get_452985626(selected_scenario_1_452985601).content, makeNimstrLit("s"), 1, makeNimstrLit("selected-scenario-1")));
+F.line = 324;
+addElement_587202760(ghost_writer_card_1_452984857, gen_second_scenario_btn_1358955299());
+F.line = 325;
+var gen_second_scenario_btn_452985655 = gebi_strict_587202720(makeNimstrLit("generate-second-scenario-btn"));
+F.line = 327;
+gen_second_scenario_btn_452985655.addEventListener("click", second_scenario_btn_click_452985334)
+;
+}
+else {
+  F.line = 329;
+gen_scenario_btn_452984856.addEventListener("click", HEX3Aanonymous_452985664)
+;
+}
+
 framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;
-F.line = 257;
-next_scenario_btn.addEventListener("click", nextBtnClicked)
-
 framePtr = F.prev;
 var F = {procname: "module cgpt_page_fe", prev: framePtr, filename: "/root/app/src/repo/cgpt_page_fe.nim", line: 0};
 framePtr = F;

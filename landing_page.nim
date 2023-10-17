@@ -618,9 +618,9 @@ proc landing*(ctx: Context) {.async.} =
         base(
             top_nav()&
             postNavCol(
-                playCard()&
-                mainContent()
-                )
+                        playCard()&
+                        mainContent()
+                      )
         )
       else:
         base(

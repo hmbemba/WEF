@@ -9,6 +9,23 @@ proc icinfo(str: string) = exec fmt"""powershell Write-Host "`n{str}" -Foregroun
 task dev, "Start server in dev mode":
     exec "nim c -r -d:ssl app.nim"
 
+task demo, "Run demo":
+    exec """nim c \
+            -r \
+            -d:demo \
+            --forceBuild:on \
+            --opt:speed \
+            --define:release \
+            --threads:on \
+            --mm:orc \
+            --deepcopy:on \
+            --define:lto \
+            --define:ssl \
+            --hints:off \
+            --outdir:"." \
+            app.nim
+        """
+
 task prod, "Start server in prod mode":
     exec """nim c \
             --forceBuild:on \
@@ -41,8 +58,9 @@ task prodr, "Start server in prod mode":
         """
 
 task mk_cgpt_fe, "builds chatgpt frontend":
+    let output =  "/root/app/src/repo/static/js/cgpt_page_fe.js"
     withDir "/root/app/src/repo":
-        exec "nim js -r:off -b:js -o:/root/app/src/repo/static/js/cgpt_page_fe.js cgpt_page_fe.nim"
+        exec fmt"nim js -r:off -b:js -o:{output} -d:nimExperimentalAsyncjsThen cgpt_page_fe.nim"
         
 task pull_mnl, "Pull mynimlib":
     withDir "/root/.nimble/pkgs/mynimlib-1.0.0":

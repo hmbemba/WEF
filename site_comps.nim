@@ -18,6 +18,9 @@ proc content_col_styles*():string =
     """
 
 proc top_nav*():string =
+
+    const nav_bg_color = "#45474F99"
+    
     # Desktop
     nw.row(
         """
@@ -35,7 +38,7 @@ proc top_nav*():string =
         ),
         itemposh=2,
         p = "px-24 py-5",
-        bgColor="#00000099",
+        bgColor= nav_bg_color,
         #extra_class = "sticky top-0 z-10",
         extra_class = " top-0 z-10",
         whenBelow = (650, @["hidden"]),
@@ -64,7 +67,7 @@ proc top_nav*():string =
         """,
         itemposh    = "between",
         p           = "px-24 py-5",
-        bgColor     ="#00000099",
+        bgColor     = nav_bg_color,
         extra_class = "top-0 z-10 hidden",
         whenBelow   = (650, @["flex"]),
         name        = "top nav mobile",
