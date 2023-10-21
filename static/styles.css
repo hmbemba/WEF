@@ -46,9 +46,9 @@ button, input[type=submit], input[type=reset], input[type=text], input[type=emai
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url("/static/img/bkg.png");
   background-size: auto;
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: black;
 }
 
 [x-cloak] {
