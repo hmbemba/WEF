@@ -2,7 +2,9 @@ import mynimlib/nimwebc   as nwc
 import consts   
 import strformat, strutils
 import mynimlib/nimwind as nw
-import mynimlib/nimhtml, mynimlib/nimalpine
+import mynimlib/[nimhtml, nimalpine, nimwind2]
+import karax / [karaxdsl, vdom]
+
 
 
 proc content_col_styles*():string = 
@@ -23,25 +25,33 @@ proc top_nav*():string =
     
     # Desktop
     nw.row(
-        """
-        <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-        """&
+        anostyle(
+            "/",
+            """
+            <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+            """
+        )&
         nw.row(
-            nw.btn(anostyle("""/""", "Get NFT"), bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6)&
-            nw.btn(anostyle(if consts.demo == false : """/contribute""" else: "/", "Contribute"))&
-            nw.btn(anostyle(if consts.demo == false : """/faq"""        else: "/", "FAQ")),
+            anostyle("/", nw.btn("Get NFT", bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6) )&
+            anostyle("/contribute" , nw.btn("Contribute"))&
+            anostyle("/faq"        , nw.btn("FAQ")),
 
             gap = 10,
             itemPosH = 1,
             extra_class = "flex-1",
             itemposv = "c"
-        ),
+        ) &
+        nw.btn("Connect Wallet", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'connect-wallet-btn'") &
+        nw.btn("0xF64...081a52", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'wallet-address-btn'", extra_class="hidden"), 
+
+
         itemposh=2,
+        itemposv = "c",
         p = "px-24 py-5",
         bgColor= nav_bg_color,
         #extra_class = "sticky top-0 z-10",
         extra_class = " top-0 z-10",
-        whenBelow = (650, @["hidden"]),
+        whenBelow = (850, @["hidden"]),
         name = "top nav desktop",
     )&
     
@@ -69,10 +79,9 @@ proc top_nav*():string =
         p           = "px-24 py-5",
         bgColor     = nav_bg_color,
         extra_class = "top-0 z-10 hidden",
-        whenBelow   = (650, @["flex"]),
+        whenBelow   = (850, @["flex"]),
         name        = "top nav mobile",
-    )
-
+    ) 
 
 proc demo_nav*():string =
     let logo = img(src="/static/img/nav_logo.png", extra_head="""style = "height:10vh " """)
@@ -200,7 +209,6 @@ proc demo_nav*():string =
 
     )
 
-
 proc grey_card*(body:string, name = ""):string = 
     nw.row(
             body,
@@ -247,7 +255,7 @@ proc postNavCol*(body:string): string =
         body,
         p    = "px-[10vw] py-[40px]",
         gap  = "5vh",
-        head = """style=color:black;""",
+        head = """style=color:black; id='post-nav-col'""",
         name = "post nav col"
         
 
@@ -258,32 +266,133 @@ proc base*(body:string, title = "WIDE EYE FEELS") : string =
         head(
                 title, 
                 body=""" 
-                    <script type="module" src="/static/js/lit_base_components/dist/assets/lit_js_file"></script> 
-                    <script type="module" src="/static/js/thirdweb/dist/assets/tw_js_file"></script>
-                    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
-
                     <link rel="stylesheet" href="/static/styles.css">
-                    <style>
-                    body{
-                        --font-smallest : 1vw;
-                        --font-smaller  : 1.5vw;
-                        --font-small    : 1.5vw;
-                        --font-medium   : 2.5vw;
-                        --font-large    : 2vw;
-                        --font-larger   : 3vw;
-                        --font-largest  : 3.5vw;
-                        }
-                    </style>
-
+                    <script type="module" src="/static/js/nav_fe.js"></script>
                     __tailwind_cdn__
                 """.multiReplace(@[
-                                    ("lit_js_file", lit_js_file),
-                                    ( "tw_js_file", tw_js_file) , # this is thirdweb not tailwind
+                                    # ( "tw_js_file", tw_js_file) , # this is thirdweb not tailwind
                                     ("__tailwind_cdn__", nw.tw_cdn())
                                 ])
             ), 
-        body(
-
-            body
-        )
+        body(body)
     )
+
+# proc contact_form*():string = 
+#     """
+#   <form id='contact-form' method="post" class="hidden bg-[#45474F99] p-6 rounded-lg shadow-lg">
+
+#         <div class="flex justify-between items-center mb-2">
+#             <h2 class="text-white text-2xl font-bold text-center">Shipping Details</h2>
+#             <!-- Close Modal Button -->
+#             <button id="close-contact-form" class="text-black close-modal text-5xl">×</button>
+#         </div>
+
+#         <div class="mb-4">
+#         <label for="email" class="block text-white text-sm font-bold mb-2">Email:</label>
+#         <input type="email" id="email" name="email" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="you@example.com">
+#         </div>
+
+#         <div class="mb-4">
+#         <label for="address" class="block text-white text-sm font-bold mb-2">Address:</label>
+#         <input type="text" id="address" name="address" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="1234 Street Ave">
+#         </div>
+
+#         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4">
+#         <div>
+#             <label for="city" class="block text-white text-sm font-bold mb-2">City:</label>
+#             <input type="text" id="city" name="city" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="City">
+#         </div>
+#         <div>
+#             <label for="state" class="block text-white text-sm font-bold mb-2">State:</label>
+#             <input type="text" id="state" name="state" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="State">
+#         </div>
+#         </div>
+
+#         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4 mb-4">
+#         <div class="md:col-span-2">
+#             <label for="country" class="block text-white text-sm font-bold mb-2">Country:</label>
+#             <select id="country" name="country" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+#             <option value="United States">United States</option>
+#             </select>
+#         </div>
+#         <div>
+#             <label for="zipcode" class="block text-white text-sm font-bold mb-2">Zip Code:</label>
+#             <input type="number" id="zipcode" name="zipcode" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Zip Code">
+#         </div>
+#         </div>
+
+#         <button type="submit" class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110">
+#         Submit
+#         </button>
+#   </form>
+#     """
+
+proc contact_form*(): string =
+    let vnode = buildHtml(form(id="contact-form" , class = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
+        tdiv(class="flex justify-between items-center mb-2"):
+            h2(class="text-white text-2xl font-bold text-center"): 
+                vdom.text "Shipping Details"
+            # Close Modal Button
+            button(class="text-black close-modal text-5xl"): 
+                vdom.text "×"
+
+            tdiv(class="mb-4"):
+                label(`for`="email" ,class="block text-white text-sm font-bold mb-2"): 
+                    vdom.text "Email:"
+                input(`type`="email", id="email", name="email", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="you@example.com")
+
+            tdiv(class="mb-4"):
+                label(`for`="address" ,class="block text-white text-sm font-bold mb-2"): 
+                    vdom.text "Address:"
+                input(`type`="text", id="address", name="address", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="1234 Street Ave")
+
+
+            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+                tdiv:
+                    label(`for`="city" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "City:"
+                    input(`type`="text", id="city", name="city", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="City")
+                tdiv:
+                    label(`for`="state" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "State:"
+                    input(`type`="text", id="state", name="state", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="State")
+
+            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+                tdiv(class="md:col-span-2"):
+                    label(`for`="country" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "Country:"
+                    select(id="country", name="country", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"):
+                        option(value="United States"): 
+                            vdom.text "United States"
+
+                tdiv:
+                    label(`for`="zipcode" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "Zip Code:"
+                    input(`type`="number", id="zipcode", name="zipcode", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="Zip Code")
+
+
+            button(`type`="submit", class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110"): 
+                vdom.text "Submit"
+        
+    result = $vnode
+
+proc triple_card*(): string =
+    proc card(img_url:string, body_text:string): VNode = 
+        buildHtml(tdiv(class="flex flex-col items-center space-y-5  rounded-lg p-2")):
+            img(src=img_url, alt="Theme Image", class=" h-48 object-cover rounded-lg shadow-lg")
+            h2(class="text-white text-xl font-semibold"): 
+                vdom.text "Theme"
+            p(class="text-white text-center"):
+                vdom.text body_text
+    
+    let cards = @[
+        card("/static/img/contrib_page_1.png", "Your NFT has a specific theme and section. You’re unique! And have the power to drastically change the story..."),
+        card("/static/img/contrib_page_2.png", "Playing a multiple endings game, you will create a script to be used for the final MVP of your chapter section."),
+        card("/static/img/contrib_page_3.png", "Once you’re complete, you will be prompted to submit your section and we will move onto the next steps in Discord!")
+        ]
+    let vnode = buildHtml(tdiv(class="lg:px-20")):
+        tdiv(class="rounded-[20px] bg-black bg-opacity-70 p-2 grid grid-cols-1 min-[825px]:grid-cols-3 "):
+            for card in cards:
+                card
+    result = $vnode
+

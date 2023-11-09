@@ -44,11 +44,19 @@ button, input[type=submit], input[type=reset], input[type=text], input[type=emai
   min-height: 100vh;
 }
 
+@font-face {
+  font-family: "bako";
+  src: url("./fonts/BaksoSapi.otf") format("opentype");
+}
 body {
-  font-family: "Roboto", sans-serif;
-  background-image: url("/static/img/bkg.png");
+  font-family: "bako", "Roboto", sans-serif;
+  background-image: url("/static/img/Gaia (Full Image).PNG");
   background-size: auto;
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
 }
 
 [x-cloak] {

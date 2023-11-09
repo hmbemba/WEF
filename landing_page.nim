@@ -6,11 +6,13 @@ import strformat, strutils
 import mynimlib/nimalpine as na
 import std/sugar
 import consts
+import mynimlib/prologutils as pu
+import sequtils, strutils
 
 
 ################
 ## Components ##
-## #############
+################
 proc blackColText(body:string) : string = 
     text(
         """
@@ -31,148 +33,88 @@ proc italicText(text:string, size:string):string =
         <p style = "font-size: {size} ; font-style:italic;"> """&text&""" </p>
     """
 
+# proc playCard*():string = 
+#     nw.col(
+#             # Image
+#             nw.col(
+#                 """
+#                 <img 
+#                     src="/static/img/BFE4182D-B784-4D86-851F-31E230476773.PNG" 
+
+#                     style="  
+#                     width: 100%;
+#                     height: auto;
+#                     border-top-left-radius: 10px;     
+#                     border-top-right-radius: 10px;     
+#                     border-bottom-left-radius: 0;
+#                     border-bottom-right-radius: 0; 
+#                     border-radius: 10px;
+#                 "
+#                 >
+#                 """,
+#                 itemposv = "c",
+#                 p = "p-4",
+#             )&
+#             # Info
+#             nw.row(
+
+#                 # Play Button
+#                 nw.col(                    
+
+#                         """
+#                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="100%"  style="display: block; margin:auto;">
+#                                 <path d="M5.5,4 L18.5,12 L5.5,20 L5.5,4 Z" />
+#                             </svg> 
+#                         """
+#                         , 
+#                         head="""id="play-card-info-play-btn"""",
+#                         itemposv = "c",
+#                         bgColor  = "black",
+#                         extra_class = "rounded-2xl"
+#                     )&
+                
+#                 # Actual Info
+#                 nw.col(                    
+#                     nw.text("WIDE EYE FEELS", "text-6xl")&
+#                     nw.text("Brenna", text_size.xxl),
+#                     head     = """id="play-card-info-text" """,
+#                     itemposv = "c"
+                    
+                
+#                 ),
+#                 gap = "2vw",
+#                 w = "full",
+#                 itemposh = "between",
+#                 p = "p-4",
+#                 name = "play card mobile info"
+
+#             ),
+
+#             round = "10px"          ,
+#             itemposh = "c"            ,
+#             itemposv = "c"            ,
+#             bgColor = "#EFECEBef"   ,
+#             name = "play card Mobile",
+#             gap = "4vh"
+
+#         )
+
 proc playCard*():string = 
-    # Desktop / Tablet
-    nw.row(
-            nw.row(
+    """
+    <div class="bg-[#EFECEBef] rounded-lg p-4 max-w-sm mx-auto">
+    <div class="text-black text-4xl font-bold uppercase">Wide Eye Feels</div>
+    <div class="text-black text-xl tracking-widest uppercase mt-2">Brenna</div>
+    <div class="mt-4 relative">
+        <img src="/static/img/BFE4182D-B784-4D86-851F-31E230476773.PNG" alt="Album cover" class="w-full h-auto rounded-lg shadow-lg">
+        <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-white w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-6.504 3.752V7.416z" />
+        </svg>
+        </button>
+    </div>
+    </div>
+    """
 
-                nw.col(                    
-                        ddiv(
-                            """
-                                style=" 
-                                cursor: pointer;
-                                background-color: black;
-                                padding: 1vh;
-                                border-radius: 10%;
-                                display: block;
-                                "
-                            """,
-                            """
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="100px" height="100px" style="display: block; margin:auto;">
-                                    <path d="M5.5,4 L18.5,12 L5.5,20 L5.5,4 Z" />
-                                </svg> 
-                            """
-                        ), 
-                        head="""id="play-card-info-play-btn"""",
-                        itemposv = "c"
-                    )&
-                nw.col(                    
-                    text(
-                        """
-                            largest
-                            bold
-                        """,
-                        "WIDE EYE FEELS"
-                        )&
-                    text(
-                        """
-                            small
-                            bold
-                        """,
-                        "Brenna"
-                    ), 
-                    head = """id="play-card-info-text"style=" width: 100%;" """,
-                    itemposv = "c"
-                    
-                
-                ),
-                gap = "2vw"
-
-            )&
-
-            nw.col(
-                """
-                <img 
-                    src="/static/img/BFE4182D-B784-4D86-851F-31E230476773.PNG" 
-
-                    style="  
-                    width: 200px;
-                    height: auto;
-                    border-radius: 3%;
-                "
-                >
-                """,
-                itemposv = "c"
-            ),
-
-            round = "10px"          ,
-            p = "py-[2vw] px-[4vw]" ,
-            itemposh = 3            ,
-            itemposv = 4            ,
-            bgColor = "#EFECEBef"   ,
-            whenBelow = (750, @["hidden"]),
-            name = "play card dekstop / tablet"
-
-        )&
-
-    # Mobile
-    nw.col(
-            nw.col(
-                """
-                <img 
-                    src="/static/img/BFE4182D-B784-4D86-851F-31E230476773.PNG" 
-
-                    style="  
-                    width: 100%;
-                    height: auto;
-                    border-top-left-radius: 10px;     
-                    border-top-right-radius: 10px;     
-                    border-bottom-left-radius: 0;
-                    border-bottom-right-radius: 0; 
-                "
-                >
-                """,
-                itemposv = "c"
-            )&
-            nw.row(
-
-                nw.col(                    
-                        ddiv(
-                            """
-                                style=" 
-                                cursor: pointer;
-                                background-color: black;
-                                padding: 1vh;
-                                border-radius: 10%;
-                                display: block;
-                                "
-                            """,
-                            """
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="20vw" height="20vw" style="display: block; margin:auto;">
-                                    <path d="M5.5,4 L18.5,12 L5.5,20 L5.5,4 Z" />
-                                </svg> 
-                            """
-                        ), 
-                        head="""id="play-card-info-play-btn"""",
-                        itemposv = "c"
-                    )&
-                nw.col(                    
-                    """<p style = "font-size: 8vw; font-weight:bold;"> WIDE EYE FEELS </p>"""&
-                    """<p style = "font-size: 3vw; font-weight:bold;"> Brenna </p>""", 
-                    head = """id="play-card-info-text"style=" width: 100%;" """,
-                    itemposv = "c"
-                    
-                
-                ),
-                gap = "2vw",
-                w = "full",
-                itemposh = "between",
-                p = "p-4",
-                name = "play card mobile info"
-
-            ),
-
-            round = "10px"          ,
-            #p = "py-[2vw] px-[4vw]" ,
-            itemposh = "c"            ,
-            itemposv = "c"            ,
-            bgColor = "#EFECEBef"   ,
-            extra_class = "hidden",
-            whenBelow = (750, @["flex"]),
-            name = "play card Mobile",
-            gap = "4vh"
-
-        )
 
 proc chapter_carousel(iframes:seq[string]): string = 
     var arr = "["
@@ -320,10 +262,8 @@ proc NFTAccordions():string =
             
             )
     let chapter_accordions = @[
-        if consts.demo == false: 
-            chapter_accordion(1, acc.items[0].btn, acc.items[0].content, chapter_carousel(buildIframes(2)) ) 
-        else: 
-            chapter_accordion(1, acc.items[0].btn, acc.items[0].content, ),
+
+        chapter_accordion(1, acc.items[0].btn, acc.items[0].content, chapter_carousel(buildIframes(2)) ),
         chapter_accordion(2, acc.items[1].btn, acc.items[1].content, ),
         chapter_accordion(3, acc.items[2].btn, acc.items[2].content, ),
         chapter_accordion(4, acc.items[3].btn, acc.items[3].content, ),
@@ -333,7 +273,8 @@ proc NFTAccordions():string =
 
     ]
     """
-    <div id="accordionExample" __top__ style = "flex:2">
+    <!-- NFT Accordions -->
+    <div class="hidden" id="nft-accordions" __top__ style = "flex:2">
         __chapter_accordions__
     
     </div>
@@ -343,295 +284,280 @@ proc NFTAccordions():string =
         
         ])
 
-proc mainContent():string = 
-    let connectWallet = 
-        nwc.col( 
-            """
-                _name   = "buy-nft-card"
-                round
-                gap     = "5vh"
-                colItemPosition="1"
+proc mainContent(extra_class:string=""):string = 
+    # let connectWallet = 
+    #     nwc.col( 
+    #         """
+    #             _name   = "buy-nft-card"
+    #             round
+    #             gap     = "5vh"
+    #             colItemPosition="1"
 
-                padding = "0px"
-                style="  
-                    flex: 2;
-                "
-            """,
+    #             padding = "0px"
+    #             style="  
+    #                 flex: 2;
+    #             "
+    #         """,
 
-                """
-                <iframe
-                    src="https://bafybeidpp4d3znpjxlvlhitaylbqwmyk2gzcxazp5wkftvwu7r3lsyku2q.gateway.ipfscdn.io/?contract=0xF6A5e6Fb034Be432c36dc2ebcf872BDC465902ED&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&primaryColor=purple"
-                    width="600px"
-                    height="900px"
-                    style="max-width:100%; "
-                    frameborder="0"
-                >
-                </iframe>
-                """
+    #             """
+    #             <iframe
+    #                 src="https://bafybeidpp4d3znpjxlvlhitaylbqwmyk2gzcxazp5wkftvwu7r3lsyku2q.gateway.ipfscdn.io/?contract=0xF6A5e6Fb034Be432c36dc2ebcf872BDC465902ED&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%7D&primaryColor=purple"
+    #                 width="600px"
+    #                 height="900px"
+    #                 style="max-width:100%; "
+    #                 frameborder="0"
+    #             >
+    #             </iframe>
+    #             """
+
+    #     )
+
+    # let connectWallet2 = 
+    #     nwc.col( 
+    #         """
+    #             _name   = "buy-nft-card"
+    #             round
+    #             gap     = "5vh"
+    #             colItemPosition="1"
+
+    #             padding = "0px"
+    #             style="  
+    #                 flex: 2;
+    #             "
+    #         """,
+
+    #             """
+    #             <iframe
+    #                 src="https://embed.ipfscdn.io/ipfs/bafybeigtqeyfmqkfbdu7ubjlwhtqkdqckvee7waks4uwhmzdfvpfaqzdwm/erc1155.html?contract=0xc2DDB991A1c1Cec4d7f735842e74F6F0c02123f0&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9%2Fethereum%2F512.png%22%2C%22height%22%3A512%2C%22width%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=c52f1313822ff572db2581450400e3a4&tokenId=0&primaryColor=purple"
+    #                 width="600px"
+    #                 height="600px"
+    #                 style="max-width:100%;"
+    #                 frameborder="0"
+    #             ></iframe>
+    #             """
+
+    #     )
+    
+
+    
+    let white_panel_title_text = "BLOOD TIES (Chapter 1)"
+    let white_panel_body_text = @["""
+        The first song in the WIDE EYE FEELS album is called BLOOD TIES.""", 
+        "In essence this song represents our attachments. ",
+        """In the comic you will be able to tell the origin story of our main character and decide the details 
+        of which will bring intrigue, fantasy, and thrill into the readers mind""",
+        ]
+    let black_panel_title_text = "Collector Comic Creation"
+    let black_panel_body_text = @["""
+        There will be 7 chapters (a chapter for each song in the album) in the Wide Eye Feels Comic book. 
+        As a collector, you will be a part of co-creating the MVP comic!!
+        Each chapter will be a new “cluster”
+        """,
+        "Each chapter will be a new “cluster”",
+        "Once you purchase your NFT, you will be prompted to enter your mailing address,", 
+        "(don't worry I won't come pay you a visit)",
+        "this is where I will be sending you your collectible Loot",
+        ]
+    
+    let white_panel = 
+        nw.col(
+
+            nw.text(white_panel_title_text, text_size.xxxl, whenBelow=(600, @["text-center"])) & 
+            white_panel_body_text.mapIt(nw.text(it, text_size.large)).join("\n") ,
+            p = "p-4",
+            gap = 4,
+            extra_class = fmt"border-[15px] border-black max-w-[800px]",
+            bgColor = "white",
+            whenAbove = (800, @["items-center"])
+        )
+    let black_panel = 
+        nw.col(
+
+            nw.text(black_panel_title_text, text_size.xxxl, whenBelow=(600, @["text-center"])) & 
+            black_panel_body_text[0..1].mapIt(nw.text(it, text_size.large)).join("\n") &
+            nwc.ddiv(
+                        body = 
+                            black_panel_body_text[2] & 
+                            fmt"<span class='font-bold'> {black_panel_body_text[3]} </span> " &
+                            black_panel_body_text[4]
+                            , 
+                        head = 
+                            "class='text-xl'"
+                    )
+            
+             ,
+            p = "p-4",
+            gap = 4,
+            extra_class = "border-[15px] border-white roboto-font text-white",
+            bgColor = "black",
+            whenAbove = (800, @["items-center"])
 
         )
 
-    let connectWallet2 = 
-        nwc.col( 
-            """
-                _name   = "buy-nft-card"
-                round
-                gap     = "5vh"
-                colItemPosition="1"
-
-                padding = "0px"
-                style="  
-                    flex: 2;
-                "
-            """,
-
-                """
-                <iframe
-                    src="https://embed.ipfscdn.io/ipfs/bafybeigtqeyfmqkfbdu7ubjlwhtqkdqckvee7waks4uwhmzdfvpfaqzdwm/erc1155.html?contract=0xc2DDB991A1c1Cec4d7f735842e74F6F0c02123f0&chain=%7B%22name%22%3A%22Goerli%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fgoerli.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Goerli+Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22gor%22%2C%22chainId%22%3A5%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22goerli%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmcxZHpyJa8T4i63xqjPYrZ6tKrt55tZJpbXcjSDKuKaf9%2Fethereum%2F512.png%22%2C%22height%22%3A512%2C%22width%22%3A512%2C%22format%22%3A%22png%22%7D%7D&clientId=c52f1313822ff572db2581450400e3a4&tokenId=0&primaryColor=purple"
-                    width="600px"
-                    height="600px"
-                    style="max-width:100%;"
-                    frameborder="0"
-                ></iframe>
-                """
-
-        )
-    
-
-    let contentCol = 
-        nwc.col( 
-            """
-            id="main-content-text"
-            bgColor = "#EFECEBef"
-            round
-            colItemPosition = 1
-            border-radius = "10px"
-            padding = 0
-            gap = 3vh
-            style="  
-                flex: 3;
-            "
-            """,
-        
-
-            # Top Text
-            nwc.col( 
-                    """
-                    _name="top-text"
-                    padding = 5vh
-                    """,
-                    boldText("BLOOD TIES (Chapter 1)", "4vw")&
-                
-                    italicText(
-                        """
-                        The first song in the WIDE EYE FEELS album is called BLOOD TIES. 
-                        In essence this song represents our attachments. 
-                        In the comic you will be able to tell the origin story of our main character and decide the details 
-                        of which will bring intrigue, fantasy, and thrill into the readers mind
-                        """,
-                        "2vw"
-                    )
-            )&
-            
-            # Black Col
-            nwc.col(
-                """
-                id="text-black-col"
-                padding = 10vh
-                round 
-                bgColor = "black"
-                textColor = "white"
-                padding = 0px
-                """,
-            
-                blackColText("Comic Creation")&
-
-                blackColText(
-                    """
-                    There will be 7 chapters (a chapter for each song in the album) in the Wide Eye Feels Comic book. 
-                    As a collector, you will be a part of co-creating the MVP comic!!
-                    """
-
-                )&
-
-                blackColText(
-                    """
-                    Each chapter will be a new “cluster”
-                    """
-                )&
-
-                nwc.row(
-                    nwc.col(
-
-                        """
-                        gap = 3vh
-                        """,
-                        blackColText(
-                            """
-                            Once you purchase your NFT, you will be prompted to enter your mailing address, (don’t worry I won’t come pay you a visit) this is where I will be sending you your “key” 🔑
-                            """
-                        )&
-
-                        blackColText(
-                            """
-                            Upon the purchase of your NFT, refresh your screen and you will enter into the Comic Creation Zone 
-                            """
-
-                        )&
-
-                        blackColText(
-                            """
-                            Here, you will make use of trained AI that will help you write your section of the comic book.
-                            """ 
-                        )&
-                    
-                        blackColText(
-                            """
-                            As a collector,  in collaboration with a trained AI mechanism , you will have your own  unique section to write about!
-                            """
-                        )
-                    )&
-
-                    nwc.col( 
-                        """
-                        class="right"
-                        gap = 3vh
-                        """,
-                        
-                        """
-                            <img 
-                            src="/static/img/Artizan Artifact (WEF Comic).png" 
-                            style="  
-                                width: 100%;
-                                height: auto;
-                                border-radius: 3%;
-                            "
-                            >
-
-                        """&
-
-                        blackColText(
-                        """
-                        <span style="font-weight: bold;">CLUSTER</span> , a group of 7 people working on a single chapter of the WEF comic book
-                        """
-                        )&
-
-                        blackColText(
-                        """
-                        <span style="font-weight: bold;">KEY</span>, a physical representation of your digital NFT
-                        """
-                        )
-                    )
-                )
-            )
-        )   
-    
-    let contentColMobile = 
-        ""
-    
-    # Desktop Main Content
-    nw.row(
-        contentCol &
-        NFTAccordions(),
-        #connectWallet2,
-        
-        gap       = "5vh",
-        whenBelow = (900, @["hidden"]),
-        name      = "main-content desktop"
-    )&
-
-    # Mobile Main Content
     nw.col(
-        contentCol &
-        NFTAccordions(),
-        #connectWallet2,
-
-        gap         = "5vh",
-        whenBelow   = (900, @["flex"]),
-        extra_class = "hidden",
-        name        = "main-content mobile"
+        white_panel & black_panel,
+        name        = "main-content",
+        extra_class = extra_class,
     )
 
-proc demo_video():string = 
-    # """
-    # <video playsinline width="full" height="full" autoplay loop muted style="border-radius:10px">
-    #     <source src="/static/img/demo_vid.mp4" type="video/mp4" />
-    #     Your browser does not support the video tag.
-    # </video>
-    # """
-    # """
-    # <img style="width: 100vw;height: 100vh;" src="/static/img/demo_gif.gif" />
-    # """
-    # Desktop / Tablet
+proc presale_card*():string = 
+    proc info_row(left: string, right: string): string = 
+        nw.row(
+            left&
+            right,
+            itemposh = "between"
+        )
+    
+    let info_col_content = @[
+        (nw.text("Price:", text_size.large), nw.text("??", text_size.large)),
+        (nw.text("Network:", text_size.large), nw.text("Ethereum", text_size.large)),
+        (nw.text("Collected:", text_size.large), nw.text("0", text_size.large))
+    ]
     nw.col(
-            """
-            <img style="width: 100vw;height: 100vh;" src="/static/img/demo_gif.gif" />
-            """
-            ,
-            itemposv = "c",
+        nw.col(
+            # Title Row
+            info_row(
+                nw.text("Presale", text_size.large),
+                nw.text("Ends: <span class='text-[red]'> 12/01/23 </span>", text_size.large)
+
+            )&
+            # Main Info Col
+            nw.col(
+                info_col_content.mapIt(info_row(it[0], it[1])).join("\n"),
+            ),
+            p = "px-8",
+            gap = 8,
+        )&
+        # Countdown box
+        nw.col(
+            nw.text("Presale Ends In:", text_size.medium)&
+            """<div id='countdown' class='text-5xl'> </div>""",
             itemposh = "c",
-            extra_class = "h-screen",
-            whenBelow = (750, @["hidden"]),
+            bgColor = "black",
+            extra_class = "text-white",
+            round = "8px",
+            p = "py-4"
 
-    )&
+        )&
+        # Connect Wallet Button
+        #nw.btn()&
+        # Public Sale Row
+        #nw.row()
+        "",
 
-    # Mobile 
+        round = "10px"          ,
+        
+        extra_class = "hidden",
+        itemposv = "c"            ,
+        bgColor = "#EFECEBef"   ,
+        name = "Presale Card",
+        gap = "4vh",
+        head = "id='presale-card'",
+        p = "pt-8"
+
+    )
+
+proc loading_box*():string = 
     nw.col(
-            """
-            <style>
-            /* CSS to zoom in the GIF */
-            .zoom-container {
-                width: 700px; /* Set the width of the container to the viewport width */
-                height: 100vh; /* Set the height of the container to the viewport height */
-                overflow: hidden; /* Hide any overflow */
-            }
-
-            .zoomed-gif {
-                width: 100%; /* Make the image take up the full width of the container */
-                height: 100%; /* Make the image take up the full height of the container */
-                transform: scale(1.5); /* Zoom the image to 2x its original size (adjust this value as needed) */
-                transform-origin: center; /* Set the zoom origin to the top left corner */
-            }
-            </style>
-
-            <div class="zoom-container">
-                <img class="zoomed-gif" src="/static/img/demo_gif.gif" alt="Zoomed GIF">
-            </div>
-            """
-            ,
-            itemposv = "c",
-            itemposh = "c",
-            extra_class = "h-screen hidden",
-            whenBelow = (750, @["flex"]),
+        nw.text("Loading...", text_size.xxxl),
+        itemposh = "c",
+        itemposv = "c",
+        h = "200px",
+        bgColor = "#EFECEBef"   ,
+        name = "Loading Box",
+        gap = "4vh",
+        head = "id='loading-box'",
+        round = "10px"          ,
 
     )
 
 ####################
 ## Route Handlers ##
 ## #################
-
 proc landing*(ctx: Context) {.async.} =
-  var headers = initResponseHeaders()
-  headers.add("Cache-Control", "no-cache, no-store, must-revalidate")
-  resp htmlResponse(
-      if not consts.demo:
-        base(
-            top_nav()&
-            postNavCol(
-                        playCard()&
-                        mainContent()
-                      )
-        )
-      else:
-        base(
-            demo_nav()&
-            demo_video()
-        ),
-      headers = headers
-  )
+  resp pu.htmlResponse base( 
+            "<script src='/static/js/landing_page_fe.js'> </script>" &
+            top_nav() &
+            
+            nw.row(
+                        mainContent(extra_class = "basis-2/3 leading-[6vh]")&
+                        nw.col(
+                            playCard()&
+                            NFTAccordions() & 
+                            loading_box() &
+                            presale_card()
+                            ,
+                            gap         = 4,
+                            name        = "right side",
+                            extra_class = "basis-1/3",
+                            
+                        ),
+                        
+                        p           = "px-[5vw] py-[40px]",
+                        gap         = "5vh",
+                        head        = """style=color:black;""",
+                        #extra_class = "hidden",
+                        #whenAbove   = (800, @["flex"]),
+                        name        = "post nav col desktop"
+                        
+            )&
+            """
+            <img src="/static/img/arrows.png">
+            """&
+            
+            """
+<script>
+// Get the target date (January 1st, 2024)
+var targetDate = new Date("2024-01-01T00:00:00Z");
 
+// Function to update the digital clock countdown
+function updateCountdown() {
+    // Get the current date and time
+    var currentDate = new Date();
+
+    // Calculate the time remaining
+    var timeRemaining = targetDate - currentDate;
+
+    if (timeRemaining <= 0) {
+        document.getElementById("countdown").innerHTML = "00:00:00:00";
+        clearInterval(countdownInterval);
+    } else {
+        // Convert time remaining to days, hours, minutes, and seconds
+        var days = Math.floor(timeRemaining / 86400000); // 1 day = 24 * 60 * 60 * 1000
+        var hours = Math.floor((timeRemaining % 86400000) / 3600000); // 1 hour = 60 * 60 * 1000
+        var minutes = Math.floor((timeRemaining % 3600000) / 60000); // 1 minute = 60 * 1000
+        var seconds = Math.floor((timeRemaining % 60000) / 1000); // 1 second = 1000 milliseconds
+
+        // Format the time as "00:00:00:00 days:hours:minutes:seconds"
+        var formattedTime =
+            padNumber(days) + ":" +
+            padNumber(hours) + ":" +
+            padNumber(minutes) + " :" +
+            padNumber(seconds) ;
+
+        // Display the digital clock countdown
+        document.getElementById("countdown").innerHTML = formattedTime;
+    }
+}
+
+// Function to pad a number with leading zeros
+function padNumber(number) {
+    return number.toString().padStart(2, '0');
+}
+
+// Update the digital clock countdown immediately and every second
+updateCountdown();
+var countdownInterval = setInterval(updateCountdown, 1000);
+
+</script>
+"""
+        
+        
+        
+        
+        )
 
 ################
 ## Routes     ##
 ## #############
-let landing_route* = pattern("/", landing, @[HttpGet],)
+let landing_route* = pattern("/", landing )

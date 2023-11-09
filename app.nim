@@ -6,6 +6,8 @@ import edit_section_page
 import cgpt_page
 import consts
 import prologue/middlewares/staticfile
+import admin
+import whitelist
 
 let settings = 
   newSettings(
@@ -24,11 +26,14 @@ app.use(staticFileMiddleware("/static"))
 app.get("/favicon.ico", redirectTo("/static/favicon.ico"))
 
 app.addRoute(@[
-                  landing_route       ,
-                  contribute_route    ,
-                  edit_section_route  ,
-                  faq_route           ,
-                  cgpt_route          ,
+                  landing_route               ,
+                  contribute_route            ,
+                  edit_section_route          ,
+                  faq_route                   ,
+                  cgpt_route                  ,
+                  admin_route                 ,
+                  whitelist_api_route         ,
+                  contact_form_submit_route   ,
 ], "")
 
 app.run()

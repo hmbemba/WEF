@@ -1,13 +1,28 @@
-import std/strformat 
+import std/strformat , os, strutils, strformat
 
 
 proc ic(str: string)     = exec fmt"""powershell Write-Host "`n{str}" -ForegroundColor Green"""
 proc icerr(str: string)  = exec fmt"""powershell Write-Host "`n{str}" -ForegroundColor Red"""
 proc icinfo(str: string) = exec fmt"""powershell Write-Host "`n{str}" -ForegroundColor Blue"""
 
+proc checkFileStuff(out_dir, input_file:string) =
+    let out_path = out_dir.split(r"/")[0..^2].join(r"/")
+    if not out_path.dirExists:
+        echo "out_dir at : " & "'" & out_path & "' " & "does not exist"
+        quit(1)
+    
+    let out_file_name = out_dir.split(r"/")[^1]
+    if not(".js" in out_file_name):
+        echo "out_dir at : " & "'" & out_path & "' " & "does not end with .js"
+        quit(1)
+    
+    if not(".nim" in input_file):
+        echo "input_file at : " & "'" & input_file & "' " & "does not end with .nim"
+        quit(1)
+
 
 task dev, "Start server in dev mode":
-    exec "nim c -r -d:ssl app.nim"
+    exec "nim c -r -d:ic -d:ssl app.nim"
 
 task demo, "Run demo":
     exec """nim c \
@@ -57,23 +72,23 @@ task prodr, "Start server in prod mode":
             app.nim
         """
 
-task mk_cgpt_fe, "builds chatgpt frontend":
-    let output =  "/root/app/src/repo/static/js/cgpt_page_fe.js"
-    withDir "/root/app/src/repo":
-        exec fmt"nim js -r:off -b:js -o:{output} -d:nimExperimentalAsyncjsThen cgpt_page_fe.nim"
-        
-task pull_mnl, "Pull mynimlib":
-    withDir "/root/.nimble/pkgs/mynimlib-1.0.0":
-        exec "git pull"
+# task mkfe, "builds chatgpt frontend":
+#     proc buildExecCommand(out_dir, input_file:string): string = 
+#         checkFileStuff(out_dir, input_file)
 
-task push_mnl, "Push mynimlib":
-    withDir "/root/.nimble/pkgs/mynimlib-1.0.0":
-        exec "git add ."
-        exec "git status"
-        exec "git commit -m 'update'"
-        exec "git push"
+#         return fmt"""nim js -b:js -d:ic -o:{out_dir} {input_file}"""
 
-task build_tw, "builds Thirdweb with Vite":
-    withDir "./static/js/thirdweb":
-        exec "npm run build"
-      
+#     exec buildExecCommand(fmt"./static/js/cgpt_page_fe.js"        ,    "./cgpt_page_fe.nim"         )
+#     exec buildExecCommand(fmt"./static/js/nav_fe.js"              ,    "./nav_fe.nim"               )
+#     exec buildExecCommand(fmt"./static/js/landing_page_fe.js"     ,    "./landing_page_fe.nim"      )
+#     exec buildExecCommand(fmt"./static/js/contribute_page_fe.js"  ,    "./contribute_page_fe.nim"   )
+task mkfe, "builds chatgpt frontend":
+    proc buildExecCommand(input_file: string, out_dir: string): string = 
+        checkFileStuff(out_dir, input_file)
+
+        return fmt"""nim js -b:js -d:ic -o:{out_dir} {input_file}"""
+
+    #exec buildExecCommand("./cgpt_page_fe.nim"         , fmt"./static/js/cgpt_page_fe.js"        )
+    #exec buildExecCommand("./nav_fe.nim"               , fmt"./static/js/nav_fe.js"              )
+    #exec buildExecCommand("./landing_page_fe.nim"      , fmt"./static/js/landing_page_fe.js"     )
+    exec buildExecCommand("./contribute_page_fe.nim"   , fmt"./static/js/contribute_page_fe.js"  )

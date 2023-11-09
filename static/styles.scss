@@ -2,34 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
 
+
+@font-face {
+    font-family: "bako";
+    src: url("./fonts/BaksoSapi.otf") format("opentype");
+}
+
+
 body {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'bako', 'Roboto', sans-serif;
     //font-family: 'Agdasima', sans-serif;
 
-    background-image: url("/static/img/bkg.png");
+    background-image: url("/static/img/Gaia (Full Image).PNG");
     background-size: auto; 
-    color: white;
+    color: rgb(0, 0, 0);
+    //background-color: rgb(113, 0, 0);
 
 }
 
-//For demo
-// body {
-
-//     font-family: 'Roboto', sans-serif;
-//     //font-family: 'Agdasima', sans-serif;
-
-//     //background-image: url("/static/img/bkg.png");
-//     background-size: auto; 
-//     color: rgb(0, 0, 0);
-//     background-color: black;
-
-// }
+.roboto-font {
+    font-family: 'Roboto', sans-serif;
+}
 
 
 
 [x-cloak] { display: none !important; }
 
-// .form-group{
-//     @include flexRow();
-// }

@@ -166,7 +166,7 @@ proc prompt_cgpt(api_key, prompt: cstring): Future[jsfetch.Response] {. async im
     .} 
 
 proc hide_unselected_options(section:Element, selected_id:string) = 
-  for child in section.children:
+  for child in section.queryAll("div"):#children:
     if child.id != selected_id:
       child.hide()
 
