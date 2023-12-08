@@ -6,47 +6,12 @@
 
 
 import prologue
-import mynimlib/nimwebc
-import mynimlib/nimwind as nw
-import strutils, strformat
+import mynimlib/[nimtinydb, icecream, nimjwtauth]
+import strutils
+import strformat
 import site_comps
-import mynimlib/icecream, mynimlib/nimhtml
-import sequtils
-import mynimlib/prologutils as pu
-
-
-# Number of unique visitors
-
-#####################
-## Page Components ##
-#####################
-
-
-
-proc sideBarLink(link: tuple[name:string, url:string]): string = 
-    fmt"""
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                  <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"/>
-                  <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/>
-               </svg>
-               <span class="ml-3">{link.name}</span>
-            </a>
-         </li>
-    """
-
-proc sideBar(links:seq[tuple[name:string, url:string]]): string = 
-    let all_links:string = links.mapIt(it.sideBarLink).join("\n")
-    fmt"""
-        <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-           <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-              <ul class="space-y-2 font-medium">
-                 {all_links}
-              </ul>
-           </div>
-        </aside>
-    """
+import karax / [karaxdsl, vdom]
+import consts
 
 
 
@@ -54,18 +19,54 @@ proc sideBar(links:seq[tuple[name:string, url:string]]): string =
 ## Handlers #########
 #####################
 
+proc login*(ctx: Context) {.async.} =
+    case ctx.request.reqMethod:
+        of HttpGet:  
+            let node = buildHtml(tdiv( class="bg-[#45474F99] p-4 rounded-lg max-w-xs mx-auto my-8")):
+                form( action="/login", `method`="post"):
+                    tdiv( class="`for`m-group mb-4"):
+                        input( `type`="password", id="password", name="password", placeholder="Enter password", class="w-full p-2 text-xl text-white bg-transparent border-b-2 border-white outline-none placeholder-white focus:border-[#D02F3A]")
+
+                    button(`type`="submit", class="w-full text-xl text-white bg-[#D02F3A] px-4 py-2 rounded-lg transition duration-300 hover:scale-105"):
+                        vdom.text "Submit"
+            resp base $node
+        of HttpPost:
+            let password = ctx.getFormParamsOption("password")
+            if password.isNone:
+                icr "No password"
+                resp redirect "/login"
+            if password.get == consts.password:
+                icr "Correct password"
+                #ctx.push_access_token("admin", consts.jwt_secret, %*{}, consts.admin_access_token)
+                resp jwtRedirect("/admin", "admin", consts.jwt_secret, %*{}, consts.admin_access_token)
+                #resp redirect "/admin"
+            else:
+                icr "Wrong password"
+                resp redirect "/login"
+        else:
+            discard
+
+
 proc admin*(ctx: Context) {.async.} =  
-    let links:seq[tuple[name:string, url:string]] = @[
-        ("Whitelist", "/admin/whitelist"),
-        ("NFTs", "/admin/nfts"),
-        ("Story", "/admin/story")
-    ]
-    resp pu.htmlResponse site_comps.base(
-        sideBar(links)
-    )
+    let current_user = ctx.get_current_user(
+                                            consts.admin_access_token, 
+                                            consts.jwt_secret, 
+                                            true, 
+                                            30.days, 
+                                            false
+                                        )
+    let is_admin = current_user.is_authenticated
+
+    if not is_admin:
+        resp redirect "/login"
+        return
+
+    let db = newTinyDB("/root/db.json")
+    resp base """<a class="text-white" href = "https://jsonformatter.org/json-pretty-print" target="_blank"> https://jsonformatter.org/json-pretty-print </a>""" & fmt"""<div class="text-white" > {$db.allRaw()} </div>"""
     
 #####################
 ## Routes ###########
 #####################
 
 let admin_route* = pattern("/admin"   , admin)
+let login_route* = pattern("/login"   , login, @[HttpGet, HttpPost])

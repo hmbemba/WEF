@@ -34,6 +34,8 @@ app.addRoute(@[
                   admin_route                 ,
                   whitelist_api_route         ,
                   contact_form_submit_route   ,
+                  cgpt_selection_route        ,
+                  login_route                 ,
 ], "")
 
 app.run()

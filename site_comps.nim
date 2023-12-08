@@ -1,87 +1,161 @@
 import mynimlib/nimwebc   as nwc
-import consts   
 import strformat, strutils
 import mynimlib/nimwind as nw
 import mynimlib/[nimhtml, nimalpine, nimwind2]
-import karax / [karaxdsl, vdom]
+import karax / [karaxdsl, vdom, vstyles]
+import handles
 
+# proc content_col_styles*():string = 
+#     """
+#         round
+#         colItemPosition = 1
+#         border-radius = "10px"
+#         padding = 0
+#         gap = 3vh
+#         style="  
+#         flex: 3;
+#         "
+#     """
 
+# proc top_nav*():string =
 
-proc content_col_styles*():string = 
-    """
-        round
-        colItemPosition = 1
-        border-radius = "10px"
-        padding = 0
-        gap = 3vh
-        style="  
-        flex: 3;
-        "
-    """
-
-proc top_nav*():string =
-
-    const nav_bg_color = "#45474F99"
+#     const nav_bg_color = "#45474F99"
     
-    # Desktop
-    nw.row(
-        anostyle(
-            "/",
-            """
-            <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-            """
-        )&
-        nw.row(
-            anostyle("/", nw.btn("Get NFT", bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6) )&
-            anostyle("/contribute" , nw.btn("Contribute"))&
-            anostyle("/faq"        , nw.btn("FAQ")),
+#     # Desktop
+#     nw.row(
+#         anostyle(
+#             "/",
+#             """
+#             <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+#             """
+#         )&
+#         nw.row(
+#             anostyle("/", nw.btn("Get NFT", bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6) )&
+#             anostyle("/contribute" , nw.btn("Contribute"))&
+#             anostyle("/faq"        , nw.btn("FAQ")),
 
-            gap = 10,
-            itemPosH = 1,
-            extra_class = "flex-1",
-            itemposv = "c"
-        ) &
-        nw.btn("Connect Wallet", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'connect-wallet-btn'") &
-        nw.btn("0xF64...081a52", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'wallet-address-btn'", extra_class="hidden"), 
+#             gap = 10,
+#             itemPosH = 1,
+#             extra_class = "flex-1",
+#             itemposv = "c"
+#         ) &
+#         nw.btn("Connect Wallet", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'connect-wallet-btn'") &
+#         nw.btn("0xF64...081a52", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'wallet-address-btn'", extra_class="hidden"), 
 
 
-        itemposh=2,
-        itemposv = "c",
-        p = "px-24 py-5",
-        bgColor= nav_bg_color,
-        #extra_class = "sticky top-0 z-10",
-        extra_class = " top-0 z-10",
-        whenBelow = (850, @["hidden"]),
-        name = "top nav desktop",
-    )&
+#         itemposh=2,
+#         itemposv = "c",
+#         p = "px-24 py-5",
+#         bgColor= nav_bg_color,
+#         #extra_class = "sticky top-0 z-10",
+#         extra_class = " top-0 z-10",
+#         whenBelow = (850, @["hidden"]),
+#         name = "top nav desktop",
+#     )&
     
-    # Mobile
-    nw.row(
+#     # Mobile
+#     nw.row(
+#         """
+#         <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
+    
+#         <?xml version="1.0" encoding="utf-8"?>
+#         <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+#         <svg 
+#             width='50px'
+#             fill = "white"
+#             style = "cursor:pointer"
+#             version="1.1" id="Design_here" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+#                 y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+#             <g>
+#                 <rect x="4" y="5" width="16" height="2"/>
+#                 <rect x="4" y="11" width="16" height="2"/>
+#                 <rect x="4" y="17" width="16" height="2"/>
+#             </g>
+#         </svg>
+#         """,
+#         itemposh    = "between",
+#         p           = "px-24 py-5",
+#         bgColor     = nav_bg_color,
+#         extra_class = "top-0 z-10 hidden",
+#         whenBelow   = (850, @["flex"]),
+#         name        = "top nav mobile",
+#     ) 
+
+proc top_nav_2*():string = 
+    let top_nav = buildHtml(nav( class="flex flex-row items-center justify-between bg-[#45474F99] px-6 py-3 sm:px-12 top-0 z-10 w-full")):
+        # Logo
+        a( href="/", class="nostyle"):
+            img( src="/static/img/nav_logo.png", alt="Logo", class="h-10 sm:h-16")
+        # Buttons Row
+        tdiv( class="flex flex-row gap-4 sm:gap-8 justify-center items-center flex-1"):
+            
+            # Get NFT Button
+            a( href="/", class="nostyle"):
+                button( class=" text-xl transition duration-300 hover:bg-black hover:text-[#D02F3A] bg-[#D02F3A] px-4 sm:px-6 py-2 rounded-lg transition duration-300 hover:scale-105"):
+                    vdom.text "Get NFT"
+
+            # Contribute and FAQ Buttons
+            for item in @[("Contribute", "/contribute"), ("FAQ", "/faq")]:
+                a( href=item[1], class="nostyle"):
+                    button( class="text-xl text-white hover:text-gray-400 transition-colors duration-300"):
+                        vdom.text item[0]
+
+        # Connect Wallet Buttons
+        tdiv( class="flex gap-4"):
+            button( class="text-xl text-white  bg-[#D02F3A] px-4 sm:px-6 py-2 rounded-lg transition duration-300 hover:scale-105", id= $connect_wallet_btn ):
+                    vdom.text "Connect Wallet"
+            button( class="text-xl bg-[#D02F3A] px-4 sm:px-6 py-2 rounded-lg transition duration-300 hover:scale-105 hidden", id= $wallet_address_btn):
+                    vdom.text "0xF64...081a52"
+      
+    let close_button = buildHtml(button(class="rounded-full hover:shadow-lg hover:bg-gray-100 p-4 transition-colors duration-150")):
         """
-        <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-    
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg 
-            width='50px'
-            fill = "white"
-            style = "cursor:pointer"
-            version="1.1" id="Design_here" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-            <g>
-                <rect x="4" y="5" width="16" height="2"/>
-                <rect x="4" y="11" width="16" height="2"/>
-                <rect x="4" y="17" width="16" height="2"/>
-            </g>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.41 4.41a.833.833 0 0 1 1.18 0L10 8.822l4.41-4.41a.833.833 0 1 1 1.18 1.178L11.178 10l4.41 4.41a.833.833 0 1 1-1.178 1.18L10 11.177 5.588 15.59a.833.833 0 1 1-1.178-1.178L8.82 10l-4.41-4.41a.833.833 0 0 1 0-1.18Z" fill="currentcolor">
+            </path>
         </svg>
-        """,
-        itemposh    = "between",
-        p           = "px-24 py-5",
-        bgColor     = nav_bg_color,
-        extra_class = "top-0 z-10 hidden",
-        whenBelow   = (850, @["flex"]),
-        name        = "top nav mobile",
-    ) 
+        """.verbatim
+
+    proc connect_option(icon, name: string, visible = true, id:string): VNode = 
+        proc showHide(): string = 
+            if visible: 
+                "" 
+            else: 
+                "hidden"
+
+        buildHtml(button(id=id, class=fmt"{showHide()} flex items-center justify-between px-4 py-2 border border-gray-300 rounded-md shadow-md hover:shadow-lg hover:border-gray-400 focus:outline-none")):
+            span(class="flex items-center"):
+                # Icon placeholder, replace with actual image path or SVG
+                img(src=icon, alt=name, class="h-6 w-6 mr-2")
+                # Button text
+                span(class="text-xl font-medium text-gray-700"):
+                    vdom.text name
+            """
+            <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+            """.verbatim
+
+    let connect_wallet_modal = buildHtml(tdiv(id= $connect_wallet_modal, class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center", style = style(backdropFilter, "blur(15px)") )):
+        tdiv(class="relative p-4 bg-white rounded-2xl shadow-lg w-full max-w-md mx-2"):
+            tdiv(class="text-center"):
+                tdiv(class="flex justify-between items-center"):
+                    h3(class="text-lg leading-6 font-medium text-gray-900"): 
+                        vdom.text "Connect"
+                
+                    # Close Connect Wallet modal Btn
+                    button(id= $close_connect_wallet_modal_btn , class="rounded-full hover:shadow-lg hover:bg-gray-100 p-2 transition-colors duration-150"):
+                        """
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.41 4.41a.833.833 0 0 1 1.18 0L10 8.822l4.41-4.41a.833.833 0 1 1 1.18 1.178L11.178 10l4.41 4.41a.833.833 0 1 1-1.178 1.18L10 11.177 5.588 15.59a.833.833 0 1 1-1.178-1.178L8.82 10l-4.41-4.41a.833.833 0 0 1 0-1.18Z" fill="currentColor">
+                            </path>
+                        </svg>
+                        """.verbatim
+                tdiv(class="mt-2 px-4 py-3 flex flex-col gap-4"):
+                    connect_option("https://iconic.dynamic-static-assets.com/icons/sprite.svg#metamask", "Metamask", false, $connect_wallet_modal_metamask_btn)
+                    connect_option("https://iconic.dynamic-static-assets.com/icons/sprite.svg#walletconnect", "WalletConnect", id = $connect_wallet_modal_cw_btn)
+                    #connect_option("https://iconic.dynamic-static-assets.com/icons/sprite.svg#coinbase", "Coinbase")
+    
+    return $top_nav & $connect_wallet_modal
 
 proc demo_nav*():string =
     let logo = img(src="/static/img/nav_logo.png", extra_head="""style = "height:10vh " """)
@@ -209,57 +283,57 @@ proc demo_nav*():string =
 
     )
 
-proc grey_card*(body:string, name = ""):string = 
-    nw.row(
-            body,
-            round     = "10px"               ,
-            p         = "py-[2vw] px-[4vw]"  ,
-            itemposh  = 3                    ,
-            itemposv  = 4                    ,
-            bgColor   = "#EFECEBef"          ,
-            name      = name
+# proc grey_card*(body:string, name = ""):string = 
+#     nw.row(
+#             body,
+#             round     = "10px"               ,
+#             p         = "py-[2vw] px-[4vw]"  ,
+#             itemposh  = 3                    ,
+#             itemposv  = 4                    ,
+#             bgColor   = "#EFECEBef"          ,
+#             name      = name
 
-        )
+#         )
 
-proc redCard*(body:string):string = nw.col(
-    body,
-    bgColor = style_red,
-    p = "p-[5vh]",
-    itemposh = "c",
-    gap = "4vh",
-    round = "2vh",
-    name = "red Card",
+# proc redCard*(body:string):string = nw.col(
+#     body,
+#     bgColor = style_red,
+#     p = "p-[5vh]",
+#     itemposh = "c",
+#     gap = "4vh",
+#     round = "2vh",
+#     name = "red Card",
     
     
-    )
+#     )
 
-proc connect_wallet_btn *(): string = 
-    nwc.btn(
-        """
-                id="connect-wallet" 
-                round 
-                bgColor="#EDE9E9" 
-                growOnHover 
-                textColor="black"
-        """,
-        "Connect Wallet"
-    )
+# proc connect_wallet_btn *(): string = 
+#     nwc.btn(
+#         """
+#                 id="connect-wallet" 
+#                 round 
+#                 bgColor="#EDE9E9" 
+#                 growOnHover 
+#                 textColor="black"
+#         """,
+#         "Connect Wallet"
+#     )
 
-proc coming_soon_card*(): string = 
-    red_card(
-        "COMING SOON"
-    )
+# proc coming_soon_card*(): string = 
+#     red_card(
+#         "COMING SOON"
+#     )
 
-proc postNavCol*(body:string): string = 
-    nw.col(
-        body,
-        p    = "px-[10vw] py-[40px]",
-        gap  = "5vh",
-        head = """style=color:black; id='post-nav-col'""",
-        name = "post nav col"
+# proc postNavCol*(body:string): string = 
+#     nw.col(
+#         body,
+#         p    = "px-[10vw] py-[40px]",
+#         gap  = "5vh",
+#         head = """style=color:black; id='post-nav-col'""",
+#         name = "post nav col"
         
 
-    )
+#     )
 
 proc base*(body:string, title = "WIDE EYE FEELS") : string = 
     html(
@@ -277,122 +351,6 @@ proc base*(body:string, title = "WIDE EYE FEELS") : string =
         body(body)
     )
 
-# proc contact_form*():string = 
-#     """
-#   <form id='contact-form' method="post" class="hidden bg-[#45474F99] p-6 rounded-lg shadow-lg">
-
-#         <div class="flex justify-between items-center mb-2">
-#             <h2 class="text-white text-2xl font-bold text-center">Shipping Details</h2>
-#             <!-- Close Modal Button -->
-#             <button id="close-contact-form" class="text-black close-modal text-5xl">×</button>
-#         </div>
-
-#         <div class="mb-4">
-#         <label for="email" class="block text-white text-sm font-bold mb-2">Email:</label>
-#         <input type="email" id="email" name="email" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="you@example.com">
-#         </div>
-
-#         <div class="mb-4">
-#         <label for="address" class="block text-white text-sm font-bold mb-2">Address:</label>
-#         <input type="text" id="address" name="address" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="1234 Street Ave">
-#         </div>
-
-#         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4">
-#         <div>
-#             <label for="city" class="block text-white text-sm font-bold mb-2">City:</label>
-#             <input type="text" id="city" name="city" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="City">
-#         </div>
-#         <div>
-#             <label for="state" class="block text-white text-sm font-bold mb-2">State:</label>
-#             <input type="text" id="state" name="state" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="State">
-#         </div>
-#         </div>
-
-#         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4 mb-4">
-#         <div class="md:col-span-2">
-#             <label for="country" class="block text-white text-sm font-bold mb-2">Country:</label>
-#             <select id="country" name="country" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-#             <option value="United States">United States</option>
-#             </select>
-#         </div>
-#         <div>
-#             <label for="zipcode" class="block text-white text-sm font-bold mb-2">Zip Code:</label>
-#             <input type="number" id="zipcode" name="zipcode" required="" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Zip Code">
-#         </div>
-#         </div>
-
-#         <button type="submit" class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110">
-#         Submit
-#         </button>
-#   </form>
-#     """
-
-proc contact_form*(): string =
-    let vnode = buildHtml(form(id="contact-form" , class = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
-        tdiv(class="flex justify-between items-center mb-2"):
-            h2(class="text-white text-2xl font-bold text-center"): 
-                vdom.text "Shipping Details"
-            # Close Modal Button
-            button(class="text-black close-modal text-5xl"): 
-                vdom.text "×"
-
-            tdiv(class="mb-4"):
-                label(`for`="email" ,class="block text-white text-sm font-bold mb-2"): 
-                    vdom.text "Email:"
-                input(`type`="email", id="email", name="email", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="you@example.com")
-
-            tdiv(class="mb-4"):
-                label(`for`="address" ,class="block text-white text-sm font-bold mb-2"): 
-                    vdom.text "Address:"
-                input(`type`="text", id="address", name="address", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="1234 Street Ave")
-
-
-            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-                tdiv:
-                    label(`for`="city" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "City:"
-                    input(`type`="text", id="city", name="city", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="City")
-                tdiv:
-                    label(`for`="state" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "State:"
-                    input(`type`="text", id="state", name="state", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="State")
-
-            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-                tdiv(class="md:col-span-2"):
-                    label(`for`="country" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "Country:"
-                    select(id="country", name="country", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"):
-                        option(value="United States"): 
-                            vdom.text "United States"
-
-                tdiv:
-                    label(`for`="zipcode" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "Zip Code:"
-                    input(`type`="number", id="zipcode", name="zipcode", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="Zip Code")
-
-
-            button(`type`="submit", class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110"): 
-                vdom.text "Submit"
-        
-    result = $vnode
-
-proc triple_card*(): string =
-    proc card(img_url:string, body_text:string): VNode = 
-        buildHtml(tdiv(class="flex flex-col items-center space-y-5  rounded-lg p-2")):
-            img(src=img_url, alt="Theme Image", class=" h-48 object-cover rounded-lg shadow-lg")
-            h2(class="text-white text-xl font-semibold"): 
-                vdom.text "Theme"
-            p(class="text-white text-center"):
-                vdom.text body_text
-    
-    let cards = @[
-        card("/static/img/contrib_page_1.png", "Your NFT has a specific theme and section. You’re unique! And have the power to drastically change the story..."),
-        card("/static/img/contrib_page_2.png", "Playing a multiple endings game, you will create a script to be used for the final MVP of your chapter section."),
-        card("/static/img/contrib_page_3.png", "Once you’re complete, you will be prompted to submit your section and we will move onto the next steps in Discord!")
-        ]
-    let vnode = buildHtml(tdiv(class="lg:px-20")):
-        tdiv(class="rounded-[20px] bg-black bg-opacity-70 p-2 grid grid-cols-1 min-[825px]:grid-cols-3 "):
-            for card in cards:
-                card
-    result = $vnode
-
+template ppostNavCol*(incoming_class:string, body:untyped): VNode =
+    buildHtml(tdiv(class=incoming_class)):
+      body

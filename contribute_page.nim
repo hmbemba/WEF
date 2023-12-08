@@ -1,110 +1,132 @@
 import prologue
 import site_comps
-import mynimlib/nimwebc as nwc
-import mynimlib/nimwind as nw
+import consts
 import strformat, sequtils, strutils, json
-import mynimlib/[icecream, nimwind2, nimtinydb]
+import mynimlib/[icecream, nimwind2, nimtinydb, prologutils]
+import karax / [karaxdsl, vdom, vstyles]
 
 
-type contact = object 
+type 
+  contact = object 
     email:   string
     address: string
     city:    string
     state:   string
     country: string
     zipcode: string
+  owners  = object
+    nft_holder_addy : string
+    nfts_owned      : seq[int]
 
 ################
 ## Components ##
 ################
 
-proc Chapter(chapter_number:int, num_sections:int) : string = 
-  var sections = newSeq[string]()
-  proc link(section_num:int) : string = anostyle("#", fmt"Section {section_num + 1}", """ style = 'opacity:.5; ' """)
-  for i in 0..<num_sections:
-    sections.add( 
-                    ddiv(
-                          #fmt"""id = "chapter-{chapter_number}-section-{i}" """, 
-                          fmt"""id = "section-{i}" """, 
-                          link(i) 
-                        )
-                  )
 
-  nwc.col(
-    fmt"""id = "chapter-{chapter_number}" """,
-    text("large",fmt"Chapter {chapter_number + 1}")&
+proc red_card():VNode = 
+    buildHtml(tdiv(id="red-card", class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-[#D02F3A] p-[5vh] rounded-[2vh]")):
+        p(id = "get-nfts-loader", class = "text-center " & tcolor"white"):
+          vdom.text "Getting Your NFTS..."
+
+proc contact_form*(): VNode =
+    buildHtml(form(id="contact-form" , class = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
+        tdiv(class="flex justify-between items-center mb-2"):
+            h2(class="text-white text-2xl font-bold text-center"): 
+                vdom.text "Shipping Details"
+            # Close Modal Button
+            button(id="close-contact-form", class="text-black close-modal text-5xl"): 
+                vdom.text "×"
+
+            tdiv(class="mb-4"):
+                label(`for`="email" ,class="block text-white text-sm font-bold mb-2"): 
+                    vdom.text "Email:"
+                input(`type`="email", id="email", name="email", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="you@example.com")
+
+            tdiv(class="mb-4"):
+                label(`for`="address" ,class="block text-white text-sm font-bold mb-2"): 
+                    vdom.text "Address:"
+                input(`type`="text", id="address", name="address", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="1234 Street Ave")
+
+
+            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+                tdiv:
+                    label(`for`="city" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "City:"
+                    input(`type`="text", id="city", name="city", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="City")
+                tdiv:
+                    label(`for`="state" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "State:"
+                    input(`type`="text", id="state", name="state", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="State")
+
+            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+                tdiv(class="md:col-span-2"):
+                    label(`for`="country" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "Country:"
+                    select(id="country", name="country", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"):
+                        option(value="United States"): 
+                            vdom.text "United States"
+
+                tdiv:
+                    label(`for`="zipcode" ,class="block text-white text-sm font-bold mb-2"): 
+                        vdom.text "Zip Code:"
+                    input(`type`="number", id="zipcode", name="zipcode", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="Zip Code")
+
+
+            button(`type`="submit", class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110"): 
+                vdom.text "Submit"
+        
+proc triple_card*(): VNode =
+    proc card(img_url:string, body_text, title_text:string): VNode = 
+        buildHtml(tdiv(class="flex flex-col items-center space-y-5  rounded-lg p-2")):
+            img(src=img_url, alt="Theme Image", class=" h-48 object-cover rounded-lg shadow-lg")
+            h2(class="text-white text-xl font-semibold"): 
+                vdom.text title_text
+            p(class="text-white text-center"):
+                vdom.text body_text
     
-    nwc.col(
-      fmt"""id = "chapter-{chapter_number}-sections" """,
-      sections.join()
-    )
-  )
+    let cards = @[
+        card("/static/img/contrib_page_1.png", "Your NFT has a specific theme and section. You’re unique! And have the power to drastically change the story..."   , "Theme"),
+        card("/static/img/contrib_page_2.png", "Playing a multiple endings game, you will create a script to be used for the final MVP of your chapter section."   , "Story"),
+        card("/static/img/contrib_page_3.png", "Once you’re complete, you will be prompted to submit your section and we will move onto the next steps in Discord!", "Submit")
+        ]
+    buildHtml(tdiv(class="lg:px-20")):
+        tdiv(class="rounded-[20px] bg-black bg-opacity-70 p-2 grid grid-cols-1 min-[825px]:grid-cols-3 "):
+            for card in cards:
+                card
 
-proc edit_chapters_section(body:string) : string = 
-  nw.col(
-    body,
-    head = """ id = 'edit-chapters-section' """,
-    extra_class = "hidden"
-  )
-
-
-
-# ____
-# proc edit_chapter
-# /edit/chapter/{chapter in}/section/{seciton_nun}/walletAdder
-
- 
-proc red_card_s():seq[string] = 
-    bg"#D02F3A"      / 
-    round"20px"      /
-    itemposh"center" /
-    itemposv"center" /
-    4.pad            
-
-proc red_card():string = 
-    ddiv(
-      class : @["grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-[#D02F3A] p-[5vh] rounded-[2vh]"],
-      name  : "red-card",
-      body  : p(id: "get-nfts-loader", body:"Getting Your NFTS...", class: "text-center" / tcolor"white").mk(),
-      id    : "red-card"
-    ).mk()
-
+proc err_card*(err_msg: string): VNode = 
+    verbatim(fmt"""<div class="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+    <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
+    </svg>
+    <span class="sr-only">Info</span>
+    <div>
+        {err_msg}
+    </div>
+    </div>""")
 
 ################
 ## Routes     ##
 ################
-
+  
 proc contribute_page*(ctx: Context) {.async gcsafe.} =
-#   resp base fmt"""
-# <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-[#D02F3A] p-[5vh] rounded-[2vh]">
-#     <!-- Card 1 -->
-#     {nftCard()}
+    let err_flash  = ctx.getErrFlash(consts.flash_token_name)
+    if err_flash.isSome():
+        ic "err_flash: " & err_flash.get.message
+    let body = ppostNavCol("px-[10vw] py-[40px] gap-5vh"):
+        contact_form() 
+        if err_flash.isSome():
+            err_card(err_flash.get.message)
+        triple_card() 
+        red_card()
 
-#     <!-- Card 2 -->
-#     {nftCard()}
-
-#     <!-- Card 3 -->
-#     {nftCard()}
-#     <!-- ... Add more cards as required ... -->
-
-#     {nftCard()}
-
-#     {nftCard()}
-
-#     {nftCard()}
-# </div>
-#   """
-
-  resp base(
-    top_nav() & 
-    postNavCol(contact_form() & site_comps.triple_card()&
-        red_card()&
-        """
-        <script type="module" src="/static/js/contribute_page_fe.js"></script>
-        """
-    )
-    
-  )
+    resp htmlResponse( base( 
+                top_nav_2() & 
+                $body     &
+                """
+                <script type="module" src="/static/js/contribute_page_fe.js"></script>
+                """
+              ), headers = @[del_cookie_header(consts.flash_token_name)])
 
 proc contact_form_submit*(ctx: Context) {.async.} =
     ic "Incoming Post request"
@@ -145,7 +167,8 @@ proc contact_form_submit*(ctx: Context) {.async.} =
     ic "Successfully inserted contact info into db with the doc_id of : " & $(insert_req.doc_id.get)
     await ctx.respond(Http200, "Successfully inserted contact info into db")
 
-
+proc add_nfts*(ctx: Context) {.async.} =
+    ic "Incoming Post request"
 
 ####################
 ## Route Handlers ##
@@ -153,3 +176,6 @@ proc contact_form_submit*(ctx: Context) {.async.} =
 
 let contribute_route*          = pattern("/contribute", contribute_page, @[HttpGet])
 let contact_form_submit_route* = pattern("/contribute/contact-form/{nft_holder_addy}", contact_form_submit, @[HttpPost])
+let add_nfts_route*            = pattern("/addnft", add_nfts, @[HttpPost])
+
+
