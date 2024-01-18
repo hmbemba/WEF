@@ -61,7 +61,7 @@ proc admin*(ctx: Context) {.async.} =
         resp redirect "/login"
         return
 
-    let db = newTinyDB("/root/db.json")
+    let db = newTinyDB(consts.db_path)
     resp base """<a class="text-white" href = "https://jsonformatter.org/json-pretty-print" target="_blank"> https://jsonformatter.org/json-pretty-print </a>""" & fmt"""<div class="text-white" > {$db.allRaw()} </div>"""
     
 #####################

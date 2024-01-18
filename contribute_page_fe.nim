@@ -1,4 +1,4 @@
-import mynimlib/[nimjs, icecream, nimThirdweb, nimEthers as ethers]
+import mynimlib/[unifetch, nimjs, icecream, nimThirdweb, nimEthers as ethers]
 import std/jsfetch
 import std/[asyncjs, jsconsole, jsformdata, jsheaders]
 import strutils, strformat, tables, sequtils
@@ -17,6 +17,44 @@ import karax / [karaxdsl, vdom, vstyles]
 import {MetaMaskWallet, ethers} from "./thirdweb/dist/thirdweb.js";
 """ .}
 
+{. emit: """
+import {createWeb3Modal, chains, projectId, wagmiConfig, getAccount} from "./cw_modal/dist/cw-modal.js";
+""" .}
+
+var wallet_addy  {. exportc:"wallet_addy" .}: cstring = ""
+var is_connected {. exportc:"is_connected" .}: bool = false
+
+{. emit: """
+const modal = createWeb3Modal({ wagmiConfig, projectId, chains })
+
+// Subscribe to state changes to get account info after connection
+modal.subscribeState(newState => {
+  if (newState.open) {
+    const account = getAccount();
+    if (account.address !== undefined){
+      wallet_addy = account.address
+      console.log("wallet_addy:", wallet_addy);
+      is_connected = true
+    }else{
+      console.log("account.address is undefined");
+      is_connected = false
+    }
+  }
+});
+
+const account = getAccount();
+if (account.address !== undefined){
+    wallet_addy = account.address
+    console.log("wallet_addy:", wallet_addy);
+    is_connected = true
+}else{
+    console.log("account.address is undefined");
+    is_connected = false
+}
+
+
+""" .}
+
 type
     wef_contract     = object
         address      : cstring = cstring(consts.contract_address)
@@ -27,11 +65,6 @@ type
         address  : cstring
         contract : wef_contract
 
-proc get_client_wallet_from_local_storage(): tuple[is_connected:bool, addy:cstring] = 
-    let addy = "user_wallet_address".grab_val_from_local_storage
-    if addy.isNone():
-        return (false, "".cstring)
-    return (true, addy.get())
 
 proc get_nfts(wallet: wef_wallet): Future[Option[seq[int]]] {. async .} = 
     var nfts: seq[int] = @[]
@@ -117,10 +150,9 @@ if not provider_req.ok:
     icr provider_req.err
 
 let provider = provider_req.val.get
+ic "provider:" 
 ic provider
 
-let wallet = get_client_wallet_from_local_storage()
-ic wallet
 
 let get_nfts_loader        = gebi_strict "get-nfts-loader"
 let red_card               = gebi_strict "red-card"
@@ -131,17 +163,16 @@ contact_form.submit(
     proc (event: Event) {.async.} = 
         event.preventDefault()
         let form_data = newFormDataThis()
-        let addy      = wallet.addy
-        let post_req  = await post(fmt"/contribute/contact-form/{addy}".cstring, form_data)
+        let addy      = wallet_addy
+        let post_req  = await unifetch.post(fmt"/contribute/contact-form/{addy}".cstring, form_data)
         if not post_req.ok:
             alert("ERROR SUBMITTING FORM" & post_req.body)
         else:
-            alert("SUCCESS" & post_req.body)
+            #alert("SUCCESS" & post_req.body)
             contact_form.toggleHidden()
             "submitted_shipping".push_to_local_storage("true".cstring)
 
 )
-
 
 proc handleShowShipping() =
     let submitted_shipping = "submitted_shipping".grab_val_from_local_storage
@@ -155,7 +186,7 @@ proc handleShowShipping() =
         contact_form.toggleHidden()
 
 proc getNfts() {.async.} = 
-    if not wallet.is_connected:
+    if not is_connected:
         ic "not connected"
         ic "Show the connect button"
         get_nfts_loader.remove()
@@ -168,10 +199,9 @@ proc getNfts() {.async.} =
             """
         )
 
-
     else:
         let wef_wallet = wef_wallet(
-                        address  :  wallet.addy, 
+                        address  :  wallet_addy, 
                         contract :  wef_contract(
                                                 contract: newEthersContract(consts.contract_address, abi_file.abi, provider) , 
                                                 num_editions: 3.cint
@@ -195,22 +225,9 @@ proc getNfts() {.async.} =
         else:
             ic "no nfts"
 
-
-
 await getNfts()
 
 
-
-
-# let provider = newJsonRpcProviderRaw(consts.rpc_url)
-# ic provider
-
-# let contract = newEthersContract(consts.contract_address, abi_file.abi, provider)
-# ic contract
-
-# # ic formatUnits( 
-# #     await contract.balanceOf("0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52".cstring, 0.cint)
-# # )
 
 
 

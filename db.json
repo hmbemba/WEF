@@ -1,0 +1,53 @@
+{
+  "_default": {
+    "meta": {
+      "highest_id": 0
+    }
+  },
+  "contributions": {
+    "meta": {
+      "highest_id": 1
+    },
+    "0": {
+      "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
+      "nft_index": 0,
+      "scenario_1": {
+        "title": "Scenario 2: Gaia's Encounter with a Hostile Faction",
+        "body": "While lost in the woods, Gaia unknowingly stumbles upon a hidden outpost of a powerful faction that seeks to maintain control over the remnants of advanced technology. Suspicious of Gaia's newfound abilities, they capture her and subject her to intense interrogation. Gaia must use her heightened senses and newfound powers to escape their clutches and continue her quest. Along the way, she discovers the dark secrets and hidden agendas of this faction, setting the stage for a dangerous game of cat and mouse."
+      },
+      "scenario_2": {
+        "title": "Gaia's Encounter with a Reclusive Hermit",
+        "body": "While lost in the woods, Gaia comes across a reclusive hermit who possesses ancient knowledge about the psychedelic plant and its healing properties. This hermit offers to teach Gaia how to harness the plant's power and use it to restore balance to the world. However, the hermit's isolation has made them wary of outsiders, and Gaia must prove herself worthy of their teachings. Together, they embark on a journey to gather the necessary ingredients and unlock the full potential of the plant's healing abilities, all while evading the watchful eyes of the hostile factions who seek to suppress their mission."
+      },
+      "scenario_full": {
+        "title": "Final Playwright",
+        "body": "[Comic book style text]\n\nPanel 1:\nGaia, disheveled and weary, stumbles upon a hidden outpost nestled deep within the woods. She cautiously peers through the foliage, her eyes widening in surprise.\n\nGaia: What is this place?\n\nPanel 2:\nSuddenly, armed guards surround Gaia, their weapons trained on her. She raises her hands in surrender, her heart pounding in her chest.\n\nGuard 1: Intruder! Who are you and what are you doing here?\n\nPanel 3:\nGaia, her voice trembling, tries to explain herself.\n\nGaia: I-I didn't mean to intrude. I'm lost and just looking for a way out of these woods.\n\nGuard 2: Lost, huh? We don't believe you. What are those strange powers you possess?\n\nPanel 4:\nGaia's eyes widen in realization as she notices the guards eyeing her pendant, a symbol of her newfound abilities.\n\nGaia: You've seen my powers? How?\n\nGuard 3: We've been watching you for some time now. Your abilities are a threat to our control over the technology remnants. You will tell us everything.\n\nPanel 5:\nGaia, her hands still raised, takes a deep breath, summoning her newfound powers.\n\nGaia: I won't let you use me for your own gain. I have a mission, a purpose.\n\nPanel 6:\nWith a surge of energy, Gaia breaks free from the guards' grasp, her body glowing with an otherworldly light.\n\nGuard 1: Stop her!\n\nPanel 7:\nGaia, now free, uses her heightened senses to evade the guards, leaping through the trees with grace and agility.\n\nGuard 2: She's getting away!\n\nPanel 8:\nGaia, hidden in the shadows, watches as the guards search for her, their frustration evident.\n\nGuard 3: Find her! We can't let her escape!\n\nPanel 9:\nGaia, determined and resolute, whispers to herself.\n\nGaia: I won't let them stop me. I will uncover the truth and bring hope back to this world.\n\n[To be continued...]"
+      },
+      "scenario_1_complete": true,
+      "scenario_2_complete": true,
+      "scenario_full_complete": true
+    }
+  },
+  "contact_db": {
+    "meta": {
+      "highest_id": 2
+    },
+    "0": {
+      "email": "hmbemba@gmail.com",
+      "address": "6424 Beaumont Sq",
+      "city": "Lewis Center",
+      "state": "ohio",
+      "country": "United States",
+      "zipcode": "43035"
+    },
+    "1": {
+      "email": "hmbemba@gmail.com",
+      "address": "6424 Beaumont Sq",
+      "city": "Lewis Center",
+      "state": "ohio",
+      "country": "United States",
+      "zipcode": "43035",
+      "addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52"
+    }
+  }
+}

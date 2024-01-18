@@ -336,7 +336,7 @@ when not defined(js):
   proc put_in_p_tag*(text: string): string = fmt"""<p> {text} </p>"""
 
   proc cgpt_selection*(ctx: Context) {.async.} =
-    let contrib_db = newTinyDB("/root/db.json", "contributions")
+    let contrib_db = newTinyDB(consts.db_path, "contributions")
 
     case ctx.request.reqMethod:
       of HttpGet:
@@ -392,7 +392,7 @@ when not defined(js):
     ic "wallet_addy: " & wallet_addy
     ic "nft_num: " & nft_num
 
-    let contrib_db = newTinyDB("/root/db.json", "contributions")
+    let contrib_db = newTinyDB(consts.db_path, "contributions")
     icb "cgpt_selection get flow"
     let get_contrib = contrib_db.get(
             contribution,
@@ -413,17 +413,17 @@ when not defined(js):
         icr "prev_contrib is not ok"
         await ctx.respond(Http500, "Internal Server Error")
       if prev_contrib.val.isNone:
-        icr "Previous contribution is not complete becuase it does not exist yet"
+        icr "The contribution before this must be complete, before you can contribute to this one"
         let url = fmt"/contribute"
         resp errFlash(url, consts.flash_token_name,
-            "Previous contribution is not complete becuase it does not exist yet",
+            "The contribution before this must be complete, before you can contribute to this one",
             consts.jwt_secret)
         return
       if not prev_contrib.val.get.item.scenario_full_complete:
         icr "Previous contribution was found, but not complete"
         let url = fmt"/contribute"
         resp errFlash(url, consts.flash_token_name,
-            "Previous contribution is not complete", consts.jwt_secret)
+            "The contribution before this must be complete, before you can contribute to this one", consts.jwt_secret)
         return
 
     let finished_notif = """

@@ -227,24 +227,6 @@ proc get_response_text(response:Response): Future[cstring] {. async .} =
 
     return resp_text
 
-# proc add_to_local_storage(scenario:scenario) = #, scenario_number, )#index:int) =     
-#   window.localStorage.setItem(
-#     fmt"scenario_{scenario.number}" ,#& $index, 
-#     """{"title"    : "__title__", "content"  : "__content__", "selected" :  __selected__ }""".multiReplace(@[
-#       ("__title__", scenario.title),
-#       ("__content__", scenario.content),
-#       ("__selected__", $scenario.selected)
-#     ]))
-
-# proc selected_scenario_in_local_storage(scenario_number:int) : Option[scenario] = 
-#   let scenario_json = window.localStorage.getItem(fmt"scenario_" & $scenario_number)
-#   if scenario_json != nil:
-#     let scenario_json_text = $scenario_json
-#     echo scenario_json_text
-#     let scenario = scenario_json_text.fromJson(scenario)
-#     return some(scenario)
-#   return none(scenario)
-
 proc get_selected_scenario_in_db(wallet_addy:cstring, nft_index:int): Future[Response] {.async.}= 
     get(
         url  = fmt"/chat/selection?wallet_addy={$wallet_addy}&nft_index={nft_index}"
@@ -477,22 +459,3 @@ else:
             second_scenario_btn.el_strict.click( second_scenario_btn_click)
 
     )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

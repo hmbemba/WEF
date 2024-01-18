@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../NimblePkgs"
+		},
+		{
+			"path": "C:/Users/hmbem/.nimble/pkgs2"
+		},
+		{
+			"path": "C:/Users/hmbem/.choosenim/toolchains/nim-2.0.0/lib"
+		},
+		{
+			"path": "C:/Users/hmbem/.nimble/pkgs/mynimlib-1.0.0"
+		}
+	],
+	"settings": {}
+}

@@ -14,6 +14,7 @@ type
     state:   string
     country: string
     zipcode: string
+    addy:    string
   owners  = object
     nft_holder_addy : string
     nfts_owned      : seq[int]
@@ -29,51 +30,90 @@ proc red_card():VNode =
           vdom.text "Getting Your NFTS..."
 
 proc contact_form*(): VNode =
-    buildHtml(form(id="contact-form" , class = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
-        tdiv(class="flex justify-between items-center mb-2"):
-            h2(class="text-white text-2xl font-bold text-center"): 
-                vdom.text "Shipping Details"
-            # Close Modal Button
-            button(id="close-contact-form", class="text-black close-modal text-5xl"): 
-                vdom.text "×"
+  buildHtml(form(id="contact-form", `class` = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
+    # Header Section
+    tdiv(`class` = "flex justify-between"):
+      h2(`class` = "text-white text-2xl font-bold text-center mb-4"): text "Shipping Details"
+      button(`type`="button" , `class` = "text-black close-modal text-5xl", `id` = "close-contact-form"): text "×"
 
-            tdiv(class="mb-4"):
-                label(`for`="email" ,class="block text-white text-sm font-bold mb-2"): 
-                    vdom.text "Email:"
-                input(`type`="email", id="email", name="email", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="you@example.com")
+    # Email Input
+    tdiv(`class` = "mb-4"):
+      label(`class` = "block text-white text-sm font-bold mb-2", `for` = "email"): text "Email:"
+      input(`id` = "email", `class` = "input-field", `type` = "email", name = "email", required = "true", placeholder = "you@example.com")
 
-            tdiv(class="mb-4"):
-                label(`for`="address" ,class="block text-white text-sm font-bold mb-2"): 
-                    vdom.text "Address:"
-                input(`type`="text", id="address", name="address", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="1234 Street Ave")
+    # Address Input
+    tdiv(`class` = "mb-4"):
+      label(`class` = "block text-white text-sm font-bold mb-2", `for` = "address"): text "Address:"
+      input(`id` = "address", `class` = "input-field", `type` = "text", name = "address", required = "true", placeholder = "1234 Street Ave")
+
+    # City and State Inputs
+    tdiv(`class` = "grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+      tdiv:
+        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "city"): text "City:"
+        input(`id` = "city", `class` = "input-field", `type` = "text", name = "city", required = "true", placeholder = "City")
+      tdiv:
+        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "state"): text "State:"
+        input(`id` = "state", `class` = "input-field", `type` = "text", name = "state", required = "true", placeholder = "State")
+
+    # Country and Zip Code Inputs
+    tdiv(`class` = "grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+      tdiv(`class` = "md:col-span-2"):
+        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "country"): text "Country:"
+        select(`id` = "country", `class` = "input-field", name = "country", required = "true"):
+          option(value = "United States"): text "United States"
+          # Add more country options here if needed
+      tdiv:
+        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "zipcode"): text "Zip Code:"
+        input(`id` = "zipcode", `class` = "input-field", `type` = "number", name = "zipcode", required = "true", placeholder = "Zip Code")
+
+    # Submit Button
+    button(`class` = "bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-101", `type` = "submit"): text "Submit"
+
+    # buildHtml(form(id="contact-form" , class = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
+    #     tdiv(class="flex justify-between items-center mb-2"):
+    #         h2(class="text-white text-2xl font-bold text-center"): 
+    #             vdom.text "Shipping Details"
+    #         # Close Modal Button
+    #         button(id="close-contact-form", class="text-black close-modal text-5xl"): 
+    #             vdom.text "×"
+
+    #         tdiv(class="mb-4"):
+    #             label(`for`="email" ,class="block text-white text-sm font-bold mb-2"): 
+    #                 vdom.text "Email:"
+    #             input(`type`="email", id="email", name="email", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="you@example.com")
+
+    #         tdiv(class="mb-4"):
+    #             label(`for`="address" ,class="block text-white text-sm font-bold mb-2"): 
+    #                 vdom.text "Address:"
+    #             input(`type`="text", id="address", name="address", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="1234 Street Ave")
 
 
-            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-                tdiv:
-                    label(`for`="city" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "City:"
-                    input(`type`="text", id="city", name="city", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="City")
-                tdiv:
-                    label(`for`="state" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "State:"
-                    input(`type`="text", id="state", name="state", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="State")
+    #         tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+    #             tdiv:
+    #                 label(`for`="city" ,class="block text-white text-sm font-bold mb-2"): 
+    #                     vdom.text "City:"
+    #                 input(`type`="text", id="city", name="city", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="City")
+    #             tdiv:
+    #                 label(`for`="state" ,class="block text-white text-sm font-bold mb-2"): 
+    #                     vdom.text "State:"
+    #                 input(`type`="text", id="state", name="state", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="State")
 
-            tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-                tdiv(class="md:col-span-2"):
-                    label(`for`="country" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "Country:"
-                    select(id="country", name="country", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"):
-                        option(value="United States"): 
-                            vdom.text "United States"
+    #         tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
+    #             tdiv(class="md:col-span-2"):
+    #                 label(`for`="country" ,class="block text-white text-sm font-bold mb-2"): 
+    #                     vdom.text "Country:"
+    #                 select(id="country", name="country", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"):
+    #                     option(value="United States"): 
+    #                         vdom.text "United States"
 
-                tdiv:
-                    label(`for`="zipcode" ,class="block text-white text-sm font-bold mb-2"): 
-                        vdom.text "Zip Code:"
-                    input(`type`="number", id="zipcode", name="zipcode", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="Zip Code")
+    #             tdiv:
+    #                 label(`for`="zipcode" ,class="block text-white text-sm font-bold mb-2"): 
+    #                     vdom.text "Zip Code:"
+    #                 input(`type`="number", id="zipcode", name="zipcode", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="Zip Code")
 
 
-            button(`type`="submit", class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110"): 
-                vdom.text "Submit"
+    #         button(`type`="submit", class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110"): 
+    #             vdom.text "Submit"
         
 proc triple_card*(): VNode =
     proc card(img_url:string, body_text, title_text:string): VNode = 
@@ -99,10 +139,9 @@ proc err_card*(err_msg: string): VNode =
     <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
     </svg>
-    <span class="sr-only">Info</span>
-    <div>
+    <p class="w-full text-center">
         {err_msg}
-    </div>
+    </p>
     </div>""")
 
 ################
@@ -153,12 +192,13 @@ proc contact_form_submit*(ctx: Context) {.async.} =
         city:    city.get,
         state:   state.get,
         country: country.get,
-        zipcode: zipcode.get
+        zipcode: zipcode.get,
+        addy:    nft_holder_addy.get()
     )
 
     ic "contact_info: " & $(contact_info)
 
-    let contact_db = newTinyDB("/root/db.json","contact_db")
+    let contact_db = newTinyDB(consts.db_path,"contact_db")
     let insert_req = contact_db.insert(%contact_info)
     if not insert_req.ok:
         icr insert_req.err 

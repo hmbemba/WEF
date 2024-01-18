@@ -5,81 +5,6 @@ import mynimlib/[nimhtml, nimalpine, nimwind2]
 import karax / [karaxdsl, vdom, vstyles]
 import handles
 
-# proc content_col_styles*():string = 
-#     """
-#         round
-#         colItemPosition = 1
-#         border-radius = "10px"
-#         padding = 0
-#         gap = 3vh
-#         style="  
-#         flex: 3;
-#         "
-#     """
-
-# proc top_nav*():string =
-
-#     const nav_bg_color = "#45474F99"
-    
-#     # Desktop
-#     nw.row(
-#         anostyle(
-#             "/",
-#             """
-#             <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-#             """
-#         )&
-#         nw.row(
-#             anostyle("/", nw.btn("Get NFT", bgColor = "#D02F3A", p=" px-10 py-4", round="2vh", growOnHover=6) )&
-#             anostyle("/contribute" , nw.btn("Contribute"))&
-#             anostyle("/faq"        , nw.btn("FAQ")),
-
-#             gap = 10,
-#             itemPosH = 1,
-#             extra_class = "flex-1",
-#             itemposv = "c"
-#         ) &
-#         nw.btn("Connect Wallet", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'connect-wallet-btn'") &
-#         nw.btn("0xF64...081a52", bgColor = "#D02F3A", p="px-10 py-4", round="2vh", growOnHover=6, head = "id = 'wallet-address-btn'", extra_class="hidden"), 
-
-
-#         itemposh=2,
-#         itemposv = "c",
-#         p = "px-24 py-5",
-#         bgColor= nav_bg_color,
-#         #extra_class = "sticky top-0 z-10",
-#         extra_class = " top-0 z-10",
-#         whenBelow = (850, @["hidden"]),
-#         name = "top nav desktop",
-#     )&
-    
-#     # Mobile
-#     nw.row(
-#         """
-#         <img src="/static/img/nav_logo.png" alt="" style="height:10vh" style="flex: 1;">
-    
-#         <?xml version="1.0" encoding="utf-8"?>
-#         <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-#         <svg 
-#             width='50px'
-#             fill = "white"
-#             style = "cursor:pointer"
-#             version="1.1" id="Design_here" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-#                 y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-#             <g>
-#                 <rect x="4" y="5" width="16" height="2"/>
-#                 <rect x="4" y="11" width="16" height="2"/>
-#                 <rect x="4" y="17" width="16" height="2"/>
-#             </g>
-#         </svg>
-#         """,
-#         itemposh    = "between",
-#         p           = "px-24 py-5",
-#         bgColor     = nav_bg_color,
-#         extra_class = "top-0 z-10 hidden",
-#         whenBelow   = (850, @["flex"]),
-#         name        = "top nav mobile",
-#     ) 
 
 proc top_nav_2*():string = 
     let top_nav = buildHtml(nav( class="flex flex-row items-center justify-between bg-[#45474F99] px-6 py-3 sm:px-12 top-0 z-10 w-full")):
@@ -102,10 +27,11 @@ proc top_nav_2*():string =
 
         # Connect Wallet Buttons
         tdiv( class="flex gap-4"):
-            button( class="text-xl text-white  bg-[#D02F3A] px-4 sm:px-6 py-2 rounded-lg transition duration-300 hover:scale-105", id= $connect_wallet_btn ):
-                    vdom.text "Connect Wallet"
-            button( class="text-xl bg-[#D02F3A] px-4 sm:px-6 py-2 rounded-lg transition duration-300 hover:scale-105 hidden", id= $wallet_address_btn):
-                    vdom.text "0xF64...081a52"
+            "<w3m-button />".verbatim
+            # button( class="text-xl text-white  bg-[#D02F3A] px-4 sm:px-6 py-2 rounded-lg transition duration-300 hover:scale-105", id= $connect_wallet_btn ):
+            #         vdom.text "Connect Wallet"
+            # button( class="text-xl bg-[#D02F3A] px-4 sm:px-6 py-2 rounded-lg transition duration-300 hover:scale-105 hidden", id= $wallet_address_btn):
+            #         vdom.text "0xF64...081a52"
       
     let close_button = buildHtml(button(class="rounded-full hover:shadow-lg hover:bg-gray-100 p-4 transition-colors duration-150")):
         """
@@ -116,26 +42,34 @@ proc top_nav_2*():string =
         """.verbatim
 
     proc connect_option(icon, name: string, visible = true, id:string): VNode = 
-        proc showHide(): string = 
-            if visible: 
-                "" 
-            else: 
-                "hidden"
+        if visible: 
+            buildHtml(button(id=id, class=fmt"flex items-center justify-between px-4 py-2 border border-gray-300 rounded-md shadow-md hover:shadow-lg hover:border-gray-400 focus:outline-none")):
+                span(class="flex items-center"):
+                    # Icon placeholder, replace with actual image path or SVG
+                    img(src=icon, alt=name, class="h-6 w-6 mr-2")
+                    # Button text
+                    span(class="text-xl font-medium text-gray-700"):
+                        vdom.text name
+                """
+                <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                """.verbatim
+        else: 
+            buildHtml(button(id=id, disabled=true, class="cursor-wait flex items-center justify-between px-4 py-2 border border-gray-300 rounded-md shadow-md hover:shadow-lg hover:border-gray-400 focus:outline-none")):
+                span(class="flex items-center"):
+                    # Icon placeholder, replace with actual image path or SVG
+                    img(src=icon, alt=name, class="h-6 w-6 mr-2")
+                    # Button text
+                    span(class="text-xl font-medium text-gray-700"):
+                        vdom.text name
+                """
+                <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                """.verbatim
 
-        buildHtml(button(id=id, class=fmt"{showHide()} flex items-center justify-between px-4 py-2 border border-gray-300 rounded-md shadow-md hover:shadow-lg hover:border-gray-400 focus:outline-none")):
-            span(class="flex items-center"):
-                # Icon placeholder, replace with actual image path or SVG
-                img(src=icon, alt=name, class="h-6 w-6 mr-2")
-                # Button text
-                span(class="text-xl font-medium text-gray-700"):
-                    vdom.text name
-            """
-            <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-            """.verbatim
-
-    let connect_wallet_modal = buildHtml(tdiv(id= $connect_wallet_modal, class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center", style = style(backdropFilter, "blur(15px)") )):
+    let connect_wallet_modal = buildHtml(tdiv(id= $connect_wallet_modal, class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center")):#, style = style(backdropFilter, "blur(15px)") )):
         tdiv(class="relative p-4 bg-white rounded-2xl shadow-lg w-full max-w-md mx-2"):
             tdiv(class="text-center"):
                 tdiv(class="flex justify-between items-center"):
@@ -283,57 +217,6 @@ proc demo_nav*():string =
 
     )
 
-# proc grey_card*(body:string, name = ""):string = 
-#     nw.row(
-#             body,
-#             round     = "10px"               ,
-#             p         = "py-[2vw] px-[4vw]"  ,
-#             itemposh  = 3                    ,
-#             itemposv  = 4                    ,
-#             bgColor   = "#EFECEBef"          ,
-#             name      = name
-
-#         )
-
-# proc redCard*(body:string):string = nw.col(
-#     body,
-#     bgColor = style_red,
-#     p = "p-[5vh]",
-#     itemposh = "c",
-#     gap = "4vh",
-#     round = "2vh",
-#     name = "red Card",
-    
-    
-#     )
-
-# proc connect_wallet_btn *(): string = 
-#     nwc.btn(
-#         """
-#                 id="connect-wallet" 
-#                 round 
-#                 bgColor="#EDE9E9" 
-#                 growOnHover 
-#                 textColor="black"
-#         """,
-#         "Connect Wallet"
-#     )
-
-# proc coming_soon_card*(): string = 
-#     red_card(
-#         "COMING SOON"
-#     )
-
-# proc postNavCol*(body:string): string = 
-#     nw.col(
-#         body,
-#         p    = "px-[10vw] py-[40px]",
-#         gap  = "5vh",
-#         head = """style=color:black; id='post-nav-col'""",
-#         name = "post nav col"
-        
-
-#     )
 
 proc base*(body:string, title = "WIDE EYE FEELS") : string = 
     html(
@@ -341,7 +224,6 @@ proc base*(body:string, title = "WIDE EYE FEELS") : string =
                 title, 
                 body=""" 
                     <link rel="stylesheet" href="/static/styles.css">
-                    <script type="module" src="/static/js/nav_fe.js"></script>
                     __tailwind_cdn__
                 """.multiReplace(@[
                                     # ( "tw_js_file", tw_js_file) , # this is thirdweb not tailwind
