@@ -6,13 +6,14 @@
 
 
 import prologue
-import mynimlib/[nimtinydb, icecream, nimjwtauth]
+import mynimlib/[nimjwtauth]
 import strutils
 import strformat
-import site_comps
+import comps
 import karax / [karaxdsl, vdom]
 import consts
-
+import nimtinydb
+import icecream/src/icecream
 
 
 #####################
@@ -29,7 +30,12 @@ proc login*(ctx: Context) {.async.} =
 
                     button(`type`="submit", class="w-full text-xl text-white bg-[#D02F3A] px-4 py-2 rounded-lg transition duration-300 hover:scale-105"):
                         vdom.text "Submit"
-            resp base $node
+            
+            let body = render:
+                bbase:
+                    say $node
+            
+            resp body
         of HttpPost:
             let password = ctx.getFormParamsOption("password")
             if password.isNone:
@@ -62,7 +68,12 @@ proc admin*(ctx: Context) {.async.} =
         return
 
     let db = newTinyDB(consts.db_path)
-    resp base """<a class="text-white" href = "https://jsonformatter.org/json-pretty-print" target="_blank"> https://jsonformatter.org/json-pretty-print </a>""" & fmt"""<div class="text-white" > {$db.allRaw()} </div>"""
+    let body = render:
+        bbase:
+            say """<a class="text-white" href = "https://jsonformatter.org/json-pretty-print" target="_blank"> https://jsonformatter.org/json-pretty-print </a>"""
+            say """<div class="text-white" > """ & $db.allRaw() & """ </div>"""
+    resp body
+    #resp base """<a class="text-white" href = "https://jsonformatter.org/json-pretty-print" target="_blank"> https://jsonformatter.org/json-pretty-print </a>""" & fmt"""<div class="text-white" > {$db.allRaw()} </div>"""
     
 #####################
 ## Routes ###########

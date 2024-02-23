@@ -1,4 +1,4 @@
-import mynimlib/[unifetch, nimjs, icecream, nimThirdweb, nimEthers as ethers]
+import mynimlib/[unifetch, nimjs, nimThirdweb, nimEthers as ethers]
 import std/jsfetch
 import std/[asyncjs, jsconsole, jsformdata, jsheaders]
 import strutils, strformat, tables, sequtils
@@ -12,6 +12,8 @@ from std/sugar import `=>`
 import abi_file
 import times, options
 import karax / [karaxdsl, vdom, vstyles]
+import icecream/src/icecream
+import mynimlib/webui/modal/modal
 
 {. emit: """
 import {MetaMaskWallet, ethers} from "./thirdweb/dist/thirdweb.js";
@@ -156,8 +158,8 @@ ic provider
 
 let get_nfts_loader        = gebi_strict "get-nfts-loader"
 let red_card               = gebi_strict "red-card"
-let contact_form           = gebi_strict "contact-form"
-let close_contact_form_btn = gebi_strict "close-contact-form"
+let contact_modal          = query_strict("[modal-component]").newModal()
+let contact_form           = contact_modal.el.query_strict("form")
 
 contact_form.submit(
     proc (event: Event) {.async.} = 
@@ -168,7 +170,6 @@ contact_form.submit(
         if not post_req.ok:
             alert("ERROR SUBMITTING FORM" & post_req.body)
         else:
-            #alert("SUCCESS" & post_req.body)
             contact_form.toggleHidden()
             "submitted_shipping".push_to_local_storage("true".cstring)
 
@@ -179,11 +180,8 @@ proc handleShowShipping() =
     if submitted_shipping.isNone():
         ic "no shipping info"
         ic "Show the shipping form"
-        close_contact_form_btn.click( 
-            proc(event: Event) =
-                contact_form.toggleHidden()
-        )
-        contact_form.toggleHidden()
+        contact_modal.show()
+
 
 proc getNfts() {.async.} = 
     if not is_connected:

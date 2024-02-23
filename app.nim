@@ -27,6 +27,7 @@ app.get("/favicon.ico", redirectTo("/static/favicon.ico"))
 
 app.addRoute(@[
                   landing_route               ,
+                  demo_landing_route          ,
                   contribute_route            ,
                   edit_section_route          ,
                   faq_route                   ,

@@ -1,4 +1,4 @@
-import mynimlib/[nimjs, unifetch, icecream]
+import mynimlib/[nimjs, unifetch]
 import std/jsfetch
 import std/[asyncjs, jsconsole, jsformdata, jsheaders]
 import strutils, strformat, tables, sequtils
@@ -12,6 +12,7 @@ from std/sugar import `=>`
 import cgpt_page
 import handles
 import std/jsfetch
+import icecream/src/icecream
 
 
 let current_url = window.location.href
@@ -186,7 +187,6 @@ proc buildPrompt3(selection_1:scenario, selection_2:scenario): cstring =
     ("s2", $selection_2.title & "\n" & $selection_2.body)
   ])
 
-
 proc prompt_cgpt(api_key, prompt: cstring): Future[jsfetch.Response] {. async importjs: 
     """
       fetch(
@@ -211,12 +211,12 @@ proc prompt_cgpt(api_key, prompt: cstring): Future[jsfetch.Response] {. async im
     .} 
 
 proc hide_unselected_options(section:Element, selected_id:string) = 
-  for child in section.queryAll(":scope > div"):
+  for child in section.queryAll(":scope > div").get:
     if child.id != selected_id:
       child.hide()
-  for child in section.queryAll(":scope > button"):
-    if child.id != selected_id:
-      child.hide()
+  # for child in section.queryAll(":scope > button").get:
+  #   if child.id != selected_id:
+  #     child.hide()
 
 proc get_response_text(response:Response): Future[cstring] {. async .} = 
     let resp_json{. exportc: "resp_json".} = await response.json()
@@ -251,134 +251,184 @@ proc add_ghost_writer_tab_selected_functionality(
         kid.style.backgroundColor = ""
         kid.style.color           = "slategray"
         kid.id  = ""
-        kid.queryAll("p")[0].style.color = "slategray"
+        kid.queryAll("p").get()[0].style.color = "slategray"
         
       tab.style.backgroundColor = "#816AFE"
       tab.style.color           = "white"
       tab.id = id
-      tab.queryAll("p")[0].style.color = "white"
+      tab.queryAll("p").get()[0].style.color = "white"
   )
 
 proc add_tab_clicked_functionality(el:Element, id:string) = 
     for kid in el.querySelectorAll("div"):
         kid.add_ghost_writer_tab_selected_functionality(id)
 
-proc second_scenario_btn_click(e: Event) {.async.}=
-    #let selected_scenario = gebi("selected-scenario-1")
+template show_err_if_no_selected_scenario(ghost_writer_card:Element, selected_scenario:Option[Element]) = 
+    if selected_scenario.isNone:
+        icr "No scenario selected"
+        ghost_writer_card.addElement("<p id='no-scenario-err' class='text-red-500'>No scenario selected</p>")
+        return
     
-    # If no scenario is selected then show error
-    if selected_scenario_1.el.isNone:
-        console.log("No scenario selected")
-        ghost_writer_card_1.el_strict.addElement("<p id='no-scenario-err' class='text-red-500'>No scenario selected</p>")
-    else:
-        let no_scenario_err = gebi("no-scenario-err")
-        # If error is showing then remove it
-        if no_scenario_err.isSome:
-          no_scenario_err.get.remove()
-        
-        ghost_writer_card_1.el_strict.hide_unselected_options($selected_scenario_1)
-        
+    let no_scenario_err = gebi("no-scenario-err")
+    
+    # If error is showing then remove it
+    if no_scenario_err.isSome:
+      no_scenario_err.get.remove()
 
-        let first_selected_scenario_title   = selected_scenario_1.el_strict.querySelector("p:first-child").innerHTML
-        let first_selected_scenario_body    = selected_scenario_1.el_strict.querySelector("p:last-child" ).innerHTML
-        
-        # ic first_selected_scenario_title
-        # ic first_selected_scenario_body
-        # return
-        let upsert_req = 
-            await contribution(
-                wallet_addy          : $wallet_addy,
-                scenario_1           : scenario(title: $first_selected_scenario_title, body: $first_selected_scenario_body),
-                nft_index            : nft_index.toInt,
-                scenario_1_complete  : true
-              ).upsert_to_db 
-         
-        if not upsert_req.ok:
-            icr "something bad happend"
-            return
-        let prompt_2                        = buildPrompt2(
-                                                            $first_selected_scenario_title & "\n" & 
-                                                            $first_selected_scenario_body
-                                                            )
+proc to_text(selected_scenario: Element) : tuple[title, body: cstring] = 
+    let title = selected_scenario.querySelector("p:first-child").innerHTML
+    let body  = selected_scenario.querySelector("p:last-child" ).innerHTML
+    return (title, body)
 
-        ic prompt_2
-        scenario_section.el_strict.addElement(ghost_writer_card(@[spinner($cgpt_spinner)], $ghost_writer_card_2))
+template waitForCGPT(gen_scenario_btn, ghost_writer_card: Element, body:untyped) : untyped = 
+    gen_scenario_btn.remove()
+    ghost_writer_card.addElement(cgpt_page.spinner($cgpt_spinner))
+    body
+    cgpt_spinner.el_strict.remove()
+
+template catch_err(cgpt_resp:jsfetch.Response, ghost_writer_card:Element)  = 
+    if not cgpt_resp.ok:
+        console.log("Request Failed", await cgpt_resp.json())
+        ghost_writer_card.addElement("<p id='no-scenario-err' class='text-red-500'>Something went wrong! Try refreshing the page</p>")
+        return
+
+proc populate_scenarios(ghost_writer_card:Element, scenarios: seq[scenario], scenario_id: string) = 
+    for ii, scenario in enumerate(scenarios):
+      ghost_writer_card
+        .addElement(
+                      cgpt_page.ghost_writer_tab2(scenario.title, scenario.body, "s" & $ii, 1 )
+                )
+    ghost_writer_card.add_tab_clicked_functionality(scenario_id)
+
+
+
+
+proc get_scenarios(cgpt_resp:jsfetch.Response) : Future[seq[scenario]] {.async.} = 
+    let resp_text = await cgpt_resp.get_response_text()
+    ic resp_text
+    let resp_text_string         = $resp_text
+    return resp_text_string.fromJson(seq[scenario])
+
+
+proc build_final_prompt : cstring = 
+    let scenario_1 = scenario(title: $selected_scenario_1.el_strict.querySelector("p:first-child").innerHTML, body: $selected_scenario_1.el_strict.querySelector("p:last-child").innerHTML)
+    let scenario_2 = scenario(title: $selected_scenario_2.el_strict.querySelector("p:first-child").innerHTML, body: $selected_scenario_2.el_strict.querySelector("p:last-child").innerHTML)
+    return buildPrompt3(scenario_1, scenario_2)
+
+proc final_scenario_btn_click(e: Event) {.async.} =
+    ic "Final Scenario Button Clicked"
+    ghost_writer_card_2.el_strict.show_err_if_no_selected_scenario(selected_scenario_2.el)
+    ghost_writer_card_2.el_strict.hide_unselected_options($selected_scenario_2)
+
+    let 
+      (selected_scenario_title, selected_scenario_body) = selected_scenario_2.el_strict.to_text()
+
+    let upsert_req = await upsert_to_db(%*{
+      "wallet_addy"          : $wallet_addy,
+      "scenario_2"           : %scenario(title: $selected_scenario_title, body: $selected_scenario_body),
+      "nft_index"            : %(nft_index.toInt),
+      "scenario_2_complete"  : true,
+      })
+    
+    let prompt_3 = build_final_prompt()
+    ic prompt_3
+    
+    scenario_section.el_strict.addElement(ghost_writer_card(@[], $ghost_writer_card_3))
+    let ghost_writer_card_3   = ghost_writer_card_3.el_strict
+
+    let cgpt_final_submit_btn = 
+      ghost_writer_card_2.el_strict.query_strict(".final_scenario_btn")
+    
+    waitForCGPT(cgpt_final_submit_btn, ghost_writer_card_3):
+      let cgpt_resp_3 = await prompt_cgpt("Bearer " & consts.open_ai_key, prompt_3)
+    
+    cgpt_resp_3.catch_err(ghost_writer_card_3)
+    
+    let resp_text_3                = await cgpt_resp_3.get_response_text()
+    let resp_3_text_string         = $resp_text_3
+
+    ghost_writer_card_3
+      .addElement(ghost_writer_tab2("Final Playwright", resp_3_text_string, "final_playwright", 3 ))
+
+    block:
+      let upsert_req = await upsert_to_db(%*{
+        "wallet_addy"             : $wallet_addy,
+        "scenario_full"           : %scenario(title: "Final Playwright", body: resp_3_text_string),
+        "nft_index"               : %(nft_index.toInt),
+        "scenario_full_complete"  : true,
+        })
+
+proc second_scenario_btn_click(e: Event) {.async.} =
+    ic "Second Scenario Button Clicked"
+    
+    ghost_writer_card_1.el_strict.show_err_if_no_selected_scenario(selected_scenario_1.el)    
+    ghost_writer_card_1.el_strict.hide_unselected_options($selected_scenario_1)
+    
+
+    let 
+      (first_selected_scenario_title, first_selected_scenario_body) = selected_scenario_1.el_strict.to_text()
+    
+
+    let upsert_req = 
+        await contribution(
+            wallet_addy          : $wallet_addy,
+            scenario_1           : scenario(title: $first_selected_scenario_title, body: $first_selected_scenario_body),
+            nft_index            : nft_index.toInt,
+            scenario_1_complete  : true
+          ).upsert_to_db 
       
-        let cgpt_resp_2         = await prompt_cgpt("Bearer " & consts.open_ai_key, prompt_2)
-        
-        cgpt_spinner.el_strict.remove()
+    if not upsert_req.ok:
+        icr "something bad happend"
+        return
+    let prompt_2 = buildPrompt2(
+                $first_selected_scenario_title & "\n" & 
+                $first_selected_scenario_body
+                )
 
-        if not cgpt_resp_2.ok:
-            console.log("Request Failed", await cgpt_resp_2.json())
-            ghost_writer_card_2.el_strict.addElement("<p id='no-scenario-err' class='text-red-500'>Something went wrong! Try refreshing the page</p>")
-        else:
-            let resp_text_2                = await cgpt_resp_2.get_response_text()
-            let resp_2_text_string         = $resp_text_2
-            let scenarios_2: seq[scenario] = resp_2_text_string.fromJson(seq[scenario])
+    ic prompt_2
 
-            for ii, scenario in enumerate(scenarios_2):
-              ghost_writer_card_2.el_strict
-                .addElement(ghost_writer_tab2(scenario.title, scenario.body, "s" & $ii, 2 ))
-            
-            ghost_writer_card_2.el_strict.add_tab_clicked_functionality($selected_scenario_2)
+    
+    scenario_section.el_strict.addElement(ghost_writer_card(@[], $ghost_writer_card_2))
+    let ghost_writer_card_2 = ghost_writer_card_2.el_strict
 
-            
-            ghost_writer_card_2.el_strict.addElement(
-              fmt"""
-              <button id='{$cgpt_final_submit_btn}' class="px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out">
-                Send your final selections to our Story AI
-              </button>
-              """
+    # This will be delted when the user clicks it
+    let gen_second_scenario_btn = 
+      ghost_writer_card_1.el_strict.query_strict(".gen_second_scenario_btn")
+    
+    waitForCGPT(gen_second_scenario_btn, ghost_writer_card_2):
+      let cgpt_resp_2         = await prompt_cgpt("Bearer " & consts.open_ai_key, prompt_2)
+    
+    cgpt_resp_2.catch_err(ghost_writer_card_2)
 
-            )
-            #let final_submit_btn = gebi_strict("cgpt-final-submit-btn")
-            cgpt_final_submit_btn.el_strict.click( 
-              proc (e: Event) {.async.} =
-                ghost_writer_card_2.el_strict.hide_unselected_options($selected_scenario_2)
-                
-                let second_selected_scenario_title   = selected_scenario_2.el_strict.querySelector("p:first-child").innerHTML
-                let second_selected_scenario_body    = selected_scenario_2.el_strict.querySelector("p:last-child" ).innerHTML
-                
-                let upsert_req = await upsert_to_db(%*{
-                  "wallet_addy"          : $wallet_addy,
-                  "scenario_2"           : %scenario(title: $second_selected_scenario_title, body: $second_selected_scenario_body),
-                  "nft_index"            : %(nft_index.toInt),
-                  "scenario_2_complete"  : true,
-                  })
-                    
-                  
-                cgpt_final_submit_btn.el_strict.toggleHidden()
-                scenario_section.el_strict.addElement(ghost_writer_card(@[spinner($cgpt_spinner)], $ghost_writer_card_3))
+    let scenarios: seq[scenario] = await cgpt_resp_2.get_scenarios()
 
-                let scenario_1 = scenario(title: $selected_scenario_1.el_strict.querySelector("p:first-child").innerHTML, body: $selected_scenario_1.el_strict.querySelector("p:last-child").innerHTML)
-                let scenario_2 = scenario(title: $selected_scenario_2.el_strict.querySelector("p:first-child").innerHTML, body: $selected_scenario_2.el_strict.querySelector("p:last-child").innerHTML)
-                
-                
-                
-                let prompt_3 = buildPrompt3(scenario_1, scenario_2)
-                ic prompt_3
-                let cgpt_resp_3         = await prompt_cgpt("Bearer " & consts.open_ai_key, prompt_3)
+    ghost_writer_card_2.populate_scenarios(scenarios, $selected_scenario_2)
 
-                cgpt_spinner.el_strict.remove()
+    let final_scenario_btn: Element = 
+      ghost_writer_card_2.addElementGet(generate_scenario_btn("Send your final selections to our Story AI", "final_scenario_btn"))           
+    
+    final_scenario_btn.click final_scenario_btn_click 
 
-                if not cgpt_resp_3.ok:
-                    console.log("Request Failed", await cgpt_resp_3.json())
-                    ghost_writer_card_3.el_strict.addElement("<p id='no-scenario-err' class='text-red-500'>Something went wrong! Try refreshing the page</p>")
-                else:
-                    let resp_text_3                = await cgpt_resp_3.get_response_text()
-                    let resp_3_text_string         = $resp_text_3
+proc first_scenario_btn_click(e: Event) {.async.} =
+    ic "First Scenario Button Clicked"
+    
+    let gen_first_scenario_btn = 
+      ghost_writer_card_1.el_strict.query_strict(".gen_first_scenario_btn")
 
-                    ghost_writer_card_3.el_strict
-                      .addElement(ghost_writer_tab2("Final Playwright", resp_3_text_string, "final_playwright", 3 ))
+    waitForCGPT(gen_first_scenario_btn, ghost_writer_card_1.el_strict):
+      let cgpt_resp = await prompt_cgpt("Bearer " & consts.open_ai_key, buildPrompt1())
 
-                    let upsert_req = await upsert_to_db(%*{
-                      "wallet_addy"             : $wallet_addy,
-                      "scenario_full"           : %scenario(title: "Final Playwright", body: resp_3_text_string),
-                      "nft_index"               : %(nft_index.toInt),
-                      "scenario_full_complete"  : true,
-                      })
+    cgpt_resp.catch_err(ghost_writer_card_1.el_strict)
 
-            )
+    let scenarios: seq[scenario] = await cgpt_resp.get_scenarios()
+
+    ghost_writer_card_1.el_strict.populate_scenarios(scenarios, $selected_scenario_1)
+
+
+    let second_scenario_btn = 
+      ghost_writer_card_1.el_strict.
+        addElementGet(generate_scenario_btn("Generate 3 More Scenarios with ChatGPT", "gen_second_scenario_btn"))           
+    second_scenario_btn.click( second_scenario_btn_click)
 
 
 if selected_scenario_1.el.isSome:
@@ -389,73 +439,21 @@ if selected_scenario_1.el.isSome:
             ic "User has completed final playwright"
         else:
             ic "User has not completed final playwright"
-            cgpt_final_submit_btn.el_strict.click( 
-              proc (e: Event) {.async.}=
-                  cgpt_final_submit_btn.el_strict.toggleHidden()
-                  scenario_section.el_strict.addElement(ghost_writer_card(@[spinner($cgpt_spinner)], $ghost_writer_card_3))
 
-                  let scenario_1 = scenario(title: $selected_scenario_1.el_strict.querySelector("p:first-child").innerHTML, body: $selected_scenario_1.el_strict.querySelector("p:last-child").innerHTML)
-                  let scenario_2 = scenario(title: $selected_scenario_2.el_strict.querySelector("p:first-child").innerHTML, body: $selected_scenario_2.el_strict.querySelector("p:last-child").innerHTML)
-                  
-                  
-                  
-                  let prompt_3 = buildPrompt3(scenario_1, scenario_2)
-                  ic prompt_3
-                  let cgpt_resp_3         = await prompt_cgpt("Bearer " & consts.open_ai_key, prompt_3)
+            let final_scenario_btn: Element = 
+              ghost_writer_card_2.el_strict.addElementGet(generate_scenario_btn("Send your final selections to our Story AI", "final_scenario_btn"))           
+            
+            final_scenario_btn.click final_scenario_btn_click 
 
-                  cgpt_spinner.el_strict.remove()
-
-                  if not cgpt_resp_3.ok:
-                      console.log("Request Failed", await cgpt_resp_3.json())
-                      ghost_writer_card_3.el_strict.addElement("<p id='no-scenario-err' class='text-red-500'>Something went wrong! Try refreshing the page</p>")
-                  else:
-                      let resp_text_3                = await cgpt_resp_3.get_response_text()
-                      let resp_3_text_string         = $resp_text_3
-
-                      ghost_writer_card_3.el_strict
-                        .addElement(ghost_writer_tab2("Final Playwright", resp_3_text_string, "final_playwright", 3 ))
-
-                      let upsert_req = await upsert_to_db(%*{
-                        "wallet_addy"             : $wallet_addy,
-                        "scenario_full"           : %scenario(title: "Final Playwright", body: resp_3_text_string),
-                        "nft_index"               : %(nft_index.toInt),
-                        "scenario_full_complete"  : true,
-                        })
-            )
     else:
         ic "User has not completed scenario 2"
-        second_scenario_btn.el_strict.click( second_scenario_btn_click)
+        let second_scenario_btn = 
+          ghost_writer_card_1.el_strict.
+            addElementGet(generate_scenario_btn("Generate 3 More Scenarios with ChatGPT", "gen_second_scenario_btn"))           
+        second_scenario_btn.click( second_scenario_btn_click)
+
 else:
     ic "No Contributions found"
-    gen_first_scenario_btn.el_strict.click( 
-      proc (e: Event) {.async.} =
-        # Hide the "Generate Scenario" button
-        # And show the spinner
-        gen_first_scenario_btn.el_strict.hide()
-        ghost_writer_card_1.el_strict.addElement(cgpt_page.spinner($cgpt_spinner))
-
-        let cgpt_resp = await prompt_cgpt("Bearer " & consts.open_ai_key, buildPrompt1())
-        
-        cgpt_spinner.el_strict.remove()
-        
-        if not cgpt_resp.ok:
-            console.log("Request Failed", await cgpt_resp.json())
-            ghost_writer_card_1.el_strict.addElement("<p id='no-scenario-err' class='text-red-500'>Something went wrong! Try refreshing the page</p>")
-        else:
-            let resp_text = await cgpt_resp.get_response_text()
-            console.log(resp_text)
-
-            let resp_text_string         = $resp_text
-            let scenarios: seq[scenario] = resp_text_string.fromJson(seq[scenario])
-
-            for ii, scenario in enumerate(scenarios):
-              ghost_writer_card_1.el_strict
-                .addElement(
-                              cgpt_page.ghost_writer_tab2(scenario.title, scenario.body, "s" & $ii, 1 )
-                        )
-            ghost_writer_card_1.el_strict.add_tab_clicked_functionality($selected_scenario_1)
-            
-            ghost_writer_card_1.el_strict.addElement(cgpt_page.gen_second_scenario_btn())            
-            second_scenario_btn.el_strict.click( second_scenario_btn_click)
-
-    )
+    ghost_writer_card_1.el_strict.addElement(generate_scenario_btn("Generate Scenario's with ChatGPT", "gen_first_scenario_btn"))
+    let gen_first_scenario_btn = ghost_writer_card_1.el_strict.query_strict(".gen_first_scenario_btn")
+    gen_first_scenario_btn.click first_scenario_btn_click

@@ -1,4 +1,4 @@
-import mynimlib/[unifetch, nimjs, icecream, nimThirdweb, nimEthers as ethers]
+import mynimlib/[unifetch, nimjs, nimThirdweb, nimEthers as ethers]
 import std/jsfetch
 import std/[asyncjs, jsconsole, jsformdata, jsheaders]
 import strutils, strformat, tables, sequtils
@@ -11,6 +11,8 @@ from std/jsffi import JsObject
 from std/sugar import `=>`
 import times
 import handles
+import icecream/src/icecream
+import mynimlib/webui/accordion/accordion 
 
 
 {. emit: """
@@ -60,6 +62,19 @@ proc is_whitelisted(addy:cstring): Future[bool] {. async .} =
         return true
     return false
 
+# let onOpen = proc(a:accordion, item:Element) = 
+#     echo "oepning " & item.title()
+
+# let onClose = proc(a:accordion, item:Element) =
+#     echo "closing " & item.title()
+
+# let test_acc = nft_accordions.el_strict.newAccordion(
+#     onItemOpen = onOpen,
+#     onItemClose = onClose
+# )
+
+let test_acc = nft_accordions.el_strict.newAccordion()
+
 document.DomContentLoaded proc (e:Event) {. async .} = 
     # If the presale is happening
     if presale_end_date > now():
@@ -69,6 +84,7 @@ document.DomContentLoaded proc (e:Event) {. async .} =
             ic "Show countdown"
             loading_box.el_strict.remove()
             presale_card.el_strict.toggleHidden()
+            err_banner.el_strict.banner_msg("Connect a whitelisted wallet to participate in the presale.", 10_000)
         else:
             ic "Client wallet is connected"
 
@@ -77,11 +93,14 @@ document.DomContentLoaded proc (e:Event) {. async .} =
                 ic "Show countdown"
                 loading_box.el_strict.remove()
                 presale_card.el_strict.toggleHidden()
+                
+                err_banner.el_strict.banner_msg("Your wallet is not whitelisted, please connect a whitelisted wallet to participate in the presale.", 10_000)
             else:
                 ic "Client wallet is whitelisted"
                 ic "Show nft accordion"
                 loading_box.el_strict.remove()
                 nft_accordions.el_strict.toggleHidden()
+                success_banner.el_strict.banner_msg("You are whitelisted and ready to participate in the presale.", 10_000)
     else:
         ic "Presale has ended"
         ic "Show nft accordion"

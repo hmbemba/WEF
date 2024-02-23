@@ -1,11 +1,3 @@
-//vite.config.js
-// import { defineConfig } from 'vite'
-
-
-// export default defineConfig({
-// 	base: "static/js/thirdweb/dist/",
-
-//   })
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 

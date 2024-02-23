@@ -1,9 +1,13 @@
 import prologue
-import site_comps
+import comps
 import consts
 import strformat, sequtils, strutils, json
-import mynimlib/[icecream, nimwind2, nimtinydb, prologutils]
+import mynimlib/[nimwind2, prologutils]
 import karax / [karaxdsl, vdom, vstyles]
+import nimtinydb
+import icecream/src/icecream
+import mynimlib/webui/modal/modal
+
 
 
 type 
@@ -29,92 +33,120 @@ proc red_card():VNode =
         p(id = "get-nfts-loader", class = "text-center " & tcolor"white"):
           vdom.text "Getting Your NFTS..."
 
-proc contact_form*(): VNode =
-  buildHtml(form(id="contact-form", `class` = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
-    # Header Section
-    tdiv(`class` = "flex justify-between"):
-      h2(`class` = "text-white text-2xl font-bold text-center mb-4"): text "Shipping Details"
-      button(`type`="button" , `class` = "text-black close-modal text-5xl", `id` = "close-contact-form"): text "×"
 
-    # Email Input
-    tdiv(`class` = "mb-4"):
-      label(`class` = "block text-white text-sm font-bold mb-2", `for` = "email"): text "Email:"
-      input(`id` = "email", `class` = "input-field", `type` = "email", name = "email", required = "true", placeholder = "you@example.com")
+proc contact_form : string = render:
+    modal_bkg("hidden"):
+        modal_container("max-w-xl"):
+            modal_body:
+                form:
+                    class "text-red flex flex-col gap-4 bg-[#45474Fdd] p-6 rounded-lg shadow-lg"
+                
+                    say "<!-- Header Section -->"
+                    tdiv:
+                        class "flex justify-between"
+                        h2:
+                            class "text-white text-2xl font-bold text-center mb-4" 
+                            say   "Shipping Details"
+                        button:
+                            class "text-black close-modal text-5xl"
+                            #id    "close-contact-form"
+                            modal_close_btn ""
+                            say   "X"
 
-    # Address Input
-    tdiv(`class` = "mb-4"):
-      label(`class` = "block text-white text-sm font-bold mb-2", `for` = "address"): text "Address:"
-      input(`id` = "address", `class` = "input-field", `type` = "text", name = "address", required = "true", placeholder = "1234 Street Ave")
+                    say "<!-- Email Input -->"
+                    tdiv:
+                        class "mb-4"
+                        label:
+                            class "block text-white text-sm font-bold mb-2"
+                            tfor   "email"
+                            say   "Email:"
+                        input:
+                            id           "email"
+                            class        "input-field"
+                            ttype        "email"
+                            name         "email"
+                            required     "true"
+                            placeholder  "you@example.com"
 
-    # City and State Inputs
-    tdiv(`class` = "grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-      tdiv:
-        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "city"): text "City:"
-        input(`id` = "city", `class` = "input-field", `type` = "text", name = "city", required = "true", placeholder = "City")
-      tdiv:
-        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "state"): text "State:"
-        input(`id` = "state", `class` = "input-field", `type` = "text", name = "state", required = "true", placeholder = "State")
+                    say "<!-- Address Input -->"
+                    tdiv:
+                        class "mb-4"
+                        label:
+                            class  "block text-white text-sm font-bold mb-2"
+                            tfor   "address" 
+                            say    "Address:"
+                        input:
+                            id          "address"
+                            class       "input-field"
+                            ttype       "text"
+                            name        "address" 
+                            required    "true"
+                            placeholder "1234 Street Ave"
 
-    # Country and Zip Code Inputs
-    tdiv(`class` = "grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-      tdiv(`class` = "md:col-span-2"):
-        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "country"): text "Country:"
-        select(`id` = "country", `class` = "input-field", name = "country", required = "true"):
-          option(value = "United States"): text "United States"
-          # Add more country options here if needed
-      tdiv:
-        label(`class` = "block text-white text-sm font-bold mb-2", `for` = "zipcode"): text "Zip Code:"
-        input(`id` = "zipcode", `class` = "input-field", `type` = "number", name = "zipcode", required = "true", placeholder = "Zip Code")
+                    say "<!-- City and State Inputs -->"
+                    tdiv:
+                        class "grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"
+                        tdiv:
+                            label:
+                                class "block text-white text-sm font-bold mb-2"
+                                tfor  "city" 
+                                say   "City:"
+                            input:
+                                id "city"
+                                class "input-field"
+                                ttype  "text"
+                                name  "city"
+                                required  "true"
+                                placeholder  "City"
+                        tdiv:
+                            label:
+                                class  "block text-white text-sm font-bold mb-2"
+                                tfor   "state" 
+                                say "State:"
+                            input:
+                                id "state"
+                                class "input-field"
+                                ttype  "text"
+                                name  "state"
+                                required  "true"
+                                placeholder  "State"
 
-    # Submit Button
-    button(`class` = "bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-101", `type` = "submit"): text "Submit"
+                    say "<!-- Country and Zip Code Inputs -->"
+                    tdiv:
+                        class "grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"
+                        tdiv:
+                            label:
+                                class "block text-white text-sm font-bold mb-2"
+                                tfor  "country" 
+                                say "Country:"
+                            select:
+                                id        "country"
+                                class     "w-full"
+                                name      "country"
+                                required  "true"
+                                dekao.option:
+                                    value  "United States" 
+                                    say    "United States"
+                        tdiv:
+                            label:
+                                class "block text-white text-sm font-bold mb-2" 
+                                tfor   "zipcode" 
+                                say   "Zip Code:"
+                            input:
+                                id           "zipcode"
+                                class        "w-full"
+                                ttype        "number"
+                                name         "zipcode"
+                                required     "true"
+                                placeholder  "Zip Code"
 
-    # buildHtml(form(id="contact-form" , class = "hidden bg-[#45474F99] p-6 rounded-lg shadow-lg")):
-    #     tdiv(class="flex justify-between items-center mb-2"):
-    #         h2(class="text-white text-2xl font-bold text-center"): 
-    #             vdom.text "Shipping Details"
-    #         # Close Modal Button
-    #         button(id="close-contact-form", class="text-black close-modal text-5xl"): 
-    #             vdom.text "×"
+                    say "<!-- Submit Button -->"
+                    button:
+                            class "bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-101" 
+                            ttype "submit"
+                            say   "Submit"
 
-    #         tdiv(class="mb-4"):
-    #             label(`for`="email" ,class="block text-white text-sm font-bold mb-2"): 
-    #                 vdom.text "Email:"
-    #             input(`type`="email", id="email", name="email", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="you@example.com")
-
-    #         tdiv(class="mb-4"):
-    #             label(`for`="address" ,class="block text-white text-sm font-bold mb-2"): 
-    #                 vdom.text "Address:"
-    #             input(`type`="text", id="address", name="address", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="1234 Street Ave")
-
-
-    #         tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-    #             tdiv:
-    #                 label(`for`="city" ,class="block text-white text-sm font-bold mb-2"): 
-    #                     vdom.text "City:"
-    #                 input(`type`="text", id="city", name="city", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="City")
-    #             tdiv:
-    #                 label(`for`="state" ,class="block text-white text-sm font-bold mb-2"): 
-    #                     vdom.text "State:"
-    #                 input(`type`="text", id="state", name="state", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="State")
-
-    #         tdiv(class="grid grid-cols-1 md:grid-cols-2 md:gap-4 mb-4"):
-    #             tdiv(class="md:col-span-2"):
-    #                 label(`for`="country" ,class="block text-white text-sm font-bold mb-2"): 
-    #                     vdom.text "Country:"
-    #                 select(id="country", name="country", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"):
-    #                     option(value="United States"): 
-    #                         vdom.text "United States"
-
-    #             tdiv:
-    #                 label(`for`="zipcode" ,class="block text-white text-sm font-bold mb-2"): 
-    #                     vdom.text "Zip Code:"
-    #                 input(`type`="number", id="zipcode", name="zipcode", required="true", class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", placeholder="Zip Code")
-
-
-    #         button(`type`="submit", class="bg-[#D02F3A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full transition duration-300 ease-in-out hover:bg-red-700 transform hover:-translate-y-1 hover:scale-110"): 
-    #             vdom.text "Submit"
-        
+                    
 proc triple_card*(): VNode =
     proc card(img_url:string, body_text, title_text:string): VNode = 
         buildHtml(tdiv(class="flex flex-col items-center space-y-5  rounded-lg p-2")):
@@ -129,8 +161,7 @@ proc triple_card*(): VNode =
         card("/static/img/contrib_page_2.png", "Playing a multiple endings game, you will create a script to be used for the final MVP of your chapter section."   , "Story"),
         card("/static/img/contrib_page_3.png", "Once you’re complete, you will be prompted to submit your section and we will move onto the next steps in Discord!", "Submit")
         ]
-    buildHtml(tdiv(class="lg:px-20")):
-        tdiv(class="rounded-[20px] bg-black bg-opacity-70 p-2 grid grid-cols-1 min-[825px]:grid-cols-3 "):
+    buildHtml tdiv(class="rounded-[20px] bg-black bg-opacity-70 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"):
             for card in cards:
                 card
 
@@ -149,23 +180,32 @@ proc err_card*(err_msg: string): VNode =
 ################
   
 proc contribute_page*(ctx: Context) {.async gcsafe.} =
+    let contact_form = contact_form()
     let err_flash  = ctx.getErrFlash(consts.flash_token_name)
     if err_flash.isSome():
         ic "err_flash: " & err_flash.get.message
-    let body = ppostNavCol("px-[10vw] py-[40px] gap-5vh"):
-        contact_form() 
-        if err_flash.isSome():
-            err_card(err_flash.get.message)
-        triple_card() 
-        red_card()
+    let top_nav_2 = top_nav_2()
+    let body = render:
+        bbase:
+            say """<script type="module" src="/static/js/contribute_page_fe.js"></script>"""
+            
+            say "<!-- Top Nav -->"
+            say top_nav_2
 
-    resp htmlResponse( base( 
-                top_nav_2() & 
-                $body     &
-                """
-                <script type="module" src="/static/js/contribute_page_fe.js"></script>
-                """
-              ), headers = @[del_cookie_header(consts.flash_token_name)])
+            tdiv:
+                class "px-[10vw] py-[40px] gap-5vh"
+                say contact_form
+
+            if err_flash.isSome():
+                say $err_card(err_flash.get.message)
+            
+            say "<!-- Post Nav Col -->"
+            postNavCol("flex flex-col gap-4 px-4 lg:px-10"):
+                say $triple_card() 
+                say $red_card()
+    
+    resp htmlResponse(body, headers = @[del_cookie_header(consts.flash_token_name)])
+
 
 proc contact_form_submit*(ctx: Context) {.async.} =
     ic "Incoming Post request"

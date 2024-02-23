@@ -17,6 +17,9 @@ type
         nft_accordions  
         presale_card 
         loading_box 
+        banner_space
+        success_banner
+        err_banner
         
         # CGPT Page
         gen_first_scenario_btn
@@ -25,6 +28,7 @@ type
         cgpt_spinner
         cgpt_final_submit_btn
         scenario_section
+        
         selected_scenario_1
         selected_scenario_2
         selected_scenario_full

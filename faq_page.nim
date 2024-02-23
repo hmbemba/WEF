@@ -1,5 +1,5 @@
 import prologue
-import site_comps
+import comps
 import karax / [karaxdsl, vdom]
 
 
@@ -13,12 +13,12 @@ import karax / [karaxdsl, vdom]
 ####################
 
 proc faq_page*(ctx: Context) {.async.} =
-  let body = ppostNavCol(""):
-    vdom.text "FAQ"
+  let body = render:
+    bbase:
+      postNavCol(""):
+        say "FAQ"
 
-  resp base(
-    top_nav_2() & $body
-  )
+  resp body
 
 
 ################

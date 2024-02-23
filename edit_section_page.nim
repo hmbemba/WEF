@@ -1,9 +1,8 @@
 import prologue
-import site_comps
+import comps
 import strutils
-import mynimlib/icecream
 import karax / [karaxdsl, vdom]
-
+import icecream/src/icecream
 
 ################
 ## Components ##
@@ -69,12 +68,15 @@ proc edit_section_page*(ctx: Context) {.async.} =
     resp err
     return
 
-  let body = ppostNavCol(""):
-    vdom.text "FAQ"
+  let body = render: #ppostNavCol(""):
+      bbase:
+          tdiv:
+              say "FAQ"
+  resp body
 
-  resp base(
-    top_nav_2() & $body
-  )
+  # resp base(
+  #   top_nav_2() & $body
+  # )
 
 
 

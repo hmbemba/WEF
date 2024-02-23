@@ -6,48 +6,45 @@
   },
   "contributions": {
     "meta": {
-      "highest_id": 1
+      "highest_id": 2
     },
     "0": {
       "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
       "nft_index": 0,
       "scenario_1": {
         "title": "Scenario 2: Gaia's Encounter with a Hostile Faction",
-        "body": "While lost in the woods, Gaia unknowingly stumbles upon a hidden outpost of a powerful faction that seeks to maintain control over the remnants of advanced technology. Suspicious of Gaia's newfound abilities, they capture her and subject her to intense interrogation. Gaia must use her heightened senses and newfound powers to escape their clutches and continue her quest. Along the way, she discovers the dark secrets and hidden agendas of this faction, setting the stage for a dangerous game of cat and mouse."
+        "body": "While Gaia rests under the tree, she unknowingly attracts the attention of a hostile faction known as The Technocrats. The Technocrats are a group of individuals who believe that advanced technology is the only path to salvation for humanity. They see Gaia's awakening as a threat to their control and attempt to capture her. Gaia must use her newfound abilities to evade capture and escape their clutches, setting the stage for her journey of self-discovery and resistance against oppressive forces."
       },
       "scenario_2": {
-        "title": "Gaia's Encounter with a Reclusive Hermit",
-        "body": "While lost in the woods, Gaia comes across a reclusive hermit who possesses ancient knowledge about the psychedelic plant and its healing properties. This hermit offers to teach Gaia how to harness the plant's power and use it to restore balance to the world. However, the hermit's isolation has made them wary of outsiders, and Gaia must prove herself worthy of their teachings. Together, they embark on a journey to gather the necessary ingredients and unlock the full potential of the plant's healing abilities, all while evading the watchful eyes of the hostile factions who seek to suppress their mission."
+        "title": "The Underground Hideout",
+        "body": "In her attempt to evade The Technocrats, Gaia stumbles upon an underground hideout, a secret refuge for those who oppose the oppressive faction. Here, she meets a group of rebels who have been fighting against The Technocrats for years. They offer her shelter and protection, recognizing her potential as a powerful ally in their resistance. Gaia must decide whether to join forces with the rebels and fight against The Technocrats or continue her journey alone. As she learns more about their cause and the extent of The Technocrats' control, she begins to understand the importance of her role in the fight for freedom and the restoration of humanity's connection to nature."
       },
       "scenario_full": {
         "title": "Final Playwright",
-        "body": "[Comic book style text]\n\nPanel 1:\nGaia, disheveled and weary, stumbles upon a hidden outpost nestled deep within the woods. She cautiously peers through the foliage, her eyes widening in surprise.\n\nGaia: What is this place?\n\nPanel 2:\nSuddenly, armed guards surround Gaia, their weapons trained on her. She raises her hands in surrender, her heart pounding in her chest.\n\nGuard 1: Intruder! Who are you and what are you doing here?\n\nPanel 3:\nGaia, her voice trembling, tries to explain herself.\n\nGaia: I-I didn't mean to intrude. I'm lost and just looking for a way out of these woods.\n\nGuard 2: Lost, huh? We don't believe you. What are those strange powers you possess?\n\nPanel 4:\nGaia's eyes widen in realization as she notices the guards eyeing her pendant, a symbol of her newfound abilities.\n\nGaia: You've seen my powers? How?\n\nGuard 3: We've been watching you for some time now. Your abilities are a threat to our control over the technology remnants. You will tell us everything.\n\nPanel 5:\nGaia, her hands still raised, takes a deep breath, summoning her newfound powers.\n\nGaia: I won't let you use me for your own gain. I have a mission, a purpose.\n\nPanel 6:\nWith a surge of energy, Gaia breaks free from the guards' grasp, her body glowing with an otherworldly light.\n\nGuard 1: Stop her!\n\nPanel 7:\nGaia, now free, uses her heightened senses to evade the guards, leaping through the trees with grace and agility.\n\nGuard 2: She's getting away!\n\nPanel 8:\nGaia, hidden in the shadows, watches as the guards search for her, their frustration evident.\n\nGuard 3: Find her! We can't let her escape!\n\nPanel 9:\nGaia, determined and resolute, whispers to herself.\n\nGaia: I won't let them stop me. I will uncover the truth and bring hope back to this world.\n\n[To be continued...]"
+        "body": "[Comic book style text]\n\nPanel 1:\nGaia, exhausted and tear-stained, sits beneath the majestic tree, overlooking the endless ocean. The weight of her grief is almost unbearable.\n\nGaia (whispering): \"Mother, why did you leave me? I can't bear this pain.\"\n\nPanel 2:\nUnbeknownst to Gaia, a group of shadowy figures watches her from a distance. They are The Technocrats, their eyes filled with suspicion and determination.\n\nTechnocrat 1: \"She possesses the power we seek. We must capture her before she becomes a threat.\"\n\nPanel 3:\nGaia, lost in her thoughts, catches a glimpse of movement out of the corner of her eye. She turns to see The Technocrats closing in on her.\n\nGaia (startled): \"Who are you? What do you want from me?\"\n\nTechnocrat 2: \"You possess a power that could disrupt our plans. We cannot allow that.\"\n\nPanel 4:\nGaia, fear and determination in her eyes, takes a step back, ready to defend herself.\n\nGaia: \"I won't let you control me! I have my own path to follow.\"\n\nPanel 5:\nSuddenly, a hidden door in the cliffside opens, revealing a dimly lit underground hideout. A group of rebels stands at the entrance, their faces filled with hope.\n\nRebel 1: \"Quickly, come with us! We've been waiting for someone like you.\"\n\nPanel 6:\nGaia, torn between her desire for solitude and the opportunity to fight back, hesitates.\n\nGaia (thinking): \"Should I trust them? Can they help me find my purpose?\"\n\nRebel 2: \"We've been fighting against The Technocrats for years. Together, we can make a difference.\"\n\nPanel 7:\nGaia takes a deep breath, her decision made. She steps forward, joining the rebels in their underground hideout.\n\nGaia: \"I won't let fear control me anymore. I'm ready to fight.\"\n\n[To be continued...]"
       },
       "scenario_1_complete": true,
       "scenario_2_complete": true,
       "scenario_full_complete": true
-    }
-  },
-  "contact_db": {
-    "meta": {
-      "highest_id": 2
-    },
-    "0": {
-      "email": "hmbemba@gmail.com",
-      "address": "6424 Beaumont Sq",
-      "city": "Lewis Center",
-      "state": "ohio",
-      "country": "United States",
-      "zipcode": "43035"
     },
     "1": {
-      "email": "hmbemba@gmail.com",
-      "address": "6424 Beaumont Sq",
-      "city": "Lewis Center",
-      "state": "ohio",
-      "country": "United States",
-      "zipcode": "43035",
-      "addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52"
+      "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
+      "nft_index": 1,
+      "scenario_1": {
+        "title": "Scenario 2: The Resistance",
+        "body": "Gaia's awakening catches the attention of a secret resistance group known as the Guardians of Nature. They have been searching for someone with the ability to harness the power of the psychedelic plant and use it to heal the world. Gaia becomes their reluctant leader, as they train her to control her newfound abilities and navigate the dangerous landscape of a society on the brink of collapse. Together, they embark on a mission to gather allies, spread awareness about the plant's healing potential, and challenge the oppressive forces that seek to suppress their movement."
+      },
+      "scenario_2": {
+        "title": "",
+        "body": ""
+      },
+      "scenario_full": {
+        "title": "",
+        "body": ""
+      },
+      "scenario_1_complete": true,
+      "scenario_2_complete": false,
+      "scenario_full_complete": false
     }
   }
 }

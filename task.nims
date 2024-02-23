@@ -15,23 +15,22 @@ proc checkFileStuff(out_dir, input_file:string) =
         echo "input_file at : " & "'" & input_file & "' " & "does not end with .nim"
         quit(1)
 
-task dev, "Start server in dev mode":
-    exec "nim c -r -d:ic -d:ssl -d:dev  -d:last_open_chapter=0 app.nim"
+task wdev, "Start server in dev mode":
+    exec "nim c -r -d:ic -d:ssl -d:dev  -d:demo -d:last_open_chapter=0 -o:wdev app.nim"
 
-task demo, "Run demo":
+task prod_demo, "Start server in prod mode":
     exec """nim c \
-            -r \
-            -d:demo \
             --forceBuild:on \
             --opt:speed \
             --define:release \
             --threads:on \
             --mm:orc \
             --deepcopy:on \
-            --define:lto \
             --define:ssl \
             --hints:off \
             --outdir:"." \
+            -d:demo \
+            -d:last_open_chapter=0 \
             app.nim
         """
 
@@ -47,35 +46,47 @@ task prod, "Start server in prod mode":
             --define:ssl \
             --hints:off \
             --outdir:"." \
-            app.nim
-        """
-
-task prodr, "Start server in prod mode":
-    exec """nim c \
-            -r \
-            --forceBuild:on \
-            --opt:speed \
-            --define:release \
-            --threads:on \
-            --mm:orc \
-            --deepcopy:on \
-            --define:lto \
-            --define:ssl \
-            --hints:off \
-            --outdir:"." \
+            -d:last_open_chapter=0 \
             app.nim
         """
 
 task mkfe, "build frontends":
     proc buildExecCommand(input_file: string, out_dir: string): string = 
         checkFileStuff(out_dir, input_file)
-
         return fmt"""nim js -b:js -d:dev -d:ic -o:{out_dir} {input_file}"""
 
-    #exec buildExecCommand("./cgpt_page_fe.nim"         , fmt"./static/js/cgpt_page_fe.js"        )
+    exec buildExecCommand("./cgpt_page_fe.nim"         , fmt"./static/js/cgpt_page_fe.js"        )
     #exec buildExecCommand("./nav_fe.nim"               , fmt"./static/js/nav_fe.js"              )
+    #exec buildExecCommand("./landing_page_fe.nim"      , fmt"./static/js/landing_page_fe.js"     )
+    #exec buildExecCommand("./contribute_page_fe.nim"   , fmt"./static/js/contribute_page_fe.js"  )
+
+task mkfe_prod_ic, "build frontends":
+    proc buildExecCommand(input_file: string, out_dir: string): string = 
+        checkFileStuff(out_dir, input_file)
+        return fmt"""nim js -b:js -d:dev -d:ic -o:{out_dir} {input_file}"""
+
+    exec buildExecCommand("./cgpt_page_fe.nim"         , fmt"./static/js/cgpt_page_fe.js"        )
+    exec buildExecCommand("./nav_fe.nim"               , fmt"./static/js/nav_fe.js"              )
     exec buildExecCommand("./landing_page_fe.nim"      , fmt"./static/js/landing_page_fe.js"     )
     exec buildExecCommand("./contribute_page_fe.nim"   , fmt"./static/js/contribute_page_fe.js"  )
+    
+    withDir "./static/js":
+        echo getCurrentDir()
+        for file_path in walkDir("."):
+            if file_path.path.endsWith(".js"):
+                let file_name = file_path.path.split("\\")[^1]
+                let full_path = getCurrentDir() & "\\" & file_name
+                echo "full_path : " & full_path
+                let terser_cmd = fmt"""terser "{full_path}" --compress --mangle --output "{full_path}"  """
+                echo "terser_cmd : " & terser_cmd
+                
+                let (output, exitcode) = gorgeEx fmt"""powershell -c "{terser_cmd}" """
+                if exitcode != 0:
+                    echo "terser failed : " & file_name
+                    echo output
+                else:
+                    echo "terser done : " & file_name & "\n"
+    echo "terser complete"
 
 task build_tw, "Builds Thirdweb":
     when defined(linus):

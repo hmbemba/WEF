@@ -1,5 +1,6 @@
 import prologue
-import mynimlib/[icecream, nimtinydb]
+import icecream/src/icecream
+import nimtinydb
 import strformat
 import consts
 

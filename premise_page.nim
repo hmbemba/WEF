@@ -1,5 +1,5 @@
 import prologue
-import site_comps
+import comps
 import strutils
 import mynimlib/icecream
 

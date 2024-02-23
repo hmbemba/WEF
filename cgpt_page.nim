@@ -1,7 +1,9 @@
 when not defined(js):
   import prologue
-  import site_comps
-  import mynimlib/[icecream, nimtinydb, prologutils]
+  import comps
+  import mynimlib/[prologutils]
+  import nimtinydb
+  import icecream/src/icecream
 
 import strformat, sequtils, strutils
 import mynimlib/nimwebc as nwc
@@ -12,6 +14,7 @@ import mynimlib/nimsvgicons
 import karax / [karaxdsl, vdom, vstyles, kbase]
 import handles
 import jsony
+import dekao
 
 
 type
@@ -327,7 +330,15 @@ proc ghost_writer_tab2*(
     """
 
 
+template ppostNavCol*(incoming_class:string, body:untyped): VNode =
+    buildHtml(tdiv(class=incoming_class)):
+      body
 
+
+proc generate_scenario_btn*(text:string, ec = "") : string = render:
+  button:
+    class ec & " px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"
+    say   text
 
 ################
 ## Routes     ##
@@ -474,25 +485,38 @@ when not defined(js):
                 vdom.text "NFT image here"
 
         # Right Column
-        tdiv(class = "w-full md:w-1/2 px-2 mb-4"):
+        tdiv(class = "md:max-w-sm w-full md:w-1/2 px-2 mb-4"):
           tdiv(class = "bg-[#B2B2B5EE] ring-8 ring-black text-black rounded-lg p-4"):
-            h2(class = "text-xl text-center font-semibold mb-2"):
+            h2(class = "text-4xl text-center font-semibold mb-2"):
               vdom.text "Gaia"
-            p:
-              vdom.text "A mid-twenties woman."
-            ul(class = "list-disc ml-4 mt-2"):
-              li:
-                vdom.text "Strong minded"
-              li:
-                vdom.text "Curious"
+            p(class="text-xl"):
+              vdom.text "A mid-twenties woman"
+            ul(class = "text-lg flex flex-col gap-2  ml-4 mt-2"):
+              block:
+                let texts = @[
+                  "Strong minded curious",
+                  "confused",
+                  "Determined",
+                  "Broken Hearted",
+
+                ]
+                for text in texts:
+                  li:
+                    vdom.text text
             # Add more traits here
             tdiv(class = "mt-4"):
-              h3(class = "font-semibold text-center text-[#8773F5]"):
+              h3(class = "text-2xl font-semibold text-center text-[#8773F5]"):
                 vdom.text "The Unknown:"
-              ul(class = "list-disc ml-4 mt-2"):
-                li:
-                  vdom.text "Why was Gaia chosen to save humanity?"
-          # Add more questions here
+              ul(class = "text-lg list-disc ml-4 mt-2 flex flex-col gap-6"):
+                let texts = @[
+                  "Why was Gaia chosen to save humanity?",
+                  "Who are these people she encounters along the way?",
+                  "Does she ever find peace in her mothers death?",
+                  "Can humanity reunite with their ancestral history and thrive again",
+                ]
+                for text in texts:
+                  li:
+                    vdom.text text
 
         # Notify the user if their section is complete or not
         status_notif
@@ -504,10 +528,11 @@ when not defined(js):
             # Ghost Writer Card 1
             tdiv(id = $ghost_writer_card_1,
                 class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
-                x-data = "{ activeTab: '' }"):
-              button(id = fmt"{$gen_first_scenario_btn}",
-                  class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
-                vdom.text "Generate Scenario's with ChatGPT"
+                x-data = "{ activeTab: '' }")#:
+              # button(id = fmt"{$gen_first_scenario_btn}",
+              #     class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+              #   vdom.text "Generate Scenario's with ChatGPT"
+          
           else:
             # If Scenario 1 is complete
             if get_contrib.val.get.item.scenario_1_complete:
@@ -523,10 +548,10 @@ when not defined(js):
                   1,
                   $selected_scenario_1
                 ).verbatim
-                if not get_contrib.val.get.item.scenario_2_complete:
-                  button(id = fmt"{$second_scenario_btn}",
-                      class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
-                    vdom.text "Generate 3 more scenarios with ChatGPT"
+                # if not get_contrib.val.get.item.scenario_2_complete:
+                #   button(id = fmt"{$second_scenario_btn}",
+                #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+                #     vdom.text "Generate 3 more scenarios with ChatGPT"
 
             # If Scenario 2 is complete
             if get_contrib.val.get.item.scenario_2_complete:
@@ -542,10 +567,10 @@ when not defined(js):
                   2,
                   $selected_scenario_2
                 ).verbatim
-                if not get_contrib.val.get.item.scenario_full_complete:
-                  button(id = fmt"{$cgpt_final_submit_btn}",
-                      class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
-                    vdom.text "Send your final selections to our Story AI"
+                # if not get_contrib.val.get.item.scenario_full_complete:
+                #   button(id = fmt"{$cgpt_final_submit_btn}",
+                #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+                #     vdom.text "Send your final selections to our Story AI"
 
             # If Final Scenario is complete
             if get_contrib.val.get.item.scenario_full_complete:
@@ -564,13 +589,19 @@ when not defined(js):
                   left = true
                 ).verbatim
 
-    resp htmlResponse base(
-      top_nav_2() & $body &
+    let top_nav = top_nav_2()
+    let bbody = render:
+      bbase:
+          say """
+              <script type="module" src="/static/js/cgpt_page_fe.js "></script>
+              """
+          say "<!-- Top Nav -->"
+          say top_nav
+          say $body
+    
+    resp htmlResponse bbody
 
-      """
-      <script type="module" src="/static/js/cgpt_page_fe.js "></script>
-      """
-    )
+
 
 
   ####################
