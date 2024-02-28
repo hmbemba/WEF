@@ -1,5 +1,8 @@
 import std/strformat , os, strutils
 
+let blockchain = "goerli"
+#let blockchain = "sepolia"
+
 proc checkFileStuff(out_dir, input_file:string) =
     let out_path = out_dir.split(r"/")[0..^2].join(r"/")
     if not out_path.dirExists:
@@ -16,7 +19,7 @@ proc checkFileStuff(out_dir, input_file:string) =
         quit(1)
 
 task wdev, "Start server in dev mode":
-    exec "nim c -r -d:ic -d:ssl -d:dev  -d:demo -d:last_open_chapter=0 -o:wdev app.nim"
+    exec fmt"nim c -r -d:ic -d:ssl -d:dev -d:last_open_chapter=0 -d:blockchain={blockchain} -o:wdev app.nim"
 
 task prod_demo, "Start server in prod mode":
     exec """nim c \
@@ -56,9 +59,9 @@ task mkfe, "build frontends":
         return fmt"""nim js -b:js -d:dev -d:ic -o:{out_dir} {input_file}"""
 
     exec buildExecCommand("./cgpt_page_fe.nim"         , fmt"./static/js/cgpt_page_fe.js"        )
-    #exec buildExecCommand("./nav_fe.nim"               , fmt"./static/js/nav_fe.js"              )
-    #exec buildExecCommand("./landing_page_fe.nim"      , fmt"./static/js/landing_page_fe.js"     )
-    #exec buildExecCommand("./contribute_page_fe.nim"   , fmt"./static/js/contribute_page_fe.js"  )
+    exec buildExecCommand("./nav_fe.nim"               , fmt"./static/js/nav_fe.js"              )
+    exec buildExecCommand("./landing_page_fe.nim"      , fmt"./static/js/landing_page_fe.js"     )
+    exec buildExecCommand("./contribute_page_fe.nim"   , fmt"./static/js/contribute_page_fe.js"  )
 
 task mkfe_prod_ic, "build frontends":
     proc buildExecCommand(input_file: string, out_dir: string): string = 

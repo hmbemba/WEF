@@ -15,6 +15,44 @@ import std/jsfetch
 import icecream/src/icecream
 
 
+{. emit: """
+import {createWeb3Modal, chains, projectId, wagmiConfig, getAccount} from "./cw_modal/dist/cw-modal.js";
+""" .}
+
+var connect_wallet_addy  {. exportc:"connect_wallet_addy" .}: cstring = ""
+var is_connected {. exportc:"is_connected" .}: bool = false
+
+{. emit: """
+const modal = createWeb3Modal({ wagmiConfig, projectId, chains })
+
+// Subscribe to state changes to get account info after connection
+modal.subscribeState(newState => {
+  if (newState.open) {
+    const account = getAccount();
+    if (account.address !== undefined){
+      connect_wallet_addy = account.address
+      console.log("connect_wallet_addy:", connect_wallet_addy);
+      is_connected = true
+    }else{
+      console.log("account.address is undefined");
+      is_connected = false
+    }
+  }
+});
+
+const account = getAccount();
+if (account.address !== undefined){
+    connect_wallet_addy = account.address
+    console.log("connect_wallet_addy:", connect_wallet_addy);
+    is_connected = true
+}else{
+    console.log("account.address is undefined");
+    is_connected = false
+}
+
+
+""" .}
+
 let current_url = window.location.href
 # http://localhost:7778/chat/0xF6427...52/0
 let url_parts   = current_url.split("/")
@@ -245,18 +283,29 @@ proc add_ghost_writer_tab_selected_functionality(
                                                   ) =
   tab.click( 
     proc (e: Event) =
+      # The parent will be a ghost writer card
       let parent = tab.parentElement
       
+      # Remove the purple bg color
+      # Remove the id
+      # Change the color of the text to slategray
+      # For all non selected tabs
       for kid in parent.querySelectorAll("div"):
         kid.style.backgroundColor = ""
-        kid.style.color           = "slategray"
-        kid.id  = ""
-        kid.queryAll("p").get()[0].style.color = "slategray"
+        kid.id                    = ""
+        for p in kid.queryAll("p").get():
+          p.style.color = "slategray"
         
+      # Add the purple bg color
+      # Add the id
+      # Change the color of the text to white
+      # For the selected tab
       tab.style.backgroundColor = "#816AFE"
       tab.style.color           = "white"
       tab.id = id
-      tab.queryAll("p").get()[0].style.color = "white"
+      
+      for p in tab.queryAll("p").get():
+        p.style.color = "white"
   )
 
 proc add_tab_clicked_functionality(el:Element, id:string) = 
@@ -277,7 +326,15 @@ template show_err_if_no_selected_scenario(ghost_writer_card:Element, selected_sc
 
 proc to_text(selected_scenario: Element) : tuple[title, body: cstring] = 
     let title = selected_scenario.querySelector("p:first-child").innerHTML
-    let body  = selected_scenario.querySelector("p:last-child" ).innerHTML
+    let all_p_tags = selected_scenario.queryAll_strict("p")
+
+    var body : cstring
+    for idx in 1..all_p_tags.high:
+      var text_body = all_p_tags[idx].innerHTML.strip()
+      if not text_body.endsWith("."):
+        text_body &= ". "
+      body.add text_body 
+    
     return (title, body)
 
 template waitForCGPT(gen_scenario_btn, ghost_writer_card: Element, body:untyped) : untyped = 

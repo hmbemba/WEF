@@ -6,44 +6,25 @@
   },
   "contributions": {
     "meta": {
-      "highest_id": 2
+      "highest_id": 1
     },
     "0": {
       "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
       "nft_index": 0,
       "scenario_1": {
         "title": "Scenario 2: Gaia's Encounter with a Hostile Faction",
-        "body": "While Gaia rests under the tree, she unknowingly attracts the attention of a hostile faction known as The Technocrats. The Technocrats are a group of individuals who believe that advanced technology is the only path to salvation for humanity. They see Gaia's awakening as a threat to their control and attempt to capture her. Gaia must use her newfound abilities to evade capture and escape their clutches, setting the stage for her journey of self-discovery and resistance against oppressive forces."
+        "body": "While Gaia is still reeling from her awakening, she unknowingly stumbles upon a hidden camp belonging to a powerful faction that seeks to suppress any knowledge of the plant's healing properties. Gaia's heightened senses allow her to sense danger, and she narrowly escapes capture. Fueled by a newfound determination, she realizes that she must gather allies and form an underground movement to protect the plant's knowledge from those who would exploit it for their own gain."
       },
       "scenario_2": {
-        "title": "The Underground Hideout",
-        "body": "In her attempt to evade The Technocrats, Gaia stumbles upon an underground hideout, a secret refuge for those who oppose the oppressive faction. Here, she meets a group of rebels who have been fighting against The Technocrats for years. They offer her shelter and protection, recognizing her potential as a powerful ally in their resistance. Gaia must decide whether to join forces with the rebels and fight against The Technocrats or continue her journey alone. As she learns more about their cause and the extent of The Technocrats' control, she begins to understand the importance of her role in the fight for freedom and the restoration of humanity's connection to nature."
+        "title": "The Betrayal",
+        "body": "While evading capture, Gaia encounters a charismatic individual who claims to be sympathetic to her cause. This person offers to guide her to a safe haven where like-minded individuals gather. However, as they journey together, Gaia begins to suspect that this person may have ulterior motives. Eventually, her suspicions are confirmed when they lead her straight into a trap set by the hostile faction. Gaia must rely on her wits and newfound abilities to escape and continue her mission."
       },
       "scenario_full": {
-        "title": "Final Playwright",
-        "body": "[Comic book style text]\n\nPanel 1:\nGaia, exhausted and tear-stained, sits beneath the majestic tree, overlooking the endless ocean. The weight of her grief is almost unbearable.\n\nGaia (whispering): \"Mother, why did you leave me? I can't bear this pain.\"\n\nPanel 2:\nUnbeknownst to Gaia, a group of shadowy figures watches her from a distance. They are The Technocrats, their eyes filled with suspicion and determination.\n\nTechnocrat 1: \"She possesses the power we seek. We must capture her before she becomes a threat.\"\n\nPanel 3:\nGaia, lost in her thoughts, catches a glimpse of movement out of the corner of her eye. She turns to see The Technocrats closing in on her.\n\nGaia (startled): \"Who are you? What do you want from me?\"\n\nTechnocrat 2: \"You possess a power that could disrupt our plans. We cannot allow that.\"\n\nPanel 4:\nGaia, fear and determination in her eyes, takes a step back, ready to defend herself.\n\nGaia: \"I won't let you control me! I have my own path to follow.\"\n\nPanel 5:\nSuddenly, a hidden door in the cliffside opens, revealing a dimly lit underground hideout. A group of rebels stands at the entrance, their faces filled with hope.\n\nRebel 1: \"Quickly, come with us! We've been waiting for someone like you.\"\n\nPanel 6:\nGaia, torn between her desire for solitude and the opportunity to fight back, hesitates.\n\nGaia (thinking): \"Should I trust them? Can they help me find my purpose?\"\n\nRebel 2: \"We've been fighting against The Technocrats for years. Together, we can make a difference.\"\n\nPanel 7:\nGaia takes a deep breath, her decision made. She steps forward, joining the rebels in their underground hideout.\n\nGaia: \"I won't let fear control me anymore. I'm ready to fight.\"\n\n[To be continued...]"
+        "title": "",
+        "body": ""
       },
       "scenario_1_complete": true,
       "scenario_2_complete": true,
-      "scenario_full_complete": true
-    },
-    "1": {
-      "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
-      "nft_index": 1,
-      "scenario_1": {
-        "title": "Scenario 2: The Resistance",
-        "body": "Gaia's awakening catches the attention of a secret resistance group known as the Guardians of Nature. They have been searching for someone with the ability to harness the power of the psychedelic plant and use it to heal the world. Gaia becomes their reluctant leader, as they train her to control her newfound abilities and navigate the dangerous landscape of a society on the brink of collapse. Together, they embark on a mission to gather allies, spread awareness about the plant's healing potential, and challenge the oppressive forces that seek to suppress their movement."
-      },
-      "scenario_2": {
-        "title": "",
-        "body": ""
-      },
-      "scenario_full": {
-        "title": "",
-        "body": ""
-      },
-      "scenario_1_complete": true,
-      "scenario_2_complete": false,
       "scenario_full_complete": false
     }
   }

@@ -8,6 +8,11 @@ import consts
 import prologue/middlewares/staticfile
 import admin
 import whitelist
+import icecream
+
+ic "Using blockchain: " & consts.blockchain 
+ic consts.contract_address
+
 
 let settings = 
   newSettings(
@@ -40,3 +45,4 @@ app.addRoute(@[
 ], "")
 
 app.run()
+

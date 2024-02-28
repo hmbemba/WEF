@@ -295,11 +295,11 @@ proc ghost_writer_card*(scenarios: seq[string], id: string): string =
   fmt"""
     <!-- Ghost Writer Card --> 
     <div
-      id="{id}" 
-      class="bg-[{bg_color}] p-4 gap-4 w-full flex flex-col "
-      style='border-radius:10px;'
-      __xdata__
-      >
+        id    = "{id}" 
+        class = "bg-[{bg_color}] p-4 gap-4 w-full flex flex-col "
+        style = 'border-radius:10px;'
+        __xdata__
+    >
       {scenarios.join("\n")}
     </div> 
     """.multiReplace(@[("__xdata__", """ x-data="{ activeTab: '' }" """)])
@@ -317,15 +317,35 @@ proc ghost_writer_tab2*(
       ""
     else:
       "items-center"
+
+  proc put_in_p_tag(text: string): string = 
+    let add_period = if text.endsWith("."): "" else: "."
+    fmt"""<p> {text}{add_period} </p>"""
+
+  proc format_content(content: string): string =
+    content.split(". ").mapIt(it.put_in_p_tag).join("\n")
+  
   fmt"""    
-    <div id="{idd}" class="gap-4 flex flex-col justify-center {get_item_pos()} p-3 w-full bg-white rounded-lg shadow-md cursor-pointer text-gray-700 hover:bg-purple-200 transition duration-300 ease-in-out" @click="showDropdown = !showDropdown" x-data="{{ showDropdown: false }}">
+    <div 
+      id     = "{idd}" 
+      class  = "gap-4 flex flex-col justify-center {get_item_pos()} p-3 w-full 
+                bg-white rounded-lg shadow-md cursor-pointer text-gray-700 hover:bg-purple-200 
+                transition duration-300 ease-in-out" 
+      
+      x-data = "{{ showDropdown: false }}"
+      @click = "showDropdown = !showDropdown" 
+    >
+
       <div class="flex justify-between w-full items-center">
-        <p class="font-semibold">{title}</p>
-        <svg :class="{{'transform rotate-180': showDropdown}}" class="fill-current text-white transition-transform duration-300" width="25px" height="25px" viewBox="0 0 24 24">
+        <p class="font-semibold text-xl">{title}</p>
+        <svg :class="{{'transform rotate-180': showDropdown}}" class="fill-current  transition-transform duration-300" width="25px" height="25px" viewBox="0 0 24 24">
           <path d="M12,17.414 3.293,8.707 4.707,7.293 12,14.586 19.293,7.293 20.707,8.707"></path>
         </svg>
       </div>
-      <p x-show="showDropdown" class="text-sm mt-2" style="display: none;">{content}</p>
+
+      
+      <div x-show="showDropdown" class="p-4 text-md mt-2 flex flex-col gap-6" >{content.format_content()}</div>
+    
     </div>
     """
 
@@ -403,6 +423,26 @@ when not defined(js):
     ic "wallet_addy: " & wallet_addy
     ic "nft_num: " & nft_num
 
+    let nft_path = case nft_num.parseInt:
+      of 0..6:
+        fmt"/static/img/nfts/1.png"
+      of 7..13:
+        fmt"/static/img/nfts/2.png"
+      of 14..20:
+        fmt"/static/img/nfts/3.png"
+      of 21..27:
+        fmt"/static/img/nfts/4.png"
+      of 28..34:
+        fmt"/static/img/nfts/5.png"
+      of 35..41:
+        fmt"/static/img/nfts/6.png"
+      of 42..48:
+        fmt"/static/img/nfts/7.png"
+      else:
+        "unknown"
+    
+    icb nft_path
+
     let contrib_db = newTinyDB(consts.db_path, "contributions")
     icb "cgpt_selection get flow"
     let get_contrib = contrib_db.get(
@@ -438,18 +478,21 @@ when not defined(js):
         return
 
     let finished_notif = """
-    <div class="flex flex-col gap-2 text-center cursor-pointer p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-      
+    <div class="text-xl flex flex-col gap-4 text-center cursor-pointer p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+  
+      <div>Great Job!</div> 
+
       <div>
-        <span class="font-medium">Great Job!</span> 
         Your contribution to the story is in! 
       </div>
-      <div>Join the discord now</div>
+
+      <div>Join the Community Chat Room</div>
+    
     </div>
     """.verbatim
 
     let unfinished_notif = buildHtml(tdiv(
-        class = "p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400",
+        class = "p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400",
         role = "alert")):
       span(class = "font-medium"):
         vdom.text "Finish your story!"
@@ -481,8 +524,9 @@ when not defined(js):
           tdiv(class = "mt-4"):
             # Placeholder for NFT image
             tdiv(class = "bg-gray-500 h-64 rounded-lg flex items-center justify-center"):
-              span:
-                vdom.text "NFT image here"
+              img(src = nft_path, alt = "NFT Image", class = "w-full h-full object-cover")
+              #span:
+              #  vdom.text "NFT image here"
 
         # Right Column
         tdiv(class = "md:max-w-sm w-full md:w-1/2 px-2 mb-4"):
@@ -609,5 +653,4 @@ when not defined(js):
   ####################
 
   let cgpt_route* = pattern("/chat/{wallet_addy}/{nft_num}", cgpt_page)
-  let cgpt_selection_route* = pattern("/chat/selection", cgpt_selection, @[
-      Httpget, HttpPost])
+  let cgpt_selection_route* = pattern("/chat/selection", cgpt_selection, @[Httpget, HttpPost])
