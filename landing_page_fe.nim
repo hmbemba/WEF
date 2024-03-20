@@ -62,20 +62,15 @@ proc is_whitelisted(addy:cstring): Future[bool] {. async .} =
         return true
     return false
 
-# let onOpen = proc(a:accordion, item:Element) = 
-#     echo "oepning " & item.title()
-
-# let onClose = proc(a:accordion, item:Element) =
-#     echo "closing " & item.title()
-
-# let test_acc = nft_accordions.el_strict.newAccordion(
-#     onItemOpen = onOpen,
-#     onItemClose = onClose
-# )
 
 let test_acc = nft_accordions.el_strict.newAccordion()
 
 document.DomContentLoaded proc (e:Event) {. async .} = 
+
+    ic "Using blockchain: " & consts.blockchain 
+    ic consts.contract_address
+    ic consts.rpc_url
+    
     # If the presale is happening
     if presale_end_date > now():
         ic "Presale is happening"
