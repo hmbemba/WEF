@@ -328,7 +328,6 @@ proc landing*(ctx: Context) {.async, gcsafe.} =
                 
     resp pu.htmlResponse body
 
-
 proc demo_landing*(ctx: Context) {.async.} =        
     let body = render:
         bbase:
@@ -475,7 +474,6 @@ proc demo_landing*(ctx: Context) {.async.} =
     </div>
     """
     resp pu.htmlResponse body
-
 
 ################
 ## Routes     ##

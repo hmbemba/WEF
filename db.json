@@ -6,26 +6,64 @@
   },
   "contributions": {
     "meta": {
-      "highest_id": 1
+      "highest_id": 3
     },
     "0": {
       "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
       "nft_index": 0,
       "scenario_1": {
-        "title": "Scenario 2: Gaia's Encounter with a Hostile Faction",
-        "body": "While Gaia is still reeling from her awakening, she unknowingly stumbles upon a hidden camp belonging to a powerful faction that seeks to suppress any knowledge of the plant's healing properties. Gaia's heightened senses allow her to sense danger, and she narrowly escapes capture. Fueled by a newfound determination, she realizes that she must gather allies and form an underground movement to protect the plant's knowledge from those who would exploit it for their own gain."
+        "title": "The Whispering Plant",
+        "body": " Gaia experiences a profound vision during one of her psychedelic voyages. The plant seems to communicate with her, guiding her through a labyrinth of lost memories and ancient wisdom. She witnesses scenes of her ancestors using the plant in communal ceremonies, healing rituals, and spiritual quests. The vision leaves Gaia with a deep sense of connection to her roots and a newfound purpose - to rekindle the relationship between her people and the plant."
       },
       "scenario_2": {
-        "title": "The Betrayal",
-        "body": "While evading capture, Gaia encounters a charismatic individual who claims to be sympathetic to her cause. This person offers to guide her to a safe haven where like-minded individuals gather. However, as they journey together, Gaia begins to suspect that this person may have ulterior motives. Eventually, her suspicions are confirmed when they lead her straight into a trap set by the hostile faction. Gaia must rely on her wits and newfound abilities to escape and continue her mission."
+        "title": "Seeds of Doubt",
+        "body": " Gaia, driven by her vision, attempts to share her newfound insights with her community. However, she is met with skepticism and fear, as people have been conditioned to view the plant as a dangerous drug. The seeds of doubt are sown in Gaia's mind as she grapples with their resistance. Resolute, she realizes she must discover more about the plant's history to convince her community of its healing potential."
       },
       "scenario_full": {
-        "title": "",
-        "body": ""
+        "title": "Part 1",
+        "body": "Panel 1: The story opens with Gaia sitting cross-legged in a moonlit grove, her eyes closed, her face serene. A psychedelic plant glows ethereally in her hand. Dialogue: \"Speak to me, ancient one. Show me your secrets.\"\n\nPanel 2: Gaia's eyes fly open as vibrant, swirling visions flood her senses. Images of her ancestors in ritualistic ceremonies, using the plant for healing and spiritual quests, dance before her. Dialogue: \"Ancestors...using the plant...Such harmony...Such connection...\"\n\nPanel 3: Gaia, now back in her village, stands before a crowd of skeptical faces. Dialogue: \"We've forgotten our roots! This plant...it can heal us, connect us!\"\n\nPanel 4: The villagers react with fear and skepticism, viewing the plant as a dangerous drug. Dialogue: Villager 1: \"Healing? That's a dangerous drug, Gaia!\" Villager 2: \"You're playing with fire, girl!\"\n\nPanel 5: Doubt casts a shadow over Gaia's face, but her eyes shine with resolve. Dialogue: \"Their fear won't deter me. This is our heritage...our hope. I must uncover more.\"\n\nText Box: \"As the seeds of doubt are sown, Gaia embarks on a mission to rediscover the ancient wisdom of the psychedelic plant. A quest fraught with resistance and revelation has begun.\""
       },
       "scenario_1_complete": true,
       "scenario_2_complete": true,
-      "scenario_full_complete": false
+      "scenario_full_complete": true
+    },
+    "1": {
+      "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
+      "nft_index": 1,
+      "scenario_1": {
+        "title": "The Ancient Ruins",
+        "body": " Panel 1: Gaia discovers an entrance to ancient ruins, believed to hold the secrets of her ancestors. Dialogue: 'The answers I seek must be within these walls.' Panel 2: She finds a mural depicting her ancestors using the plant in various healing ceremonies. Dialogue: 'This...this is our forgotten history.' Panel 3: Gaia carefully copies the mural, determined to show her village the truth. Dialogue: 'They must see this. They must remember.'."
+      },
+      "scenario_2": {
+        "title": "The Elder's Wisdom",
+        "body": " Panel 1: Gaia exits the ruins, her mind buzzing with newfound information. She decides to seek out the village elder, the only one who might understand. Dialogue: 'Elder Nara...she might remember.' Panel 2: Gaia finds Elder Nara, a wise woman who has lived longer than anyone in the village. She tells Nara about her discovery. Dialogue: 'Nara, I've found something...something from our past.' Panel 3: Elder Nara listens intently, her old eyes lighting up with recognition and hope. Dialogue: 'I remember...we were healers...not destroyers.'."
+      },
+      "scenario_full": {
+        "title": "Part 2",
+        "body": "Part 2\nPanel 1: Gaia, bathed in the soft glow of dawn, stands at the entrance of the ancient ruins. Her heart pounds with anticipation. Dialogue: \"Ancestors whisper within these walls. Their secrets must be mine.\"\n\nPanel 2: Inside, she discovers a mural; a vivid tapestry of her ancestors using the plant in sacred ceremonies. Dialogue: \"This! This is truth...our forgotten connection.\"\n\nPanel 3: Gaia meticulously sketches the mural onto parchment, her hands steady, her eyes alight with determination. Dialogue: \"The villagers...they need to see, to remember.\"\n\nPanel 4: Leaving the ruins, Gaia seeks Elder Nara, the village's oldest denizen, her mind teeming with revelations. Dialogue: \"Elder Nara, our past calls. It speaks of healing, hope.\"\n\nPanel 5: Gaia finds Nara, her wrinkled face etched with wisdom and age. She recounts her discovery, her voice trembling with excitement and fear. Dialogue: \"Nara, our ancestors...they knew. They used the plant...to heal, to connect.\"\n\nPanel 6: Nara's eyes flash with recognition, her old heart thrums with hope. Dialogue: \"Yes, child...we were not destroyers. We were healers.\"\n\nText Box: \"As Gaia's quest for knowledge deepens, the echoes of the past reverberate through the present. The seeds sown by her ancestors sprout, threatening to shatter centuries of ignorance and fear.\""
+      },
+      "scenario_1_complete": true,
+      "scenario_2_complete": true,
+      "scenario_full_complete": true
+    },
+    "2": {
+      "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
+      "nft_index": 2,
+      "scenario_1": {
+        "title": "The Skeptic's Conversion",
+        "body": " Panel 1: Gaia confronts a vocal skeptic from her village, attempting to bridge the gap of understanding. Dialogue: 'You fear what you do not understand. Let me show you.' \nPanel 2: Under Gaia's careful guidance, the skeptic consumes the plant. He experiences profound visions, his prejudices crumbling. Dialogue: 'This...this is not what I expected. It's...beautiful.' \nPanel 3: Inspired by this change, Gaia decides to replicate this experience with other skeptics in her village. Dialogue: 'One mind at a time...we will remember who we truly are.' \nPanel 4: Gaia, filled with hope and resolve, prepares to take on the monumental task of changing hearts and minds. Dialogue: 'They will understand. They must.' \nText Box: 'Gaia's mission takes a promising turn as she successfully converts a skeptic. Empowered, she prepares to spread the truth about the plant's healing powers, one person at a time.'."
+      },
+      "scenario_2": {
+        "title": "The Secret Gathering",
+        "body": " Panel 1: Gaia organizes a secret gathering, inviting those who showed curiosity instead of fear towards her discovery. Dialogue: 'Together, we can remember our heritage.' Panel 2: As night descends, the attendees consume the plant under Gaia's watchful eye, experiencing visions of a world in harmony with nature. Dialogue: 'Feel the connection.. the unity.' Panel 3: Moved by their shared experience, the attendees pledge to help Gaia on her mission. Dialogue: 'We will stand with you, Gaia.' Panel 4: Gaia, filled with gratitude and hope, embraces her new allies. Dialogue: 'Together, we can awaken our people.' Text Box: 'In a bold move, Gaia exposes her secret in a bid to win allies. Her gamble pays off, and she gains the support of a small but determined group of villagers.'."
+      },
+      "scenario_full": {
+        "title": "Part 3",
+        "body": "Part 3\nPanel 1: Gaia, now in the heart of her village, faces a man known for his skepticism. His eyes glint with distrust. Dialogue: \"You fear what you do not understand, Joren. Let me show you.\"\n\nPanel 2: Under a starlit sky, Joren consumes the plant at Gaia's behest. He is engulfed by visions of unity and harmony, his prejudices crumbling. Dialogue: \"This...this is not a nightmare, but a dream. It's...beautiful.\"\n\nPanel 3: Gaia, glowing with the success of her first conversion, addresses a small gathering of curious villagers in secret, their faces lit by the soft glow of flickering torches. Dialogue: \"Together, we can remember our heritage. Feel the connection.. the unity.\"\n\nPanel 4: Moved by the experience and Gaia's resolve, the villagers pledge their support. Dialogue: \"We will stand with you, Gaia.\"\n\nPanel 5: Gaia, her eyes shining with gratitude and hope, embraces her newfound allies. Dialogue: \"Together, we will awaken our people. They will understand. They must.\"\n\nText Box: \"With the conversion of a skeptic and the support of a small group of villagers, Gaia's mission gains momentum. As she strives to unravel the truths of the plant, she sows the seeds of hope and unity within her community.\""
+      },
+      "scenario_1_complete": true,
+      "scenario_2_complete": true,
+      "scenario_full_complete": true
     }
   }
 }

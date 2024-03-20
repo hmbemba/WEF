@@ -1,12 +1,14 @@
 when not defined(js):
   import prologue
   import comps
-  import mynimlib/[prologutils]
+  import mynimlib/[prologutils, nimOpenai]
   import nimtinydb
   import icecream/src/icecream
+  import db/db
+
+
 
 import strformat, sequtils, strutils
-import mynimlib/nimwebc as nwc
 import mynimlib/nimwind as nw
 import mynimlib/nimalpine as na
 import consts
@@ -15,26 +17,8 @@ import karax / [karaxdsl, vdom, vstyles, kbase]
 import handles
 import jsony
 import dekao
-
-
-type
-  scenario* = object
-    title*: string
-    body*: string
-
-  contribution* = object
-    wallet_addy*: string
-    nft_index*: int
-    scenario_1*: scenario
-    scenario_2*: scenario
-    scenario_full*: scenario
-    scenario_1_complete*: bool
-    scenario_2_complete*: bool
-    scenario_full_complete*: bool
-
-
-
-
+import comms
+import safenim
 
 ################
 ## Components ##
@@ -360,290 +344,802 @@ proc generate_scenario_btn*(text:string, ec = "") : string = render:
     class ec & " px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"
     say   text
 
+
+proc issue(nft_num:int) : string = render:
+  let issue_num = case nft_num:
+    of 0..6   : 1
+    of 7..13  : 2
+    of 14..20 : 3
+    of 21..27 : 4
+    of 28..34 : 5
+    of 35..41 : 6
+    of 42..48 : 7
+    else: 0
+
+  tdiv:
+      class "bg-[#A83939aa] text-white rounded-lg p-4 flex flex-col gap-4"
+      tdiv:
+        class "flex items-center justify-between mb-3"
+        h2: 
+          class "text-lg font-semibold"
+          say fmt"Issue {issue_num}"
+        say consts.issues[issue_num-1].title
+      for sentence in consts.issues[issue_num-1].body.split(".").mapIt(it.strip).filterIt(it != ""):
+        p:
+          say sentence & "."
+
+proc nft_finished_notif : string = render :
+    tdiv:
+        class """text-xl flex flex-col gap-4 text-center cursor-pointer p-4 mb-4 text-sm text-green-800 rounded-lg 
+        bg-green-50 dark:bg-gray-800 dark:text-green-400"""
+
+        tdiv:
+          say "Great Job!"
+
+        tdiv:
+          say "Your contribution to the story is in! "
+
+        tdiv:
+          say "Join the Community Chat Room"
+
+
+
 ################
 ## Routes     ##
 ################
+
 when not defined(js):
+  template catch_server_err(db_tx: untyped, err_msg: string, body: untyped)  : untyped =
+      if not db_tx.ok:
+          icr err_msg
+          icr db_tx.err
+          await ctx.respond(Http500, err_msg)
+          body
+
+
+  proc upsert_scenario_1(contrib : contribution) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+      ContribDB().upsert(
+          %contrib,
+          (Where("wallet_addy") == %contrib.wallet_addy ) &
+          (Where("nft_index")   == %contrib.nft_index   )
+      )
+
+  proc upsert_scenario_2 (contrib : contribution) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+      ContribDB().upsert(
+                          %*{
+                              "scenario_2_complete": true,
+                              "scenario_2": %contrib.scenario_2
+                          },
+                          (Where("wallet_addy") == %contrib.wallet_addy ) &
+                          (Where("nft_index")   == %contrib.nft_index   )
+                      )
+  proc upsert_scenario_full(contrib : contribution) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+      ContribDB().upsert(
+                          %*{
+                              "scenario_full_complete": true,
+                              "scenario_full"         : %contrib.scenario_full
+                          },
+                          (Where("wallet_addy") == %contrib.wallet_addy ) &
+                          (Where("nft_index")   == %contrib.nft_index   )
+                      )
+  
+  proc upsert_scenario_full(nft_index : int, wallet_addy, scenario_full : string) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+      ContribDB().upsert(
+                          %*{
+                              "scenario_full_complete": true,
+                              "scenario_full"         : %scenario(title: fmt"Part {nft_index + 1}", body : scenario_full )
+                          },
+                          (Where("wallet_addy") == %wallet_addy ) &
+                          (Where("nft_index")   == %nft_index   )
+                      )
+
+  template check_prev_contrib_complete(nft_num:int, body: untyped) : untyped = 
+    let prev_contrib = ContribDB().get( contribution,
+            (Where("nft_index") == %(nft_num - 1))
+          )
+    
+    prev_contrib.catch_server_err("prev_contrib is not ok"):
+      body
+    
+    if prev_contrib.val.isNone:
+      icr "The contribution before this must be complete, before you can contribute to this one"
+      
+      let url = "/contribute"
+      resp errFlash(url, consts.flash_token_name,
+          "The contribution before this must be complete, before you can contribute to this one",
+          consts.jwt_secret)
+      
+      body
+
+    if not prev_contrib.val.get.item.scenario_full_complete:
+      icr "Previous contribution was found, but not complete"
+      
+      let url = "/contribute"
+      resp errFlash(url, consts.flash_token_name,
+          "The contribution before this must be complete, before you can contribute to this one", consts.jwt_secret)
+      
+      body
+    
   proc put_in_p_tag*(text: string): string = fmt"""<p> {text} </p>"""
 
-  proc cgpt_selection*(ctx: Context) {.async.} =
-    let contrib_db = newTinyDB(consts.db_path, "contributions")
+  # proc cgpt_selection*(ctx: Context) {.async.} =
 
-    case ctx.request.reqMethod:
-      of HttpGet:
-        icb "cgpt_selection get flow"
-        let wallet_addy = ctx.getQueryParamsOption("wallet_addy")
-        let nft_index = ctx.getQueryParamsOption("nft_index")
-        if wallet_addy.isNone or nft_index.isNone:
-          icr "wallet_addy or nft_index is None"
-          await ctx.respond(Http400, "Bad Request")
-        icb "wallet_addy: " & wallet_addy.get
-        icb "nft_index: " & nft_index.get
+  #   case ctx.request.reqMethod:
+  #     of HttpPost:
+  #       case ctx.request.contentType:
+  #         of "application/json":
+  #           icb "cgpt_selection post flow"
 
-        let get_contrib = contrib_db.get(
-                contribution,
-                (Where("wallet_addy") == %wallet_addy.get) &
-                (Where("nft_index") == %nft_index.get.parseInt)
-              )
-        if not get_contrib.ok:
-          icr "get_contrib is not ok"
-          await ctx.respond(Http500, "Internal Server Error")
-        if get_contrib.val.isNone:
-          icr "No contribution found with the wallet_addy: " & wallet_addy.get &
-              " and nft_index: " & nft_index.get
-          await ctx.respond(Http404, "Contribution not found")
-        await ctx.respond(Http200, get_contrib.val.get.item.toJson)
+  #           let msg = ctx.getPostMsg(comms.postMsg)
+            
+  #           icb msg
 
-      of HttpPost:
-        case ctx.request.contentType:
-          of "application/json":
-            icb "cgpt_selection post flow"
+  #           case msg.kind:
+  #               of cgpt_selection:
+                    
+  #                   icb msg.contrib
+                    
+  #                   if msg.contrib.scenario_1_complete:
+  #                       ic msg.contrib.scenario_1
+                        
+  #                       let upsert_req = msg.contrib.upsert_scenario_1()
+  #                       upsert_req.catch_server_err("Error upserting scenario 1"):
+  #                         return
+                        
+  #                       await ctx.respond(Http200,"")
+  #                       return
+                    
+  #                   if msg.contrib.scenario_2_complete:
+                        
+  #                       let upsert_req = msg.contrib.upsert_scenario_2()
+  #                       upsert_req.catch_server_err("Error upserting scenario 2"):
+  #                         return
+                        
+  #                       await ctx.respond(Http200,"")
+  #                       return
+                    
+  #                   if msg.contrib.scenario_full_complete:
+                        
+  #                       let upsert_req = msg.contrib.upsert_scenario_full()
+  #                       upsert_req.catch_server_err("Error upserting full scenario"):
+  #                         return
+                        
+  #                       await ctx.respond(Http200,"")
+  #                       return
+                    
+  #                   icr "No scenario complete flag was set", "We should never get here"
+  #                   await ctx.respond(Http500, "Internal Server Error - Upsert Failed")
+  #                   return
 
-            let data = ctx.request.body.parseJson
-            # ic $data
-            let data_obj = ctx.request.body.fromJson(contribution)
-            ic $data_obj
-            let upsert_req = contrib_db.upsert(
-                data,
-                (Where("wallet_addy") == data["wallet_addy"]) &
-                (Where("nft_index") == data["nft_index"])
-            )
-            if not upsert_req.ok:
-              icr "upsert_req is not ok"
-              await ctx.respond(Http500, "Internal Server Error - Upsert Failed")
-            await ctx.respond(Http200, "Hello World")
-          else:
-            await ctx.respond(Http415, "Unsupported Media Type")
-      else:
-        await ctx.respond(Http405, "Method Not Allowed")
+                    
+  #               of prompt_cgpt: 
+  #                   let prompt = msg.prompt.prompt
+  #                   ic prompt
+  #                   {.cast(gcsafe).}:
+  #                       let resp = waitFor nimopenai.text_prompt(consts.open_ai_key, gpt_4.name, prompt)
+                    
+  #                   resp.catch_server_err("Internal Server Error - OpenAI Request Failed"):
+  #                     return
+                    
+  #                   let cgpt_resp_msg = resp.val.get.getMsg
+                    
+  #                   ic cgpt_resp_msg
+                    
+  #                   await ctx.respond(Http200, cgpt_resp_msg)
+  #         else:
+  #           await ctx.respond(Http415, "Unsupported Media Type")
+  #     else:discard
+
+  template catch_db_err(db_tx: untyped, err_msg: string, body: untyped)  : untyped =
+      if not db_tx.ok:
+          icr err_msg
+          icr db_tx.err
+          await ctx.respond(Http500, err_msg)
+          body
 
   proc cgpt_page*(ctx: Context) {.async.} =
-    let wallet_addy = ctx.getPathParams("wallet_addy")
-    let nft_num = ctx.getPathParams("nft_num")
-    ic "wallet_addy: " & wallet_addy
-    ic "nft_num: " & nft_num
+      let wallet_addy                = ctx.getPathParams("wallet_addy")
+      let nft_num                    = ctx.getPathParams("nft_num")
+      let (chapter_num, section_num) = nft_num.parseInt.get_chap_sec_num() 
+      
+      icb wallet_addy ,
+        nft_num      ,
+        chapter_num  ,
+        section_num  
 
-    let nft_path = case nft_num.parseInt:
-      of 0..6:
-        fmt"/static/img/nfts/1.png"
-      of 7..13:
-        fmt"/static/img/nfts/2.png"
-      of 14..20:
-        fmt"/static/img/nfts/3.png"
-      of 21..27:
-        fmt"/static/img/nfts/4.png"
-      of 28..34:
-        fmt"/static/img/nfts/5.png"
-      of 35..41:
-        fmt"/static/img/nfts/6.png"
-      of 42..48:
-        fmt"/static/img/nfts/7.png"
-      else:
-        "unknown"
-    
-    icb nft_path
-
-    let contrib_db = newTinyDB(consts.db_path, "contributions")
-    icb "cgpt_selection get flow"
-    let get_contrib = contrib_db.get(
-            contribution,
-            (Where("wallet_addy") == %wallet_addy) &
-            (Where("nft_index") == %nft_num.parseInt)
-          )
-
-    if not get_contrib.ok:
-      icr "get_contrib is not ok"
-      await ctx.respond(Http500, "Internal Server Error")
-
-    if nft_num.parseInt > 0:
-      let prev_contrib = contrib_db.get(
+      let this_contrib = ContribDB().get(
               contribution,
-              (Where("nft_index") == %(nft_num.parseInt - 1))
+              (Where("wallet_addy") == %wallet_addy     ) &
+              (Where("nft_index")   == %nft_num.parseInt)
             )
-      if not prev_contrib.ok:
-        icr "prev_contrib is not ok"
-        await ctx.respond(Http500, "Internal Server Error")
-      if prev_contrib.val.isNone:
-        icr "The contribution before this must be complete, before you can contribute to this one"
-        let url = fmt"/contribute"
-        resp errFlash(url, consts.flash_token_name,
-            "The contribution before this must be complete, before you can contribute to this one",
-            consts.jwt_secret)
-        return
-      if not prev_contrib.val.get.item.scenario_full_complete:
-        icr "Previous contribution was found, but not complete"
-        let url = fmt"/contribute"
-        resp errFlash(url, consts.flash_token_name,
-            "The contribution before this must be complete, before you can contribute to this one", consts.jwt_secret)
-        return
-
-    let finished_notif = """
-    <div class="text-xl flex flex-col gap-4 text-center cursor-pointer p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-  
-      <div>Great Job!</div> 
-
-      <div>
-        Your contribution to the story is in! 
-      </div>
-
-      <div>Join the Community Chat Room</div>
-    
-    </div>
-    """.verbatim
-
-    let unfinished_notif = buildHtml(tdiv(
-        class = "p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400",
-        role = "alert")):
-      span(class = "font-medium"):
-        vdom.text "Finish your story!"
-      vdom.text " The rest of the story can't be compelete without you..."
-
-    let status_notif =
-      if get_contrib.val.isSome:
-            if get_contrib.val.get.item.scenario_full_complete:
-                finished_notif
-            else:
-                unfinished_notif
-        else:
-          unfinished_notif
-
-    let body = ppostNavCol("container mx-auto p-4 text-white"):
-      h1(class = "text-4xl font-bold mb-6"):
-        vdom.text "COMIC ZONE"
-      tdiv(class = "flex flex-wrap -mx-2 justify-center"):
-        # Left Column
-        tdiv(class = "w-full md:w-1/2 px-2 mb-4"):
-          tdiv(class = "bg-[#A83939aa] text-white rounded-lg p-4"):
-            tdiv(class = "flex items-center justify-between mb-3"):
-              h2(class = "text-lg font-semibold"):
-                vdom.text "Loss"
-              span:
-                vdom.text "Details"
-            p:
-              vdom.text "Section 1.1: Gaia's perspective - Mourning the death of her mother and feeling lost."
-          tdiv(class = "mt-4"):
-            # Placeholder for NFT image
-            tdiv(class = "bg-gray-500 h-64 rounded-lg flex items-center justify-center"):
-              img(src = nft_path, alt = "NFT Image", class = "w-full h-full object-cover")
-              #span:
-              #  vdom.text "NFT image here"
-
-        # Right Column
-        tdiv(class = "md:max-w-sm w-full md:w-1/2 px-2 mb-4"):
-          tdiv(class = "bg-[#B2B2B5EE] ring-8 ring-black text-black rounded-lg p-4"):
-            h2(class = "text-4xl text-center font-semibold mb-2"):
-              vdom.text "Gaia"
-            p(class="text-xl"):
-              vdom.text "A mid-twenties woman"
-            ul(class = "text-lg flex flex-col gap-2  ml-4 mt-2"):
-              block:
-                let texts = @[
-                  "Strong minded curious",
-                  "confused",
-                  "Determined",
-                  "Broken Hearted",
-
-                ]
-                for text in texts:
-                  li:
-                    vdom.text text
-            # Add more traits here
-            tdiv(class = "mt-4"):
-              h3(class = "text-2xl font-semibold text-center text-[#8773F5]"):
-                vdom.text "The Unknown:"
-              ul(class = "text-lg list-disc ml-4 mt-2 flex flex-col gap-6"):
-                let texts = @[
-                  "Why was Gaia chosen to save humanity?",
-                  "Who are these people she encounters along the way?",
-                  "Does she ever find peace in her mothers death?",
-                  "Can humanity reunite with their ancestral history and thrive again",
-                ]
-                for text in texts:
-                  li:
-                    vdom.text text
-
-        # Notify the user if their section is complete or not
-        status_notif
-
-        # Scenario Section
-        tdiv(id = $scenario_section, class = "flex flex-col gap-4 w-full"):
-          # If Scenario 1 is not complete
-          if get_contrib.val.isNone or get_contrib.val.get.item.scenario_1_complete == false:
-            # Ghost Writer Card 1
-            tdiv(id = $ghost_writer_card_1,
-                class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
-                x-data = "{ activeTab: '' }")#:
-              # button(id = fmt"{$gen_first_scenario_btn}",
-              #     class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
-              #   vdom.text "Generate Scenario's with ChatGPT"
+      this_contrib.catch_db_err("get_contrib is not ok"): 
+          return
+        
+      onPost:
+          ic "Incoming Post Request to cgpt_page"
+          let msg = ctx.getPostMsg(comms.postMsg)
           
-          else:
-            # If Scenario 1 is complete
-            if get_contrib.val.get.item.scenario_1_complete:
-              # Ghost Writer Card 2
-              tdiv(id = $ghost_writer_card_1,
-                  class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
-                  x-data = "{ activeTab: '' }"):
-                # Build Ghost Writer Tab for Scenario 1
-                ghost_writer_tab2(
-                  get_contrib.val.get.item.scenario_1.title,
-                  get_contrib.val.get.item.scenario_1.body,
-                  "scenario_1",
-                  1,
-                  $selected_scenario_1
-                ).verbatim
-                # if not get_contrib.val.get.item.scenario_2_complete:
-                #   button(id = fmt"{$second_scenario_btn}",
-                #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
-                #     vdom.text "Generate 3 more scenarios with ChatGPT"
+          icb msg
 
-            # If Scenario 2 is complete
-            if get_contrib.val.get.item.scenario_2_complete:
-              # Ghost Writer Card
-              tdiv(id = $ghost_writer_card_2,
-                  class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
-                  x-data = "{ activeTab: '' }"):
-                # Build Ghost Writer Tab for Scenario 1
-                ghost_writer_tab2(
-                  get_contrib.val.get.item.scenario_2.title,
-                  get_contrib.val.get.item.scenario_2.body,
-                  "scenario_2",
-                  2,
-                  $selected_scenario_2
-                ).verbatim
-                # if not get_contrib.val.get.item.scenario_full_complete:
-                #   button(id = fmt"{$cgpt_final_submit_btn}",
-                #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
-                #     vdom.text "Send your final selections to our Story AI"
+          case msg.kind:
+              of err: discard
+              # of get_prev_info: 
+                
 
-            # If Final Scenario is complete
-            if get_contrib.val.get.item.scenario_full_complete:
-              # Ghost Writer Card
-              tdiv(id = $ghost_writer_card_3,
-                  class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
-                  x-data = "{ activeTab: '' }"):
-                # Build Ghost Writer Tab for Scenario 1
-                ghost_writer_tab2(
-                  get_contrib.val.get.item.scenario_full.title,
-                  get_contrib.val.get.item.scenario_full.body.replace("\n\n",
-                      "\n").split("\n").mapIt(it.put_in_p_tag).join("\n"),
-                  "scenario_full",
-                  3,
-                  $selected_scenario_full,
-                  left = true
-                ).verbatim
 
-    let top_nav = top_nav_2()
-    let bbody = render:
-      bbase:
-          say """
-              <script type="module" src="/static/js/cgpt_page_fe.js "></script>
-              """
-          say "<!-- Top Nav -->"
-          say top_nav
-          say $body
+              #   let msg = SendPrevInfo(prev_info)
+                
+              #   resp jsonResponse %msg
+              
+              of set_contribution:                      
+                  if msg.contrib.scenario_1_complete:
+                      ic "Scenario 1 is complete"
+                      
+                      let upsert_req = msg.contrib.upsert_scenario_1()
+                      upsert_req.catch_server_err("Error upserting scenario 1"):
+                        return
+                      
+                      await ctx.respond(Http200,"")
+                      return
+                  
+                  if msg.contrib.scenario_2_complete:
+                      ic "Scenario 2 is complete"
+                      
+                      let upsert_req = msg.contrib.upsert_scenario_2()
+                      upsert_req.catch_server_err("Error upserting scenario 2"):
+                        return
+                      
+                      await ctx.respond(Http200,"")
+                      return
+                  
+                  if msg.contrib.scenario_full_complete:
+                      ic "Full Scenario is complete"
+                      
+                      let upsert_req = msg.contrib.upsert_scenario_full()
+                      upsert_req.catch_server_err("Error upserting full scenario"):
+                        return
+                      
+                      await ctx.respond(Http200,"")
+                      return
+                  
+                  icr "No scenario complete flag was set", "We should never get here"
+                  await ctx.respond(Http500, "Internal Server Error - Upsert Failed: No scenario complete flag was set")
+                  return
+
+                  
+              of prompt_cgpt: 
+                  ic "Incoming prompt_cgpt request"
+                  ic msg.scenario_num
+                  
+                  let prev_story = ContribDB().get_prev_story()
+                  
+                  var 
+                    scenario_1, scenario_2: scenario #= this_contrib.val.get.item.scenario_1
+                  
+                  if this_contrib.val.isSome:
+                    scenario_1 = this_contrib.val.get.item.scenario_1
+                    scenario_2 = this_contrib.val.get.item.scenario_2
+                
+                  icb prev_story, scenario_1, scenario_2
+
+                  let prompt       = consts.buildPrompt(
+                      chapter_num  = chapter_num                , 
+                      section_num  = section_num                , 
+                      scenario_num = msg.scenario_num           ,
+                      
+                      selection_1  = if scenario_1.title != "": scenario_1.title & " " & scenario_1.body else: "" ,
+                      selection_2  = if scenario_2.title != "": scenario_2.title & " " & scenario_2.body else: "" ,
+                      previously_generated_story = prev_story.val.get
+                  )
+
+                  if not prompt.ok:
+                      icr prompt.err
+                      resp jsonResponse %ServerErr("Prompt Generation Failed :" & prompt.err)
+                                          
+                  ic prompt.val.get
+                    
+                  icb "Sending prompt to OpenAI..."
+                  {.cast(gcsafe).}:
+                      let resp = waitFor nimopenai.text_prompt(consts.open_ai_key, gpt_4.name, prompt.val.get)
+                  
+                  if not resp.ok:
+                      icr resp.err
+                      resp jsonResponse %ServerErr("OpenAI Request Failed :" & resp.err)
+
+                  ic "OpenAI Request Successful"
+
+                  let cgpt_resp_msg = resp.val.get.getMsg                      
+                  icb cgpt_resp_msg
+
+                  if msg.scenario_num < 3:
+          
+                      let scenarios = cgpt_resp_msg.asObj(seq[comms.scenario])
+                      if not scenarios.ok:
+                          icr scenarios.err
+                          resp jsonResponse %ServerErr("Error parsing OpenAI response: " & scenarios.err)
+                      
+                      ic "OpenAI Response Parsed Successfully"
+
+                      resp jsonResponse %SendScenarios(scenarios.val.get)
+                  
+                  else:
+                      let upsert_req = upsert_scenario_full(nft_num.parseInt, wallet_addy, cgpt_resp_msg)
+                      if not upsert_req.ok:
+                          icr upsert_req.err
+                          resp jsonResponse %ServerErr("Error upserting full scenario: " & upsert_req.err)
+                          return
+                      
+                      ic "Successfully upserted full scenario"
+
+                      # Send the full story to the client
+                      resp jsonResponse %SendScenarioFull(cgpt_resp_msg)
     
-    resp htmlResponse bbody
+      onGet:
+
+          # If we are working on any NFT other than the first one
+          # Check if the previous contribution is complete
+          # And if not, redirect the user BACK to the contribute page
+          if nft_num.parseInt > 0:
+            nft_num.parseInt.check_prev_contrib_complete: return
+
+          let nft_path = fmt"/static/img/nfts/{chapter_num}.png"
+          
+          icb "cgpt set contriib flow", nft_path
+
+          let get_contrib = ContribDB().get(
+                  contribution,
+                  (Where("wallet_addy") == %wallet_addy     ) &
+                  (Where("nft_index")   == %nft_num.parseInt)
+                )
+          
+          get_contrib.catch_db_err("get_contrib is not ok"): 
+              return
+
+          ic get_contrib
+
+          let unfinished_notif = 
+            buildHtml tdiv(class = "p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"):
+              span(class = "font-medium"):
+                vdom.text "Finish your story!"
+              vdom.text " The rest of the story can't be compelete without you..."
+
+          let status_notif =
+            if get_contrib.val.isSome:
+                  if get_contrib.val.get.item.scenario_full_complete:
+                      nft_finished_notif().verbatim
+                  else:
+                      unfinished_notif
+              else:
+                unfinished_notif
+
+          let body = ppostNavCol("container mx-auto p-4 text-white"):
+            h1(class = "text-4xl font-bold mb-6"):
+              vdom.text "COMIC ZONE"
+            tdiv(class = "flex flex-wrap -mx-2 justify-center"):
+              # Left Column
+              tdiv(class = "w-full md:w-1/2 px-2 mb-4"):
+                issue(nft_num.parseInt).verbatim
+
+                tdiv(class = "mt-4"):
+                  # Placeholder for NFT image
+                  tdiv(class = "bg-gray-500 h-64 rounded-lg flex items-center justify-center"):
+                    img(src = nft_path, alt = "NFT Image", class = "w-full h-full object-cover")
+
+
+              # Right Column
+              tdiv(class = "md:max-w-sm w-full md:w-1/2 px-2 mb-4"):
+                tdiv(class = "bg-[#B2B2B5EE] ring-8 ring-black text-black rounded-lg p-4"):
+                  h2(class = "text-4xl text-center font-semibold mb-2"):
+                    vdom.text "Gaia"
+                  p(class="text-xl"):
+                    vdom.text "A mid-twenties woman"
+                  ul(class = "text-lg flex flex-col gap-2  ml-4 mt-2"):
+                    block:
+                      let texts = @[
+                        "Strong minded curious",
+                        "confused",
+                        "Determined",
+                        "Broken Hearted",
+
+                      ]
+                      for text in texts:
+                        li:
+                          vdom.text text
+                  # Add more traits here
+                  tdiv(class = "mt-4"):
+                    h3(class = "text-2xl font-semibold text-center text-[#8773F5]"):
+                      vdom.text "The Unknown:"
+                    ul(class = "text-lg list-disc ml-4 mt-2 flex flex-col gap-6"):
+                      let texts = @[
+                        "Why was Gaia chosen to save humanity?",
+                        "Who are these people she encounters along the way?",
+                        "Does she ever find peace in her mothers death?",
+                        "Can humanity reunite with their ancestral history and thrive again",
+                      ]
+                      for text in texts:
+                        li:
+                          vdom.text text
+
+              # Notify the user if their section is complete or not
+              status_notif
+
+              # Scenario Section
+              tdiv(id = $scenario_section, class = "flex flex-col gap-4 w-full items-center"):
+                # If Scenario 1 is not complete
+                if get_contrib.val.isNone or get_contrib.val.get.item.scenario_1_complete == false:
+                  # Ghost Writer Card 1
+                  tdiv(id = $ghost_writer_card_1,
+                      class = "md:max-w-4xl bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+                      x-data = "{ activeTab: '' }")#:
+                    # button(id = fmt"{$gen_first_scenario_btn}",
+                    #     class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+                    #   vdom.text "Generate Scenario's with ChatGPT"
+                
+                else:
+                  # If Scenario 1 is complete
+                  if get_contrib.val.get.item.scenario_1_complete:
+                    # Ghost Writer Card 2
+                    tdiv(id = $ghost_writer_card_1,
+                        class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+                        x-data = "{ activeTab: '' }"):
+                      # Build Ghost Writer Tab for Scenario 1
+                      ghost_writer_tab2(
+                        get_contrib.val.get.item.scenario_1.title,
+                        get_contrib.val.get.item.scenario_1.body,
+                        "scenario_1",
+                        1,
+                        $selected_scenario_1
+                      ).verbatim
+                      # if not get_contrib.val.get.item.scenario_2_complete:
+                      #   button(id = fmt"{$second_scenario_btn}",
+                      #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+                      #     vdom.text "Generate 3 more scenarios with ChatGPT"
+
+                  # If Scenario 2 is complete
+                  if get_contrib.val.get.item.scenario_2_complete:
+                    # Ghost Writer Card
+                    tdiv(id = $ghost_writer_card_2,
+                        class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+                        x-data = "{ activeTab: '' }"):
+                      # Build Ghost Writer Tab for Scenario 1
+                      ghost_writer_tab2(
+                        get_contrib.val.get.item.scenario_2.title,
+                        get_contrib.val.get.item.scenario_2.body,
+                        "scenario_2",
+                        2,
+                        $selected_scenario_2
+                      ).verbatim
+                      # if not get_contrib.val.get.item.scenario_full_complete:
+                      #   button(id = fmt"{$cgpt_final_submit_btn}",
+                      #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+                      #     vdom.text "Send your final selections to our Story AI"
+
+                  # If Final Scenario is complete
+                  if get_contrib.val.get.item.scenario_full_complete:
+                    # Ghost Writer Card
+                    tdiv(id = $ghost_writer_card_3,
+                        class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+                        x-data = "{ activeTab: '' }"):
+                      # Build Ghost Writer Tab for Scenario 1
+                      ghost_writer_tab2(
+                        get_contrib.val.get.item.scenario_full.title,
+                        get_contrib.val.get.item.scenario_full.body.replace("\n\n",
+                            "\n").split("\n").mapIt(it.put_in_p_tag).join("\n"),
+                        "scenario_full",
+                        3,
+                        $selected_scenario_full,
+                        left = true
+                      ).verbatim
+
+          let top_nav = top_nav_2()
+          let bbody = render:
+            bbase:
+                say """
+                    <script type="module" src="/static/js/cgpt_page_fe.js "></script>
+                    """
+                say "<!-- Top Nav -->"
+                say top_nav
+                say $body
+          
+          resp prologutils.htmlResponse bbody
+      
+
+
+
+      # case ctx.request.reqMethod:
+        
+      #     of HttpPost:
+      #         ic "Incoming Post Request to cgpt_page"
+      #         let msg = ctx.getPostMsg(comms.postMsg)
+              
+      #         icb msg
+
+      #         case msg.kind:
+      #             of err: discard
+      #             # of get_prev_info: 
+                    
+
+
+      #             #   let msg = SendPrevInfo(prev_info)
+                    
+      #             #   resp jsonResponse %msg
+                  
+      #             of set_contribution:                      
+      #                 if msg.contrib.scenario_1_complete:
+      #                     ic "Scenario 1 is complete"
+                          
+      #                     let upsert_req = msg.contrib.upsert_scenario_1()
+      #                     upsert_req.catch_server_err("Error upserting scenario 1"):
+      #                       return
+                          
+      #                     await ctx.respond(Http200,"")
+      #                     return
+                      
+      #                 if msg.contrib.scenario_2_complete:
+      #                     ic "Scenario 2 is complete"
+                          
+      #                     let upsert_req = msg.contrib.upsert_scenario_2()
+      #                     upsert_req.catch_server_err("Error upserting scenario 2"):
+      #                       return
+                          
+      #                     await ctx.respond(Http200,"")
+      #                     return
+                      
+      #                 if msg.contrib.scenario_full_complete:
+      #                     ic "Full Scenario is complete"
+                          
+      #                     let upsert_req = msg.contrib.upsert_scenario_full()
+      #                     upsert_req.catch_server_err("Error upserting full scenario"):
+      #                       return
+                          
+      #                     await ctx.respond(Http200,"")
+      #                     return
+                      
+      #                 icr "No scenario complete flag was set", "We should never get here"
+      #                 await ctx.respond(Http500, "Internal Server Error - Upsert Failed: No scenario complete flag was set")
+      #                 return
+
+                      
+      #             of prompt_cgpt: 
+      #                 ic "Incoming prompt_cgpt request"
+      #                 ic msg.scenario_num
+                      
+      #                 let prev_story = ContribDB().get_prev_story()
+                      
+      #                 var 
+      #                   scenario_1, scenario_2: scenario #= this_contrib.val.get.item.scenario_1
+                      
+      #                 if this_contrib.val.isSome:
+      #                   scenario_1 = this_contrib.val.get.item.scenario_1
+      #                   scenario_2 = this_contrib.val.get.item.scenario_2
+                    
+      #                 icb prev_story, scenario_1, scenario_2
+
+      #                 let prompt       = consts.buildPrompt(
+      #                     chapter_num  = chapter_num                , 
+      #                     section_num  = section_num                , 
+      #                     scenario_num = msg.scenario_num           ,
+                          
+      #                     selection_1  = if scenario_1.title != "": scenario_1.title & " " & scenario_1.body else: "" ,
+      #                     selection_2  = if scenario_2.title != "": scenario_2.title & " " & scenario_2.body else: "" ,
+      #                     previously_generated_story = prev_story.val.get
+      #                 )
+
+      #                 if not prompt.ok:
+      #                     icr prompt.err
+      #                     resp jsonResponse %ServerErr("Prompt Generation Failed :" & prompt.err)
+                                              
+      #                 ic prompt.val.get
+                        
+      #                 icb "Sending prompt to OpenAI..."
+      #                 {.cast(gcsafe).}:
+      #                     let resp = waitFor nimopenai.text_prompt(consts.open_ai_key, gpt_4.name, prompt.val.get)
+                      
+      #                 if not resp.ok:
+      #                     icr resp.err
+      #                     resp jsonResponse %ServerErr("OpenAI Request Failed :" & resp.err)
+
+      #                 ic "OpenAI Request Successful"
+
+      #                 let cgpt_resp_msg = resp.val.get.getMsg                      
+      #                 icb cgpt_resp_msg
+
+      #                 if msg.scenario_num < 3:
+              
+      #                     let scenarios = cgpt_resp_msg.asObj(seq[comms.scenario])
+      #                     if not scenarios.ok:
+      #                         icr scenarios.err
+      #                         resp jsonResponse %ServerErr("Error parsing OpenAI response: " & scenarios.err)
+                          
+      #                     ic "OpenAI Response Parsed Successfully"
+
+      #                     resp jsonResponse %SendScenarios(scenarios.val.get)
+                      
+      #                 else:
+      #                     let upsert_req = upsert_scenario_full(nft_num.parseInt, wallet_addy, cgpt_resp_msg)
+      #                     if not upsert_req.ok:
+      #                         icr upsert_req.err
+      #                         resp jsonResponse %ServerErr("Error upserting full scenario: " & upsert_req.err)
+      #                         return
+                          
+      #                     ic "Successfully upserted full scenario"
+
+      #                     # Send the full story to the client
+      #                     resp jsonResponse %SendScenarioFull(cgpt_resp_msg)
+        
+      #     of HttpGet:
+
+      #         # If we are working on any NFT other than the first one
+      #         # Check if the previous contribution is complete
+      #         # And if not, redirect the user BACK to the contribute page
+      #         if nft_num.parseInt > 0:
+      #           nft_num.parseInt.check_prev_contrib_complete: return
+
+      #         let nft_path = fmt"/static/img/nfts/{chapter_num}.png"
+              
+      #         icb "cgpt set contriib flow", nft_path
+
+      #         let get_contrib = ContribDB().get(
+      #                 contribution,
+      #                 (Where("wallet_addy") == %wallet_addy     ) &
+      #                 (Where("nft_index")   == %nft_num.parseInt)
+      #               )
+              
+      #         get_contrib.catch_db_err("get_contrib is not ok"): 
+      #             return
+
+      #         ic get_contrib
+
+
+
+
+      #         let unfinished_notif = 
+      #           buildHtml tdiv(class = "p-4 mb-4 text-lg text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"):
+      #             span(class = "font-medium"):
+      #               vdom.text "Finish your story!"
+      #             vdom.text " The rest of the story can't be compelete without you..."
+
+      #         let status_notif =
+      #           if get_contrib.val.isSome:
+      #                 if get_contrib.val.get.item.scenario_full_complete:
+      #                     nft_finished_notif().verbatim
+      #                 else:
+      #                     unfinished_notif
+      #             else:
+      #               unfinished_notif
+
+      #         let body = ppostNavCol("container mx-auto p-4 text-white"):
+      #           h1(class = "text-4xl font-bold mb-6"):
+      #             vdom.text "COMIC ZONE"
+      #           tdiv(class = "flex flex-wrap -mx-2 justify-center"):
+      #             # Left Column
+      #             tdiv(class = "w-full md:w-1/2 px-2 mb-4"):
+      #               issue(nft_num.parseInt).verbatim
+
+      #               tdiv(class = "mt-4"):
+      #                 # Placeholder for NFT image
+      #                 tdiv(class = "bg-gray-500 h-64 rounded-lg flex items-center justify-center"):
+      #                   img(src = nft_path, alt = "NFT Image", class = "w-full h-full object-cover")
+
+
+      #             # Right Column
+      #             tdiv(class = "md:max-w-sm w-full md:w-1/2 px-2 mb-4"):
+      #               tdiv(class = "bg-[#B2B2B5EE] ring-8 ring-black text-black rounded-lg p-4"):
+      #                 h2(class = "text-4xl text-center font-semibold mb-2"):
+      #                   vdom.text "Gaia"
+      #                 p(class="text-xl"):
+      #                   vdom.text "A mid-twenties woman"
+      #                 ul(class = "text-lg flex flex-col gap-2  ml-4 mt-2"):
+      #                   block:
+      #                     let texts = @[
+      #                       "Strong minded curious",
+      #                       "confused",
+      #                       "Determined",
+      #                       "Broken Hearted",
+
+      #                     ]
+      #                     for text in texts:
+      #                       li:
+      #                         vdom.text text
+      #                 # Add more traits here
+      #                 tdiv(class = "mt-4"):
+      #                   h3(class = "text-2xl font-semibold text-center text-[#8773F5]"):
+      #                     vdom.text "The Unknown:"
+      #                   ul(class = "text-lg list-disc ml-4 mt-2 flex flex-col gap-6"):
+      #                     let texts = @[
+      #                       "Why was Gaia chosen to save humanity?",
+      #                       "Who are these people she encounters along the way?",
+      #                       "Does she ever find peace in her mothers death?",
+      #                       "Can humanity reunite with their ancestral history and thrive again",
+      #                     ]
+      #                     for text in texts:
+      #                       li:
+      #                         vdom.text text
+
+      #             # Notify the user if their section is complete or not
+      #             status_notif
+
+      #             # Scenario Section
+      #             tdiv(id = $scenario_section, class = "flex flex-col gap-4 w-full items-center"):
+      #               # If Scenario 1 is not complete
+      #               if get_contrib.val.isNone or get_contrib.val.get.item.scenario_1_complete == false:
+      #                 # Ghost Writer Card 1
+      #                 tdiv(id = $ghost_writer_card_1,
+      #                     class = "md:max-w-4xl bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+      #                     x-data = "{ activeTab: '' }")#:
+      #                   # button(id = fmt"{$gen_first_scenario_btn}",
+      #                   #     class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+      #                   #   vdom.text "Generate Scenario's with ChatGPT"
+                    
+      #               else:
+      #                 # If Scenario 1 is complete
+      #                 if get_contrib.val.get.item.scenario_1_complete:
+      #                   # Ghost Writer Card 2
+      #                   tdiv(id = $ghost_writer_card_1,
+      #                       class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+      #                       x-data = "{ activeTab: '' }"):
+      #                     # Build Ghost Writer Tab for Scenario 1
+      #                     ghost_writer_tab2(
+      #                       get_contrib.val.get.item.scenario_1.title,
+      #                       get_contrib.val.get.item.scenario_1.body,
+      #                       "scenario_1",
+      #                       1,
+      #                       $selected_scenario_1
+      #                     ).verbatim
+      #                     # if not get_contrib.val.get.item.scenario_2_complete:
+      #                     #   button(id = fmt"{$second_scenario_btn}",
+      #                     #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+      #                     #     vdom.text "Generate 3 more scenarios with ChatGPT"
+
+      #                 # If Scenario 2 is complete
+      #                 if get_contrib.val.get.item.scenario_2_complete:
+      #                   # Ghost Writer Card
+      #                   tdiv(id = $ghost_writer_card_2,
+      #                       class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+      #                       x-data = "{ activeTab: '' }"):
+      #                     # Build Ghost Writer Tab for Scenario 1
+      #                     ghost_writer_tab2(
+      #                       get_contrib.val.get.item.scenario_2.title,
+      #                       get_contrib.val.get.item.scenario_2.body,
+      #                       "scenario_2",
+      #                       2,
+      #                       $selected_scenario_2
+      #                     ).verbatim
+      #                     # if not get_contrib.val.get.item.scenario_full_complete:
+      #                     #   button(id = fmt"{$cgpt_final_submit_btn}",
+      #                     #       class = "px-4 py-2 mt-4 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out"):
+      #                     #     vdom.text "Send your final selections to our Story AI"
+
+      #                 # If Final Scenario is complete
+      #                 if get_contrib.val.get.item.scenario_full_complete:
+      #                   # Ghost Writer Card
+      #                   tdiv(id = $ghost_writer_card_3,
+      #                       class = "bg-[#816AFE99] p-4 gap-4 w-full flex flex-col rounded-[10px]",
+      #                       x-data = "{ activeTab: '' }"):
+      #                     # Build Ghost Writer Tab for Scenario 1
+      #                     ghost_writer_tab2(
+      #                       get_contrib.val.get.item.scenario_full.title,
+      #                       get_contrib.val.get.item.scenario_full.body.replace("\n\n",
+      #                           "\n").split("\n").mapIt(it.put_in_p_tag).join("\n"),
+      #                       "scenario_full",
+      #                       3,
+      #                       $selected_scenario_full,
+      #                       left = true
+      #                     ).verbatim
+
+      #         let top_nav = top_nav_2()
+      #         let bbody = render:
+      #           bbase:
+      #               say """
+      #                   <script type="module" src="/static/js/cgpt_page_fe.js "></script>
+      #                   """
+      #               say "<!-- Top Nav -->"
+      #               say top_nav
+      #               say $body
+              
+      #         resp prologutils.htmlResponse bbody
+          
+      #     else: discard
 
 
 
@@ -652,5 +1148,5 @@ when not defined(js):
   ## Route Handlers ##
   ####################
 
-  let cgpt_route* = pattern("/chat/{wallet_addy}/{nft_num}", cgpt_page)
-  let cgpt_selection_route* = pattern("/chat/selection", cgpt_selection, @[Httpget, HttpPost])
+  let cgpt_route*           = pattern("/chat/{wallet_addy}/{nft_num}" , cgpt_page      , @[Httpget, HttpPost] )
+  #let cgpt_selection_route* = pattern("/chat/selection"               , cgpt_selection , @[ HttpPost] )

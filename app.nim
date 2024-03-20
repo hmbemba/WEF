@@ -12,6 +12,7 @@ import icecream
 
 ic "Using blockchain: " & consts.blockchain 
 ic consts.contract_address
+ic consts.rpc_url
 
 
 let settings = 
@@ -40,7 +41,7 @@ app.addRoute(@[
                   admin_route                 ,
                   whitelist_api_route         ,
                   contact_form_submit_route   ,
-                  cgpt_selection_route        ,
+                  #cgpt_selection_route        ,
                   login_route                 ,
 ], "")
 

@@ -2,30 +2,30 @@
 var framePtr = null;
 var excHandler = 0;
 var lastJSError = null;
-var NTI1342177744 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI1342177782 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI33555179 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI134217746 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1006633039 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
 var NTI1006633045 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI134217742 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI536870956 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI536870955 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
 var NTI1258291204 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1258291203 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
 var NTI33555183 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1291845636 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1291845635 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
-var NTI536871184 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI536871156 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1325400071 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
 var NTI1325400072 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
 var NTI1325400070 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
 var NTI1325400069 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
 var NTI1325400068 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI1811939335 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI1811939334 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI1811939333 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI1811939332 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
-var NTI1811939331 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI1342177584 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI2030043143 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI2030043142 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI2030043141 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI2030043140 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
+var NTI2030043139 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI1342177622 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
 var NTI1275068509 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
 var NTI1275068508 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
 var NTI1275068507 = {size: 0,kind: 25,base: null,node: null,finalizer: null};
@@ -93,8 +93,8 @@ var NTI1275068527 = {size: 0, kind: 17, base: null, node: null, finalizer: null}
 var NTI1275068430 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
 var NTI1275068541 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1275068434 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
-var NTI1342177564 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
-var NTI1342177569 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI1342177602 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+var NTI1342177607 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI134217745 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1342177283 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI134217749 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
@@ -713,17 +713,17 @@ NTI1275068485.base = NTI33555173;
 NTI1275068530.base = NTI1275068485;
 NTI1275068541.base = NTI1275068530;
 NTI1275068434.base = NTI1275068541;
-NTI1342177564.base = NTI1275068434;
-var NNI1342177569 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "val", len: 0, typ: NTI1342177564, name: "val", sons: null}, 
+NTI1342177602.base = NTI1275068434;
+var NNI1342177607 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "val", len: 0, typ: NTI1342177602, name: "val", sons: null}, 
 {kind: 1, offset: "has", len: 0, typ: NTI33554466, name: "has", sons: null}]};
-NTI1342177569.node = NNI1342177569;
-NTI1342177584.base = NTI1275068434;
-var NNI1811939331 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "el", len: 0, typ: NTI1275068434, name: "el", sons: null}, 
-{kind: 1, offset: "onShow", len: 0, typ: NTI1811939332, name: "onShow", sons: null}, 
-{kind: 1, offset: "onHide", len: 0, typ: NTI1811939333, name: "onHide", sons: null}, 
-{kind: 1, offset: "onToggle", len: 0, typ: NTI1811939334, name: "onToggle", sons: null}, 
-{kind: 1, offset: "onReset", len: 0, typ: NTI1811939335, name: "onReset", sons: null}]};
-NTI1811939331.node = NNI1811939331;
+NTI1342177607.node = NNI1342177607;
+NTI1342177622.base = NTI1275068434;
+var NNI2030043139 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "el", len: 0, typ: NTI1275068434, name: "el", sons: null}, 
+{kind: 1, offset: "onShow", len: 0, typ: NTI2030043140, name: "onShow", sons: null}, 
+{kind: 1, offset: "onHide", len: 0, typ: NTI2030043141, name: "onHide", sons: null}, 
+{kind: 1, offset: "onToggle", len: 0, typ: NTI2030043142, name: "onToggle", sons: null}, 
+{kind: 1, offset: "onReset", len: 0, typ: NTI2030043143, name: "onReset", sons: null}]};
+NTI2030043139.node = NNI2030043139;
 var NNI1325400068 = {kind: 2, offset: 0, typ: null, name: null, len: 3, sons: {"0": {kind: 1, offset: 0, typ: NTI1325400068, name: "cors", len: 0, sons: null}, 
 "1": {kind: 1, offset: 1, typ: NTI1325400068, name: "no-cors", len: 0, sons: null}, 
 "2": {kind: 1, offset: 2, typ: NTI1325400068, name: "same-origin", len: 0, sons: null}}};
@@ -759,7 +759,7 @@ var NNI1258291204 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []
 NTI1258291204.node = NNI1258291204;
 NTI1258291204.base = NTI33555183;
 NTI1258291203.base = NTI1258291204;
-var NNI536871184 = {kind: 2, len: 11, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "keepalive", len: 0, typ: NTI33554466, name: "keepalive", sons: null}, 
+var NNI536871156 = {kind: 2, len: 11, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "keepalive", len: 0, typ: NTI33554466, name: "keepalive", sons: null}, 
 {kind: 1, offset: "method", len: 0, typ: NTI33554450, name: "metod", sons: null}, 
 {kind: 1, offset: "integrity", len: 0, typ: NTI33554450, name: "integrity", sons: null}, 
 {kind: 1, offset: "referrer", len: 0, typ: NTI33554450, name: "referrer", sons: null}, 
@@ -770,9 +770,9 @@ var NNI536871184 = {kind: 2, len: 11, offset: 0, typ: null, name: null, sons: [{
 {kind: 1, offset: "referrerPolicy", len: 0, typ: NTI33554450, name: "referrerPolicy", sons: null}, 
 {kind: 1, offset: "headers", len: 0, typ: NTI1291845635, name: "headers", sons: null}, 
 {kind: 1, offset: "body", len: 0, typ: NTI1258291203, name: "body", sons: null}]};
-NTI536871184.node = NNI536871184;
-NTI536871184.base = NTI33555183;
-NTI536870956.base = NTI33554435;
+NTI536871156.node = NNI536871156;
+NTI536871156.base = NTI33555183;
+NTI536870955.base = NTI33554435;
 var NNI134217742 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI134217742.node = NNI134217742;
 NTI134217742.base = NTI134217741;
@@ -785,9 +785,9 @@ var NNI33555179 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555179.node = NNI33555179;
 NTI33555179.base = NTI33555177;
 NTI134217746.base = NTI33555179;
-var NNI1342177744 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "val", len: 0, typ: NTI33554450, name: "val", sons: null}, 
+var NNI1342177782 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "val", len: 0, typ: NTI33554450, name: "val", sons: null}, 
 {kind: 1, offset: "has", len: 0, typ: NTI33554466, name: "has", sons: null}]};
-NTI1342177744.node = NNI1342177744;
+NTI1342177782.node = NNI1342177782;
 
 function arrayConstr(len_33557314, value_33557315, typ_33557316) {
         var result = new Array(len_33557314);
@@ -1430,6 +1430,12 @@ framePtr = F.prev;
 var F = {procname: "module sequtils", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\collections\\sequtils.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
+var F = {procname: "module sets", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\collections\\sets.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module sets", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\collections\\sets.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 var F = {procname: "module nimjs", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
@@ -1448,6 +1454,96 @@ framePtr = F.prev;
 var F = {procname: "module nimThirdweb", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimThirdweb.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
+var F = {procname: "module osseps", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osseps.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module osseps", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osseps.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module pathnorm", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\pathnorm.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module pathnorm", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\pathnorm.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module oserrors", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\oserrors.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module oserrors", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\oserrors.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module oscommon", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\oscommon.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module oscommon", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\oscommon.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module ospaths2", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\ospaths2.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module ospaths2", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\ospaths2.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module ossymlinks", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\ossymlinks.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module ossymlinks", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\ossymlinks.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module osfiles", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osfiles.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module osfiles", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osfiles.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module osdirs", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osdirs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module osdirs", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osdirs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module envvars", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\envvars.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module envvars", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\envvars.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module osappdirs", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osappdirs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module osappdirs", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\private\\osappdirs.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cmdline", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\cmdline.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module cmdline", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\cmdline.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module os", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\os.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module os", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\os.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony\\objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module objvar", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony\\objvar.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsony", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module jsony", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module safenim", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\safenim-0.1.0-0856cbc1c825f8d30e680af37ee2b7b646a7cb26\\safenim.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module safenim", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\safenim-0.1.0-0856cbc1c825f8d30e680af37ee2b7b646a7cb26\\safenim.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 var F = {procname: "module consts", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\consts.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
@@ -1458,1881 +1554,1983 @@ var F = {procname: "module enumerate", prev: framePtr, filename: "C:\\Users\\hmb
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module enumerate", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\std\\enumerate.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony\\objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module objvar", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony\\objvar.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sets", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\collections\\sets.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module sets", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\collections\\sets.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module jsony", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony.nim", line: 0};
-framePtr = F;
-framePtr = F.prev;
-var F = {procname: "module jsony", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\jsony-1.1.5-6aeb83e7481ca8686396a568096054bc668294df\\jsony.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 var F = {procname: "module abi_file", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\abi_file.nim", line: 0};
 framePtr = F;
-F.line = 1867;
+F.line = 4;
 F.filename = "abi_file.nim";
 var abi = {};
-F.line = 1868;
-abi = 
-[
-  {
-    "type": "constructor",
-    "name": "",
-    "inputs": [],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "error",
-    "name": "OperatorNotAllowed",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "operator",
-        "internalType": "address"
-      }
-    ],
-    "outputs": []
-  },
-  {
-    "type": "event",
-    "name": "ApprovalForAll",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "account",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "operator",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "bool",
-        "name": "approved",
-        "indexed": false,
-        "internalType": "bool"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "ClaimConditionsUpdated",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "tokenId",
-        "indexed": true,
-        "internalType": "uint256"
-      },
-      {
-        "type": "tuple[]",
-        "name": "claimConditions",
-        "components": [
-          {
-            "type": "uint256",
-            "name": "startTimestamp",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "maxClaimableSupply",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "supplyClaimed",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "quantityLimitPerWallet",
-            "internalType": "uint256"
-          },
-          {
-            "type": "bytes32",
-            "name": "merkleRoot",
-            "internalType": "bytes32"
-          },
-          {
-            "type": "uint256",
-            "name": "pricePerToken",
-            "internalType": "uint256"
-          },
-          {
-            "type": "address",
-            "name": "currency",
-            "internalType": "address"
-          },
-          {
-            "type": "string",
-            "name": "metadata",
-            "internalType": "string"
-          }
-        ],
-        "indexed": false,
-        "internalType": "struct IClaimCondition.ClaimCondition[]"
-      },
-      {
-        "type": "bool",
-        "name": "resetEligibility",
-        "indexed": false,
-        "internalType": "bool"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "ContractURIUpdated",
-    "inputs": [
-      {
-        "type": "string",
-        "name": "prevURI",
-        "indexed": false,
-        "internalType": "string"
-      },
-      {
-        "type": "string",
-        "name": "newURI",
-        "indexed": false,
-        "internalType": "string"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "DefaultRoyalty",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "newRoyaltyRecipient",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "newRoyaltyBps",
-        "indexed": false,
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "Initialized",
-    "inputs": [
-      {
-        "type": "uint8",
-        "name": "version",
-        "indexed": false,
-        "internalType": "uint8"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "MaxTotalSupplyUpdated",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "tokenId",
-        "indexed": false,
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "maxTotalSupply",
-        "indexed": false,
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "OperatorRestriction",
-    "inputs": [
-      {
-        "type": "bool",
-        "name": "restriction",
-        "indexed": false,
-        "internalType": "bool"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "OwnerUpdated",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "prevOwner",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "newOwner",
-        "indexed": true,
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "PlatformFeeInfoUpdated",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "platformFeeRecipient",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "platformFeeBps",
-        "indexed": false,
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "PrimarySaleRecipientUpdated",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "recipient",
-        "indexed": true,
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "RoleAdminChanged",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "indexed": true,
-        "internalType": "bytes32"
-      },
-      {
-        "type": "bytes32",
-        "name": "previousAdminRole",
-        "indexed": true,
-        "internalType": "bytes32"
-      },
-      {
-        "type": "bytes32",
-        "name": "newAdminRole",
-        "indexed": true,
-        "internalType": "bytes32"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "RoleGranted",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "indexed": true,
-        "internalType": "bytes32"
-      },
-      {
-        "type": "address",
-        "name": "account",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "sender",
-        "indexed": true,
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "RoleRevoked",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "indexed": true,
-        "internalType": "bytes32"
-      },
-      {
-        "type": "address",
-        "name": "account",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "sender",
-        "indexed": true,
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "RoyaltyForToken",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "tokenId",
-        "indexed": true,
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "royaltyRecipient",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "royaltyBps",
-        "indexed": false,
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "SaleRecipientForTokenUpdated",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "tokenId",
-        "indexed": true,
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "saleRecipient",
-        "indexed": false,
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "TokensClaimed",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "claimConditionIndex",
-        "indexed": true,
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "claimer",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "receiver",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "tokenId",
-        "indexed": false,
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "quantityClaimed",
-        "indexed": false,
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "TokensLazyMinted",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "startTokenId",
-        "indexed": true,
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "endTokenId",
-        "indexed": false,
-        "internalType": "uint256"
-      },
-      {
-        "type": "string",
-        "name": "baseURI",
-        "indexed": false,
-        "internalType": "string"
-      },
-      {
-        "type": "bytes",
-        "name": "encryptedBaseURI",
-        "indexed": false,
-        "internalType": "bytes"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "TransferBatch",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "operator",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "from",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "to",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "uint256[]",
-        "name": "ids",
-        "indexed": false,
-        "internalType": "uint256[]"
-      },
-      {
-        "type": "uint256[]",
-        "name": "values",
-        "indexed": false,
-        "internalType": "uint256[]"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "TransferSingle",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "operator",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "from",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "to",
-        "indexed": true,
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "id",
-        "indexed": false,
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "value",
-        "indexed": false,
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "URI",
-    "inputs": [
-      {
-        "type": "string",
-        "name": "value",
-        "indexed": false,
-        "internalType": "string"
-      },
-      {
-        "type": "uint256",
-        "name": "id",
-        "indexed": true,
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "anonymous": false
-  },
-  {
-    "type": "function",
-    "name": "DEFAULT_ADMIN_ROLE",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "bytes32",
-        "name": "",
-        "internalType": "bytes32"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "balanceOf",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "id",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "balanceOfBatch",
-    "inputs": [
-      {
-        "type": "address[]",
-        "name": "accounts",
-        "internalType": "address[]"
-      },
-      {
-        "type": "uint256[]",
-        "name": "ids",
-        "internalType": "uint256[]"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256[]",
-        "name": "",
-        "internalType": "uint256[]"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "burnBatch",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256[]",
-        "name": "ids",
-        "internalType": "uint256[]"
-      },
-      {
-        "type": "uint256[]",
-        "name": "values",
-        "internalType": "uint256[]"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "claim",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "_receiver",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "_quantity",
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "_currency",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "_pricePerToken",
-        "internalType": "uint256"
-      },
-      {
-        "type": "tuple",
-        "name": "_allowlistProof",
-        "components": [
-          {
-            "type": "bytes32[]",
-            "name": "proof",
-            "internalType": "bytes32[]"
-          },
-          {
-            "type": "uint256",
-            "name": "quantityLimitPerWallet",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "pricePerToken",
-            "internalType": "uint256"
-          },
-          {
-            "type": "address",
-            "name": "currency",
-            "internalType": "address"
-          }
-        ],
-        "internalType": "struct IDrop1155.AllowlistProof"
-      },
-      {
-        "type": "bytes",
-        "name": "_data",
-        "internalType": "bytes"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "payable"
-  },
-  {
-    "type": "function",
-    "name": "claimCondition",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "currentStartId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "count",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "contractType",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "bytes32",
-        "name": "",
-        "internalType": "bytes32"
-      }
-    ],
-    "stateMutability": "pure"
-  },
-  {
-    "type": "function",
-    "name": "contractURI",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "string",
-        "name": "",
-        "internalType": "string"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "contractVersion",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "uint8",
-        "name": "",
-        "internalType": "uint8"
-      }
-    ],
-    "stateMutability": "pure"
-  },
-  {
-    "type": "function",
-    "name": "getActiveClaimConditionId",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getBaseURICount",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getBatchIdAtIndex",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_index",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getClaimConditionById",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "_conditionId",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "tuple",
-        "name": "condition",
-        "components": [
-          {
-            "type": "uint256",
-            "name": "startTimestamp",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "maxClaimableSupply",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "supplyClaimed",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "quantityLimitPerWallet",
-            "internalType": "uint256"
-          },
-          {
-            "type": "bytes32",
-            "name": "merkleRoot",
-            "internalType": "bytes32"
-          },
-          {
-            "type": "uint256",
-            "name": "pricePerToken",
-            "internalType": "uint256"
-          },
-          {
-            "type": "address",
-            "name": "currency",
-            "internalType": "address"
-          },
-          {
-            "type": "string",
-            "name": "metadata",
-            "internalType": "string"
-          }
-        ],
-        "internalType": "struct IClaimCondition.ClaimCondition"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getDefaultRoyaltyInfo",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "",
-        "internalType": "address"
-      },
-      {
-        "type": "uint16",
-        "name": "",
-        "internalType": "uint16"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getPlatformFeeInfo",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "",
-        "internalType": "address"
-      },
-      {
-        "type": "uint16",
-        "name": "",
-        "internalType": "uint16"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getRoleAdmin",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bytes32",
-        "name": "",
-        "internalType": "bytes32"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getRoleMember",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      },
-      {
-        "type": "uint256",
-        "name": "index",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "member",
-        "internalType": "address"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getRoleMemberCount",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "count",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getRoyaltyInfoForToken",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "",
-        "internalType": "address"
-      },
-      {
-        "type": "uint16",
-        "name": "",
-        "internalType": "uint16"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "getSupplyClaimedByWallet",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "_conditionId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "_claimer",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "supplyClaimedByWallet",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "grantRole",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      },
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "hasRole",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      },
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bool",
-        "name": "",
-        "internalType": "bool"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "hasRoleWithSwitch",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      },
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bool",
-        "name": "",
-        "internalType": "bool"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "initialize",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "_defaultAdmin",
-        "internalType": "address"
-      },
-      {
-        "type": "string",
-        "name": "_name",
-        "internalType": "string"
-      },
-      {
-        "type": "string",
-        "name": "_symbol",
-        "internalType": "string"
-      },
-      {
-        "type": "string",
-        "name": "_contractURI",
-        "internalType": "string"
-      },
-      {
-        "type": "address[]",
-        "name": "_trustedForwarders",
-        "internalType": "address[]"
-      },
-      {
-        "type": "address",
-        "name": "_saleRecipient",
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "_royaltyRecipient",
-        "internalType": "address"
-      },
-      {
-        "type": "uint128",
-        "name": "_royaltyBps",
-        "internalType": "uint128"
-      },
-      {
-        "type": "uint128",
-        "name": "_platformFeeBps",
-        "internalType": "uint128"
-      },
-      {
-        "type": "address",
-        "name": "_platformFeeRecipient",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "isApprovedForAll",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "operator",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bool",
-        "name": "",
-        "internalType": "bool"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "isTrustedForwarder",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "forwarder",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bool",
-        "name": "",
-        "internalType": "bool"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "lazyMint",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_amount",
-        "internalType": "uint256"
-      },
-      {
-        "type": "string",
-        "name": "_baseURIForTokens",
-        "internalType": "string"
-      },
-      {
-        "type": "bytes",
-        "name": "_data",
-        "internalType": "bytes"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "batchId",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "maxTotalSupply",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "multicall",
-    "inputs": [
-      {
-        "type": "bytes[]",
-        "name": "data",
-        "internalType": "bytes[]"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bytes[]",
-        "name": "results",
-        "internalType": "bytes[]"
-      }
-    ],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "name",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "string",
-        "name": "",
-        "internalType": "string"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "nextTokenIdToMint",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "operatorRestriction",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "bool",
-        "name": "",
-        "internalType": "bool"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "owner",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "",
-        "internalType": "address"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "primarySaleRecipient",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "",
-        "internalType": "address"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "renounceRole",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      },
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "revokeRole",
-    "inputs": [
-      {
-        "type": "bytes32",
-        "name": "role",
-        "internalType": "bytes32"
-      },
-      {
-        "type": "address",
-        "name": "account",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "royaltyInfo",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "salePrice",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "receiver",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "royaltyAmount",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "safeBatchTransferFrom",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "from",
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "to",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256[]",
-        "name": "ids",
-        "internalType": "uint256[]"
-      },
-      {
-        "type": "uint256[]",
-        "name": "amounts",
-        "internalType": "uint256[]"
-      },
-      {
-        "type": "bytes",
-        "name": "data",
-        "internalType": "bytes"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "safeTransferFrom",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "from",
-        "internalType": "address"
-      },
-      {
-        "type": "address",
-        "name": "to",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "id",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "amount",
-        "internalType": "uint256"
-      },
-      {
-        "type": "bytes",
-        "name": "data",
-        "internalType": "bytes"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "saleRecipient",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "address",
-        "name": "",
-        "internalType": "address"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "setApprovalForAll",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "operator",
-        "internalType": "address"
-      },
-      {
-        "type": "bool",
-        "name": "approved",
-        "internalType": "bool"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setClaimConditions",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "tuple[]",
-        "name": "_conditions",
-        "components": [
-          {
-            "type": "uint256",
-            "name": "startTimestamp",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "maxClaimableSupply",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "supplyClaimed",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "quantityLimitPerWallet",
-            "internalType": "uint256"
-          },
-          {
-            "type": "bytes32",
-            "name": "merkleRoot",
-            "internalType": "bytes32"
-          },
-          {
-            "type": "uint256",
-            "name": "pricePerToken",
-            "internalType": "uint256"
-          },
-          {
-            "type": "address",
-            "name": "currency",
-            "internalType": "address"
-          },
-          {
-            "type": "string",
-            "name": "metadata",
-            "internalType": "string"
-          }
-        ],
-        "internalType": "struct IClaimCondition.ClaimCondition[]"
-      },
-      {
-        "type": "bool",
-        "name": "_resetClaimEligibility",
-        "internalType": "bool"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setContractURI",
-    "inputs": [
-      {
-        "type": "string",
-        "name": "_uri",
-        "internalType": "string"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setDefaultRoyaltyInfo",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "_royaltyRecipient",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "_royaltyBps",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setMaxTotalSupply",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "_maxTotalSupply",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setOperatorRestriction",
-    "inputs": [
-      {
-        "type": "bool",
-        "name": "_restriction",
-        "internalType": "bool"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setOwner",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "_newOwner",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setPlatformFeeInfo",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "_platformFeeRecipient",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "_platformFeeBps",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setPrimarySaleRecipient",
-    "inputs": [
-      {
-        "type": "address",
-        "name": "_saleRecipient",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setRoyaltyInfoForToken",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "_recipient",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "_bps",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setSaleRecipientForToken",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "_saleRecipient",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "supportsInterface",
-    "inputs": [
-      {
-        "type": "bytes4",
-        "name": "interfaceId",
-        "internalType": "bytes4"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bool",
-        "name": "",
-        "internalType": "bool"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "symbol",
-    "inputs": [],
-    "outputs": [
-      {
-        "type": "string",
-        "name": "",
-        "internalType": "string"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "totalSupply",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "uint256",
-        "name": "",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "uri",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "string",
-        "name": "",
-        "internalType": "string"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "verifyClaim",
-    "inputs": [
-      {
-        "type": "uint256",
-        "name": "_conditionId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "_claimer",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "_tokenId",
-        "internalType": "uint256"
-      },
-      {
-        "type": "uint256",
-        "name": "_quantity",
-        "internalType": "uint256"
-      },
-      {
-        "type": "address",
-        "name": "_currency",
-        "internalType": "address"
-      },
-      {
-        "type": "uint256",
-        "name": "_pricePerToken",
-        "internalType": "uint256"
-      },
-      {
-        "type": "tuple",
-        "name": "_allowlistProof",
-        "components": [
-          {
-            "type": "bytes32[]",
-            "name": "proof",
-            "internalType": "bytes32[]"
-          },
-          {
-            "type": "uint256",
-            "name": "quantityLimitPerWallet",
-            "internalType": "uint256"
-          },
-          {
-            "type": "uint256",
-            "name": "pricePerToken",
-            "internalType": "uint256"
-          },
-          {
-            "type": "address",
-            "name": "currency",
-            "internalType": "address"
-          }
-        ],
-        "internalType": "struct IDrop1155.AllowlistProof"
-      }
-    ],
-    "outputs": [
-      {
-        "type": "bool",
-        "name": "isOverride",
-        "internalType": "bool"
-      }
-    ],
-    "stateMutability": "view"
-  }
-]
-
+F.line = 6;
+abi =             [
+              {
+                "type": "constructor",
+                "name": "",
+                "inputs": [],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "event",
+                "name": "ApprovalForAll",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "operator",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "bool",
+                    "name": "approved",
+                    "indexed": false,
+                    "internalType": "bool"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "BatchMetadataUpdate",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_fromTokenId",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_toTokenId",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "ClaimConditionsUpdated",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "tokenId",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "tuple[]",
+                    "name": "claimConditions",
+                    "components": [
+                      {
+                        "type": "uint256",
+                        "name": "startTimestamp",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "maxClaimableSupply",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "supplyClaimed",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "quantityLimitPerWallet",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "bytes32",
+                        "name": "merkleRoot",
+                        "internalType": "bytes32"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "pricePerToken",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "address",
+                        "name": "currency",
+                        "internalType": "address"
+                      },
+                      {
+                        "type": "string",
+                        "name": "metadata",
+                        "internalType": "string"
+                      }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IClaimCondition.ClaimCondition[]"
+                  },
+                  {
+                    "type": "bool",
+                    "name": "resetEligibility",
+                    "indexed": false,
+                    "internalType": "bool"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "ContractURIUpdated",
+                "inputs": [
+                  {
+                    "type": "string",
+                    "name": "prevURI",
+                    "indexed": false,
+                    "internalType": "string"
+                  },
+                  {
+                    "type": "string",
+                    "name": "newURI",
+                    "indexed": false,
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "DefaultRoyalty",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "newRoyaltyRecipient",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "newRoyaltyBps",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "FlatPlatformFeeUpdated",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "platformFeeRecipient",
+                    "indexed": false,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "flatFee",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "Initialized",
+                "inputs": [
+                  {
+                    "type": "uint8",
+                    "name": "version",
+                    "indexed": false,
+                    "internalType": "uint8"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "MaxTotalSupplyUpdated",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "tokenId",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "maxTotalSupply",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "MetadataFrozen",
+                "inputs": [],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "OwnerUpdated",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "prevOwner",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "newOwner",
+                    "indexed": true,
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "PlatformFeeInfoUpdated",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "platformFeeRecipient",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "platformFeeBps",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "PlatformFeeTypeUpdated",
+                "inputs": [
+                  {
+                    "type": "uint8",
+                    "name": "feeType",
+                    "indexed": false,
+                    "internalType": "enum IPlatformFee.PlatformFeeType"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "PrimarySaleRecipientUpdated",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "recipient",
+                    "indexed": true,
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "RoleAdminChanged",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "indexed": true,
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "bytes32",
+                    "name": "previousAdminRole",
+                    "indexed": true,
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "bytes32",
+                    "name": "newAdminRole",
+                    "indexed": true,
+                    "internalType": "bytes32"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "RoleGranted",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "indexed": true,
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "sender",
+                    "indexed": true,
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "RoleRevoked",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "indexed": true,
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "sender",
+                    "indexed": true,
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "RoyaltyForToken",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "tokenId",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "royaltyRecipient",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "royaltyBps",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "SaleRecipientForTokenUpdated",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "tokenId",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "saleRecipient",
+                    "indexed": false,
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "TokensClaimed",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "claimConditionIndex",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "claimer",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "receiver",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "tokenId",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "quantityClaimed",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "TokensLazyMinted",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "startTokenId",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "endTokenId",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "string",
+                    "name": "baseURI",
+                    "indexed": false,
+                    "internalType": "string"
+                  },
+                  {
+                    "type": "bytes",
+                    "name": "encryptedBaseURI",
+                    "indexed": false,
+                    "internalType": "bytes"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "TransferBatch",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "operator",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "from",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "to",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256[]",
+                    "name": "ids",
+                    "indexed": false,
+                    "internalType": "uint256[]"
+                  },
+                  {
+                    "type": "uint256[]",
+                    "name": "values",
+                    "indexed": false,
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "TransferSingle",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "operator",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "from",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "to",
+                    "indexed": true,
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "id",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "value",
+                    "indexed": false,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "event",
+                "name": "URI",
+                "inputs": [
+                  {
+                    "type": "string",
+                    "name": "value",
+                    "indexed": false,
+                    "internalType": "string"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "id",
+                    "indexed": true,
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "anonymous": false
+              },
+              {
+                "type": "function",
+                "name": "DEFAULT_ADMIN_ROLE",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "",
+                    "internalType": "bytes32"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "balanceOf",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "id",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "balanceOfBatch",
+                "inputs": [
+                  {
+                    "type": "address[]",
+                    "name": "accounts",
+                    "internalType": "address[]"
+                  },
+                  {
+                    "type": "uint256[]",
+                    "name": "ids",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256[]",
+                    "name": "",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "batchFrozen",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bool",
+                    "name": "",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "burnBatch",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256[]",
+                    "name": "ids",
+                    "internalType": "uint256[]"
+                  },
+                  {
+                    "type": "uint256[]",
+                    "name": "values",
+                    "internalType": "uint256[]"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "claim",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "_receiver",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_quantity",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_currency",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_pricePerToken",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "tuple",
+                    "name": "_allowlistProof",
+                    "components": [
+                      {
+                        "type": "bytes32[]",
+                        "name": "proof",
+                        "internalType": "bytes32[]"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "quantityLimitPerWallet",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "pricePerToken",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "address",
+                        "name": "currency",
+                        "internalType": "address"
+                      }
+                    ],
+                    "internalType": "struct IDrop1155.AllowlistProof"
+                  },
+                  {
+                    "type": "bytes",
+                    "name": "_data",
+                    "internalType": "bytes"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "payable"
+              },
+              {
+                "type": "function",
+                "name": "claimCondition",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "currentStartId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "count",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "contractType",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "",
+                    "internalType": "bytes32"
+                  }
+                ],
+                "stateMutability": "pure"
+              },
+              {
+                "type": "function",
+                "name": "contractURI",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "string",
+                    "name": "",
+                    "internalType": "string"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "contractVersion",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "uint8",
+                    "name": "",
+                    "internalType": "uint8"
+                  }
+                ],
+                "stateMutability": "pure"
+              },
+              {
+                "type": "function",
+                "name": "freezeBatchBaseURI",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_index",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "getActiveClaimConditionId",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getBaseURICount",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getBatchIdAtIndex",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_index",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getClaimConditionById",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_conditionId",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "tuple",
+                    "name": "condition",
+                    "components": [
+                      {
+                        "type": "uint256",
+                        "name": "startTimestamp",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "maxClaimableSupply",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "supplyClaimed",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "quantityLimitPerWallet",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "bytes32",
+                        "name": "merkleRoot",
+                        "internalType": "bytes32"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "pricePerToken",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "address",
+                        "name": "currency",
+                        "internalType": "address"
+                      },
+                      {
+                        "type": "string",
+                        "name": "metadata",
+                        "internalType": "string"
+                      }
+                    ],
+                    "internalType": "struct IClaimCondition.ClaimCondition"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getDefaultRoyaltyInfo",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint16",
+                    "name": "",
+                    "internalType": "uint16"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getFlatPlatformFeeInfo",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getPlatformFeeInfo",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint16",
+                    "name": "",
+                    "internalType": "uint16"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getPlatformFeeType",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "uint8",
+                    "name": "",
+                    "internalType": "enum IPlatformFee.PlatformFeeType"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getRoleAdmin",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "",
+                    "internalType": "bytes32"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getRoleMember",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "index",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "member",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getRoleMemberCount",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "count",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getRoyaltyInfoForToken",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint16",
+                    "name": "",
+                    "internalType": "uint16"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "getSupplyClaimedByWallet",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_conditionId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_claimer",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "supplyClaimedByWallet",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "grantRole",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "hasRole",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bool",
+                    "name": "",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "hasRoleWithSwitch",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bool",
+                    "name": "",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "initialize",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "_defaultAdmin",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "string",
+                    "name": "_name",
+                    "internalType": "string"
+                  },
+                  {
+                    "type": "string",
+                    "name": "_symbol",
+                    "internalType": "string"
+                  },
+                  {
+                    "type": "string",
+                    "name": "_contractURI",
+                    "internalType": "string"
+                  },
+                  {
+                    "type": "address[]",
+                    "name": "_trustedForwarders",
+                    "internalType": "address[]"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_saleRecipient",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_royaltyRecipient",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint128",
+                    "name": "_royaltyBps",
+                    "internalType": "uint128"
+                  },
+                  {
+                    "type": "uint128",
+                    "name": "_platformFeeBps",
+                    "internalType": "uint128"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_platformFeeRecipient",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "isApprovedForAll",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "operator",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bool",
+                    "name": "",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "isTrustedForwarder",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "forwarder",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bool",
+                    "name": "",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "lazyMint",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_amount",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "string",
+                    "name": "_baseURIForTokens",
+                    "internalType": "string"
+                  },
+                  {
+                    "type": "bytes",
+                    "name": "_data",
+                    "internalType": "bytes"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "batchId",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "maxTotalSupply",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "multicall",
+                "inputs": [
+                  {
+                    "type": "bytes[]",
+                    "name": "data",
+                    "internalType": "bytes[]"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bytes[]",
+                    "name": "results",
+                    "internalType": "bytes[]"
+                  }
+                ],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "name",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "string",
+                    "name": "",
+                    "internalType": "string"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "nextTokenIdToMint",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "owner",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "primarySaleRecipient",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "renounceRole",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "revokeRole",
+                "inputs": [
+                  {
+                    "type": "bytes32",
+                    "name": "role",
+                    "internalType": "bytes32"
+                  },
+                  {
+                    "type": "address",
+                    "name": "account",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "royaltyInfo",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "salePrice",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "receiver",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "royaltyAmount",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "safeBatchTransferFrom",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "from",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "to",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256[]",
+                    "name": "ids",
+                    "internalType": "uint256[]"
+                  },
+                  {
+                    "type": "uint256[]",
+                    "name": "amounts",
+                    "internalType": "uint256[]"
+                  },
+                  {
+                    "type": "bytes",
+                    "name": "data",
+                    "internalType": "bytes"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "safeTransferFrom",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "from",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "address",
+                    "name": "to",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "id",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "amount",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "bytes",
+                    "name": "data",
+                    "internalType": "bytes"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "saleRecipient",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "address",
+                    "name": "",
+                    "internalType": "address"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "setApprovalForAll",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "operator",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "bool",
+                    "name": "approved",
+                    "internalType": "bool"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setClaimConditions",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "tuple[]",
+                    "name": "_conditions",
+                    "components": [
+                      {
+                        "type": "uint256",
+                        "name": "startTimestamp",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "maxClaimableSupply",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "supplyClaimed",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "quantityLimitPerWallet",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "bytes32",
+                        "name": "merkleRoot",
+                        "internalType": "bytes32"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "pricePerToken",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "address",
+                        "name": "currency",
+                        "internalType": "address"
+                      },
+                      {
+                        "type": "string",
+                        "name": "metadata",
+                        "internalType": "string"
+                      }
+                    ],
+                    "internalType": "struct IClaimCondition.ClaimCondition[]"
+                  },
+                  {
+                    "type": "bool",
+                    "name": "_resetClaimEligibility",
+                    "internalType": "bool"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setContractURI",
+                "inputs": [
+                  {
+                    "type": "string",
+                    "name": "_uri",
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setDefaultRoyaltyInfo",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "_royaltyRecipient",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_royaltyBps",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setFlatPlatformFeeInfo",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "_platformFeeRecipient",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_flatFee",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setMaxTotalSupply",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_maxTotalSupply",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setOwner",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "_newOwner",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setPlatformFeeInfo",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "_platformFeeRecipient",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_platformFeeBps",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setPlatformFeeType",
+                "inputs": [
+                  {
+                    "type": "uint8",
+                    "name": "_feeType",
+                    "internalType": "enum IPlatformFee.PlatformFeeType"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setPrimarySaleRecipient",
+                "inputs": [
+                  {
+                    "type": "address",
+                    "name": "_saleRecipient",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setRoyaltyInfoForToken",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_recipient",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_bps",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "setSaleRecipientForToken",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_saleRecipient",
+                    "internalType": "address"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "supportsInterface",
+                "inputs": [
+                  {
+                    "type": "bytes4",
+                    "name": "interfaceId",
+                    "internalType": "bytes4"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bool",
+                    "name": "",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "symbol",
+                "inputs": [],
+                "outputs": [
+                  {
+                    "type": "string",
+                    "name": "",
+                    "internalType": "string"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "totalSupply",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "uint256",
+                    "name": "",
+                    "internalType": "uint256"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "updateBatchBaseURI",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_index",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "string",
+                    "name": "_uri",
+                    "internalType": "string"
+                  }
+                ],
+                "outputs": [],
+                "stateMutability": "nonpayable"
+              },
+              {
+                "type": "function",
+                "name": "uri",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "string",
+                    "name": "",
+                    "internalType": "string"
+                  }
+                ],
+                "stateMutability": "view"
+              },
+              {
+                "type": "function",
+                "name": "verifyClaim",
+                "inputs": [
+                  {
+                    "type": "uint256",
+                    "name": "_conditionId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_claimer",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_tokenId",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_quantity",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "address",
+                    "name": "_currency",
+                    "internalType": "address"
+                  },
+                  {
+                    "type": "uint256",
+                    "name": "_pricePerToken",
+                    "internalType": "uint256"
+                  },
+                  {
+                    "type": "tuple",
+                    "name": "_allowlistProof",
+                    "components": [
+                      {
+                        "type": "bytes32[]",
+                        "name": "proof",
+                        "internalType": "bytes32[]"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "quantityLimitPerWallet",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "uint256",
+                        "name": "pricePerToken",
+                        "internalType": "uint256"
+                      },
+                      {
+                        "type": "address",
+                        "name": "currency",
+                        "internalType": "address"
+                      }
+                    ],
+                    "internalType": "struct IDrop1155.AllowlistProof"
+                  }
+                ],
+                "outputs": [
+                  {
+                    "type": "bool",
+                    "name": "isOverride",
+                    "internalType": "bool"
+                  }
+                ],
+                "stateMutability": "view"
+              }
+            ]
+          
 
 framePtr = F.prev;
 var F = {procname: "module abi_file", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\abi_file.nim", line: 0};
@@ -3348,12 +3546,12 @@ var F = {procname: "module times", prev: framePtr, filename: "C:\\Users\\hmbem\\
 framePtr = F;
 F.line = 1371;
 F.filename = "times.nim";
-if (globalThis.utcInstance_1610614388 === undefined) {
-  globalThis.utcInstance_1610614388 = [null];
+if (globalThis.utcInstance_1828718196 === undefined) {
+  globalThis.utcInstance_1828718196 = [null];
 }
 F.line = 1372;
-if (globalThis.localInstance_1610614389 === undefined) {
-  globalThis.localInstance_1610614389 = [null];
+if (globalThis.localInstance_1828718197 === undefined) {
+  globalThis.localInstance_1828718197 = [null];
 }
 framePtr = F.prev;
 var F = {procname: "module times", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\times.nim", line: 0};
@@ -3393,11 +3591,11 @@ var F = {procname: "module vdom", prev: framePtr, filename: "C:\\Users\\hmbem\\.
 framePtr = F;
 F.line = 75;
 F.filename = "vdom.nim";
-var svgNamespace_1660944610 = [[104,116,116,112,58,47,47,119,119,119,46,119,51,46,111,114,103,47,50,48,48,48,47,115,118,103]];
+var svgNamespace_1879048418 = [[104,116,116,112,58,47,47,119,119,119,46,119,51,46,111,114,103,47,50,48,48,48,47,115,118,103]];
 F.line = 76;
-var mathNamespace_1660944611 = [[104,116,116,112,58,47,47,119,119,119,46,119,51,46,111,114,103,47,49,57,57,56,47,77,97,116,104,47,77,97,116,104,77,76]];
+var mathNamespace_1879048419 = [[104,116,116,112,58,47,47,119,119,119,46,119,51,46,111,114,103,47,49,57,57,56,47,77,97,116,104,47,77,97,116,104,77,76]];
 F.line = 224;
-var gid_1660945084 = [0];
+var gid_1879048892 = [0];
 framePtr = F.prev;
 var F = {procname: "module vdom", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\karax-1.3.3-6683189b4456437c2809be72e3404adde77f5c34\\karax\\vdom.nim", line: 0};
 framePtr = F;
@@ -3406,7 +3604,7 @@ var F = {procname: "module compact", prev: framePtr, filename: "C:\\Users\\hmbem
 framePtr = F;
 F.line = 10;
 F.filename = "compact.nim";
-var vcomponents_1677721613 = [{}];
+var vcomponents_1895825421 = [{}];
 F.line = 22;
 framePtr = F.prev;
 var F = {procname: "module compact", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\karax-1.3.3-6683189b4456437c2809be72e3404adde77f5c34\\karax\\compact.nim", line: 0};
@@ -3449,12 +3647,12 @@ var F = {procname: "module dekao", prev: framePtr, filename: "C:\\Users\\hmbem\\
 framePtr = F;
 F.line = 8;
 F.filename = "dekao.nim";
-if (globalThis.sayStack_1828716551 === undefined) {
-  globalThis.sayStack_1828716551 = [[]];
+if (globalThis.sayStack_2046820359 === undefined) {
+  globalThis.sayStack_2046820359 = [[]];
 }
 F.line = 9;
-if (globalThis.attrsStack_1828716552 === undefined) {
-  globalThis.attrsStack_1828716552 = [[]];
+if (globalThis.attrsStack_2046820360 === undefined) {
+  globalThis.attrsStack_2046820360 = [[]];
 }
 framePtr = F.prev;
 var F = {procname: "module dekao", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs2\\dekao-0.0.2-b1952d468233f589fc629ad841461ebb03e9bd69\\dekao.nim", line: 0};
@@ -3467,34 +3665,34 @@ var F = {procname: "module modal", prev: framePtr, filename: "C:\\Users\\hmbem\\
 framePtr = F;
 framePtr = F.prev;
 
-function none_1459617839() {
-  var result_1459617846 = ({val: null, has: false});
+function none_1493172271() {
+  var result_1493172278 = ({val: null, has: false});
 
   var F = {procname: "none.none", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
   framePtr = F.prev;
 
-  return result_1459617846;
+  return result_1493172278;
 
 }
 
-function some_1459617851(val_1459617853) {
-  var result_1459617854 = ({val: null, has: false});
+function some_1493172283(val_1493172285) {
+  var result_1493172286 = ({val: null, has: false});
 
   var F = {procname: "some.some", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 140;
     F.filename = "options.nim";
-    result_1459617854.has = true;
+    result_1493172286.has = true;
     F.line = 141;
-    result_1459617854.val = val_1459617853;
+    result_1493172286.val = val_1493172285;
   framePtr = F.prev;
 
-  return result_1459617854;
+  return result_1493172286;
 
 }
-async function newJsonRpcProvider_1459617811(RPC_URL_1459617812) {
-  var result_1459617823 = null;
+async function newJsonRpcProvider_1493172243(RPC_URL_1493172244) {
+  var result_1493172255 = null;
 
   var F = {procname: "nimEthers.newJsonRpcProvider", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimEthers.nim", line: 0};
   framePtr = F;
@@ -3505,36 +3703,36 @@ async function newJsonRpcProvider_1459617811(RPC_URL_1459617812) {
     F.line = 32;
     var pprovider = null;
     F.line = 33;
-                pprovider = new ethers.providers.JsonRpcProvider(RPC_URL_1459617812)
+                pprovider = new ethers.providers.JsonRpcProvider(RPC_URL_1493172244)
             await pprovider._networkPromise.catch((r) => {reason = r})
             
     if (!((reason == null))) {
     F.line = 39;
-    result_1459617823 = {Field0: false, Field1: reason.message, Field2: none_1459617839()};
+    result_1493172255 = {Field0: false, Field1: reason.message, Field2: none_1493172271()};
     break BeforeRet;
     }
     
     F.line = 40;
-    result_1459617823 = {Field0: true, Field1: "", Field2: some_1459617851(pprovider)};
+    result_1493172255 = {Field0: true, Field1: "", Field2: some_1493172283(pprovider)};
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_1459617823;
+  return result_1493172255;
 
 }
 
-function isNone_536871170(self_536871172) {
-  var result_536871173 = false;
+function isNone_536871133(self_536871135) {
+  var result_536871136 = false;
 
   var F = {procname: "isNone.isNone", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 176;
     F.filename = "options.nim";
-    result_536871173 = !(self_536871172.has);
+    result_536871136 = !(self_536871135.has);
   framePtr = F.prev;
 
-  return result_536871173;
+  return result_536871136;
 
 }
 
@@ -3638,19 +3836,19 @@ function addChars_301990090(result_301990092, result_301990092_Idx, x_301990093,
       var iHEX60gensym4_301990110 = 0;
       F.line = 119;
       F.filename = "iterators_1.nim";
-      var i_536871600 = 0;
+      var i_536871564 = 0;
       Label3: {
         F.line = 120;
           Label4: while (true) {
-          if (!(i_536871600 < n_301990095)) break Label4;
+          if (!(i_536871564 < n_301990095)) break Label4;
             F.line = 49;
             F.filename = "digitsutils.nim";
-            iHEX60gensym4_301990110 = i_536871600;
+            iHEX60gensym4_301990110 = i_536871564;
             F.line = 49;
             result_301990092[result_301990092_Idx][chckIndx(addInt(old_301990096, iHEX60gensym4_301990110), 0, (result_301990092[result_301990092_Idx]).length - 1)] = x_301990093.charCodeAt(chckIndx(addInt(start_301990094, iHEX60gensym4_301990110), 0, (x_301990093).length - 1));
             F.line = 122;
             F.filename = "iterators_1.nim";
-            i_536871600 = addInt(i_536871600, 1);
+            i_536871564 = addInt(i_536871564, 1);
           }
       };
     };
@@ -3740,13 +3938,13 @@ function auxWriteStackTrace_33556508(f_33556509) {
     
     Label5: {
       var j_33556554 = 0;
-      var colontmp__536871592 = 0;
-      colontmp__536871592 = (i_33556519 - 1);
-      var res_536871594 = colontmp__536871592;
+      var colontmp__536871556 = 0;
+      colontmp__536871556 = (i_33556519 - 1);
+      var res_536871558 = colontmp__536871556;
       Label6: {
           Label7: while (true) {
-          if (!(0 <= res_536871594)) break Label7;
-            j_33556554 = res_536871594;
+          if (!(0 <= res_536871558)) break Label7;
+            j_33556554 = res_536871558;
             result_33556510[0].push.apply(result_33556510[0], cstrToNimstr(tempFrames_33556521[j_33556554].Field2));;
             if ((0 < tempFrames_33556521[j_33556554].Field1)) {
             result_33556510[0].push.apply(result_33556510[0], [40]);;
@@ -3762,7 +3960,7 @@ function auxWriteStackTrace_33556508(f_33556509) {
             result_33556510[0].push.apply(result_33556510[0], [32,97,116,32]);;
             add_33556373(result_33556510, 0, tempFrames_33556521[j_33556554].Field0);
             result_33556510[0].push.apply(result_33556510[0], [10]);;
-            res_536871594 -= 1;
+            res_536871558 -= 1;
           }
       };
     };
@@ -3826,75 +4024,75 @@ function unhandledException(e_33556649) {
   
 }
 
-function get_536871162(self_536871164) {
-  var result_536871165 = null;
+function get_536871125(self_536871127) {
+  var result_536871128 = null;
 
   var F = {procname: "get.get", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
-    if (isNone_536871170(self_536871164)) {
+    if (isNone_536871133(self_536871127)) {
     F.line = 202;
     F.filename = "options.nim";
     raiseException({message: [67,97,110,39,116,32,111,98,116,97,105,110,32,97,32,118,97,108,117,101,32,102,114,111,109,32,97,32,96,110,111,110,101,96], parent: null, m_type: NTI1174405140, name: null, trace: [], up: null}, "UnpackDefect");
     }
     
     F.line = 203;
-    result_536871165 = self_536871164["val"];
+    result_536871128 = self_536871127["val"];
   framePtr = F.prev;
 
-  return result_536871165;
+  return result_536871128;
 
 }
 
-function gebi_strict_1342177480(id_1342177481) {
-  var result_1342177482 = null;
+function gebi_strict_1342177488(id_1342177489) {
+  var result_1342177490 = null;
 
   var F = {procname: "nimjs.gebi_strict", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 48;
+    F.line = 53;
     F.filename = "nimjs.nim";
-    var el_1342177483 = document.getElementById(id_1342177481);
-    if ((el_1342177483 == null)) {
-    F.line = 50;
-    raiseException({message: ([69,108,101,109,101,110,116,32,119,105,116,104,32,105,100,32,39] || []).concat(cstrToNimstr(id_1342177481) || [],[39,32,110,111,116,32,102,111,117,110,100] || []), parent: null, m_type: NTI1342177283, name: null, trace: [], up: null}, "ElementNotFound");
+    var el_1342177491 = document.getElementById(id_1342177489);
+    if ((el_1342177491 == null)) {
+    F.line = 55;
+    raiseException({message: ([69,108,101,109,101,110,116,32,119,105,116,104,32,105,100,32,39] || []).concat(cstrToNimstr(id_1342177489) || [],[39,32,110,111,116,32,102,111,117,110,100] || []), parent: null, m_type: NTI1342177283, name: null, trace: [], up: null}, "ElementNotFound");
     }
     else {
-      F.line = 52;
-      result_1342177482 = el_1342177483;
+      F.line = 57;
+      result_1342177490 = el_1342177491;
       break BeforeRet;
     }
     
   };
   framePtr = F.prev;
 
-  return result_1342177482;
+  return result_1342177490;
 
 }
 
-function isSome_1811939391(self_1811939393) {
-  var result_1811939394 = false;
+function isSome_2030043199(self_2030043201) {
+  var result_2030043202 = false;
 
   var F = {procname: "isSome.isSome", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 161;
     F.filename = "options.nim";
-    result_1811939394 = self_1811939393.has;
+    result_2030043202 = self_2030043201.has;
   framePtr = F.prev;
 
-  return result_1811939394;
+  return result_2030043202;
 
 }
 
-function newSeq_1342177706(len_1342177708) {
-  var result_1342177709 = [];
+function newSeq_1342177749(len_1342177751) {
+  var result_1342177752 = [];
 
   var F = {procname: "newSeq.newSeq", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\system.nim", line: 0};
   framePtr = F;
     F.line = 635;
     F.filename = "system.nim";
-    result_1342177709 = new Array(len_1342177708); for (var i = 0 ; i < len_1342177708 ; ++i) { result_1342177709[i] = null; }  framePtr = F.prev;
+    result_1342177752 = new Array(len_1342177751); for (var i = 0 ; i < len_1342177751 ; ++i) { result_1342177752[i] = null; }  framePtr = F.prev;
 
-  return result_1342177709;
+  return result_1342177752;
 
 }
 
@@ -3931,69 +4129,69 @@ function failedAssertImpl_268435541(msg_268435542) {
   
 }
 
-function none_1342177761() {
-  var result_1342177768 = ({val: [], has: false});
+function none_1342177804() {
+  var result_1342177811 = ({val: [], has: false});
 
   var F = {procname: "none.none", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
   framePtr = F.prev;
 
-  return result_1342177768;
+  return result_1342177811;
 
 }
 
-function some_1342177769(val_1342177771) {
-  var result_1342177772 = ({val: [], has: false});
+function some_1342177812(val_1342177814) {
+  var result_1342177815 = ({val: [], has: false});
 
   var F = {procname: "some.some", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 140;
     F.filename = "options.nim";
-    result_1342177772.has = true;
+    result_1342177815.has = true;
     F.line = 141;
-    result_1342177772.val = nimCopy(null, val_1342177771, NTI1342177584);
+    result_1342177815.val = nimCopy(null, val_1342177814, NTI1342177622);
   framePtr = F.prev;
 
-  return result_1342177772;
+  return result_1342177815;
 
 }
 
-function queryAll_1342177693(el_1342177694, selector_1342177695) {
-  var result_1342177701 = ({val: [], has: false});
+function queryAll_1342177736(el_1342177737, selector_1342177738) {
+  var result_1342177744 = ({val: [], has: false});
 
   var F = {procname: "nimjs.queryAll", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 147;
+    F.line = 176;
     F.filename = "nimjs.nim";
-    var gather_1342177730 = newSeq_1342177706(0);
+    var gather_1342177773 = newSeq_1342177749(0);
     Label1: {
-      F.line = 148;
-      var el_1342177753 = null;
+      F.line = 177;
+      var el_1342177796 = null;
       F.line = 239;
       F.filename = "iterators.nim";
-      var colontmp__536871619 = [];
-      F.line = 148;
+      var colontmp__536871583 = [];
+      F.line = 177;
       F.filename = "nimjs.nim";
-      colontmp__536871619 = el_1342177694.querySelectorAll(selector_1342177695);
+      colontmp__536871583 = el_1342177737.querySelectorAll(selector_1342177738);
       F.line = 241;
       F.filename = "iterators.nim";
-      var i_536871620 = 0;
+      var i_536871584 = 0;
       F.line = 242;
-      var L_536871621 = (colontmp__536871619).length;
+      var L_536871585 = (colontmp__536871583).length;
       Label2: {
         F.line = 243;
           Label3: while (true) {
-          if (!(i_536871620 < L_536871621)) break Label3;
-            F.line = 148;
+          if (!(i_536871584 < L_536871585)) break Label3;
+            F.line = 177;
             F.filename = "nimjs.nim";
-            el_1342177753 = colontmp__536871619[chckIndx(i_536871620, 0, (colontmp__536871619).length - 1)];
-            F.line = 148;
-            gather_1342177730.push(el_1342177753);;
+            el_1342177796 = colontmp__536871583[chckIndx(i_536871584, 0, (colontmp__536871583).length - 1)];
+            F.line = 177;
+            gather_1342177773.push(el_1342177796);;
             F.line = 245;
             F.filename = "iterators.nim";
-            i_536871620 = addInt(i_536871620, 1);
-            if (!(((colontmp__536871619).length == L_536871621))) {
+            i_536871584 = addInt(i_536871584, 1);
+            if (!(((colontmp__536871583).length == L_536871585))) {
             F.line = 246;
             failedAssertImpl_268435541(makeNimstrLit("C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\system\\iterators.nim(246, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -4001,114 +4199,114 @@ function queryAll_1342177693(el_1342177694, selector_1342177695) {
           }
       };
     };
-    if (((gather_1342177730).length == 0)) {
-    F.line = 151;
+    if (((gather_1342177773).length == 0)) {
+    F.line = 180;
     F.filename = "nimjs.nim";
-    result_1342177701 = nimCopy(result_1342177701, none_1342177761(), NTI1342177569);
+    result_1342177744 = nimCopy(result_1342177744, none_1342177804(), NTI1342177607);
     break BeforeRet;
     }
     else {
-      F.line = 153;
-      result_1342177701 = nimCopy(result_1342177701, some_1342177769(gather_1342177730), NTI1342177569);
+      F.line = 182;
+      result_1342177744 = nimCopy(result_1342177744, some_1342177812(gather_1342177773), NTI1342177607);
       break BeforeRet;
     }
     
   };
   framePtr = F.prev;
 
-  return result_1342177701;
+  return result_1342177744;
 
 }
 
-function close_btns_1811939381(modal_1811939382) {
-  var result_1811939384 = ({val: [], has: false});
+function close_btns_2030043189(modal_2030043190) {
+  var result_2030043192 = ({val: [], has: false});
 
   var F = {procname: "modal.close_btns", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
   framePtr = F;
     F.line = 32;
     F.filename = "modal.nim";
-    result_1811939384 = nimCopy(result_1811939384, queryAll_1342177693(modal_1811939382.el, "[modal-close-btn]"), NTI1342177569);
+    result_2030043192 = nimCopy(result_2030043192, queryAll_1342177736(modal_2030043190.el, "[modal-close-btn]"), NTI1342177607);
   framePtr = F.prev;
 
-  return result_1811939384;
+  return result_2030043192;
 
 }
 
-function isNone_1811939416(self_1811939418) {
-  var result_1811939419 = false;
+function isNone_2030043224(self_2030043226) {
+  var result_2030043227 = false;
 
   var F = {procname: "isNone.isNone", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 176;
     F.filename = "options.nim";
-    result_1811939419 = !(self_1811939418.has);
+    result_2030043227 = !(self_2030043226.has);
   framePtr = F.prev;
 
-  return result_1811939419;
+  return result_2030043227;
 
 }
 
-function get_1811939408(self_1811939410) {
-  var result_1811939411 = [];
+function get_2030043216(self_2030043218) {
+  var result_2030043219 = [];
 
   var F = {procname: "get.get", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
-    if (isNone_1811939416(self_1811939410)) {
+    if (isNone_2030043224(self_2030043218)) {
     F.line = 202;
     F.filename = "options.nim";
     raiseException({message: [67,97,110,39,116,32,111,98,116,97,105,110,32,97,32,118,97,108,117,101,32,102,114,111,109,32,97,32,96,110,111,110,101,96], parent: null, m_type: NTI1174405140, name: null, trace: [], up: null}, "UnpackDefect");
     }
     
     F.line = 203;
-    result_1811939411 = self_1811939410["val"];
+    result_2030043219 = self_2030043218["val"];
   framePtr = F.prev;
 
-  return result_1811939411;
+  return result_2030043219;
 
 }
 
-function click_1342177527(el_1342177528, cb_1342177531) {
+function click_1342177535(el_1342177536, cb_1342177539) {
   var F = {procname: "nimjs.click", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
-    F.line = 57;
+    F.line = 62;
     F.filename = "nimjs.nim";
-    el_1342177528.addEventListener("click", cb_1342177531, false);
+    el_1342177536.addEventListener("click", cb_1342177539, false);
   framePtr = F.prev;
 
   
 }
 
-function addClass_1342178330(el_1342178332, cls_1342178333) {
+function addClass_1342179156(el_1342179158, cls_1342179159) {
   var F = {procname: "addClass.addClass", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
-    F.line = 278;
+    F.line = 307;
     F.filename = "nimjs.nim";
-    el_1342178332.classList.add(toJSStr(cls_1342178333));
+    el_1342179158.classList.add(toJSStr(cls_1342179159));
   framePtr = F.prev;
 
   
 }
 
-function hide_1811939353(modal_1811939354) {
+function hide_2030043161(modal_2030043162) {
   var F = {procname: "modal.hide", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
   framePtr = F;
     F.line = 17;
     F.filename = "modal.nim";
-    addClass_1342178330(modal_1811939354.el, [104,105,100,100,101,110]);
+    addClass_1342179156(modal_2030043162.el, [104,105,100,100,101,110]);
   framePtr = F.prev;
 
   
 }
 
-function addCloseBtnFunctionality_1811939385(modal_1811939386) {
-            modal_1811939386 = nimCopy(null, modal_1811939386, NTI1811939331);
+function addCloseBtnFunctionality_2030043193(modal_2030043194) {
+            modal_2030043194 = nimCopy(null, modal_2030043194, NTI2030043139);
             
-function HEX3Aanonymous_1811939442(e_1811939443) {
+function HEX3Aanonymous_2030043250(e_2030043251) {
               var F = {procname: "addCloseBtnFunctionality.:anonymous", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
               framePtr = F;
                 F.line = 38;
                 F.filename = "modal.nim";
-                hide_1811939353(modal_1811939386);
+                hide_2030043161(modal_2030043194);
               framePtr = F.prev;
 
               
@@ -4116,35 +4314,35 @@ function HEX3Aanonymous_1811939442(e_1811939443) {
 
   var F = {procname: "modal.addCloseBtnFunctionality", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
   framePtr = F;
-    if (isSome_1811939391(close_btns_1811939381(modal_1811939386))) {
+    if (isSome_2030043199(close_btns_2030043189(modal_2030043194))) {
     Label1: {
       F.line = 36;
       F.filename = "modal.nim";
-      var item_1811939441 = null;
+      var item_2030043249 = null;
       F.line = 239;
       F.filename = "iterators.nim";
-      var colontmp__536871614 = [];
+      var colontmp__536871578 = [];
       F.line = 36;
       F.filename = "modal.nim";
-      colontmp__536871614 = get_1811939408(close_btns_1811939381(modal_1811939386));
+      colontmp__536871578 = get_2030043216(close_btns_2030043189(modal_2030043194));
       F.line = 241;
       F.filename = "iterators.nim";
-      var i_536871615 = 0;
+      var i_536871579 = 0;
       F.line = 242;
-      var L_536871616 = (colontmp__536871614).length;
+      var L_536871580 = (colontmp__536871578).length;
       Label2: {
         F.line = 243;
           Label3: while (true) {
-          if (!(i_536871615 < L_536871616)) break Label3;
+          if (!(i_536871579 < L_536871580)) break Label3;
             F.line = 36;
             F.filename = "modal.nim";
-            item_1811939441 = colontmp__536871614[chckIndx(i_536871615, 0, (colontmp__536871614).length - 1)];
+            item_2030043249 = colontmp__536871578[chckIndx(i_536871579, 0, (colontmp__536871578).length - 1)];
             F.line = 36;
-            click_1342177527(item_1811939441, HEX3Aanonymous_1811939442);
+            click_1342177535(item_2030043249, HEX3Aanonymous_2030043250);
             F.line = 245;
             F.filename = "iterators.nim";
-            i_536871615 = addInt(i_536871615, 1);
-            if (!(((colontmp__536871614).length == L_536871616))) {
+            i_536871579 = addInt(i_536871579, 1);
+            if (!(((colontmp__536871578).length == L_536871580))) {
             F.line = 246;
             failedAssertImpl_268435541(makeNimstrLit("C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\system\\iterators.nim(246, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -4159,81 +4357,81 @@ function HEX3Aanonymous_1811939442(e_1811939443) {
   
 }
 
-function onClassChange_1342177807(el_1342177808, cb_1342177811) {
+function onClassChange_1342177850(el_1342177851, cb_1342177854) {
   var F = {procname: "nimjs.onClassChange", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
-    F.line = 156;
+    F.line = 185;
     F.filename = "nimjs.nim";
         let observer = new MutationObserver(mutations => {
         mutations.forEach(mutation => {
             if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                cb_1342177811(el_1342177808)
+                cb_1342177854(el_1342177851)
             }
         });
     });
-    observer.observe(el_1342177808, { attributes: true });
+    observer.observe(el_1342177851, { attributes: true });
 
   framePtr = F.prev;
 
   
 }
 
-function hasClass_1342177967(el_1342177968, cls_1342177969) {
-  var result_1342177970 = false;
+function hasClass_1342178010(el_1342178011, cls_1342178012) {
+  var result_1342178013 = false;
 
   var F = {procname: "nimjs.hasClass", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 235;
+    F.line = 264;
     F.filename = "nimjs.nim";
-    result_1342177970 = el_1342177968.classList.contains(cls_1342177969);
+    result_1342178013 = el_1342178011.classList.contains(cls_1342178012);
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_1342177970;
+  return result_1342178013;
 
 }
 
-function rmClass_1342178325(el_1342178327, cls_1342178328) {
+function rmClass_1342179151(el_1342179153, cls_1342179154) {
   var F = {procname: "rmClass.rmClass", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
-    F.line = 275;
+    F.line = 304;
     F.filename = "nimjs.nim";
-    el_1342178327.classList.remove(toJSStr(cls_1342178328));
+    el_1342179153.classList.remove(toJSStr(cls_1342179154));
   framePtr = F.prev;
 
   
 }
 
-function show_1811939347(modal_1811939348) {
+function show_2030043155(modal_2030043156) {
   var F = {procname: "modal.show", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
   framePtr = F;
     F.line = 16;
     F.filename = "modal.nim";
-    rmClass_1342178325(modal_1811939348.el, [104,105,100,100,101,110]);
+    rmClass_1342179151(modal_2030043156.el, [104,105,100,100,101,110]);
   framePtr = F.prev;
 
   
 }
 
-function newModal_1811939444(el_1811939445, onShow_1811939448, onHide_1811939451, onToggle_1811939454, onReset_1811939457, openBtns_1811939462, closeBtns_1811939467) {
+function newModal_2030043252(el_2030043253, onShow_2030043256, onHide_2030043259, onToggle_2030043262, onReset_2030043265, openBtns_2030043270, closeBtns_2030043275) {
     
-function HEX3Aanonymous_1811939470(el_1811939471) {
+function HEX3Aanonymous_2030043278(el_2030043279) {
       var F = {procname: "newModal.:anonymous", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
       framePtr = F;
-        if (hasClass_1342177967(el_1811939471, "hidden")) {
-        if (!((this_1811939469.onHide == null))) {
+        if (hasClass_1342178010(el_2030043279, "hidden")) {
+        if (!((this_2030043277.onHide == null))) {
         F.line = 62;
         F.filename = "modal.nim";
-        this_1811939469.onHide(this_1811939469);
+        this_2030043277.onHide(this_2030043277);
         }
         
         }
         else {
-          if (!((this_1811939469.onShow == null))) {
+          if (!((this_2030043277.onShow == null))) {
           F.line = 65;
-          this_1811939469.onShow(this_1811939469);
+          this_2030043277.onShow(this_2030043277);
           }
           
         }
@@ -4243,61 +4441,61 @@ function HEX3Aanonymous_1811939470(el_1811939471) {
       
     }
             
-function HEX3Aanonymous_1811939488(e_1811939489) {
+function HEX3Aanonymous_2030043296(e_2030043297) {
               var F = {procname: "newModal.:anonymous", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
               framePtr = F;
                 F.line = 69;
                 F.filename = "modal.nim";
-                show_1811939347(this_1811939469);
+                show_2030043155(this_2030043277);
               framePtr = F.prev;
 
               
             }
             
-function HEX3Aanonymous_1811939494(e_1811939495) {
+function HEX3Aanonymous_2030043302(e_2030043303) {
               var F = {procname: "newModal.:anonymous", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
               framePtr = F;
                 F.line = 73;
                 F.filename = "modal.nim";
-                hide_1811939353(this_1811939469);
+                hide_2030043161(this_2030043277);
               framePtr = F.prev;
 
               
             }
 
-  var result_1811939468 = ({el: null, onShow: null, onHide: null, onToggle: null, onReset: null});
+  var result_2030043276 = ({el: null, onShow: null, onHide: null, onToggle: null, onReset: null});
 
   var F = {procname: "modal.newModal", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\webui\\modal\\modal.nim", line: 0};
   framePtr = F;
   BeforeRet: {
     F.line = 50;
     F.filename = "modal.nim";
-    var this_1811939469 = {el: el_1811939445, onShow: onShow_1811939448, onHide: onHide_1811939451, onToggle: onToggle_1811939454, onReset: onReset_1811939457};
+    var this_2030043277 = {el: el_2030043253, onShow: onShow_2030043256, onHide: onHide_2030043259, onToggle: onToggle_2030043262, onReset: onReset_2030043265};
     F.line = 58;
-    addCloseBtnFunctionality_1811939385(this_1811939469);
+    addCloseBtnFunctionality_2030043193(this_2030043277);
     F.line = 59;
-    onClassChange_1342177807(this_1811939469.el, HEX3Aanonymous_1811939470);
+    onClassChange_1342177850(this_2030043277.el, HEX3Aanonymous_2030043278);
     Label1: {
       F.line = 67;
-      var btn_1811939487 = null;
+      var btn_2030043295 = null;
       F.line = 241;
       F.filename = "iterators.nim";
-      var i_536871606 = 0;
+      var i_536871570 = 0;
       F.line = 242;
-      var L_536871607 = (openBtns_1811939462).length;
+      var L_536871571 = (openBtns_2030043270).length;
       Label2: {
         F.line = 243;
           Label3: while (true) {
-          if (!(i_536871606 < L_536871607)) break Label3;
+          if (!(i_536871570 < L_536871571)) break Label3;
             F.line = 67;
             F.filename = "modal.nim";
-            btn_1811939487 = openBtns_1811939462[chckIndx(i_536871606, 0, (openBtns_1811939462).length - 1)];
+            btn_2030043295 = openBtns_2030043270[chckIndx(i_536871570, 0, (openBtns_2030043270).length - 1)];
             F.line = 67;
-            click_1342177527(btn_1811939487, HEX3Aanonymous_1811939488);
+            click_1342177535(btn_2030043295, HEX3Aanonymous_2030043296);
             F.line = 245;
             F.filename = "iterators.nim";
-            i_536871606 = addInt(i_536871606, 1);
-            if (!(((openBtns_1811939462).length == L_536871607))) {
+            i_536871570 = addInt(i_536871570, 1);
+            if (!(((openBtns_2030043270).length == L_536871571))) {
             F.line = 246;
             failedAssertImpl_268435541(makeNimstrLit("C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\system\\iterators.nim(246, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -4308,25 +4506,25 @@ function HEX3Aanonymous_1811939494(e_1811939495) {
     Label4: {
       F.line = 71;
       F.filename = "modal.nim";
-      var btn_1811939493 = null;
+      var btn_2030043301 = null;
       F.line = 241;
       F.filename = "iterators.nim";
-      var i_536871610 = 0;
+      var i_536871574 = 0;
       F.line = 242;
-      var L_536871611 = (closeBtns_1811939467).length;
+      var L_536871575 = (closeBtns_2030043275).length;
       Label5: {
         F.line = 243;
           Label6: while (true) {
-          if (!(i_536871610 < L_536871611)) break Label6;
+          if (!(i_536871574 < L_536871575)) break Label6;
             F.line = 71;
             F.filename = "modal.nim";
-            btn_1811939493 = closeBtns_1811939467[chckIndx(i_536871610, 0, (closeBtns_1811939467).length - 1)];
+            btn_2030043301 = closeBtns_2030043275[chckIndx(i_536871574, 0, (closeBtns_2030043275).length - 1)];
             F.line = 71;
-            click_1342177527(btn_1811939493, HEX3Aanonymous_1811939494);
+            click_1342177535(btn_2030043301, HEX3Aanonymous_2030043302);
             F.line = 245;
             F.filename = "iterators.nim";
-            i_536871610 = addInt(i_536871610, 1);
-            if (!(((closeBtns_1811939467).length == L_536871611))) {
+            i_536871574 = addInt(i_536871574, 1);
+            if (!(((closeBtns_2030043275).length == L_536871575))) {
             F.line = 246;
             failedAssertImpl_268435541(makeNimstrLit("C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\system\\iterators.nim(246, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -4336,86 +4534,86 @@ function HEX3Aanonymous_1811939494(e_1811939495) {
     };
     F.line = 75;
     F.filename = "modal.nim";
-    result_1811939468 = nimCopy(result_1811939468, this_1811939469, NTI1811939331);
+    result_2030043276 = nimCopy(result_2030043276, this_2030043277, NTI2030043139);
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_1811939468;
+  return result_2030043276;
 
 }
 
-function query_strict_1342177684(selector_1342177685) {
-  var result_1342177686 = null;
+function query_strict_1342177718(selector_1342177719) {
+  var result_1342177720 = null;
 
   var F = {procname: "nimjs.query_strict", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 140;
+    F.line = 161;
     F.filename = "nimjs.nim";
-    var el_1342177687 = document.querySelector(toJSStr(selector_1342177685));
-    if ((el_1342177687 == null)) {
-    F.line = 142;
-    raiseException({message: ([69,108,101,109,101,110,116,32,119,105,116,104,32,115,101,108,101,99,116,111,114,32,39] || []).concat(selector_1342177685 || [],[39,32,110,111,116,32,102,111,117,110,100] || []), parent: null, m_type: NTI1342177283, name: null, trace: [], up: null}, "ElementNotFound");
+    var el_1342177721 = document.querySelector(toJSStr(selector_1342177719));
+    if ((el_1342177721 == null)) {
+    F.line = 163;
+    raiseException({message: ([69,108,101,109,101,110,116,32,119,105,116,104,32,115,101,108,101,99,116,111,114,32,39] || []).concat(selector_1342177719 || [],[39,32,110,111,116,32,102,111,117,110,100] || []), parent: null, m_type: NTI1342177283, name: null, trace: [], up: null}, "ElementNotFound");
     }
     else {
-      F.line = 144;
-      result_1342177686 = el_1342177687;
+      F.line = 165;
+      result_1342177720 = el_1342177721;
       break BeforeRet;
     }
     
   };
   framePtr = F.prev;
 
-  return result_1342177686;
+  return result_1342177720;
 
 }
 
-function query_strict_1342177674(el_1342177675, selector_1342177676) {
-  var result_1342177677 = null;
+function query_strict_1342177708(el_1342177709, selector_1342177710) {
+  var result_1342177711 = null;
 
   var F = {procname: "nimjs.query_strict", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 133;
+    F.line = 154;
     F.filename = "nimjs.nim";
-    var el_1342177678 = el_1342177675.querySelector(toJSStr(selector_1342177676));
-    if ((el_1342177678 == null)) {
-    F.line = 135;
-    raiseException({message: ([69,108,101,109,101,110,116,32,119,105,116,104,32,115,101,108,101,99,116,111,114,32,39] || []).concat(selector_1342177676 || [],[39,32,110,111,116,32,102,111,117,110,100] || []), parent: null, m_type: NTI1342177283, name: null, trace: [], up: null}, "ElementNotFound");
+    var el_1342177712 = el_1342177709.querySelector(toJSStr(selector_1342177710));
+    if ((el_1342177712 == null)) {
+    F.line = 156;
+    raiseException({message: ([69,108,101,109,101,110,116,32,119,105,116,104,32,115,101,108,101,99,116,111,114,32,39] || []).concat(selector_1342177710 || [],[39,32,110,111,116,32,102,111,117,110,100] || []), parent: null, m_type: NTI1342177283, name: null, trace: [], up: null}, "ElementNotFound");
     }
     else {
-      F.line = 137;
-      result_1342177677 = el_1342177678;
+      F.line = 158;
+      result_1342177711 = el_1342177712;
       break BeforeRet;
     }
     
   };
   framePtr = F.prev;
 
-  return result_1342177677;
+  return result_1342177711;
 
 }
 
-function newBetterfetchOptions_536871248(metod_536871250, body_536871251, mode_536871252, credentials_536871253, cache_536871254, referrerPolicy_536871255, keepalive_536871256, redirect_536871257, referrer_536871258, integrity_536871259, headers_536871260) {
+function newBetterfetchOptions_536871211(metod_536871213, body_536871214, mode_536871215, credentials_536871216, cache_536871217, referrerPolicy_536871218, keepalive_536871219, redirect_536871220, referrer_536871221, integrity_536871222, headers_536871223) {
     var Temporary1;
     var Temporary2;
 
-  var result_536871261 = null;
+  var result_536871224 = null;
 
   var F = {procname: "newBetterfetchOptions.newBetterfetchOptions", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\unifetch.nim", line: 0};
   framePtr = F;
     F.line = 25;
     F.filename = "unifetch.nim";
-    if (!((ConstSet2[metod_536871250] != undefined))) {
-    Temporary1 = body_536871251;
+    if (!((ConstSet2[metod_536871213] != undefined))) {
+    Temporary1 = body_536871214;
     }
     else {
     Temporary1 = null;
     }
     
     F.line = 29;
-    switch (metod_536871250) {
+    switch (metod_536871213) {
     case 0:
       Temporary2 = "HEAD";
       break;
@@ -4438,46 +4636,46 @@ function newBetterfetchOptions_536871248(metod_536871250, body_536871251, mode_5
       Temporary2 = "GET";
       break;
     }
-    result_536871261 = {body: Temporary1, mode: toJSStr(reprEnum(mode_536871252, NTI1325400068)), credentials: toJSStr(reprEnum(credentials_536871253, NTI1325400069)), cache: toJSStr(reprEnum(cache_536871254, NTI1325400070)), referrerPolicy: toJSStr(reprEnum(referrerPolicy_536871255, NTI1325400072)), keepalive: keepalive_536871256, redirect: toJSStr(reprEnum(redirect_536871257, NTI1325400071)), referrer: referrer_536871258, integrity: integrity_536871259, headers: headers_536871260, method: Temporary2, m_type: NTI536871184};
+    result_536871224 = {body: Temporary1, mode: toJSStr(reprEnum(mode_536871215, NTI1325400068)), credentials: toJSStr(reprEnum(credentials_536871216, NTI1325400069)), cache: toJSStr(reprEnum(cache_536871217, NTI1325400070)), referrerPolicy: toJSStr(reprEnum(referrerPolicy_536871218, NTI1325400072)), keepalive: keepalive_536871219, redirect: toJSStr(reprEnum(redirect_536871220, NTI1325400071)), referrer: referrer_536871221, integrity: integrity_536871222, headers: headers_536871223, method: Temporary2, m_type: NTI536871156};
   framePtr = F.prev;
 
-  return result_536871261;
+  return result_536871224;
 
 }
-async function post_536871214(url_536871216, body_536871217, incoming_headers_536871218) {
-  var result_536871219 = null;
+async function post_536871177(url_536871179, body_536871180, incoming_headers_536871181) {
+  var result_536871182 = null;
 
   var F = {procname: "post.post", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\unifetch.nim", line: 0};
   framePtr = F;
     F.line = 99;
     F.filename = "unifetch.nim";
     F.line = 82;
-    var headers_536871229 = new Headers();
+    var headers_536871192 = new Headers();
     Label1: {
       F.line = 83;
-      var k_536871233 = [];
+      var k_536871196 = [];
       F.line = 83;
-      var v_536871234 = [];
+      var v_536871197 = [];
       F.line = 241;
       F.filename = "iterators.nim";
-      var i_536871626 = 0;
+      var i_536871590 = 0;
       F.line = 242;
-      var L_536871627 = (incoming_headers_536871218).length;
+      var L_536871591 = (incoming_headers_536871181).length;
       Label2: {
         F.line = 243;
           Label3: while (true) {
-          if (!(i_536871626 < L_536871627)) break Label3;
+          if (!(i_536871590 < L_536871591)) break Label3;
             F.line = 83;
             F.filename = "unifetch.nim";
-            k_536871233 = incoming_headers_536871218[chckIndx(i_536871626, 0, (incoming_headers_536871218).length - 1)]["Field0"];
+            k_536871196 = incoming_headers_536871181[chckIndx(i_536871590, 0, (incoming_headers_536871181).length - 1)]["Field0"];
             F.line = 83;
-            v_536871234 = incoming_headers_536871218[chckIndx(i_536871626, 0, (incoming_headers_536871218).length - 1)]["Field1"];
+            v_536871197 = incoming_headers_536871181[chckIndx(i_536871590, 0, (incoming_headers_536871181).length - 1)]["Field1"];
             F.line = 83;
-            headers_536871229.append(toJSStr(k_536871233), toJSStr(v_536871234));
+            headers_536871192.append(toJSStr(k_536871196), toJSStr(v_536871197));
             F.line = 245;
             F.filename = "iterators.nim";
-            i_536871626 = addInt(i_536871626, 1);
-            if (!(((incoming_headers_536871218).length == L_536871627))) {
+            i_536871590 = addInt(i_536871590, 1);
+            if (!(((incoming_headers_536871181).length == L_536871591))) {
             F.line = 246;
             failedAssertImpl_268435541(makeNimstrLit("C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\system\\iterators.nim(246, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -4487,65 +4685,65 @@ async function post_536871214(url_536871216, body_536871217, incoming_headers_53
     };
     F.line = 87;
     F.filename = "unifetch.nim";
-    var options0_536871314 = newBetterfetchOptions_536871248(2, body_536871217, 0, 1, 0, 1, false, 0, "client", "", headers_536871229);
-    result_536871219 = fetch(url_536871216, options0_536871314);
+    var options0_536871277 = newBetterfetchOptions_536871211(2, body_536871180, 0, 1, 0, 1, false, 0, "client", "", headers_536871192);
+    result_536871182 = fetch(url_536871179, options0_536871277);
   framePtr = F.prev;
 
-  return result_536871219;
+  return result_536871182;
 
 }
 
-function toggleHidden_1342177995(el_1342177996) {
+function toggleHidden_1342178038(el_1342178039) {
   var F = {procname: "nimjs.toggleHidden", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
-    F.line = 268;
+    F.line = 297;
     F.filename = "nimjs.nim";
-    el_1342177996.classList.toggle("hidden");
+    el_1342178039.classList.toggle("hidden");
   framePtr = F.prev;
 
   
 }
 
-function push_to_local_storage_1342178209(key_1342178210, val_1342178211) {
+function push_to_local_storage_1342178254(key_1342178255, val_1342178256) {
   var F = {procname: "nimjs.push_to_local_storage", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
-    F.line = 366;
+    F.line = 399;
     F.filename = "nimjs.nim";
-    window.localStorage.setItem(key_1342178210, val_1342178211);
+    window.localStorage.setItem(key_1342178255, val_1342178256);
   framePtr = F.prev;
 
   
 }
 
-function Template_1342177971(content_1342177972) {
-  var result_1342177973 = null;
+function Template_1342178014(content_1342178015) {
+  var result_1342178016 = null;
 
   var F = {procname: "nimjs.Template", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 238;
+    F.line = 267;
     F.filename = "nimjs.nim";
-    var p_1342177974 = document.createElement("template");
-    F.line = 239;
-    p_1342177974.innerHTML = content_1342177972;
-    F.line = 240;
-    var node_1342177975 = p_1342177974.content.cloneNode(true);
-    F.line = 241;
-    result_1342177973 = node_1342177975;
+    var p_1342178017 = document.createElement("template");
+    F.line = 268;
+    p_1342178017.innerHTML = content_1342178015;
+    F.line = 269;
+    var node_1342178018 = p_1342178017.content.cloneNode(true);
+    F.line = 270;
+    result_1342178016 = node_1342178018;
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_1342177973;
+  return result_1342178016;
 
 }
 
-function addElement_1342177981(el_1342177982, child_1342177983) {
+function addElement_1342178024(el_1342178025, child_1342178026) {
   var F = {procname: "nimjs.addElement", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
-    F.line = 250;
+    F.line = 279;
     F.filename = "nimjs.nim";
-    el_1342177982.appendChild(Template_1342177971(child_1342177983));
+    el_1342178025.appendChild(Template_1342178014(child_1342178026));
   framePtr = F.prev;
 
   
@@ -4571,7 +4769,7 @@ function some_536871004(val_536871006) {
     F.filename = "options.nim";
     result_536871007.has = true;
     F.line = 141;
-    result_536871007.val = nimCopy(null, val_536871006, NTI536870956);
+    result_536871007.val = nimCopy(null, val_536871006, NTI536870955);
   framePtr = F.prev;
 
   return result_536871007;
@@ -4583,43 +4781,43 @@ async function get_nfts_536870953(wallet_536870954) {
   var F = {procname: "contribute_page_fe.get_nfts", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\contribute_page_fe.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 304;
+    F.line = 72;
     F.filename = "contribute_page_fe.nim";
     var nfts_536870976 = [];
     Label1: {
-      F.line = 305;
+      F.line = 73;
       var nft_index_536870977 = 0;
       F.line = 107;
       F.filename = "iterators_1.nim";
-      var res_536871637 = 0;
+      var res_536871601 = 0;
       Label2: {
         F.line = 108;
           Label3: while (true) {
-          if (!(res_536871637 <= wallet_536870954.contract.num_editions)) break Label3;
-            F.line = 305;
+          if (!(res_536871601 <= wallet_536870954.contract.num_editions)) break Label3;
+            F.line = 73;
             F.filename = "contribute_page_fe.nim";
-            nft_index_536870977 = res_536871637;
-            F.line = 306;
+            nft_index_536870977 = res_536871601;
+            F.line = 74;
             var balance_536870983 = (await wallet_536870954.contract.contract.balanceOf(wallet_536870954.address, nft_index_536870977));
             if ((0.0 < parseFloat(balance_536870983))) {
-            F.line = 308;
+            F.line = 76;
             nfts_536870976.push(((nft_index_536870977) | 0));;
             }
             
             F.line = 110;
             F.filename = "iterators_1.nim";
-            res_536871637 = addInt(res_536871637, 1);
+            res_536871601 = addInt(res_536871601, 1);
           }
       };
     };
     if (((nfts_536870976).length == 0)) {
-    F.line = 311;
+    F.line = 79;
     F.filename = "contribute_page_fe.nim";
     result_536870962 = none_536870992();
     break BeforeRet;
     }
     
-    F.line = 313;
+    F.line = 81;
     result_536870962 = some_536871004(nfts_536870976);
     break BeforeRet;
   };
@@ -4629,50 +4827,50 @@ async function get_nfts_536870953(wallet_536870954) {
 
 }
 
-function isSome_536871401(self_536871403) {
-  var result_536871404 = false;
+function isSome_536871365(self_536871367) {
+  var result_536871368 = false;
 
   var F = {procname: "isSome.isSome", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 161;
     F.filename = "options.nim";
-    result_536871404 = self_536871403.has;
+    result_536871368 = self_536871367.has;
   framePtr = F.prev;
 
-  return result_536871404;
+  return result_536871368;
 
 }
 
-function isNone_536871426(self_536871428) {
-  var result_536871429 = false;
+function isNone_536871390(self_536871392) {
+  var result_536871393 = false;
 
   var F = {procname: "isNone.isNone", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 176;
     F.filename = "options.nim";
-    result_536871429 = !(self_536871428.has);
+    result_536871393 = !(self_536871392.has);
   framePtr = F.prev;
 
-  return result_536871429;
+  return result_536871393;
 
 }
 
-function get_536871418(self_536871420) {
-  var result_536871421 = [];
+function get_536871382(self_536871384) {
+  var result_536871385 = [];
 
   var F = {procname: "get.get", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
-    if (isNone_536871426(self_536871420)) {
+    if (isNone_536871390(self_536871384)) {
     F.line = 202;
     F.filename = "options.nim";
     raiseException({message: [67,97,110,39,116,32,111,98,116,97,105,110,32,97,32,118,97,108,117,101,32,102,114,111,109,32,97,32,96,110,111,110,101,96], parent: null, m_type: NTI1174405140, name: null, trace: [], up: null}, "UnpackDefect");
     }
     
     F.line = 203;
-    result_536871421 = self_536871420["val"];
+    result_536871385 = self_536871384["val"];
   framePtr = F.prev;
 
-  return result_536871421;
+  return result_536871385;
 
 }
 
@@ -4769,19 +4967,19 @@ function HEX5BHEX5D_973079835(s_973079838, x_973079839) {
       var i_973079849 = 0;
       F.line = 119;
       F.filename = "iterators_1.nim";
-      var i_1660944783 = 0;
+      var i_1879048591 = 0;
       Label2: {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_1660944783 < L_973079844)) break Label3;
+          if (!(i_1879048591 < L_973079844)) break Label3;
             F.line = 86;
             F.filename = "indices.nim";
-            i_973079849 = i_1660944783;
+            i_973079849 = i_1879048591;
             F.line = 86;
             result_973079840[chckIndx(i_973079849, 0, (result_973079840).length - 1)] = s_973079838[chckIndx(addInt(i_973079849, a_973079842), 0, (s_973079838).length - 1)];
             F.line = 122;
             F.filename = "iterators_1.nim";
-            i_1660944783 = addInt(i_1660944783, 1);
+            i_1879048591 = addInt(i_1879048591, 1);
           }
       };
     };
@@ -5174,25 +5372,25 @@ function nsuRepeatChar(c_973079649, count_973079650) {
       var i_973079656 = 0;
       F.line = 75;
       F.filename = "iterators_1.nim";
-      var colontmp__536871646 = 0;
+      var colontmp__536871608 = 0;
       F.line = 1329;
       F.filename = "strutils.nim";
-      colontmp__536871646 = subInt(count_973079650, 1);
+      colontmp__536871608 = subInt(count_973079650, 1);
       F.line = 90;
       F.filename = "iterators_1.nim";
-      var res_536871647 = 0;
+      var res_536871609 = 0;
       Label2: {
         F.line = 91;
           Label3: while (true) {
-          if (!(res_536871647 <= colontmp__536871646)) break Label3;
+          if (!(res_536871609 <= colontmp__536871608)) break Label3;
             F.line = 1329;
             F.filename = "strutils.nim";
-            i_973079656 = res_536871647;
+            i_973079656 = res_536871609;
             F.line = 1329;
             result_973079651[chckIndx(i_973079656, 0, (result_973079651).length - 1)] = c_973079649;
             F.line = 93;
             F.filename = "iterators_1.nim";
-            res_536871647 = addInt(res_536871647, 1);
+            res_536871609 = addInt(res_536871609, 1);
           }
       };
     };
@@ -5326,152 +5524,152 @@ function mkDigit_1358954501(v_1358954502, typ_1358954503) {
 
 }
 
-function formatInt_536871111(n_536871113, radix_536871114, spec_536871115) {
+function formatInt_1509949568(n_1509949570, radix_1509949571, spec_1509949572) {
     var Temporary1;
 
-  var result_536871116 = [];
+  var result_1509949573 = [];
 
   var F = {procname: "formatInt.formatInt", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\strformat.nim", line: 0};
   framePtr = F;
     F.line = 370;
     F.filename = "strformat.nim";
-    var n_536871119 = BigInt(n_536871113);
+    var n_1509949576 = BigInt(n_1509949570);
     F.line = 371;
-    var negative_536871120 = (n_536871119 < 0n);
+    var negative_1509949577 = (n_1509949576 < 0n);
     F.line = 372;
-    if (negative_536871120) {
-    Temporary1 = BigInt.asUintN(64, (BigInt.asUintN(64, ~(n_536871119)) + 1n));
+    if (negative_1509949577) {
+    Temporary1 = BigInt.asUintN(64, (BigInt.asUintN(64, ~(n_1509949576)) + 1n));
     }
     else {
-    Temporary1 = BigInt.asUintN(64, n_536871119);
+    Temporary1 = BigInt.asUintN(64, n_1509949576);
     }
     
-    var v_536871121 = Temporary1;
+    var v_1509949578 = Temporary1;
     F.line = 379;
-    var xx_536871122 = [];
-    if (spec_536871115.alternateForm) {
+    var xx_1509949579 = [];
+    if (spec_1509949572.alternateForm) {
     F.line = 381;
-    switch (spec_536871115.typ) {
+    switch (spec_1509949572.typ) {
     case 88:
       F.line = 382;
-      xx_536871122 = nimCopy(null, [48,120], NTI33554449);
+      xx_1509949579 = nimCopy(null, [48,120], NTI33554449);
       break;
     case 120:
       F.line = 383;
-      xx_536871122 = nimCopy(null, [48,120], NTI33554449);
+      xx_1509949579 = nimCopy(null, [48,120], NTI33554449);
       break;
     case 98:
       F.line = 384;
-      xx_536871122 = nimCopy(null, [48,98], NTI33554449);
+      xx_1509949579 = nimCopy(null, [48,98], NTI33554449);
       break;
     case 111:
       F.line = 385;
-      xx_536871122 = nimCopy(null, [48,111], NTI33554449);
+      xx_1509949579 = nimCopy(null, [48,111], NTI33554449);
       break;
     default: 
       break;
     }
     }
     
-    if ((v_536871121 == 0n)) {
+    if ((v_1509949578 == 0n)) {
     F.line = 389;
-    result_536871116 = nimCopy(null, [48], NTI33554449);
+    result_1509949573 = nimCopy(null, [48], NTI33554449);
     }
     else {
       F.line = 391;
-      result_536871116 = nimCopy(null, [], NTI33554449);
+      result_1509949573 = nimCopy(null, [], NTI33554449);
       Label2: {
         F.line = 392;
           Label3: while (true) {
-          if (!(0n < v_536871121)) break Label3;
+          if (!(0n < v_1509949578)) break Label3;
             F.line = 393;
-            var d_536871123 = (v_536871121 % BigInt.asUintN(64, BigInt(radix_536871114)));
+            var d_1509949580 = (v_1509949578 % BigInt.asUintN(64, BigInt(radix_1509949571)));
             F.line = 394;
-            v_536871121 = BigInt.asUintN(64, (v_536871121 / BigInt.asUintN(64, BigInt(radix_536871114))));
+            v_1509949578 = BigInt.asUintN(64, (v_1509949578 / BigInt.asUintN(64, BigInt(radix_1509949571))));
             F.line = 395;
-            result_536871116.push.apply(result_536871116, mkDigit_1358954501(chckRange(Number(d_536871123), (-2147483648), 2147483647), spec_536871115.typ));;
+            result_1509949573.push.apply(result_1509949573, mkDigit_1358954501(chckRange(Number(d_1509949580), (-2147483648), 2147483647), spec_1509949572.typ));;
           }
       };
       Label4: {
         F.line = 396;
-        var idx_536871128 = 0;
+        var idx_1509949585 = 0;
         F.line = 117;
         F.filename = "iterators_1.nim";
-        var colontmp__536871651 = 0;
+        var colontmp__536871613 = 0;
         F.line = 396;
         F.filename = "strformat.nim";
-        colontmp__536871651 = divInt((result_536871116).length, 2);
+        colontmp__536871613 = divInt((result_1509949573).length, 2);
         F.line = 119;
         F.filename = "iterators_1.nim";
-        var i_536871652 = 0;
+        var i_536871614 = 0;
         Label5: {
           F.line = 120;
             Label6: while (true) {
-            if (!(i_536871652 < colontmp__536871651)) break Label6;
+            if (!(i_536871614 < colontmp__536871613)) break Label6;
               F.line = 396;
               F.filename = "strformat.nim";
-              idx_536871128 = i_536871652;
+              idx_1509949585 = i_536871614;
               F.line = 396;
-              var Temporary7 = result_536871116[chckIndx(idx_536871128, 0, (result_536871116).length - 1)]; result_536871116[chckIndx(idx_536871128, 0, (result_536871116).length - 1)] = result_536871116[chckIndx(subInt(subInt((result_536871116).length, idx_536871128), 1), 0, (result_536871116).length - 1)]; result_536871116[chckIndx(subInt(subInt((result_536871116).length, idx_536871128), 1), 0, (result_536871116).length - 1)] = Temporary7;              F.line = 122;
+              var Temporary7 = result_1509949573[chckIndx(idx_1509949585, 0, (result_1509949573).length - 1)]; result_1509949573[chckIndx(idx_1509949585, 0, (result_1509949573).length - 1)] = result_1509949573[chckIndx(subInt(subInt((result_1509949573).length, idx_1509949585), 1), 0, (result_1509949573).length - 1)]; result_1509949573[chckIndx(subInt(subInt((result_1509949573).length, idx_1509949585), 1), 0, (result_1509949573).length - 1)] = Temporary7;              F.line = 122;
               F.filename = "iterators_1.nim";
-              i_536871652 = addInt(i_536871652, 1);
+              i_536871614 = addInt(i_536871614, 1);
             }
         };
       };
     }
     
-    if (spec_536871115.padWithZero) {
+    if (spec_1509949572.padWithZero) {
     F.line = 399;
     F.filename = "strformat.nim";
-    var sign_536871133 = (negative_536871120 || !((spec_536871115.sign == 45)));
+    var sign_1509949590 = (negative_1509949577 || !((spec_1509949572.sign == 45)));
     F.line = 400;
-    var toFill_536871137 = subInt(subInt(subInt(spec_536871115.minimumWidth, (result_536871116).length), (xx_536871122).length), (sign_536871133 ? 1 : 0));
-    if ((0 < toFill_536871137)) {
+    var toFill_1509949594 = subInt(subInt(subInt(spec_1509949572.minimumWidth, (result_1509949573).length), (xx_1509949579).length), (sign_1509949590 ? 1 : 0));
+    if ((0 < toFill_1509949594)) {
     F.line = 402;
-    result_536871116 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_536871137, 0, 2147483647)) || []).concat(result_536871116 || []), NTI33554449);
+    result_1509949573 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_1509949594, 0, 2147483647)) || []).concat(result_1509949573 || []), NTI33554449);
     }
     
     }
     
-    if (negative_536871120) {
+    if (negative_1509949577) {
     F.line = 405;
-    result_536871116 = nimCopy(null, ([45] || []).concat(xx_536871122 || [],result_536871116 || []), NTI33554449);
+    result_1509949573 = nimCopy(null, ([45] || []).concat(xx_1509949579 || [],result_1509949573 || []), NTI33554449);
     }
     else {
-    if (!((spec_536871115.sign == 45))) {
+    if (!((spec_1509949572.sign == 45))) {
     F.line = 407;
-    result_536871116 = nimCopy(null, [spec_536871115.sign].concat(xx_536871122 || [],result_536871116 || []), NTI33554449);
+    result_1509949573 = nimCopy(null, [spec_1509949572.sign].concat(xx_1509949579 || [],result_1509949573 || []), NTI33554449);
     }
     else {
       F.line = 409;
-      result_536871116 = nimCopy(null, (xx_536871122 || []).concat(result_536871116 || []), NTI33554449);
+      result_1509949573 = nimCopy(null, (xx_1509949579 || []).concat(result_1509949573 || []), NTI33554449);
     }
     }
-    if ((spec_536871115.align == 60)) {
+    if ((spec_1509949572.align == 60)) {
     Label8: {
       F.line = 412;
-      var i_536871142 = 0;
+      var i_1509949599 = 0;
       F.line = 117;
       F.filename = "iterators_1.nim";
-      var colontmp__536871655 = 0;
+      var colontmp__536871617 = 0;
       F.line = 412;
       F.filename = "strformat.nim";
-      colontmp__536871655 = (result_536871116).length;
+      colontmp__536871617 = (result_1509949573).length;
       F.line = 119;
       F.filename = "iterators_1.nim";
-      var i_536871656 = colontmp__536871655;
+      var i_536871618 = colontmp__536871617;
       Label9: {
         F.line = 120;
           Label10: while (true) {
-          if (!(i_536871656 < spec_536871115.minimumWidth)) break Label10;
+          if (!(i_536871618 < spec_1509949572.minimumWidth)) break Label10;
             F.line = 412;
             F.filename = "strformat.nim";
-            i_536871142 = i_536871656;
+            i_1509949599 = i_536871618;
             F.line = 412;
-            addChar(result_536871116, spec_536871115.fill);;
+            addChar(result_1509949573, spec_1509949572.fill);;
             F.line = 122;
             F.filename = "iterators_1.nim";
-            i_536871656 = addInt(i_536871656, 1);
+            i_536871618 = addInt(i_536871618, 1);
           }
       };
     };
@@ -5479,17 +5677,17 @@ function formatInt_536871111(n_536871113, radix_536871114, spec_536871115) {
     else {
       F.line = 415;
       F.filename = "strformat.nim";
-      var toFill_536871143 = subInt(spec_536871115.minimumWidth, (result_536871116).length);
-      if ((spec_536871115.align == 94)) {
+      var toFill_1509949600 = subInt(spec_1509949572.minimumWidth, (result_1509949573).length);
+      if ((spec_1509949572.align == 94)) {
       F.line = 417;
-      var half_536871144 = divInt(toFill_536871143, 2);
+      var half_1509949601 = divInt(toFill_1509949600, 2);
       F.line = 418;
-      result_536871116 = nimCopy(null, (nsuRepeatChar(spec_536871115.fill, chckRange(half_536871144, 0, 2147483647)) || []).concat(result_536871116 || [],nsuRepeatChar(spec_536871115.fill, chckRange(subInt(toFill_536871143, half_536871144), 0, 2147483647)) || []), NTI33554449);
+      result_1509949573 = nimCopy(null, (nsuRepeatChar(spec_1509949572.fill, chckRange(half_1509949601, 0, 2147483647)) || []).concat(result_1509949573 || [],nsuRepeatChar(spec_1509949572.fill, chckRange(subInt(toFill_1509949600, half_1509949601), 0, 2147483647)) || []), NTI33554449);
       }
       else {
-        if ((0 < toFill_536871143)) {
+        if ((0 < toFill_1509949600)) {
         F.line = 421;
-        result_536871116 = nimCopy(null, (nsuRepeatChar(spec_536871115.fill, chckRange(toFill_536871143, 0, 2147483647)) || []).concat(result_536871116 || []), NTI33554449);
+        result_1509949573 = nimCopy(null, (nsuRepeatChar(spec_1509949572.fill, chckRange(toFill_1509949600, 0, 2147483647)) || []).concat(result_1509949573 || []), NTI33554449);
         }
         
       }
@@ -5498,51 +5696,51 @@ function formatInt_536871111(n_536871113, radix_536871114, spec_536871115) {
     
   framePtr = F.prev;
 
-  return result_536871116;
+  return result_1509949573;
 
 }
 
-function formatValue_536871103(result_536871105, result_536871105_Idx, value_536871106, specifier_536871107) {
+function formatValue_1509949560(result_1509949562, result_1509949562_Idx, value_1509949563, specifier_1509949564) {
   var F = {procname: "formatValue.formatValue", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\strformat.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    if (((specifier_536871107).length == 0)) {
+    if (((specifier_1509949564).length == 0)) {
     F.line = 481;
     F.filename = "strformat.nim";
-    result_536871105[result_536871105_Idx].push.apply(result_536871105[result_536871105_Idx], HEX24_369098760(value_536871106));;
+    result_1509949562[result_1509949562_Idx].push.apply(result_1509949562[result_1509949562_Idx], HEX24_369098760(value_1509949563));;
     F.line = 482;
     break BeforeRet;
     }
     
     F.line = 483;
-    var spec_536871108 = parseStandardFormatSpecifier_1358954554(specifier_536871107, 0, false);
+    var spec_1509949565 = parseStandardFormatSpecifier_1358954554(specifier_1509949564, 0, false);
     F.line = 484;
-    var radix_536871109 = 10;
+    var radix_1509949566 = 10;
     F.line = 485;
-    switch (spec_536871108.typ) {
+    switch (spec_1509949565.typ) {
     case 120:
     case 88:
       F.line = 486;
-      radix_536871109 = 16;
+      radix_1509949566 = 16;
       break;
     case 100:
     case 0:
       break;
     case 98:
       F.line = 488;
-      radix_536871109 = 2;
+      radix_1509949566 = 2;
       break;
     case 111:
       F.line = 489;
-      radix_536871109 = 8;
+      radix_1509949566 = 8;
       break;
     default: 
       F.line = 491;
-      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_536871108.typ]), parent: null, m_type: NTI134217746, name: null, trace: [], up: null}, "ValueError");
+      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_1509949565.typ]), parent: null, m_type: NTI134217746, name: null, trace: [], up: null}, "ValueError");
       break;
     }
     F.line = 494;
-    result_536871105[result_536871105_Idx].push.apply(result_536871105[result_536871105_Idx], formatInt_536871111(value_536871106, radix_536871109, spec_536871108));;
+    result_1509949562[result_1509949562_Idx].push.apply(result_1509949562[result_1509949562_Idx], formatInt_1509949568(value_1509949563, radix_1509949566, spec_1509949565));;
   };
   framePtr = F.prev;
 
@@ -5554,20 +5752,20 @@ function nftCard_536871094(wallet_address_536871095, nft_num_536871096) {
 
   var F = {procname: "contribute_page_fe.nftCard", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\contribute_page_fe.nim", line: 0};
   framePtr = F;
-    F.line = 341;
+    F.line = 109;
     F.filename = "contribute_page_fe.nim";
     Label1: {
-      F.line = 341;
+      F.line = 109;
       var fmtRes_536871102 = [mnewString(0)];
-      F.line = 341;
+      F.line = 109;
       fmtRes_536871102[0].push.apply(fmtRes_536871102[0], [32,32,32,32,60,97,32,104,114,101,102,61,34,47,99,104,97,116,47]);;
-      F.line = 341;
+      F.line = 109;
       formatValue_1358954667(fmtRes_536871102, 0, wallet_address_536871095, []);
-      F.line = 341;
+      F.line = 109;
       fmtRes_536871102[0].push.apply(fmtRes_536871102[0], [47]);;
-      F.line = 341;
-      formatValue_536871103(fmtRes_536871102, 0, nft_num_536871096, []);
-      F.line = 341;
+      F.line = 109;
+      formatValue_1509949560(fmtRes_536871102, 0, nft_num_536871096, []);
+      F.line = 109;
       fmtRes_536871102[0].push.apply(fmtRes_536871102[0], makeNimstrLit("\">\x0A        <div class=\"bg-white rounded-xl shadow-md overflow-hidden\">\x0A            <!-- Image section -->\x0A            <div class=\"relative\">\x0A                <img class=\"w-full h-60 object-cover\" src=\"https://placehold.it/1000x1000\" alt=\"NFT Image\">\x0A                \x0A                <!-- Top-right price section -->\x0A                <div class=\"absolute top-4 right-4 bg-white py-1 px-2 rounded-full text-sm\">\x0A                    \xE2\xA7\xAB 0.28\x0A                </div>\x0A            </div>\x0A\x0A            <!-- Title section -->\x0A            <div class=\"p-4\">\x0A                <!-- Title and avatar section -->\x0A                <div class=\"flex items-center justify-between mb-2\">\x0A                    <div class=\"flex items-center space-x-2\">\x0A                        <!-- Avatar -->\x0A                        <img class=\"h-8 w-8 rounded-full\" src=\"https://placehold.it/50x50\" alt=\"Avatar\">\x0A                        <!-- Name -->\x0A                        <div class=\"text-sm\">\x0A                            <p class=\"font-medium text-gray-900\">\x0A                                Monk Punk #128\x0A                            </p>\x0A                            <p class=\"text-gray-500\">\x0A                                not for sale\x0A                            </p>\x0A                        </div>\x0A                    </div>\x0A                    \x0A                    <!-- Auction timer section -->\x0A                    <div class=\"text-sm text-gray-500\">\x0A                        Ending in 10h 58m\x0A                    </div>\x0A                </div>\x0A            </div>\x0A        </div>\x0A    </a>\x0A    "));;
     };
     result_536871097 = nimCopy(null, fmtRes_536871102[0], NTI33554449);
@@ -5577,177 +5775,193 @@ function nftCard_536871094(wallet_address_536871095, nft_num_536871096) {
 
 }
 
-function in_local_storage_1342178171(key_1342178172) {
-  var result_1342178173 = false;
+function in_local_storage_1342178216(key_1342178217) {
+  var result_1342178218 = false;
 
   var F = {procname: "nimjs.in_local_storage", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    if ((window.localStorage.getItem(key_1342178172) == null)) {
-    F.line = 342;
+    if ((window.localStorage.getItem(key_1342178217) == null)) {
+    F.line = 375;
     F.filename = "nimjs.nim";
-    result_1342178173 = false;
+    result_1342178218 = false;
     break BeforeRet;
     }
     else {
-      F.line = 344;
-      result_1342178173 = true;
+      F.line = 377;
+      result_1342178218 = true;
       break BeforeRet;
     }
     
   };
   framePtr = F.prev;
 
-  return result_1342178173;
+  return result_1342178218;
 
 }
 
-function none_1342177914() {
-  var result_1342177921 = ({val: null, has: false});
+function none_1342177957() {
+  var result_1342177964 = ({val: null, has: false});
 
   var F = {procname: "none.none", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
   framePtr = F.prev;
 
-  return result_1342177921;
+  return result_1342177964;
 
 }
 
-function some_1342177929(val_1342177931) {
-  var result_1342177932 = ({val: null, has: false});
+function some_1342177972(val_1342177974) {
+  var result_1342177975 = ({val: null, has: false});
 
   var F = {procname: "some.some", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 140;
     F.filename = "options.nim";
-    result_1342177932.has = true;
+    result_1342177975.has = true;
     F.line = 141;
-    result_1342177932.val = val_1342177931;
+    result_1342177975.val = val_1342177974;
   framePtr = F.prev;
 
-  return result_1342177932;
+  return result_1342177975;
 
 }
 
-function grab_val_from_local_storage_1342178178(key_1342178179) {
-  var result_1342178181 = ({val: null, has: false});
+function grab_val_from_local_storage_1342178223(key_1342178224) {
+  var result_1342178226 = ({val: null, has: false});
 
   var F = {procname: "nimjs.grab_val_from_local_storage", prev: framePtr, filename: "C:\\Users\\hmbem\\.nimble\\pkgs\\mynimlib-1.0.0\\mynimlib\\nimjs.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    if (!(in_local_storage_1342178171(key_1342178179))) {
-    F.line = 350;
+    if (!(in_local_storage_1342178216(key_1342178224))) {
+    F.line = 383;
     F.filename = "nimjs.nim";
-    result_1342178181 = nimCopy(result_1342178181, none_1342177914(), NTI1342177744);
+    result_1342178226 = nimCopy(result_1342178226, none_1342177957(), NTI1342177782);
     break BeforeRet;
     }
     else {
-      F.line = 352;
-      result_1342178181 = nimCopy(result_1342178181, some_1342177929(window.localStorage.getItem(key_1342178179)), NTI1342177744);
+      F.line = 385;
+      result_1342178226 = nimCopy(result_1342178226, some_1342177972(window.localStorage.getItem(key_1342178224)), NTI1342177782);
       break BeforeRet;
     }
     
   };
   framePtr = F.prev;
 
-  return result_1342178181;
+  return result_1342178226;
 
 }
 
-function isNone_536871372(self_536871374) {
-  var result_536871375 = false;
+function isNone_536871335(self_536871337) {
+  var result_536871338 = false;
 
   var F = {procname: "isNone.isNone", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\options.nim", line: 0};
   framePtr = F;
     F.line = 176;
     F.filename = "options.nim";
-    result_536871375 = !(self_536871374.has);
+    result_536871338 = !(self_536871337.has);
   framePtr = F.prev;
 
-  return result_536871375;
+  return result_536871338;
 
 }
 
-function handleShowShipping_536871366() {
+function handleShowShipping_536871329() {
   var F = {procname: "contribute_page_fe.handleShowShipping", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\contribute_page_fe.nim", line: 0};
   framePtr = F;
-    F.line = 411;
+    F.line = 179;
     F.filename = "contribute_page_fe.nim";
-    var submitted_shipping_536871367 = grab_val_from_local_storage_1342178178("submitted_shipping");
-    if (isNone_536871372(submitted_shipping_536871367)) {
-    F.line = 413;
+    var submitted_shipping_536871330 = grab_val_from_local_storage_1342178223("submitted_shipping");
+    if (isNone_536871335(submitted_shipping_536871330)) {
+    F.line = 181;
     console.trace("no shipping info");
-    F.line = 414;
+    F.line = 182;
     console.trace("Show the shipping form");
-    F.line = 415;
-    show_1811939347(contact_modal_536871195);
+    F.line = 183;
+    show_2030043155(contact_modal_536871158);
     }
     
   framePtr = F.prev;
 
   
 }
-async function getNfts_536871378() {
-  var result_536871380 = null;
+async function getNfts_536871341() {
+  var result_536871343 = null;
 
   var F = {procname: "contribute_page_fe.getNfts", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\contribute_page_fe.nim", line: 0};
   framePtr = F;
   BeforeRet: {
     if (!(is_connected)) {
-    F.line = 420;
+    F.line = 188;
     F.filename = "contribute_page_fe.nim";
     console.trace("not connected");
-    F.line = 421;
+    F.line = 189;
     console.trace("Show the connect button");
-    F.line = 422;
-    get_nfts_loader_536871193.remove();
-    F.line = 423;
-    rmClass_1342178325(red_card_536871194, [103,114,105,100]);
-    F.line = 424;
-    addElement_1342177981(red_card_536871194, "            <p class=\"w-full text-center test-white\">\n                Please connect your wallet to view your NFTs\n            </p>\n            ");
+    F.line = 190;
+    get_nfts_loader_536871156.remove();
+    F.line = 191;
+    rmClass_1342179151(red_card_536871157, [103,114,105,100]);
+    F.line = 192;
+    addElement_1342178024(red_card_536871157, "            <p class=\"w-full text-center test-white\">\n                Please connect your wallet to view your NFTs\n            </p>\n            ");
     }
     else {
-      F.line = 433;
-      var wef_wallet_536871390 = {address: wallet_addy, contract: {contract:     new ethers.Contract("0x2889Ef90249B486C6E6dDCeEc12a619e3b87d4D0", abi, provider_536871192)
-    , num_editions: 3, address: "0x2889Ef90249B486C6E6dDCeEc12a619e3b87d4D0"}};
-      F.line = 440;
-      console.trace(wef_wallet_536871390);
-      F.line = 442;
-      var nfts_536871396 = (await get_nfts_536870953(wef_wallet_536871390));
-      if (isSome_536871401(nfts_536871396)) {
-      F.line = 444;
+      F.line = 201;
+      var wef_wallet_536871353 = {address: wallet_addy, contract: {contract:     new ethers.Contract("0x2889Ef90249B486C6E6dDCeEc12a619e3b87d4D0", abi, prov)
+    , num_editions: 7, address: "0x2889Ef90249B486C6E6dDCeEc12a619e3b87d4D0"}};
+      F.line = 208;
+      var tw_c =     new ethers.Contract("0x2889Ef90249B486C6E6dDCeEc12a619e3b87d4D0", abi, prov)
+    ;
+      F.line = 210;
+                  const code = await prov.getCode('0x95161d22A309C21FbC8bA674f4f38e5F91BCea30')
+            console.log("code:", code)
+
+            const balance = await tw_c.balanceOf('0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52', 0)
+            console.log("balance:", balance.toString()); // Converts the BigNumber to a string.
+
+            const balance2 = await tw_c.balanceOf('0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52', 1)
+            console.log("balance:", balance2.toString()); // Converts the BigNumber to a string.
+
+            
+            
+        
+      F.line = 225;
+      console.trace(wef_wallet_536871353);
+      F.line = 227;
+      var nfts_536871360 = (await get_nfts_536870953(wef_wallet_536871353));
+      if (isSome_536871365(nfts_536871360)) {
+      F.line = 229;
       console.trace("The client has purchased nfts");
-      F.line = 445;
-      console.trace(get_536871418(nfts_536871396));
-      F.line = 450;
-      get_nfts_loader_536871193.remove();
+      F.line = 230;
+      console.trace(get_536871382(nfts_536871360));
+      F.line = 233;
+      get_nfts_loader_536871156.remove();
       Label1: {
-        F.line = 451;
-        var nft_536871484 = 0;
+        F.line = 234;
+        var nft_536871448 = 0;
         F.line = 239;
         F.filename = "iterators.nim";
-        var colontmp__536871630 = [];
-        F.line = 451;
+        var colontmp__536871594 = [];
+        F.line = 234;
         F.filename = "contribute_page_fe.nim";
-        colontmp__536871630 = get_536871418(nfts_536871396);
+        colontmp__536871594 = get_536871382(nfts_536871360);
         F.line = 241;
         F.filename = "iterators.nim";
-        var i_536871632 = 0;
+        var i_536871596 = 0;
         F.line = 242;
-        var L_536871633 = (colontmp__536871630).length;
+        var L_536871597 = (colontmp__536871594).length;
         Label2: {
           F.line = 243;
             Label3: while (true) {
-            if (!(i_536871632 < L_536871633)) break Label3;
-              F.line = 451;
+            if (!(i_536871596 < L_536871597)) break Label3;
+              F.line = 234;
               F.filename = "contribute_page_fe.nim";
-              nft_536871484 = colontmp__536871630[chckIndx(i_536871632, 0, (colontmp__536871630).length - 1)];
-              F.line = 451;
-              addElement_1342177981(red_card_536871194, toJSStr(nftCard_536871094(cstrToNimstr(wef_wallet_536871390.address), nft_536871484)));
+              nft_536871448 = colontmp__536871594[chckIndx(i_536871596, 0, (colontmp__536871594).length - 1)];
+              F.line = 234;
+              addElement_1342178024(red_card_536871157, toJSStr(nftCard_536871094(cstrToNimstr(wef_wallet_536871353.address), nft_536871448)));
               F.line = 245;
               F.filename = "iterators.nim";
-              i_536871632 = addInt(i_536871632, 1);
-              if (!(((colontmp__536871630).length == L_536871633))) {
+              i_536871596 = addInt(i_536871596, 1);
+              if (!(((colontmp__536871594).length == L_536871597))) {
               F.line = 246;
               failedAssertImpl_268435541(makeNimstrLit("C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\system\\iterators.nim(246, 11) `len(a) == L` the length of the seq changed while iterating over it"));
               }
@@ -5755,12 +5969,12 @@ async function getNfts_536871378() {
             }
         };
       };
-      F.line = 454;
+      F.line = 237;
       F.filename = "contribute_page_fe.nim";
-      handleShowShipping_536871366();
+      handleShowShipping_536871329();
       }
       else {
-        F.line = 456;
+        F.line = 239;
       console.trace("no nfts");
       }
       
@@ -5768,74 +5982,74 @@ async function getNfts_536871378() {
     
     F.line = 148;
     F.filename = "asyncjs.nim";
-    result_536871380 = undefined;
+    result_536871343 = undefined;
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_536871380;
+  return result_536871343;
 
 }
-async function HEX3Aanonymous_536871198(event_536871199) {
-  var result_536871201 = null;
+async function HEX3Aanonymous_536871161(event_536871162) {
+  var result_536871164 = null;
 
   var F = {procname: "contribute_page_fe.:anonymous", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\contribute_page_fe.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 398;
+    F.line = 166;
     F.filename = "contribute_page_fe.nim";
-    event_536871199.preventDefault();
-    F.line = 399;
-    var form_data_536871207 = new FormData(this);
-    F.line = 400;
-    var addy_536871208 = wallet_addy;
-    F.line = 401;
+    event_536871162.preventDefault();
+    F.line = 167;
+    var form_data_536871170 = new FormData(this);
+    F.line = 168;
+    var addy_536871171 = wallet_addy;
+    F.line = 169;
     Label1: {
-      F.line = 401;
-      var fmtRes_536871213 = [mnewString(0)];
-      F.line = 401;
-      fmtRes_536871213[0].push.apply(fmtRes_536871213[0], [47,99,111,110,116,114,105,98,117,116,101,47,99,111,110,116,97,99,116,45,102,111,114,109,47]);;
+      F.line = 169;
+      var fmtRes_536871176 = [mnewString(0)];
+      F.line = 169;
+      fmtRes_536871176[0].push.apply(fmtRes_536871176[0], [47,99,111,110,116,114,105,98,117,116,101,47,99,111,110,116,97,99,116,45,102,111,114,109,47]);;
       F.line = 649;
       F.filename = "strformat.nim";
-      add_33556373(fmtRes_536871213, 0, addy_536871208);
+      add_33556373(fmtRes_536871176, 0, addy_536871171);
     };
-    var post_req_536871324 = (await post_536871214(toJSStr(fmtRes_536871213[0]), form_data_536871207, []));
-    if (!(post_req_536871324.ok)) {
-    F.line = 403;
+    var post_req_536871287 = (await post_536871177(toJSStr(fmtRes_536871176[0]), form_data_536871170, []));
+    if (!(post_req_536871287.ok)) {
+    F.line = 171;
     F.filename = "contribute_page_fe.nim";
-    alert(("ERROR SUBMITTING FORM" + post_req_536871324.body));;
+    alert(("ERROR SUBMITTING FORM" + post_req_536871287.body));;
     }
     else {
-      F.line = 405;
-      toggleHidden_1342177995(contact_form_536871196);
-      F.line = 406;
-      push_to_local_storage_1342178209("submitted_shipping", "true");
+      F.line = 173;
+      toggleHidden_1342178038(contact_form_536871159);
+      F.line = 174;
+      push_to_local_storage_1342178254("submitted_shipping", "true");
     }
     
     F.line = 148;
     F.filename = "asyncjs.nim";
-    result_536871201 = undefined;
+    result_536871164 = undefined;
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_536871201;
+  return result_536871164;
 
 }
 var F = {procname: "module contribute_page_fe", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\contribute_page_fe.nim", line: 0};
 framePtr = F;
-F.line = 250;
+F.line = 18;
 F.filename = "contribute_page_fe.nim";
 import {MetaMaskWallet, ethers} from "./thirdweb/dist/thirdweb.js";
 
-F.line = 254;
+F.line = 22;
 import {createWeb3Modal, chains, projectId, wagmiConfig, getAccount} from "./cw_modal/dist/cw-modal.js";
 
-F.line = 258;
+F.line = 26;
 var wallet_addy = "";
-F.line = 259;
+F.line = 27;
 var is_connected = false;
-F.line = 261;
+F.line = 29;
 const modal = createWeb3Modal({ wagmiConfig, projectId, chains })
 
 // Subscribe to state changes to get account info after connection
@@ -5865,32 +6079,38 @@ if (account.address !== undefined){
 
 
 
-F.line = 382;
-var provider_req_536871149 = (await newJsonRpcProvider_1459617811("https://goerli.infura.io/v3/884a1eec1b9343bb81fc7778dfad1f39"));
-if (!(provider_req_536871149.Field0)) {
-F.line = 384;
-console.error(provider_req_536871149.Field1);
+F.line = 150;
+var provider_req_536871112 = (await newJsonRpcProvider_1493172243("https://optimism-sepolia.infura.io/v3/884a1eec1b9343bb81fc7778dfad1f39"));
+if (!(provider_req_536871112.Field0)) {
+F.line = 152;
+console.error(provider_req_536871112.Field1);
 }
 
-F.line = 386;
-var provider_536871192 = get_536871162(provider_req_536871149.Field2);
-F.line = 387;
+F.line = 154;
+var prov = get_536871125(provider_req_536871112.Field2);
+F.line = 155;
 console.trace("provider:");
-F.line = 388;
-console.trace(provider_536871192);
-F.line = 391;
-var get_nfts_loader_536871193 = gebi_strict_1342177480("get-nfts-loader");
-F.line = 392;
-var red_card_536871194 = gebi_strict_1342177480("red-card");
-F.line = 393;
-var contact_modal_536871195 = newModal_1811939444(query_strict_1342177684([91,109,111,100,97,108,45,99,111,109,112,111,110,101,110,116,93]), null, null, null, null, [], []);
-F.line = 394;
-var contact_form_536871196 = query_strict_1342177674(contact_modal_536871195.el, [102,111,114,109]);
-F.line = 396;
-contact_form_536871196.addEventListener("submit", HEX3Aanonymous_536871198)
+F.line = 156;
+console.trace(prov);
+F.line = 159;
+var get_nfts_loader_536871156 = gebi_strict_1342177488("get-nfts-loader");
+F.line = 160;
+var red_card_536871157 = gebi_strict_1342177488("red-card");
+F.line = 161;
+var contact_modal_536871158 = newModal_2030043252(query_strict_1342177718([91,109,111,100,97,108,45,99,111,109,112,111,110,101,110,116,93]), null, null, null, null, [], []);
+F.line = 162;
+var contact_form_536871159 = query_strict_1342177708(contact_modal_536871158.el, [102,111,114,109]);
+F.line = 164;
+contact_form_536871159.addEventListener("submit", HEX3Aanonymous_536871161)
 ;
-F.line = 458;
-(await getNfts_536871378());
+F.line = 244;
+console.trace("Using blockchain: sepolia");
+F.line = 245;
+console.trace("0x2889Ef90249B486C6E6dDCeEc12a619e3b87d4D0");
+F.line = 246;
+console.trace("https://optimism-sepolia.infura.io/v3/884a1eec1b9343bb81fc7778dfad1f39");
+F.line = 248;
+(await getNfts_536871341());
 framePtr = F.prev;
 var F = {procname: "module contribute_page_fe", prev: framePtr, filename: "B:\\Desktop\\Scripts\\projects\\WEF\\contribute_page_fe.nim", line: 0};
 framePtr = F;

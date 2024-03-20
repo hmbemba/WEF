@@ -204,7 +204,7 @@ proc contribute_page*(ctx: Context) {.async gcsafe.} =
                 say $triple_card() 
                 say $red_card()
     
-    resp htmlResponse(body, headers = @[del_cookie_header(consts.flash_token_name)])
+    resp prologutils.htmlResponse(body, headers = @[del_cookie_header(consts.flash_token_name)])
 
 
 proc contact_form_submit*(ctx: Context) {.async.} =
