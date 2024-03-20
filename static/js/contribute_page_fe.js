@@ -5524,81 +5524,81 @@ function mkDigit_1358954501(v_1358954502, typ_1358954503) {
 
 }
 
-function formatInt_1509949568(n_1509949570, radix_1509949571, spec_1509949572) {
+function formatInt_1509949567(n_1509949569, radix_1509949570, spec_1509949571) {
     var Temporary1;
 
-  var result_1509949573 = [];
+  var result_1509949572 = [];
 
   var F = {procname: "formatInt.formatInt", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\strformat.nim", line: 0};
   framePtr = F;
     F.line = 370;
     F.filename = "strformat.nim";
-    var n_1509949576 = BigInt(n_1509949570);
+    var n_1509949575 = BigInt(n_1509949569);
     F.line = 371;
-    var negative_1509949577 = (n_1509949576 < 0n);
+    var negative_1509949576 = (n_1509949575 < 0n);
     F.line = 372;
-    if (negative_1509949577) {
-    Temporary1 = BigInt.asUintN(64, (BigInt.asUintN(64, ~(n_1509949576)) + 1n));
+    if (negative_1509949576) {
+    Temporary1 = BigInt.asUintN(64, (BigInt.asUintN(64, ~(n_1509949575)) + 1n));
     }
     else {
-    Temporary1 = BigInt.asUintN(64, n_1509949576);
+    Temporary1 = BigInt.asUintN(64, n_1509949575);
     }
     
-    var v_1509949578 = Temporary1;
+    var v_1509949577 = Temporary1;
     F.line = 379;
-    var xx_1509949579 = [];
-    if (spec_1509949572.alternateForm) {
+    var xx_1509949578 = [];
+    if (spec_1509949571.alternateForm) {
     F.line = 381;
-    switch (spec_1509949572.typ) {
+    switch (spec_1509949571.typ) {
     case 88:
       F.line = 382;
-      xx_1509949579 = nimCopy(null, [48,120], NTI33554449);
+      xx_1509949578 = nimCopy(null, [48,120], NTI33554449);
       break;
     case 120:
       F.line = 383;
-      xx_1509949579 = nimCopy(null, [48,120], NTI33554449);
+      xx_1509949578 = nimCopy(null, [48,120], NTI33554449);
       break;
     case 98:
       F.line = 384;
-      xx_1509949579 = nimCopy(null, [48,98], NTI33554449);
+      xx_1509949578 = nimCopy(null, [48,98], NTI33554449);
       break;
     case 111:
       F.line = 385;
-      xx_1509949579 = nimCopy(null, [48,111], NTI33554449);
+      xx_1509949578 = nimCopy(null, [48,111], NTI33554449);
       break;
     default: 
       break;
     }
     }
     
-    if ((v_1509949578 == 0n)) {
+    if ((v_1509949577 == 0n)) {
     F.line = 389;
-    result_1509949573 = nimCopy(null, [48], NTI33554449);
+    result_1509949572 = nimCopy(null, [48], NTI33554449);
     }
     else {
       F.line = 391;
-      result_1509949573 = nimCopy(null, [], NTI33554449);
+      result_1509949572 = nimCopy(null, [], NTI33554449);
       Label2: {
         F.line = 392;
           Label3: while (true) {
-          if (!(0n < v_1509949578)) break Label3;
+          if (!(0n < v_1509949577)) break Label3;
             F.line = 393;
-            var d_1509949580 = (v_1509949578 % BigInt.asUintN(64, BigInt(radix_1509949571)));
+            var d_1509949579 = (v_1509949577 % BigInt.asUintN(64, BigInt(radix_1509949570)));
             F.line = 394;
-            v_1509949578 = BigInt.asUintN(64, (v_1509949578 / BigInt.asUintN(64, BigInt(radix_1509949571))));
+            v_1509949577 = BigInt.asUintN(64, (v_1509949577 / BigInt.asUintN(64, BigInt(radix_1509949570))));
             F.line = 395;
-            result_1509949573.push.apply(result_1509949573, mkDigit_1358954501(chckRange(Number(d_1509949580), (-2147483648), 2147483647), spec_1509949572.typ));;
+            result_1509949572.push.apply(result_1509949572, mkDigit_1358954501(chckRange(Number(d_1509949579), (-2147483648), 2147483647), spec_1509949571.typ));;
           }
       };
       Label4: {
         F.line = 396;
-        var idx_1509949585 = 0;
+        var idx_1509949584 = 0;
         F.line = 117;
         F.filename = "iterators_1.nim";
         var colontmp__536871613 = 0;
         F.line = 396;
         F.filename = "strformat.nim";
-        colontmp__536871613 = divInt((result_1509949573).length, 2);
+        colontmp__536871613 = divInt((result_1509949572).length, 2);
         F.line = 119;
         F.filename = "iterators_1.nim";
         var i_536871614 = 0;
@@ -5608,9 +5608,9 @@ function formatInt_1509949568(n_1509949570, radix_1509949571, spec_1509949572) {
             if (!(i_536871614 < colontmp__536871613)) break Label6;
               F.line = 396;
               F.filename = "strformat.nim";
-              idx_1509949585 = i_536871614;
+              idx_1509949584 = i_536871614;
               F.line = 396;
-              var Temporary7 = result_1509949573[chckIndx(idx_1509949585, 0, (result_1509949573).length - 1)]; result_1509949573[chckIndx(idx_1509949585, 0, (result_1509949573).length - 1)] = result_1509949573[chckIndx(subInt(subInt((result_1509949573).length, idx_1509949585), 1), 0, (result_1509949573).length - 1)]; result_1509949573[chckIndx(subInt(subInt((result_1509949573).length, idx_1509949585), 1), 0, (result_1509949573).length - 1)] = Temporary7;              F.line = 122;
+              var Temporary7 = result_1509949572[chckIndx(idx_1509949584, 0, (result_1509949572).length - 1)]; result_1509949572[chckIndx(idx_1509949584, 0, (result_1509949572).length - 1)] = result_1509949572[chckIndx(subInt(subInt((result_1509949572).length, idx_1509949584), 1), 0, (result_1509949572).length - 1)]; result_1509949572[chckIndx(subInt(subInt((result_1509949572).length, idx_1509949584), 1), 0, (result_1509949572).length - 1)] = Temporary7;              F.line = 122;
               F.filename = "iterators_1.nim";
               i_536871614 = addInt(i_536871614, 1);
             }
@@ -5618,55 +5618,55 @@ function formatInt_1509949568(n_1509949570, radix_1509949571, spec_1509949572) {
       };
     }
     
-    if (spec_1509949572.padWithZero) {
+    if (spec_1509949571.padWithZero) {
     F.line = 399;
     F.filename = "strformat.nim";
-    var sign_1509949590 = (negative_1509949577 || !((spec_1509949572.sign == 45)));
+    var sign_1509949589 = (negative_1509949576 || !((spec_1509949571.sign == 45)));
     F.line = 400;
-    var toFill_1509949594 = subInt(subInt(subInt(spec_1509949572.minimumWidth, (result_1509949573).length), (xx_1509949579).length), (sign_1509949590 ? 1 : 0));
-    if ((0 < toFill_1509949594)) {
+    var toFill_1509949593 = subInt(subInt(subInt(spec_1509949571.minimumWidth, (result_1509949572).length), (xx_1509949578).length), (sign_1509949589 ? 1 : 0));
+    if ((0 < toFill_1509949593)) {
     F.line = 402;
-    result_1509949573 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_1509949594, 0, 2147483647)) || []).concat(result_1509949573 || []), NTI33554449);
+    result_1509949572 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_1509949593, 0, 2147483647)) || []).concat(result_1509949572 || []), NTI33554449);
     }
     
     }
     
-    if (negative_1509949577) {
+    if (negative_1509949576) {
     F.line = 405;
-    result_1509949573 = nimCopy(null, ([45] || []).concat(xx_1509949579 || [],result_1509949573 || []), NTI33554449);
+    result_1509949572 = nimCopy(null, ([45] || []).concat(xx_1509949578 || [],result_1509949572 || []), NTI33554449);
     }
     else {
-    if (!((spec_1509949572.sign == 45))) {
+    if (!((spec_1509949571.sign == 45))) {
     F.line = 407;
-    result_1509949573 = nimCopy(null, [spec_1509949572.sign].concat(xx_1509949579 || [],result_1509949573 || []), NTI33554449);
+    result_1509949572 = nimCopy(null, [spec_1509949571.sign].concat(xx_1509949578 || [],result_1509949572 || []), NTI33554449);
     }
     else {
       F.line = 409;
-      result_1509949573 = nimCopy(null, (xx_1509949579 || []).concat(result_1509949573 || []), NTI33554449);
+      result_1509949572 = nimCopy(null, (xx_1509949578 || []).concat(result_1509949572 || []), NTI33554449);
     }
     }
-    if ((spec_1509949572.align == 60)) {
+    if ((spec_1509949571.align == 60)) {
     Label8: {
       F.line = 412;
-      var i_1509949599 = 0;
+      var i_1509949598 = 0;
       F.line = 117;
       F.filename = "iterators_1.nim";
       var colontmp__536871617 = 0;
       F.line = 412;
       F.filename = "strformat.nim";
-      colontmp__536871617 = (result_1509949573).length;
+      colontmp__536871617 = (result_1509949572).length;
       F.line = 119;
       F.filename = "iterators_1.nim";
       var i_536871618 = colontmp__536871617;
       Label9: {
         F.line = 120;
           Label10: while (true) {
-          if (!(i_536871618 < spec_1509949572.minimumWidth)) break Label10;
+          if (!(i_536871618 < spec_1509949571.minimumWidth)) break Label10;
             F.line = 412;
             F.filename = "strformat.nim";
-            i_1509949599 = i_536871618;
+            i_1509949598 = i_536871618;
             F.line = 412;
-            addChar(result_1509949573, spec_1509949572.fill);;
+            addChar(result_1509949572, spec_1509949571.fill);;
             F.line = 122;
             F.filename = "iterators_1.nim";
             i_536871618 = addInt(i_536871618, 1);
@@ -5677,17 +5677,17 @@ function formatInt_1509949568(n_1509949570, radix_1509949571, spec_1509949572) {
     else {
       F.line = 415;
       F.filename = "strformat.nim";
-      var toFill_1509949600 = subInt(spec_1509949572.minimumWidth, (result_1509949573).length);
-      if ((spec_1509949572.align == 94)) {
+      var toFill_1509949599 = subInt(spec_1509949571.minimumWidth, (result_1509949572).length);
+      if ((spec_1509949571.align == 94)) {
       F.line = 417;
-      var half_1509949601 = divInt(toFill_1509949600, 2);
+      var half_1509949600 = divInt(toFill_1509949599, 2);
       F.line = 418;
-      result_1509949573 = nimCopy(null, (nsuRepeatChar(spec_1509949572.fill, chckRange(half_1509949601, 0, 2147483647)) || []).concat(result_1509949573 || [],nsuRepeatChar(spec_1509949572.fill, chckRange(subInt(toFill_1509949600, half_1509949601), 0, 2147483647)) || []), NTI33554449);
+      result_1509949572 = nimCopy(null, (nsuRepeatChar(spec_1509949571.fill, chckRange(half_1509949600, 0, 2147483647)) || []).concat(result_1509949572 || [],nsuRepeatChar(spec_1509949571.fill, chckRange(subInt(toFill_1509949599, half_1509949600), 0, 2147483647)) || []), NTI33554449);
       }
       else {
-        if ((0 < toFill_1509949600)) {
+        if ((0 < toFill_1509949599)) {
         F.line = 421;
-        result_1509949573 = nimCopy(null, (nsuRepeatChar(spec_1509949572.fill, chckRange(toFill_1509949600, 0, 2147483647)) || []).concat(result_1509949573 || []), NTI33554449);
+        result_1509949572 = nimCopy(null, (nsuRepeatChar(spec_1509949571.fill, chckRange(toFill_1509949599, 0, 2147483647)) || []).concat(result_1509949572 || []), NTI33554449);
         }
         
       }
@@ -5696,51 +5696,51 @@ function formatInt_1509949568(n_1509949570, radix_1509949571, spec_1509949572) {
     
   framePtr = F.prev;
 
-  return result_1509949573;
+  return result_1509949572;
 
 }
 
-function formatValue_1509949560(result_1509949562, result_1509949562_Idx, value_1509949563, specifier_1509949564) {
+function formatValue_1509949559(result_1509949561, result_1509949561_Idx, value_1509949562, specifier_1509949563) {
   var F = {procname: "formatValue.formatValue", prev: framePtr, filename: "C:\\Users\\hmbem\\.choosenim\\toolchains\\nim-2.0.0\\lib\\pure\\strformat.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    if (((specifier_1509949564).length == 0)) {
+    if (((specifier_1509949563).length == 0)) {
     F.line = 481;
     F.filename = "strformat.nim";
-    result_1509949562[result_1509949562_Idx].push.apply(result_1509949562[result_1509949562_Idx], HEX24_369098760(value_1509949563));;
+    result_1509949561[result_1509949561_Idx].push.apply(result_1509949561[result_1509949561_Idx], HEX24_369098760(value_1509949562));;
     F.line = 482;
     break BeforeRet;
     }
     
     F.line = 483;
-    var spec_1509949565 = parseStandardFormatSpecifier_1358954554(specifier_1509949564, 0, false);
+    var spec_1509949564 = parseStandardFormatSpecifier_1358954554(specifier_1509949563, 0, false);
     F.line = 484;
-    var radix_1509949566 = 10;
+    var radix_1509949565 = 10;
     F.line = 485;
-    switch (spec_1509949565.typ) {
+    switch (spec_1509949564.typ) {
     case 120:
     case 88:
       F.line = 486;
-      radix_1509949566 = 16;
+      radix_1509949565 = 16;
       break;
     case 100:
     case 0:
       break;
     case 98:
       F.line = 488;
-      radix_1509949566 = 2;
+      radix_1509949565 = 2;
       break;
     case 111:
       F.line = 489;
-      radix_1509949566 = 8;
+      radix_1509949565 = 8;
       break;
     default: 
       F.line = 491;
-      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_1509949565.typ]), parent: null, m_type: NTI134217746, name: null, trace: [], up: null}, "ValueError");
+      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_1509949564.typ]), parent: null, m_type: NTI134217746, name: null, trace: [], up: null}, "ValueError");
       break;
     }
     F.line = 494;
-    result_1509949562[result_1509949562_Idx].push.apply(result_1509949562[result_1509949562_Idx], formatInt_1509949568(value_1509949563, radix_1509949566, spec_1509949565));;
+    result_1509949561[result_1509949561_Idx].push.apply(result_1509949561[result_1509949561_Idx], formatInt_1509949567(value_1509949562, radix_1509949565, spec_1509949564));;
   };
   framePtr = F.prev;
 
@@ -5764,7 +5764,7 @@ function nftCard_536871094(wallet_address_536871095, nft_num_536871096) {
       F.line = 109;
       fmtRes_536871102[0].push.apply(fmtRes_536871102[0], [47]);;
       F.line = 109;
-      formatValue_1509949560(fmtRes_536871102, 0, nft_num_536871096, []);
+      formatValue_1509949559(fmtRes_536871102, 0, nft_num_536871096, []);
       F.line = 109;
       fmtRes_536871102[0].push.apply(fmtRes_536871102[0], makeNimstrLit("\">\x0A        <div class=\"bg-white rounded-xl shadow-md overflow-hidden\">\x0A            <!-- Image section -->\x0A            <div class=\"relative\">\x0A                <img class=\"w-full h-60 object-cover\" src=\"https://placehold.it/1000x1000\" alt=\"NFT Image\">\x0A                \x0A                <!-- Top-right price section -->\x0A                <div class=\"absolute top-4 right-4 bg-white py-1 px-2 rounded-full text-sm\">\x0A                    \xE2\xA7\xAB 0.28\x0A                </div>\x0A            </div>\x0A\x0A            <!-- Title section -->\x0A            <div class=\"p-4\">\x0A                <!-- Title and avatar section -->\x0A                <div class=\"flex items-center justify-between mb-2\">\x0A                    <div class=\"flex items-center space-x-2\">\x0A                        <!-- Avatar -->\x0A                        <img class=\"h-8 w-8 rounded-full\" src=\"https://placehold.it/50x50\" alt=\"Avatar\">\x0A                        <!-- Name -->\x0A                        <div class=\"text-sm\">\x0A                            <p class=\"font-medium text-gray-900\">\x0A                                Monk Punk #128\x0A                            </p>\x0A                            <p class=\"text-gray-500\">\x0A                                not for sale\x0A                            </p>\x0A                        </div>\x0A                    </div>\x0A                    \x0A                    <!-- Auction timer section -->\x0A                    <div class=\"text-sm text-gray-500\">\x0A                        Ending in 10h 58m\x0A                    </div>\x0A                </div>\x0A            </div>\x0A        </div>\x0A    </a>\x0A    "));;
     };

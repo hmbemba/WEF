@@ -1,10 +1,13 @@
 when not defined(js):
   import prologue
   import comps
-  import mynimlib/[prologutils, nimOpenai]
+  import mynimlib/[prologutils, nimOpenai, utils]
   import nimtinydb
   import icecream/src/icecream
   import db/db
+  import dotenv, os
+
+  load()
 
 
 
@@ -640,7 +643,7 @@ when not defined(js):
                     
                   icb "Sending prompt to OpenAI..."
                   {.cast(gcsafe).}:
-                      let resp = waitFor nimopenai.text_prompt(consts.open_ai_key, gpt_4.name, prompt.val.get)
+                      let resp = waitFor nimopenai.text_prompt(getEnv_strict"OPEN_AI_API_KEY", gpt_4.name, prompt.val.get)
                   
                   if not resp.ok:
                       icr resp.err

@@ -75,23 +75,23 @@ task mkfe_prod_ic, "build frontends":
     exec buildExecCommand("./landing_page_fe.nim"      , fmt"./static/js/landing_page_fe.js"     )
     exec buildExecCommand("./contribute_page_fe.nim"   , fmt"./static/js/contribute_page_fe.js"  )
     
-    # withDir "./static/js":
-    #     echo getCurrentDir()
-    #     for file_path in walkDir("."):
-    #         if file_path.path.endsWith(".js"):
-    #             let file_name = file_path.path.split("\\")[^1]
-    #             let full_path = getCurrentDir() & "\\" & file_name
-    #             echo "full_path : " & full_path
-    #             let terser_cmd = fmt"""terser "{full_path}" --compress --mangle --output "{full_path}"  """
-    #             echo "terser_cmd : " & terser_cmd
+    withDir "./static/js":
+        echo getCurrentDir()
+        for file_path in walkDir("."):
+            if file_path.path.endsWith(".js"):
+                let file_name = file_path.path.split("\\")[^1]
+                let full_path = getCurrentDir() & "\\" & file_name
+                echo "full_path : " & full_path
+                let terser_cmd = fmt"""terser "{full_path}" --compress --mangle --output "{full_path}"  """
+                echo "terser_cmd : " & terser_cmd
                 
-    #             let (output, exitcode) = gorgeEx fmt"""powershell -c "{terser_cmd}" """
-    #             if exitcode != 0:
-    #                 echo "terser failed : " & file_name
-    #                 echo output
-    #             else:
-    #                 echo "terser done : " & file_name & "\n"
-    # echo "terser complete"
+                let (output, exitcode) = gorgeEx fmt"""powershell -c "{terser_cmd}" """
+                if exitcode != 0:
+                    echo "terser failed : " & file_name
+                    echo output
+                else:
+                    echo "terser done : " & file_name & "\n"
+    echo "terser complete"
 
 task build_tw, "Builds Thirdweb":
     when defined(linus):
