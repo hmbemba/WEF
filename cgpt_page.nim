@@ -465,74 +465,6 @@ when not defined(js):
     
   proc put_in_p_tag*(text: string): string = fmt"""<p> {text} </p>"""
 
-  # proc cgpt_selection*(ctx: Context) {.async.} =
-
-  #   case ctx.request.reqMethod:
-  #     of HttpPost:
-  #       case ctx.request.contentType:
-  #         of "application/json":
-  #           icb "cgpt_selection post flow"
-
-  #           let msg = ctx.getPostMsg(comms.postMsg)
-            
-  #           icb msg
-
-  #           case msg.kind:
-  #               of cgpt_selection:
-                    
-  #                   icb msg.contrib
-                    
-  #                   if msg.contrib.scenario_1_complete:
-  #                       ic msg.contrib.scenario_1
-                        
-  #                       let upsert_req = msg.contrib.upsert_scenario_1()
-  #                       upsert_req.catch_server_err("Error upserting scenario 1"):
-  #                         return
-                        
-  #                       await ctx.respond(Http200,"")
-  #                       return
-                    
-  #                   if msg.contrib.scenario_2_complete:
-                        
-  #                       let upsert_req = msg.contrib.upsert_scenario_2()
-  #                       upsert_req.catch_server_err("Error upserting scenario 2"):
-  #                         return
-                        
-  #                       await ctx.respond(Http200,"")
-  #                       return
-                    
-  #                   if msg.contrib.scenario_full_complete:
-                        
-  #                       let upsert_req = msg.contrib.upsert_scenario_full()
-  #                       upsert_req.catch_server_err("Error upserting full scenario"):
-  #                         return
-                        
-  #                       await ctx.respond(Http200,"")
-  #                       return
-                    
-  #                   icr "No scenario complete flag was set", "We should never get here"
-  #                   await ctx.respond(Http500, "Internal Server Error - Upsert Failed")
-  #                   return
-
-                    
-  #               of prompt_cgpt: 
-  #                   let prompt = msg.prompt.prompt
-  #                   ic prompt
-  #                   {.cast(gcsafe).}:
-  #                       let resp = waitFor nimopenai.text_prompt(consts.open_ai_key, gpt_4.name, prompt)
-                    
-  #                   resp.catch_server_err("Internal Server Error - OpenAI Request Failed"):
-  #                     return
-                    
-  #                   let cgpt_resp_msg = resp.val.get.getMsg
-                    
-  #                   ic cgpt_resp_msg
-                    
-  #                   await ctx.respond(Http200, cgpt_resp_msg)
-  #         else:
-  #           await ctx.respond(Http415, "Unsupported Media Type")
-  #     else:discard
-
   template catch_db_err(db_tx: untyped, err_msg: string, body: untyped)  : untyped =
       if not db_tx.ok:
           icr err_msg
@@ -642,6 +574,7 @@ when not defined(js):
                   ic prompt.val.get
                     
                   icb "Sending prompt to OpenAI..."
+
                   {.cast(gcsafe).}:
                       let resp = waitFor nimopenai.text_prompt(getEnv_strict"OPEN_AI_API_KEY", gpt_4.name, prompt.val.get)
                   
@@ -1152,4 +1085,3 @@ when not defined(js):
   ####################
 
   let cgpt_route*           = pattern("/chat/{wallet_addy}/{nft_num}" , cgpt_page      , @[Httpget, HttpPost] )
-  #let cgpt_selection_route* = pattern("/chat/selection"               , cgpt_selection , @[ HttpPost] )
