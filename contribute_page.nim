@@ -27,11 +27,13 @@ type
 ## Components ##
 ################
 
-
 proc red_card():VNode = 
-    buildHtml(tdiv(id="red-card", class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-[#D02F3A] p-[5vh] rounded-[2vh]")):
+    buildHtml tdiv(id="red-card", class="flex flex-col gap-4 mb-8 bg-[#D02F3A] p-[5vh] rounded-[2vh]" ):
+        h2(class="text-white text-2xl font-bold text-center mb-4"): 
+            vdom.text "Click on an NFT to contribute to the story!"
         p(id = "get-nfts-loader", class = "text-center " & tcolor"white"):
-          vdom.text "Getting Your NFTS..."
+            vdom.text "Getting Your NFTS..."
+        tdiv(class="nfts_grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  ")
 
 
 proc contact_form : string = render:
@@ -146,7 +148,6 @@ proc contact_form : string = render:
                             ttype "submit"
                             say   "Submit"
 
-                    
 proc triple_card*(): VNode =
     proc card(img_url:string, body_text, title_text:string): VNode = 
         buildHtml(tdiv(class="flex flex-col items-center space-y-5  rounded-lg p-2")):
@@ -159,7 +160,7 @@ proc triple_card*(): VNode =
     let cards = @[
         card("/static/img/contrib_page_1.png", "Your NFT has a specific theme and section. You’re unique! And have the power to drastically change the story..."   , "Theme"),
         card("/static/img/contrib_page_2.png", "Playing a multiple endings game, you will create a script to be used for the final MVP of your chapter section."   , "Story"),
-        card("/static/img/contrib_page_3.png", "Once you’re complete, you will be prompted to submit your section and we will move onto the next steps in Discord!", "Submit")
+        card("/static/img/contrib_page_3.png", "Once you’re complete, you will be prompted to submit your section and we will move onto the next steps in the Chat Room!", "Submit")
         ]
     buildHtml tdiv(class="rounded-[20px] bg-black bg-opacity-70 p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"):
             for card in cards:
@@ -192,6 +193,7 @@ proc contribute_page*(ctx: Context) {.async gcsafe.} =
             say "<!-- Top Nav -->"
             say top_nav_2
 
+            say "<!-- Contact Form -->"
             tdiv:
                 class "px-[10vw] py-[40px] gap-5vh"
                 say contact_form
@@ -201,11 +203,13 @@ proc contribute_page*(ctx: Context) {.async gcsafe.} =
             
             say "<!-- Post Nav Col -->"
             postNavCol("flex flex-col gap-4 px-4 lg:px-10"):
+                say "<!-- Triple Card -->"
                 say $triple_card() 
+                
+                say "<!-- Red Card -->"
                 say $red_card()
     
     resp prologutils.htmlResponse(body, headers = @[del_cookie_header(consts.flash_token_name)])
-
 
 proc contact_form_submit*(ctx: Context) {.async.} =
     ic "Incoming Post request"

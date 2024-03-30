@@ -82,63 +82,36 @@ proc get_nfts(wallet: wef_wallet): Future[Option[seq[int]]] {. async .} =
 
 
 proc nftCard(wallet_address: string, nft_num: int):string = 
-    # let node = buildHtml(tdiv(class="bg-white rounded-xl shadow-md overflow-hidden")):
-    #     # Image Section
-    #     tdiv(class="relative"):
-    #         img(class="w-full h-60 object-cover", src="https://placehold.it/1000x1000", alt="NFT Image")
-    #         # Top-right price section
-    #         tdiv(class="absolute top-4 right-4 bg-white py-1 px-2 rounded-full text-sm"):
-    #             text "⧫ 0.28"
-    #     # Title section
-    #     tdiv(class="p-4"):
-    #         # Title and avatar section
-    #         tdiv(class="flex items-center justify-between mb-2"):
-    #             tdiv(class="flex items-center space-x-2"):
-    #                 # Avatar
-    #                 img(class="h-8 w-8 rounded-full", src="https://placehold.it/50x50", alt="Avatar")
-    #                 # Name
-    #                 tdiv(class="text-sm"):
-    #                     p(class="font-medium text-gray-900"):
-    #                         text "Monk Punk #128"
-    #                     p(class="text-gray-500"):
-    #                         text "not for sale"
-    #             tdiv(class="text-sm text-gray-500"):
-    #                 text "Ending in 10h 58m"
-    # $node
-
     fmt"""
     <a href="/chat/{wallet_address}/{nft_num}">
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
             <!-- Image section -->
             <div class="relative">
-                <img class="w-full h-60 object-cover" src="https://placehold.it/1000x1000" alt="NFT Image">
+                <img class="w-full h-60 object-cover" src="/static/img/nfts/{nft_num+1}.png" alt="NFT Image">
                 
-                <!-- Top-right price section -->
-                <div class="absolute top-4 right-4 bg-white py-1 px-2 rounded-full text-sm">
-                    ⧫ 0.28
-                </div>
             </div>
 
             <!-- Title section -->
-            <div class="p-4">
+            <div class="p-4 bg-black text-white">
                 <!-- Title and avatar section -->
                 <div class="flex items-center justify-between mb-2">
+                   
                     <div class="flex items-center space-x-2">
-                        <!-- Avatar -->
-                        <img class="h-8 w-8 rounded-full" src="https://placehold.it/50x50" alt="Avatar">
+                        
                         <!-- Name -->
                         <div class="text-sm">
-                            <p class="font-medium text-gray-900">
+                            <p class="font-medium">
                                 Monk Punk #128
                             </p>
-                            <p class="text-gray-500">
+                            <p class="">
                                 not for sale
                             </p>
                         </div>
+                    
                     </div>
                     
                     <!-- Auction timer section -->
-                    <div class="text-sm text-gray-500">
+                    <div class="text-sm ">
                         Ending in 10h 58m
                     </div>
                 </div>
@@ -170,7 +143,7 @@ contact_form.submit(
         if not post_req.ok:
             alert("ERROR SUBMITTING FORM" & post_req.body)
         else:
-            contact_form.toggleHidden()
+            contact_modal.hide()
             "submitted_shipping".push_to_local_storage("true".cstring)
 
 )
@@ -187,15 +160,13 @@ proc getNfts() {.async.} =
     if not is_connected:
         ic "not connected"
         ic "Show the connect button"
-        get_nfts_loader.remove()
-        red_card.rmClass("grid")
-        red_card.addElement(
+        get_nfts_loader.innerHTML =
             """
             <p class="w-full text-center test-white">
                 Please connect your wallet to view your NFTs
             </p>
             """
-        )
+        
 
     else:
         let wef_wallet = wef_wallet(
@@ -232,7 +203,7 @@ proc getNfts() {.async.} =
             
             get_nfts_loader.remove()
             for nft in nfts.get:
-                red_card.addElement(nftCard($wef_wallet.address, nft))
+                red_card.query_strict(".nfts_grid").addElement(nftCard($wef_wallet.address, nft))
             
             handleShowShipping()
         else:

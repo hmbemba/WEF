@@ -88,7 +88,6 @@ proc chapter_carousel(iframes:seq[string]): string =
                     >
                     </button>
                 </template>
-            
             </div>
         </div>
     </div>
@@ -233,6 +232,7 @@ proc NFTModal(carousel:string) : string = render:
                     say "X"
                     x_click "showModal = !showModal"
             modal_body:
+                say """<p class="border-4 border-red-500 p-2 mb-2 rounded-lg text-black py-4">When you're done minting head to the contribute tab to add your story!</p>"""
                 say carousel
 
 proc NFTAccordions : string = render:
