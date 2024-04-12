@@ -4,9 +4,10 @@ import consts
 import strformat, sequtils, strutils, json
 import mynimlib/[nimwind2, prologutils]
 import karax / [karaxdsl, vdom, vstyles]
-import nimtinydb
+import tinydb/src/tinydb
 import icecream/src/icecream
 import mynimlib/webui/modal/modal
+import dekao
 
 
 
@@ -126,7 +127,7 @@ proc contact_form : string = render:
                                 class     "w-full"
                                 name      "country"
                                 required  "true"
-                                dekao.option:
+                                dekao.toption:
                                     value  "United States" 
                                     say    "United States"
                         tdiv:
@@ -248,7 +249,7 @@ proc contact_form_submit*(ctx: Context) {.async.} =
         icr insert_req.err 
         await ctx.respond(Http500, "Failed to insert contact info into db \n" & insert_req.err)
     
-    ic "Successfully inserted contact info into db with the doc_id of : " & $(insert_req.doc_id.get)
+    ic "Successfully inserted contact info into db with the doc_id of : " & $(insert_req.val.get)
     await ctx.respond(Http200, "Successfully inserted contact info into db")
 
 proc add_nfts*(ctx: Context) {.async.} =

@@ -12,7 +12,7 @@ import strformat
 import comps
 import karax / [karaxdsl, vdom]
 import consts
-import nimtinydb
+import tinydb/src/tinydb
 import icecream/src/icecream
 
 

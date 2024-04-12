@@ -3,7 +3,7 @@ import comps
 import mynimlib/nimwebc as nwc
 import mynimlib/nimwind as nw
 import strformat, strutils
-import mynimlib/nimalpine as na
+import mynimlib/utils
 import handles
 import mynimlib/prologutils as pu
 import sequtils
@@ -277,7 +277,8 @@ proc landing*(ctx: Context) {.async, gcsafe.} =
 
     let body = render:
         bbase:
-            say "<script type='module' src='/static/js/landing_page_fe.js'></script>"
+            #say "<script type='module' src='/static/js/landing_page_fe.js'></script>"
+            say uncached_script("/static/js/landing_page_fe.js")
             
             say "<!-- Top Nav -->"
             say top_nav

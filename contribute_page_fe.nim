@@ -100,20 +100,18 @@ proc nftCard(wallet_address: string, nft_num: int):string =
                         
                         <!-- Name -->
                         <div class="text-sm">
-                            <p class="font-medium">
-                                Monk Punk #128
-                            </p>
-                            <p class="">
-                                not for sale
+                            <p class="font-medium text-xl">
+                                WIDE EYE FEELS NFT #{nft_num+1}
                             </p>
                         </div>
                     
                     </div>
                     
-                    <!-- Auction timer section -->
+                    <!-- Auction timer section
                     <div class="text-sm ">
                         Ending in 10h 58m
                     </div>
+                     -->
                 </div>
             </div>
         </div>

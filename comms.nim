@@ -40,6 +40,33 @@ type
         err*         : string
 
 server:
+    import prologue
+    import mynimlib/prologutils
+
+    template handle*(msg_kind: comms.msgKind, body : untyped) = 
+        if msg.kind == msg_kind:
+            body
+
+    template resp*(obj: postMsg, body:untyped) = 
+        prologue.resp jsonResponse %obj
+        body
+
+
+    proc CommsErr*(msg: string) : postMsg =
+        postMsg(
+                    kind : msgKind.err,
+                    ok   : false,
+                    err  : msg
+                )
+
+    template inject_parsed_msg* = 
+        let parse = prologutils.getPostMsg(ctx, postMsg)
+        if not parse.ok:
+            icr "Error parsing post msg", parse.err
+            comms.resp CommsErr(parse.err): return
+        
+        let msg  {.inject.} = parse.val.get
+
     proc SendScenarioFull*(scenario_full: string) : postMsg = 
         postMsg(
                     kind          : msgKind.prompt_cgpt,
@@ -47,12 +74,7 @@ server:
                     scenarios     : @[scenario( title: "final_play_write", body: scenario_full)],
                 )
     
-    proc ServerErr*(msg: string) : postMsg =
-        postMsg(
-                    kind : msgKind.err,
-                    ok   : false,
-                    err  : msg
-                )
+
 
     proc SendScenarios*(scenarios: seq[scenario]) : postMsg = 
         postMsg(
@@ -62,6 +84,17 @@ server:
                 )
 
 client:
+    import mynimlib/[nimjs, unifetch]
+    import jsony
+
+    #proc send*(msg: postMsg, url = current_url()) : Future[result[postMsg]] = 
+    proc send*(msg: postMsg, url = current_url()) : Future[postMsg] {.async.}= 
+        #unifetch.postJson( url, %msg ).asObj(comms.postMsg)
+        let resp          = await unifetch.postJson( url, %msg )
+        let text: cstring = await resp.text()
+        return ($text).fromJson(postMsg)
+
+
     proc PromptCGPT*(scenario_num: int) : postMsg = 
         postMsg(
                     kind         : msgKind.prompt_cgpt,

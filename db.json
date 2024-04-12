@@ -6,12 +6,31 @@
   },
   "contributions": {
     "meta": {
-      "highest_id": 0
+      "highest_id": 1
+    },
+    "0": {
+      "wallet_addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52",
+      "nft_index": 0,
+      "scenario_1": {
+        "title": "The Elder's Revelation",
+        "body": " Gaia encounters an old and wise woman named Nona, living in seclusion on the outskirts of the city. Nona is one of the last surviving elders who remembers the days when the healing plant was embraced. Nona shares her memories with Gaia, revealing the plant's sacred history and transformative powers. Touched by the elder's stories, Gaia is more determined than ever to reintroduce the plant's healing properties to her people."
+      },
+      "scenario_2": {
+        "title": "The Hidden Garden",
+        "body": " Nona, sensing Gaia's determination, leads her to a hidden garden where the healing plants still grow in abundance, protected from the ignorance of the world. Gaia is captivated by the beauty of the sacred plants, experiencing a profound connection. She learns from Nona how to care for the plants, preparing her for the journey to reintroduce them to their rightful place in society."
+      },
+      "scenario_full": {
+        "title": "Part 1",
+        "body": "In the dim outskirts of the city, Gaia stumbles upon a secluded dwelling, home to an elderly woman known as Nona. The old woman's eyes glow with ancient wisdom as she greets Gaia, recognizing in her a shared longing for the forgotten. \"Child, our world once danced with the rhythms of the healing plants,\" Nona confides, her voice a soft echo of yesteryears. She weaves tales of a time when the plants were held sacred, their powers revered and embraced.\n\nMoved by Nona's revelation, Gaia's determination hardens like steel in the crucible of her resolve. \"We must bring back those days, Nona. For the sake of our dying world.\"\n\nA knowing smile plays on Nona's weathered face as she leads Gaia to a hidden sanctuary. A garden, teeming with the vibrant life of the healing plants, bathed in the glow of the setting sun. The sight of the plants, their aura pulsating with sacred energy, stirs something profound within Gaia.\n\nWith Nona as her guide, Gaia learns to nurture the plants, her hands gently tending to their needs. Each day spent in the hidden garden strengthens her resolve to restore the rightful place of the healing plants in their world, to bring about the renaissance of a forgotten past."
+      },
+      "scenario_1_complete": true,
+      "scenario_2_complete": true,
+      "scenario_full_complete": true
     }
   },
   "contact_db": {
     "meta": {
-      "highest_id": 4
+      "highest_id": 5
     },
     "0": {
       "email": "hmbemba@gmail.com",
@@ -47,6 +66,15 @@
       "state": "ohio",
       "country": "United States",
       "zipcode": "43035",
+      "addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52"
+    },
+    "4": {
+      "email": "hmbemba@gmail.com",
+      "address": "108 S Ohio Ave",
+      "city": "Columbus",
+      "state": "Ohio",
+      "country": "United States",
+      "zipcode": "43205",
       "addy": "0xF6427B9C66505fc8181783e3EBe6D6b7d6081a52"
     }
   }

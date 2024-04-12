@@ -1,4 +1,4 @@
-import nimtinydb
+import tinydb/src/tinydb
 import ../consts
 import safenim
 import ../comms

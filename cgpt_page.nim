@@ -2,7 +2,7 @@ when not defined(js):
   import prologue
   import comps
   import mynimlib/[prologutils, nimOpenai, utils]
-  import nimtinydb
+  import tinydb/src/tinydb
   import icecream/src/icecream
   import db/db
   import dotenv, os
@@ -400,14 +400,14 @@ when not defined(js):
           body
 
 
-  proc upsert_scenario_1(contrib : contribution) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+  proc upsert_scenario_1(contrib : contribution) : result[int] = 
       ContribDB().upsert(
           %contrib,
           (Where("wallet_addy") == %contrib.wallet_addy ) &
           (Where("nft_index")   == %contrib.nft_index   )
       )
 
-  proc upsert_scenario_2 (contrib : contribution) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+  proc upsert_scenario_2 (contrib : contribution) : result[int] = 
       ContribDB().upsert(
                           %*{
                               "scenario_2_complete": true,
@@ -416,7 +416,7 @@ when not defined(js):
                           (Where("wallet_addy") == %contrib.wallet_addy ) &
                           (Where("nft_index")   == %contrib.nft_index   )
                       )
-  proc upsert_scenario_full(contrib : contribution) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+  proc upsert_scenario_full(contrib : contribution) : result[int] = 
       ContribDB().upsert(
                           %*{
                               "scenario_full_complete": true,
@@ -426,7 +426,7 @@ when not defined(js):
                           (Where("nft_index")   == %contrib.nft_index   )
                       )
   
-  proc upsert_scenario_full(nft_index : int, wallet_addy, scenario_full : string) : tuple[ok:bool, err:string, doc_id:Option[int]] = 
+  proc upsert_scenario_full(nft_index : int, wallet_addy, scenario_full : string) : result[int] = 
       ContribDB().upsert(
                           %*{
                               "scenario_full_complete": true,
@@ -492,123 +492,114 @@ when not defined(js):
         
       onPost:
           ic "Incoming Post Request to cgpt_page"
-          let msg = ctx.getPostMsg(comms.postMsg)
+          inject_parsed_msg()
+          # let msg = ctx.getPostMsg(comms.postMsg)
           
-          icb msg
+          # icb msg
 
-          case msg.kind:
-              of err: discard
-              # of get_prev_info: 
-                
-
-
-              #   let msg = SendPrevInfo(prev_info)
-                
-              #   resp jsonResponse %msg
-              
-              of set_contribution:                      
-                  if msg.contrib.scenario_1_complete:
-                      ic "Scenario 1 is complete"
-                      
-                      let upsert_req = msg.contrib.upsert_scenario_1()
-                      upsert_req.catch_server_err("Error upserting scenario 1"):
-                        return
-                      
-                      await ctx.respond(Http200,"")
-                      return
+          handle set_contribution:                      
+              if msg.contrib.scenario_1_complete:
+                  ic "Scenario 1 is complete"
                   
-                  if msg.contrib.scenario_2_complete:
-                      ic "Scenario 2 is complete"
-                      
-                      let upsert_req = msg.contrib.upsert_scenario_2()
-                      upsert_req.catch_server_err("Error upserting scenario 2"):
-                        return
-                      
-                      await ctx.respond(Http200,"")
-                      return
+                  let upsert_req = msg.contrib.upsert_scenario_1()
+                  upsert_req.catch_server_err("Error upserting scenario 1"):
+                    return
                   
-                  if msg.contrib.scenario_full_complete:
-                      ic "Full Scenario is complete"
-                      
-                      let upsert_req = msg.contrib.upsert_scenario_full()
-                      upsert_req.catch_server_err("Error upserting full scenario"):
-                        return
-                      
-                      await ctx.respond(Http200,"")
-                      return
-                  
-                  icr "No scenario complete flag was set", "We should never get here"
-                  await ctx.respond(Http500, "Internal Server Error - Upsert Failed: No scenario complete flag was set")
+                  await ctx.respond(Http200,"")
                   return
+              
+              if msg.contrib.scenario_2_complete:
+                  ic "Scenario 2 is complete"
+                  
+                  let upsert_req = msg.contrib.upsert_scenario_2()
+                  upsert_req.catch_server_err("Error upserting scenario 2"):
+                    return
+                  
+                  await ctx.respond(Http200,"")
+                  return
+              
+              if msg.contrib.scenario_full_complete:
+                  ic "Full Scenario is complete"
+                  
+                  let upsert_req = msg.contrib.upsert_scenario_full()
+                  upsert_req.catch_server_err("Error upserting full scenario"):
+                    return
+                  
+                  await ctx.respond(Http200,"")
+                  return
+              
+              icr "No scenario complete flag was set", "We should never get here"
+              await ctx.respond(Http500, "Internal Server Error - Upsert Failed: No scenario complete flag was set")
+              return
 
                   
-              of prompt_cgpt: 
-                  ic "Incoming prompt_cgpt request"
-                  ic msg.scenario_num
+          handle prompt_cgpt: 
+              ic "Incoming prompt_cgpt request"
+              ic msg.scenario_num
+              
+              let prev_story = ContribDB().get_prev_story()
+              
+              var 
+                scenario_1, scenario_2: scenario #= this_contrib.val.get.item.scenario_1
+              
+              if this_contrib.val.isSome:
+                scenario_1 = this_contrib.val.get.item.scenario_1
+                scenario_2 = this_contrib.val.get.item.scenario_2
+            
+              icb prev_story, scenario_1, scenario_2
+
+              let prompt       = consts.buildPrompt(
+                  chapter_num  = chapter_num                , 
+                  section_num  = section_num                , 
+                  scenario_num = msg.scenario_num           ,
                   
-                  let prev_story = ContribDB().get_prev_story()
-                  
-                  var 
-                    scenario_1, scenario_2: scenario #= this_contrib.val.get.item.scenario_1
-                  
-                  if this_contrib.val.isSome:
-                    scenario_1 = this_contrib.val.get.item.scenario_1
-                    scenario_2 = this_contrib.val.get.item.scenario_2
+                  selection_1  = if scenario_1.title != "": scenario_1.title & " " & scenario_1.body else: "" ,
+                  selection_2  = if scenario_2.title != "": scenario_2.title & " " & scenario_2.body else: "" ,
+                  previously_generated_story = prev_story.val.get
+              )
+
+              if not prompt.ok:
+                  icr prompt.err
+                  resp jsonResponse %CommsErr("Prompt Generation Failed :" & prompt.err)
+                                      
+              ic prompt.val.get
                 
-                  icb prev_story, scenario_1, scenario_2
+              icb "Sending prompt to OpenAI..."
 
-                  let prompt       = consts.buildPrompt(
-                      chapter_num  = chapter_num                , 
-                      section_num  = section_num                , 
-                      scenario_num = msg.scenario_num           ,
-                      
-                      selection_1  = if scenario_1.title != "": scenario_1.title & " " & scenario_1.body else: "" ,
-                      selection_2  = if scenario_2.title != "": scenario_2.title & " " & scenario_2.body else: "" ,
-                      previously_generated_story = prev_story.val.get
-                  )
+              {.cast(gcsafe).}:
+                  let resp = waitFor nimopenai.text_prompt(getEnv_strict"OPEN_AI_API_KEY", gpt_4.name, prompt.val.get)
+              
+              if not resp.ok:
+                  icr resp.err
+                  resp jsonResponse %CommsErr("OpenAI Request Failed :" & resp.err)
 
-                  if not prompt.ok:
-                      icr prompt.err
-                      resp jsonResponse %ServerErr("Prompt Generation Failed :" & prompt.err)
-                                          
-                  ic prompt.val.get
-                    
-                  icb "Sending prompt to OpenAI..."
+              ic "OpenAI Request Successful"
 
-                  {.cast(gcsafe).}:
-                      let resp = waitFor nimopenai.text_prompt(getEnv_strict"OPEN_AI_API_KEY", gpt_4.name, prompt.val.get)
+              let cgpt_resp_msg = resp.val.get.getMsg                      
+              icb cgpt_resp_msg
+
+              if msg.scenario_num < 3:
+      
+                  let scenarios = cgpt_resp_msg.asObj(seq[comms.scenario])
+                  if not scenarios.ok:
+                      icr scenarios.err
+                      resp jsonResponse %CommsErr("Error parsing OpenAI response: " & scenarios.err)
                   
-                  if not resp.ok:
-                      icr resp.err
-                      resp jsonResponse %ServerErr("OpenAI Request Failed :" & resp.err)
+                  ic "OpenAI Response Parsed Successfully"
 
-                  ic "OpenAI Request Successful"
-
-                  let cgpt_resp_msg = resp.val.get.getMsg                      
-                  icb cgpt_resp_msg
-
-                  if msg.scenario_num < 3:
-          
-                      let scenarios = cgpt_resp_msg.asObj(seq[comms.scenario])
-                      if not scenarios.ok:
-                          icr scenarios.err
-                          resp jsonResponse %ServerErr("Error parsing OpenAI response: " & scenarios.err)
-                      
-                      ic "OpenAI Response Parsed Successfully"
-
-                      resp jsonResponse %SendScenarios(scenarios.val.get)
+                  resp jsonResponse %SendScenarios(scenarios.val.get)
+              
+              else:
+                  let upsert_req = upsert_scenario_full(nft_num.parseInt, wallet_addy, cgpt_resp_msg)
+                  if not upsert_req.ok:
+                      icr upsert_req.err
+                      resp jsonResponse %CommsErr("Error upserting full scenario: " & upsert_req.err)
+                      return
                   
-                  else:
-                      let upsert_req = upsert_scenario_full(nft_num.parseInt, wallet_addy, cgpt_resp_msg)
-                      if not upsert_req.ok:
-                          icr upsert_req.err
-                          resp jsonResponse %ServerErr("Error upserting full scenario: " & upsert_req.err)
-                          return
-                      
-                      ic "Successfully upserted full scenario"
+                  ic "Successfully upserted full scenario"
 
-                      # Send the full story to the client
-                      resp jsonResponse %SendScenarioFull(cgpt_resp_msg)
+                  # Send the full story to the client
+                  resp jsonResponse %SendScenarioFull(cgpt_resp_msg)
     
       onGet:
 

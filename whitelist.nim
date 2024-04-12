@@ -1,6 +1,6 @@
 import prologue
 import icecream/src/icecream
-import nimtinydb
+import tinydb/src/tinydb
 import strformat
 import consts
 
